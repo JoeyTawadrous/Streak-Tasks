@@ -2,20 +2,14 @@
 
 Store Link: http://apple.co/2krwSkQ
 
-
 Keeping your life in order shouldn't be hard.
-
-
-Followed by gentle reminders just when you need them.
-
-
-Its. that. simple. 
-Get organised today. 
 
 
 # Core Concept
 1. You create goals you want to achieve.
 2. And then create tasks for each of your goals.
+3. Followed by gentle reminders just when you need them.
+4. Its. that. simple. Get organised today. 
 
 
 # Broad Features

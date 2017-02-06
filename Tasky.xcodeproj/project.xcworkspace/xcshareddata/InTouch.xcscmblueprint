@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1A4FA8A27E3779882D56CB8D561AE1164676B7EB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1A4FA8A27E3779882D56CB8D561AE1164676B7EB" : 0,
+    "5D1940FBAAC868399FC344147AFB4D9D29FB2774" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CCDBA01C-3C5B-4114-8D0B-2DFA7CD4C488",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1A4FA8A27E3779882D56CB8D561AE1164676B7EB" : "Contact\/",
+    "5D1940FBAAC868399FC344147AFB4D9D29FB2774" : "CatchUp"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "InTouch",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "InTouch.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/JoeyTawadrous\/contact.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A4FA8A27E3779882D56CB8D561AE1164676B7EB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/JoeyTawadrous\/catchup.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5D1940FBAAC868399FC344147AFB4D9D29FB2774"
+    }
+  ]
+}

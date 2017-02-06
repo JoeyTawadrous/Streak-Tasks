@@ -1,13 +1,18 @@
-# Tasky Open Source iOS App
-## Habits, Goals & Tasks To-Do List Tracker
+# Tasky Open Source iOS App (Habits, Goals & Tasks To-Do List Tracker)
+
+Store Link: http://apple.co/2krwSkQ
+
 
 Keeping your life in order shouldn't be hard.
+
 
 Tasky allows you to organize your life with two simple concepts:
 1. You create goals you want to achieve.
 2. And then create tasks for each of your goals.
 
+
 Followed by gentle reminders just when you need them.
+
 
 Its. that. simple. 
 Get organised today. 

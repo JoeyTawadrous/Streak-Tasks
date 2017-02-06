@@ -28,11 +28,11 @@ Keeping your life in order shouldn't be hard.
 * Payments
 
 
-# Tags
-task, goal, track, list, manager, prioritised, simple, achieve, design, colourful, trigger, add, progress, free
-
-
 <img alt="Screenshot" width="205px" src="readme-assets/1.png">
 <img alt="Screenshot2" width="205px" src="readme-assets/2.png">
 <img alt="Screenshot3" width="205px" src="readme-assets/3.png">
 <img alt="Screenshot3" width="205px" src="readme-assets/4.png">
+
+
+# Tags
+task, goal, track, list, manager, prioritised, simple, achieve, design, colourful, trigger, add, progress, free

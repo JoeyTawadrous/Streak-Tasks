@@ -28,10 +28,7 @@ Keeping your life in order shouldn't be hard.
 * Payments
 
 
-<img alt="Screenshot" width="205px" src="readme-assets/1.png">
-<img alt="Screenshot2" width="205px" src="readme-assets/2.png">
-<img alt="Screenshot3" width="205px" src="readme-assets/3.png">
-<img alt="Screenshot3" width="205px" src="readme-assets/4.png">
+<img alt="Screenshot" width="205px" src="readme-assets/1.png"><img alt="Screenshot2" width="205px" src="readme-assets/2.png"><img alt="Screenshot3" width="205px" src="readme-assets/3.png"><img alt="Screenshot3" width="205px" src="readme-assets/4.png">
 
 
 # Tags

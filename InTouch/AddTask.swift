@@ -47,19 +47,16 @@ class AddTask: FormViewController {
 	/* MARK: Init
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
-		// init
 		selectedGoal = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_GOAL)!
 		Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
 		
 		// Styling
+		Utils.insertGradientIntoView(viewController: self)
 		cancelButton.image = Utils.imageResize(UIImage(named: "cross")!, sizeChange: CGSize(width: 18, height: 18)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
 		checkButton.image = Utils.imageResize(UIImage(named: "check")!, sizeChange: CGSize(width: 22, height: 22)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
 		
         // Disable scroll
         tableView.alwaysBounceVertical = false;
-		
-		Utils.insertGradientIntoView(viewController: self)
-		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -84,8 +81,7 @@ class AddTask: FormViewController {
 		var whenValue = date.value as! Date?
 		var reasonValue = reason.value
 		let uuid = UUID().uuidString
-		
-		
+
 		// Make sure no nil values
 		let today = Date()
 		let tomorrow = (Calendar.current as NSCalendar).date(
@@ -96,7 +92,6 @@ class AddTask: FormViewController {
 		if whenValue == nil { whenValue = tomorrow }
 		if reasonValue == nil { reasonValue = FormPlaceholders.REASON_WHEN_NIL as NSObject? }
 		
-		
 		let task = Utils.createObject(Constants.CoreData.TASK)
 		task.setValue(selectedGoal, forKey: Constants.CoreData.NAME)
 		task.setValue(typeValue, forKey: Constants.CoreData.TYPE)
@@ -104,7 +99,6 @@ class AddTask: FormViewController {
 		task.setValue(reasonValue, forKey: Constants.CoreData.REASON)
 		task.setValue(uuid, forKey: Constants.CoreData.UUID);
 		Utils.saveObject()
-		
 		
 		// Create local notification
 		let notification = UILocalNotification()
@@ -116,9 +110,7 @@ class AddTask: FormViewController {
 		notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
 		UIApplication.shared.scheduleLocalNotification(notification)
 		
-		
 		Tasks.setBadgeNumbers()
-		
 		
 		self.dismiss(animated: true, completion: nil)
 	}
@@ -130,8 +122,7 @@ class AddTask: FormViewController {
 	func loadForm() {
         let form = FormDescriptor(title: FormTitles.FORM_TITLE)
         let section = FormSectionDescriptor(headerTitle: nil, footerTitle: nil)
-		
-		
+
         // Type
 //		type = FormRowDescriptor(tag: FormTypes.TYPE, type: .picker, title: FormTitles.TYPE_TITLE)
 //        type.configuration[FormRowDescriptor.Configuration.Options] = [TypeOptions.TYPE1, TypeOptions.TYPE2, TypeOptions.TYPE3, TypeOptions.TYPE4, TypeOptions.TYPE5, TypeOptions.TYPE6, TypeOptions.TYPE7, TypeOptions.TYPE8, TypeOptions.TYPE9]
@@ -145,18 +136,15 @@ class AddTask: FormViewController {
 //        type.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["backgroundColor" : UIColor.clear]
 //        section.addRow(type)
 //
-//
 //        // Date and time
 //		date = FormRowDescriptor(tag: FormTypes.DATE, type: .dateAndTime, title: FormTitles.WHEN_TITLE)
 //        date.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["backgroundColor" : UIColor.clear]
 //        section.addRow(date)
 //
-//
 //        // Reason
 //		reason = FormRowDescriptor(tag: FormTypes.REASON, type: .text, title: FormTitles.REASON_TITLE)
 //        reason.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["textField.placeholder" : FormPlaceholders.REASON_WHEN_NIL, "textField.textAlignment" : NSTextAlignment.right.rawValue, "backgroundColor" : UIColor.clear]
 //        section.addRow(reason)
-		
 		
         form.sections = [section]
         self.form = form

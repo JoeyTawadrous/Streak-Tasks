@@ -9,8 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="GothamProMedium.ttf">
-            <string>GothamPro-Medium</string>
+        <array key="GothamProBold.ttf">
+            <string>GothamPro-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -20,15 +20,22 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tasky" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvT-vh-kwQ">
-                    <rect key="frame" x="188" y="135" width="104" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasky" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvT-vh-kwQ">
+                    <rect key="frame" x="188" y="215" width="104" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Alq-dy-9Xu"/>
+                        <constraint firstAttribute="width" constant="104" id="geT-il-mAy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="27"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.58823529411764708" green="0.90196078431372551" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gvT-vh-kwQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BJ3-36-w3V"/>
+                <constraint firstItem="gvT-vh-kwQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ePa-py-6qk"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>

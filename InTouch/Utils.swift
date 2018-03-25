@@ -59,13 +59,13 @@ class Utils {
 	
 	/* MARK: Reminders
 	/////////////////////////////////////////// */
-	class func scheduleReminder(_ catchUp: NSManagedObject) {
+	class func scheduleReminder(_ task: NSManagedObject) {
 		let notification = UILocalNotification() // create a new reminder notification
-		notification.alertBody = "Don't forget: \(catchUp.value(forKey: Constants.CoreData.REASON) as! NSString)"
+		notification.alertBody = "Don't forget: \(task.value(forKey: Constants.CoreData.REASON) as! NSString)"
 		notification.alertAction = "Open"
 		notification.fireDate = Date().addingTimeInterval(30 * 60) // 30 minutes from current time
 		notification.soundName = UILocalNotificationDefaultSoundName
-		notification.userInfo = ["UUID": catchUp.value(forKey: Constants.CoreData.UUID)!]
+		notification.userInfo = ["UUID": task.value(forKey: Constants.CoreData.UUID)!]
 		notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
 		
 		UIApplication.shared.scheduleLocalNotification(notification)
@@ -75,9 +75,9 @@ class Utils {
 	
 	/* MARK: Colors
 	/////////////////////////////////////////// */
-//    class func getMainColor() -> UIColor {
-//        return UIColor(hex: "#2C3E50")
-//    }
+    class func getMainColor() -> UIColor {
+        return UIColor(hex: "#96e6a1")
+    }
     
 //    class func getNextTableColour(_ number: Int, reverse: DarwinBoolean) -> UIColor {
 //        var number = number

@@ -5,7 +5,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var catchUps = [AnyObject]()
+    var tasks = [AnyObject]()
 	
 	
 	/* MARK: Init
@@ -51,19 +51,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Void) {
         
-        // Get catchUp attached to notification
-        catchUps = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+        // Get task attached to notification
+        tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         
-        for catchUp in catchUps {
-            let catchUpUUID = catchUp.value(forKey: Constants.CoreData.UUID) as! String
+        for task in tasks {
+            let taskUUID = task.value(forKey: Constants.CoreData.UUID) as! String
             let notificationUUID = notification.userInfo!["UUID"] as! String
             
-            if (notificationUUID == catchUpUUID) {
+            if (notificationUUID == taskUUID) {
                 switch (identifier!) {
                     case Constants.LocalNotifications.DONE_ACTION_IDENTIFIER:
-                        Tasks.deleteTask(catchUp as! NSManagedObject)
+                        Tasks.deleteTask(task as! NSManagedObject)
                     case Constants.LocalNotifications.REMIND_ACTION_IDENTIFIER:
-                        Utils.scheduleReminder(catchUp as! NSManagedObject)
+                        Utils.scheduleReminder(task as! NSManagedObject)
                     default: // switch statements must be exhaustive - this condition should never be met
                         print("Error: unexpected notification action identifier!")
                 }
@@ -82,15 +82,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
-        catchUps = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+        tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         
-        let catchUpsDue = catchUps.filter({ (catchUp) -> Bool in
-            let when = catchUp.value(forKey: Constants.CoreData.WHEN) as! Date
+        let tasksDue = tasks.filter({ (task) -> Bool in
+            let when = task.value(forKey: Constants.CoreData.WHEN) as! Date
             let dateComparisionResult: ComparisonResult = when.compare(Date())
             
             return dateComparisionResult == ComparisonResult.orderedAscending
         })
-        UIApplication.shared.applicationIconBadgeNumber = catchUpsDue.count
+        UIApplication.shared.applicationIconBadgeNumber = tasksDue.count
     }
 
 	

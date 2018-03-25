@@ -21,14 +21,7 @@ class Task: UIViewController {
 	}
 	
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-		
-		// Styling
-		let borderWidth = CGFloat(3.5)
-		
-		
-		// Init
-        let defaults = UserDefaults.standard
+		let defaults = UserDefaults.standard
         var goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
         goals = goals.reversed()
 		
@@ -37,14 +30,15 @@ class Task: UIViewController {
         let selectedTaskIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_TASK_INDEX)
         var tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
         tasks = tasks.reversed()
-        
+		
+		// Styling
+		let borderWidth = CGFloat(3.5)
         
         // Reason label
         reasonLabel?.text = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.REASON) as! String?
         reasonLabel!.layer.borderWidth = borderWidth
         reasonLabel!.layer.borderColor = UIColor.white.cgColor
-        
-        
+		
         // Goal thumbnail
         let thumbnailFile = goals[selectedGoalIndex].value(forKey: Constants.CoreData.THUMBNAIL) as! String?
         goalImageView!.image = UIImage(named: thumbnailFile!)
@@ -53,7 +47,6 @@ class Task: UIViewController {
         goalImageView!.layer.borderWidth = borderWidth;
 		goalImageView!.layer.borderColor = UIColor.white.cgColor
 		
-        
         // Date label
         let when = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.WHEN) as! Date?
         let dateFormatter = DateFormatter()
@@ -64,20 +57,17 @@ class Task: UIViewController {
         dateLabel!.layer.borderWidth = borderWidth;
 		dateLabel!.layer.borderColor = UIColor.white.cgColor
 		
-        
         // Time label
         timeLabel?.text = whenArray[0]
         timeLabel!.layer.borderWidth = borderWidth;
 		timeLabel!.layer.borderColor = UIColor.white.cgColor
 		
-        
         // Type label
         let type = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.TYPE) as! String?
         typeLabel?.text = type!.uppercased()
         typeLabel!.layer.borderWidth = borderWidth;
 		typeLabel!.layer.borderColor = UIColor.white.cgColor
 		
-        
         // Type thumbnail
 		taskImageView!.image = UIImage(named: type!)
         taskImageView!.image! = Utils.imageResize(taskImageView!.image!, sizeChange: CGSize(width: 40, height: 40)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
@@ -85,10 +75,8 @@ class Task: UIViewController {
         taskImageView!.layer.borderWidth = borderWidth;
 		taskImageView!.layer.borderColor = UIColor.white.cgColor
 		
-        
         // Title bar button
         titleButton?.title = Utils.getDayOfWeek(formattedWhen)! + ", " + whenArray[1] + " @ " + whenArray[0]
-		
 		
         // Complete button
         markDoneButton!.layer.cornerRadius = 3

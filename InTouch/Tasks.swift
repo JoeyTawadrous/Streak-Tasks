@@ -19,13 +19,9 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
 		Utils.insertGradientIntoView(viewController: self)
-		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-
-		// init
 		tableView.delegate = self
 		tableView.dataSource = self
 		refresh();
@@ -63,12 +59,12 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	}
 	
 	
+	
 	/* MARK: Core Functionality
 	/////////////////////////////////////////// */
     class func deleteTask(_ task: NSManagedObject) {
         let taskUUID = task.value(forKey: Constants.CoreData.UUID) as! String
-        
-        
+		
         // Remove notification for task object & update app icon badge notification count
         for notification in UIApplication.shared.scheduledLocalNotifications!{
             let notificationUUID = notification.userInfo!["UUID"] as! String
@@ -79,8 +75,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
             }
         }
         Tasks.setBadgeNumbers()
-        
-        
+		
         // Remove task object
         let managedObjectContect = Utils.fetchManagedObjectContext()
         managedObjectContect.delete(task)
@@ -131,7 +126,6 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		let tasks = self.tasks[indexPath.row]
 		let type = tasks.value(forKey: Constants.CoreData.TYPE) as! String?
 		
-		
 		// Style
 		cell!.selectionStyle = .none
 		
@@ -143,10 +137,6 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.updateConstraints()
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -171,13 +161,11 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        
+		
         // Set task in NSUserDefaults (so we can get task details it later)
         let defaults = UserDefaults.standard
         defaults.set(NSInteger(indexPath.row), forKey: Constants.LocalData.SELECTED_TASK_INDEX)
-        
-        
+		
         // Show task view
         let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
         let taskView = storyBoard.instantiateViewController(withIdentifier: Constants.Classes.TASK) as! Tasks
@@ -217,6 +205,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		}
     }
 }
+
 
 class TasksTableViewCell : UITableViewCell {
     @IBOutlet var reasonLabel: UILabel?

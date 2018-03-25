@@ -23,12 +23,9 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
 		Utils.insertGradientIntoView(viewController: self)
-		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
 	}
 	
     override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-		
 		goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
 		goals = goals.reversed() // newest first
 		tableView.reloadData()
@@ -56,15 +53,26 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Button Actions
 	/////////////////////////////////////////// */
     @IBAction func addGoal(_ sender: AnyObject) {
-        let alert = SCLAlertView()
-        let textField = alert.addTextField(ClassConstants.ADD_GOAL_NAME)
-        alert.addButton(Constants.Common.SUBMIT) {
-            if !textField.text!.isEmpty {
-                self.saveGoal(textField.text!, thumbnail: Utils.getRandomImageString())
-                self.tableView.reloadData()
-            }
-        }
-        alert.showEdit(ClassConstants.ADD_GOAL_TITLE, subTitle:ClassConstants.ADD_GOAL_MESSAGE)
+		let appearance = SCLAlertView.SCLAppearance(
+			kCircleHeight: 100.0,
+			kCircleIconHeight: 60.0,
+			kTitleTop: 62.0,
+			showCloseButton: false
+		)
+		
+		let alertView = SCLAlertView(appearance: appearance)
+		let alertViewIcon = UIImage(named: Constants.Design.ICON_TROPHY)
+		let textField = alertView.addTextField(ClassConstants.ADD_GOAL_NAME)
+		
+		alertView.addButton(Constants.Common.SUBMIT) {
+			if !textField.text!.isEmpty {
+				self.saveGoal(textField.text!, thumbnail: Utils.getRandomImageString())
+				self.tableView.reloadData()
+			}
+		}
+		alertView.addButton(Constants.Common.CLOSE) {}
+		
+		alertView.showCustom(ClassConstants.ADD_GOAL_TITLE, subTitle: ClassConstants.ADD_GOAL_MESSAGE, color: Utils.getMainColor(), icon: alertViewIcon!, animationStyle: .leftToRight)
 	}
 	
 	@IBAction func menuButtonPressed(_ sender: AnyObject) {
@@ -98,26 +106,19 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         let goal = goals[indexPath.row]
 		
-		
 		// Style
 		cell!.selectionStyle = .none
 		
-        
         let name = goal.value(forKey: Constants.CoreData.NAME) as! String?
         cell.nameLabel!.text = name
         
-        
         let tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: name!)
         cell.taskCountLabel!.text = String(tasks.count)
-        
         
         let thumbnail = goal.value(forKey: Constants.CoreData.THUMBNAIL) as! String?
         cell.thumbnailImageView!.image = UIImage(named: thumbnail!)
         cell.thumbnailImageView!.image = cell.thumbnailImageView!.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         cell.thumbnailImageView!.tintColor = UIColor.white
-		
-        cell.underlineImageView!.tintColor = UIColor.white
-		cell.underlineImageView!.addBorderBottom(size: 2.0, color: UIColor.white)
 		
         cell.updateConstraints()
 
@@ -138,9 +139,8 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     Tasks.deleteTask(task as! NSManagedObject)
                 }
             }
-            
-            
-            // Now delete goal
+			
+            // Delete goal
             let goalToDelete = goals[indexPath.row]
             
             let managedObjectContect = Utils.fetchManagedObjectContext()
@@ -218,5 +218,4 @@ class GoalTableViewCell : UITableViewCell {
     @IBOutlet var nameLabel: UILabel?
     @IBOutlet var taskCountLabel: UILabel?
     @IBOutlet var thumbnailImageView: UIImageView?
-    @IBOutlet var underlineImageView: UIImageView?
 }

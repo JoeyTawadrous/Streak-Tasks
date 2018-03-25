@@ -15,6 +15,7 @@ class Constants {
 		static let CELL = "cell"
 		static let MAIN_STORYBOARD = "Main"
 		static let SUBMIT = "Create"
+		static let CLOSE = "Close"
 	}
 	
 	struct CoreData {
@@ -26,6 +27,10 @@ class Constants {
 		static let TYPE = "type"
 		static let WHEN = "when"
 		static let UUID = "uuid"
+	}
+	
+	struct Design {
+		static let ICON_TROPHY = "trophy"
 	}
 	
 	struct IAP {

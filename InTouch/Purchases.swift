@@ -21,9 +21,12 @@ class Purchases: UIViewController, SKPaymentTransactionObserver, SKProductsReque
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		// Style
-//		view.backgroundColor = Utils.getNextTableColour(0, reverse: false)
-		restoreButton.image = Utils.imageResize(UIImage(named: "refresh")!, sizeChange: CGSize(width: 22, height: 22)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+		// Nav bar
+		var attributes = [NSAttributedStringKey : Any]()
+		attributes = [.font: UIFont.fontAwesome(ofSize: 21)]
+		restoreButton.setTitleTextAttributes(attributes, for: .normal)
+		restoreButton.setTitleTextAttributes(attributes, for: .selected)
+		restoreButton.title = String.fontAwesomeIcon(name: .refresh)
 		
         // IAP's
         UserDefaults.standard.set(false, forKey: Constants.IAP.TRANSACTION_IN_PROGRESS)
@@ -40,7 +43,6 @@ class Purchases: UIViewController, SKPaymentTransactionObserver, SKProductsReque
     /* MARK: Button Actions
     /////////////////////////////////////////// */
     @IBAction func themePressed(_ sender: UIButton) {
-        
         // if the user is not already making a purchase
         if UserDefaults.standard.bool(forKey: Constants.IAP.TRANSACTION_IN_PROGRESS) == false {
             

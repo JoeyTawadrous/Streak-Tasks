@@ -14,6 +14,7 @@ class Constants {
 		static let APP_ID = "id1195440882"
 		static let APPNAME = "Tasky"
 		static let APP_STORE_LINK = "http://apple.co/2krwSkQ"
+		static let LEARNABLE_STORE_LINK = "http://apple.co/2vgq8hY"
 		static let APP_TWITTER_LINK = "https://twitter.com/getlearnable"
 		static let APP_FACEBOOK_LINK = "https://www.facebook.com/getlearnable"
 		static let APP_INSTAGRAM_LINK = "https://www.instagram.com/learnableapp"

@@ -18,9 +18,6 @@
         <array key="GothamProMedium.ttf">
             <string>GothamPro-Medium</string>
         </array>
-        <array key="GothamProRegular.ttf">
-            <string>GothamPro</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Navigation Controller-->
@@ -227,15 +224,9 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-1c-Th9">
-                                                                            <rect key="frame" x="80" y="22" width="206" height="29"/>
-                                                                            <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="19"/>
-                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zK-ar-8Sy">
-                                                                            <rect key="frame" x="310" y="25" width="33" height="22"/>
-                                                                            <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
+                                                                            <rect key="frame" x="313" y="25" width="33" height="22"/>
+                                                                            <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="20"/>
                                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -246,27 +237,33 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-EB-Mzf">
-                                                                            <rect key="frame" x="310" y="23" width="32" height="27"/>
+                                                                            <rect key="frame" x="311" y="23" width="32" height="27"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="32" id="K5p-SI-5l1"/>
                                                                             </constraints>
                                                                         </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-1c-Th9">
+                                                                            <rect key="frame" x="84" y="21" width="206" height="29"/>
+                                                                            <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="19"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstItem="ajP-tV-K2n" firstAttribute="centerY" secondItem="VvD-1c-Th9" secondAttribute="centerY" constant="-1.5" id="8zQ-DA-yN2"/>
+                                                                        <constraint firstItem="ajP-tV-K2n" firstAttribute="centerY" secondItem="VvD-1c-Th9" secondAttribute="centerY" constant="-0.5" id="8zQ-DA-yN2"/>
                                                                         <constraint firstItem="ajP-tV-K2n" firstAttribute="leading" secondItem="XiL-O3-L1m" secondAttribute="leadingMargin" constant="10" id="97L-u1-GSb"/>
                                                                         <constraint firstItem="0zK-ar-8Sy" firstAttribute="centerY" secondItem="XiL-O3-L1m" secondAttribute="centerY" id="Aew-1a-sB5"/>
-                                                                        <constraint firstItem="pQd-EB-Mzf" firstAttribute="leading" secondItem="0zK-ar-8Sy" secondAttribute="leading" id="NJc-0Q-BM7"/>
-                                                                        <constraint firstAttribute="trailingMargin" secondItem="0zK-ar-8Sy" secondAttribute="trailing" constant="17" id="SMR-wt-7bF"/>
-                                                                        <constraint firstItem="VvD-1c-Th9" firstAttribute="centerY" secondItem="pQd-EB-Mzf" secondAttribute="centerY" id="URs-wa-TIZ"/>
-                                                                        <constraint firstItem="VvD-1c-Th9" firstAttribute="top" secondItem="XiL-O3-L1m" secondAttribute="topMargin" constant="11" id="Z35-T7-cMT"/>
+                                                                        <constraint firstItem="pQd-EB-Mzf" firstAttribute="leading" secondItem="0zK-ar-8Sy" secondAttribute="leading" constant="-2" id="NJc-0Q-BM7"/>
+                                                                        <constraint firstAttribute="trailingMargin" secondItem="0zK-ar-8Sy" secondAttribute="trailing" constant="14" id="SMR-wt-7bF"/>
+                                                                        <constraint firstItem="VvD-1c-Th9" firstAttribute="centerY" secondItem="pQd-EB-Mzf" secondAttribute="centerY" constant="-1" id="URs-wa-TIZ"/>
+                                                                        <constraint firstItem="VvD-1c-Th9" firstAttribute="top" secondItem="XiL-O3-L1m" secondAttribute="topMargin" constant="10" id="Z35-T7-cMT"/>
                                                                         <constraint firstItem="pQd-EB-Mzf" firstAttribute="top" secondItem="XiL-O3-L1m" secondAttribute="topMargin" constant="12" id="bWD-40-Nkq"/>
                                                                         <constraint firstItem="0zK-ar-8Sy" firstAttribute="top" secondItem="XiL-O3-L1m" secondAttribute="topMargin" constant="14" id="dLS-q3-8c8"/>
-                                                                        <constraint firstItem="pQd-EB-Mzf" firstAttribute="centerX" secondItem="0zK-ar-8Sy" secondAttribute="centerX" id="kSS-OZ-ci1"/>
+                                                                        <constraint firstItem="pQd-EB-Mzf" firstAttribute="centerX" secondItem="0zK-ar-8Sy" secondAttribute="centerX" constant="-2.5" id="kSS-OZ-ci1"/>
                                                                         <constraint firstItem="pQd-EB-Mzf" firstAttribute="centerY" secondItem="0zK-ar-8Sy" secondAttribute="centerY" id="sf2-Us-kD5"/>
                                                                         <constraint firstItem="ajP-tV-K2n" firstAttribute="top" secondItem="XiL-O3-L1m" secondAttribute="topMargin" constant="9" id="smS-P1-GmG"/>
-                                                                        <constraint firstItem="0zK-ar-8Sy" firstAttribute="leading" secondItem="VvD-1c-Th9" secondAttribute="trailing" constant="24" id="ssI-MH-re9"/>
-                                                                        <constraint firstItem="VvD-1c-Th9" firstAttribute="leading" secondItem="ajP-tV-K2n" secondAttribute="trailing" constant="23" id="voW-US-Kli"/>
+                                                                        <constraint firstItem="0zK-ar-8Sy" firstAttribute="leading" secondItem="VvD-1c-Th9" secondAttribute="trailing" constant="23" id="ssI-MH-re9"/>
+                                                                        <constraint firstItem="VvD-1c-Th9" firstAttribute="leading" secondItem="ajP-tV-K2n" secondAttribute="trailing" constant="27" id="voW-US-Kli"/>
                                                                     </constraints>
                                                                 </tableViewCellContentView>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -512,7 +509,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="CyB-It-t5J" kind="relationship" relationship="rootViewController" id="O9i-hm-GiQ"/>
+                        <segue destination="CyB-It-t5J" kind="relationship" relationship="rootViewController" id="yRH-pN-Um3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDJ-Oh-Day" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -522,6 +519,7 @@
         <!--Settings-->
         <scene sceneID="e0x-yc-C0V">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKa-fn-X5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="Settings" id="CyB-It-t5J" customClass="Settings" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="kJq-1W-TRF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -541,8 +539,11 @@
                                                     <rect key="frame" x="12" y="6.5" width="351" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="  Themes">
-                                                        <color key="titleColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="themesButtonPressed" destination="CyB-It-t5J" eventType="touchUpInside" id="sCc-c0-UdF"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -561,12 +562,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWK-ip-6kU" userLabel="Upgrade to Premium">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWK-ip-6kU">
                                                     <rect key="frame" x="12" y="6.5" width="351" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="  Learn to Code">
-                                                        <color key="titleColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="learnToCodeButtonPressed" destination="CyB-It-t5J" eventType="touchUpInside" id="rb4-ld-SIs"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -575,6 +579,7 @@
                                                 <constraint firstItem="aWK-ip-6kU" firstAttribute="centerY" secondItem="GUG-zr-hBU" secondAttribute="centerY" id="ZSi-LZ-m6U"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="AqM-ni-X2w">
                                         <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
@@ -583,12 +588,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMd-QT-y8J" userLabel="Upgrade to Premium">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMd-QT-y8J">
                                                     <rect key="frame" x="12" y="6.5" width="351" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="  Review Tasky">
-                                                        <color key="titleColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="reviewButtonPressedWithSender:" destination="CyB-It-t5J" eventType="touchUpInside" id="PEH-Vo-TDN"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -597,6 +605,7 @@
                                                 <constraint firstItem="QMd-QT-y8J" firstAttribute="centerX" secondItem="t04-RK-llB" secondAttribute="centerX" id="yMO-v1-eV8"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="SP0-4v-zkw">
                                         <rect key="frame" x="0.0" y="187.5" width="375" height="44"/>
@@ -605,12 +614,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFt-4J-aSi" userLabel="Upgrade to Premium">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFt-4J-aSi">
                                                     <rect key="frame" x="12" y="6.5" width="351" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="  Send Feedback">
-                                                        <color key="titleColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="sendFeedbackButtonPressed" destination="CyB-It-t5J" eventType="touchUpInside" id="OPJ-nX-REP"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -619,6 +631,7 @@
                                                 <constraint firstItem="oFt-4J-aSi" firstAttribute="centerY" secondItem="kzg-CU-YhQ" secondAttribute="centerY" id="vAi-RN-aPi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -631,12 +644,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zad-wP-5KR" userLabel="Upgrade to Premium">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zad-wP-5KR">
                                                     <rect key="frame" x="12" y="6.5" width="351" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="  Share the love">
-                                                        <color key="titleColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="shareButtonPressed" destination="CyB-It-t5J" eventType="touchUpInside" id="KaT-K3-br7"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -645,6 +661,7 @@
                                                 <constraint firstItem="zad-wP-5KR" firstAttribute="centerX" secondItem="KNI-hu-OL8" secondAttribute="centerX" id="a3d-fT-TWU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="0cS-9F-1Zd">
                                         <rect key="frame" x="0.0" y="331.5" width="375" height="44"/>
@@ -653,12 +670,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-dc-RVP" userLabel="Upgrade to Premium">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-dc-RVP">
                                                     <rect key="frame" x="12" y="6.5" width="351" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="  Follow us on Twitter">
-                                                        <color key="titleColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="twitterButtonPressed" destination="CyB-It-t5J" eventType="touchUpInside" id="Pcc-0k-Fkq"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -667,6 +687,7 @@
                                                 <constraint firstItem="ed3-dc-RVP" firstAttribute="centerY" secondItem="l2h-Hm-58B" secondAttribute="centerY" id="qaC-o6-Tz5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="gQO-1B-y65">
                                         <rect key="frame" x="0.0" y="375.5" width="375" height="44"/>
@@ -675,12 +696,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dum-RC-gw8" userLabel="Upgrade to Premium">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dum-RC-gw8">
                                                     <rect key="frame" x="12" y="6.5" width="351" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="  Like us on Facebook">
-                                                        <color key="titleColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="facebookButtonPressed" destination="CyB-It-t5J" eventType="touchUpInside" id="gt6-0W-lbW"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -689,6 +713,7 @@
                                                 <constraint firstItem="dum-RC-gw8" firstAttribute="centerY" secondItem="0kl-N0-Ebk" secondAttribute="centerY" id="kDm-1F-vwq"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="xA8-cQ-B9Y">
                                         <rect key="frame" x="0.0" y="419.5" width="375" height="44"/>
@@ -697,12 +722,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqF-7s-sDj" userLabel="Upgrade to Premium">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqF-7s-sDj">
                                                     <rect key="frame" x="12" y="6.5" width="351" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="  Heart us on Instagram">
-                                                        <color key="titleColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="instagramButtonPressed" destination="CyB-It-t5J" eventType="touchUpInside" id="YmF-Dy-wvb"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -711,6 +739,7 @@
                                                 <constraint firstItem="ZqF-7s-sDj" firstAttribute="centerX" secondItem="6oj-F0-HcG" secondAttribute="centerX" id="JxU-ct-tdJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -722,7 +751,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="imb-zm-PBb"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sKa-fn-X5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5748" y="168"/>
         </scene>

@@ -5,15 +5,33 @@ import MessageUI
 
 class Settings: UITableViewController, UITextFieldDelegate {
 	
-	@IBOutlet var tableView: UITableView!
-	
-	
 	
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
-		Utils.insertGradientIntoView(viewController: self)
-		Utils.insertGradientIntoTableView(viewController: self, tableView: self.tableView)
+		self.view.backgroundColor = Utils.getMainColor()
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		// Styling
+		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+		tableView.tableHeaderView?.tintColor = UIColor.white
+	}
+	
+	override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		let label = UILabel()
+		label.backgroundColor = UIColor.clear
+		label.textColor = UIColor.white
+		label.font = UIFont.GothamProBold(size: 15)
+		
+		if section == 0 {
+			label.text = "   APP"
+		}
+		else {
+			label.text = "   SHARE"
+		}
+		
+		return label
 	}
 	
 	override var prefersStatusBarHidden: Bool {
@@ -30,13 +48,11 @@ class Settings: UITableViewController, UITextFieldDelegate {
 	}
 	
 	@IBAction func learnToCodeButtonPressed() {
-		Utils.openURL(url: Constants.Common.APP_STORE_LINK)
+		Utils.openURL(url: Constants.Common.LEARNABLE_STORE_LINK)
 	}
 	
 	@IBAction func reviewButtonPressed(sender: UIButton) {
-		Utils.openReviewAppURL(appId: Constants.Common.APP_ID) { success in
-			// success
-		}
+		Utils.openURL(url: Constants.Common.APP_STORE_LINK)
 	}
 	
 	@IBAction func sendFeedbackButtonPressed() {

@@ -285,19 +285,6 @@ class Utils {
 	
 	// MARK: Social
 	/////////////////////////////////////////// */
-	class func openReviewAppURL(appId: String, completion: @escaping ((_ success: Bool)->())) {
-		guard let url = URL(string : "itms-apps://itunes.apple.com/app/" + appId) else {
-			completion(false)
-			return
-		}
-		guard #available(iOS 10, *) else {
-			completion(UIApplication.shared.openURL(url))
-			return
-		}
-		UIApplication.shared.open(url, options: [:], completionHandler: completion)
-	}
-	
-	
 	class func openURL(url: String) {
 		let url = URL(string: url)!
 		if #available(iOS 10.0, *) {

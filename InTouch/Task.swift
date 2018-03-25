@@ -5,11 +5,11 @@ class Task: UIViewController {
     
     @IBOutlet var titleButton: UIBarButtonItem?
     @IBOutlet var reasonLabel: UILabel?
-    @IBOutlet var personThumbnail: UIImageView?
+    @IBOutlet var goalImageView: UIImageView?
     @IBOutlet var dateLabel: UILabel?
     @IBOutlet var timeLabel: UILabel?
     @IBOutlet var typeLabel: UILabel?
-    @IBOutlet var thumbnailImageView: UIImageView?
+    @IBOutlet var taskImageView: UIImageView?
     @IBOutlet var markDoneButton: UIButton?
     
 	
@@ -29,35 +29,33 @@ class Task: UIViewController {
 		
 		// Init
         let defaults = UserDefaults.standard
-        var people = Utils.fetchCoreDataObject(Constants.CoreData.PERSON, predicate: "")
-        people = people.reversed()
+        var goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+        goals = goals.reversed()
 		
-        let selectedPerson = defaults.string(forKey: Constants.LocalData.SELECTED_PERSON)!
-        let selectedPersonIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_PERSON_INDEX)
-        let selectedCatchUpIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_CATCHUP_INDEX)
-        var catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: selectedPerson)
-        catchUps = catchUps.reversed()
+        let selectedGoal = defaults.string(forKey: Constants.LocalData.SELECTED_GOAL)!
+        let selectedGoalIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_GOAL_INDEX)
+        let selectedTaskIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_TASK_INDEX)
+        var tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
+        tasks = tasks.reversed()
         
         
         // Reason label
-        reasonLabel?.text = catchUps[selectedCatchUpIndex].value(forKey: Constants.CoreData.REASON) as! String?
+        reasonLabel?.text = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.REASON) as! String?
         reasonLabel!.layer.borderWidth = borderWidth
         reasonLabel!.layer.borderColor = UIColor.white.cgColor
-		reasonLabel!.backgroundColor = Utils.getNextTableColour(selectedCatchUpIndex + 1, reverse: false)
         
         
-        // Person thumbnail
-        let thumbnailFile = people[selectedPersonIndex].value(forKey: Constants.CoreData.THUMBNAIL) as! String?
-        personThumbnail!.image = UIImage(named: thumbnailFile!)
-        personThumbnail!.image! = Utils.imageResize(personThumbnail!.image!, sizeChange: CGSize(width: 45, height: 45)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-        personThumbnail!.tintColor = UIColor.white
-        personThumbnail!.layer.borderWidth = borderWidth;
-		personThumbnail!.layer.borderColor = UIColor.white.cgColor
-		personThumbnail!.backgroundColor = Utils.getNextTableColour(selectedCatchUpIndex + 2, reverse: false)
+        // Goal thumbnail
+        let thumbnailFile = goals[selectedGoalIndex].value(forKey: Constants.CoreData.THUMBNAIL) as! String?
+        goalImageView!.image = UIImage(named: thumbnailFile!)
+        goalImageView!.image! = Utils.imageResize(goalImageView!.image!, sizeChange: CGSize(width: 45, height: 45)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        goalImageView!.tintColor = UIColor.white
+        goalImageView!.layer.borderWidth = borderWidth;
+		goalImageView!.layer.borderColor = UIColor.white.cgColor
 		
         
         // Date label
-        let when = catchUps[selectedCatchUpIndex].value(forKey: Constants.CoreData.WHEN) as! Date?
+        let when = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.WHEN) as! Date?
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = Constants.LocalData.DATE_FORMAT
         let formattedWhen = dateFormatter.string(from: when!)
@@ -65,31 +63,27 @@ class Task: UIViewController {
         dateLabel?.text = Utils.getDayOfWeek(formattedWhen)! + ", " + whenArray[1]
         dateLabel!.layer.borderWidth = borderWidth;
 		dateLabel!.layer.borderColor = UIColor.white.cgColor
-		dateLabel!.backgroundColor = Utils.getNextTableColour(selectedCatchUpIndex + 3, reverse: false)
 		
         
         // Time label
         timeLabel?.text = whenArray[0]
         timeLabel!.layer.borderWidth = borderWidth;
 		timeLabel!.layer.borderColor = UIColor.white.cgColor
-		timeLabel!.backgroundColor = Utils.getNextTableColour(selectedCatchUpIndex + 4, reverse: false)
 		
         
         // Type label
-        let type = catchUps[selectedCatchUpIndex].value(forKey: Constants.CoreData.TYPE) as! String?
+        let type = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.TYPE) as! String?
         typeLabel?.text = type!.uppercased()
         typeLabel!.layer.borderWidth = borderWidth;
 		typeLabel!.layer.borderColor = UIColor.white.cgColor
-		typeLabel!.backgroundColor = Utils.getNextTableColour(selectedCatchUpIndex + 3, reverse: false)
 		
         
         // Type thumbnail
-		thumbnailImageView!.image = UIImage(named: type!)
-        thumbnailImageView!.image! = Utils.imageResize(thumbnailImageView!.image!, sizeChange: CGSize(width: 40, height: 40)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-        thumbnailImageView!.tintColor = UIColor.white
-        thumbnailImageView!.layer.borderWidth = borderWidth;
-		thumbnailImageView!.layer.borderColor = UIColor.white.cgColor
-		thumbnailImageView!.backgroundColor = Utils.getNextTableColour(selectedCatchUpIndex + 7, reverse: false)
+		taskImageView!.image = UIImage(named: type!)
+        taskImageView!.image! = Utils.imageResize(taskImageView!.image!, sizeChange: CGSize(width: 40, height: 40)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        taskImageView!.tintColor = UIColor.white
+        taskImageView!.layer.borderWidth = borderWidth;
+		taskImageView!.layer.borderColor = UIColor.white.cgColor
 		
         
         // Title bar button
@@ -99,7 +93,6 @@ class Task: UIViewController {
         // Complete button
         markDoneButton!.layer.cornerRadius = 3
         markDoneButton!.setTitleColor(UIColor.white, for: UIControlState())
-		markDoneButton!.backgroundColor = Utils.getNextTableColour(selectedCatchUpIndex + 6, reverse: false)
     }
 	
 	override var prefersStatusBarHidden: Bool {
@@ -114,11 +107,11 @@ class Task: UIViewController {
         sender.isEnabled = false
 		
         let defaults = UserDefaults.standard
-        let selectedPerson = defaults.string(forKey: Constants.LocalData.SELECTED_PERSON)!
-        let selectedCatchUpIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_CATCHUP_INDEX)
-        var catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: selectedPerson)
-        let catchUp = catchUps[selectedCatchUpIndex] as! NSManagedObject
-        Tasks.deleteCatchUp(catchUp)
+        let selectedGoal = defaults.string(forKey: Constants.LocalData.SELECTED_GOAL)!
+        let selectedTaskIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_TASK_INDEX)
+        var tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
+        let task = tasks[selectedTaskIndex] as! NSManagedObject
+        Tasks.deleteTask(task)
 		
         navigationController?.popViewController(animated: true)
     }

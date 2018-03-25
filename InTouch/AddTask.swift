@@ -40,7 +40,7 @@ class AddTask: FormViewController {
     var type: FormRowDescriptor!
     var date: FormRowDescriptor!
     var reason: FormRowDescriptor!
-    var selectedPerson = String()
+    var selectedGoal = String()
     
     
 	
@@ -48,8 +48,8 @@ class AddTask: FormViewController {
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
 		// init
-		selectedPerson = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_PERSON)!
-		Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: selectedPerson)
+		selectedGoal = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_GOAL)!
+		Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
 		
 		// Styling
 		cancelButton.image = Utils.imageResize(UIImage(named: "cross")!, sizeChange: CGSize(width: 18, height: 18)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
@@ -97,18 +97,18 @@ class AddTask: FormViewController {
 		if reasonValue == nil { reasonValue = FormPlaceholders.REASON_WHEN_NIL as NSObject? }
 		
 		
-		let catchUp = Utils.createObject(Constants.CoreData.CATCHUP)
-		catchUp.setValue(selectedPerson, forKey: Constants.CoreData.NAME)
-		catchUp.setValue(typeValue, forKey: Constants.CoreData.TYPE)
-		catchUp.setValue(whenValue, forKey: Constants.CoreData.WHEN)
-		catchUp.setValue(reasonValue, forKey: Constants.CoreData.REASON)
-		catchUp.setValue(uuid, forKey: Constants.CoreData.UUID);
+		let task = Utils.createObject(Constants.CoreData.TASK)
+		task.setValue(selectedGoal, forKey: Constants.CoreData.NAME)
+		task.setValue(typeValue, forKey: Constants.CoreData.TYPE)
+		task.setValue(whenValue, forKey: Constants.CoreData.WHEN)
+		task.setValue(reasonValue, forKey: Constants.CoreData.REASON)
+		task.setValue(uuid, forKey: Constants.CoreData.UUID);
 		Utils.saveObject()
 		
 		
 		// Create local notification
 		let notification = UILocalNotification()
-		notification.alertBody = "\(selectedPerson): \(reasonValue as! NSString)" // text that will be displayed in the notification
+		notification.alertBody = "\(selectedGoal): \(reasonValue as! NSString)" // text that will be displayed in the notification
 		notification.alertAction = "Open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
 		notification.fireDate = whenValue // NOTE: dates in the past, chosen by the user, will not create a notification
 		notification.soundName = UILocalNotificationDefaultSoundName // play default sound

@@ -10,8 +10,8 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	@IBOutlet var tableView: UITableView!
 	@IBOutlet var addButton: UIBarButtonItem!
 	
-    var catchUps = [AnyObject]()
-    var selectedPerson = String()
+    var tasks = [AnyObject]()
+    var selectedTask = String()
 	
 	
 	
@@ -53,30 +53,27 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
 	func refresh() {
-		selectedPerson = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_PERSON)!
-		self.title = selectedPerson
+		selectedTask = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_GOAL)!
+		self.title = selectedTask
 		
-		catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: selectedPerson)
-		catchUps = catchUps.reversed() // newest first
+		tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedTask)
+		tasks = tasks.reversed() // newest first
 		
-		view.backgroundColor = Utils.getMainColor()
-		
-		self.tableView.backgroundColor = Utils.getNextTableColour(catchUps.count, reverse: false)
 		self.tableView.reloadData()
 	}
 	
 	
 	/* MARK: Core Functionality
 	/////////////////////////////////////////// */
-    class func deleteCatchUp(_ catchUp: NSManagedObject) {
-        let catchUpUUID = catchUp.value(forKey: Constants.CoreData.UUID) as! String
+    class func deleteTask(_ task: NSManagedObject) {
+        let taskUUID = task.value(forKey: Constants.CoreData.UUID) as! String
         
         
-        // Remove notification for catchUp object & update app icon badge notification count
+        // Remove notification for task object & update app icon badge notification count
         for notification in UIApplication.shared.scheduledLocalNotifications!{
             let notificationUUID = notification.userInfo!["UUID"] as! String
             
-            if (notificationUUID == catchUpUUID) {
+            if (notificationUUID == taskUUID) {
                 UIApplication.shared.cancelLocalNotification(notification)
                 break
             }
@@ -84,9 +81,9 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
         Tasks.setBadgeNumbers()
         
         
-        // Remove catchUp object
+        // Remove task object
         let managedObjectContect = Utils.fetchManagedObjectContext()
-        managedObjectContect.delete(catchUp)
+        managedObjectContect.delete(task)
         do {
             try managedObjectContect.save()
         }
@@ -97,27 +94,25 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     class func setBadgeNumbers() {
         let notifications = UIApplication.shared.scheduledLocalNotifications // all scheduled notifications
-        let catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: "")
+        let tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         
         UIApplication.shared.cancelAllLocalNotifications()
         
         // for every notification
         for notification in notifications! {
-            
-            for catchUp in catchUps {
-                
-                let catchUpUUID = catchUp.value(forKey: Constants.CoreData.UUID) as! String
+            for task in tasks {
+                let taskUUID = task.value(forKey: Constants.CoreData.UUID) as! String
                 let notificationUUID = notification.userInfo!["UUID"] as! String
 				
-                if (notificationUUID == catchUpUUID) {
-                    let overdueCatchUps = catchUps.filter({ (catchUp) -> Bool in
-                        let when = catchUp.value(forKey: Constants.CoreData.WHEN) as! Date
+                if (notificationUUID == taskUUID) {
+                    let overdueTasks = tasks.filter({ (task) -> Bool in
+                        let when = task.value(forKey: Constants.CoreData.WHEN) as! Date
                         let dateComparisionResult: ComparisonResult = notification.fireDate!.compare(when)
                         
                         return dateComparisionResult == ComparisonResult.orderedAscending
                     })
                     
-                    notification.applicationIconBadgeNumber = overdueCatchUps.count   // set new badge number
+                    notification.applicationIconBadgeNumber = overdueTasks.count   // set new badge number
                     UIApplication.shared.scheduleLocalNotification(notification)      // reschedule notification
                 }
             }
@@ -129,18 +124,18 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Table Functionality
 	/////////////////////////////////////////// */
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: CatchUpsTableViewCell! = tableView.dequeueReusableCell(withIdentifier: Constants.Common.CELL) as? CatchUpsTableViewCell
+        var cell: TasksTableViewCell! = tableView.dequeueReusableCell(withIdentifier: Constants.Common.CELL) as? TasksTableViewCell
         if cell == nil {
-            cell = CatchUpsTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: Constants.Common.CELL)
+            cell = TasksTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: Constants.Common.CELL)
         }
-        let catchUp = catchUps[indexPath.row]
-		let type = catchUp.value(forKey: Constants.CoreData.TYPE) as! String?
+		let tasks = self.tasks[indexPath.row]
+		let type = tasks.value(forKey: Constants.CoreData.TYPE) as! String?
 		
 		
 		// Style
 		cell!.selectionStyle = .none
 		
-        cell.reasonLabel!.text = catchUp.value(forKey: Constants.CoreData.REASON) as! String?
+        cell.reasonLabel!.text = tasks.value(forKey: Constants.CoreData.REASON) as! String?
 		cell.thumbnailImageView!.image = UIImage(named: type!)
         cell.thumbnailImageView!.image = cell.thumbnailImageView!.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         cell.thumbnailImageView!.tintColor = UIColor.white
@@ -160,15 +155,14 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
 		let deleteAction = UITableViewRowAction(style: .default, title: "Complete") {_,_ in 
-            let catchUp = self.catchUps[indexPath.row] as! NSManagedObject
-            Tasks.deleteCatchUp(catchUp)
+            let task = self.tasks[indexPath.row] as! NSManagedObject
+            Tasks.deleteTask(task)
 			
             // Refresh table
-            self.catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: self.selectedPerson)
-            self.catchUps = self.catchUps.reversed() // newest first
+            self.tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: self.selectedTask)
+            self.tasks = self.tasks.reversed() // newest first
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
-            tableView.backgroundColor = Utils.getNextTableColour(self.catchUps.count, reverse: false)
             tableView.reloadData()
         }
         
@@ -179,15 +173,15 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         
-        // Set catchup in NSUserDefaults (so we can get catchup details it later)
+        // Set task in NSUserDefaults (so we can get task details it later)
         let defaults = UserDefaults.standard
-        defaults.set(NSInteger(indexPath.row), forKey: Constants.LocalData.SELECTED_CATCHUP_INDEX)
+        defaults.set(NSInteger(indexPath.row), forKey: Constants.LocalData.SELECTED_TASK_INDEX)
         
         
-        // Show CatchUp view
+        // Show task view
         let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
-        let catchUpView = storyBoard.instantiateViewController(withIdentifier: Constants.Classes.CATCH_UP) as! Tasks
-        self.show(catchUpView as UIViewController, sender: catchUpView)
+        let taskView = storyBoard.instantiateViewController(withIdentifier: Constants.Classes.TASK) as! Tasks
+        self.show(taskView as UIViewController, sender: taskView)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -195,7 +189,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		if catchUps.count == 0 {
+		if tasks.count == 0 {
 			let emptyView = UIView(frame: CGRect(x:0, y:0, width:self.view.bounds.size.width, height:self.view.bounds.size.height))
 			
 			let emptyImageView = UIImageView(frame: CGRect(x:0, y:0, width:150, height:150))
@@ -219,12 +213,12 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 			return 0
 		}
 		else {
-			return catchUps.count
+			return tasks.count
 		}
     }
 }
 
-class CatchUpsTableViewCell : UITableViewCell {
+class TasksTableViewCell : UITableViewCell {
     @IBOutlet var reasonLabel: UILabel?
     @IBOutlet var thumbnailImageView: UIImageView?
 }

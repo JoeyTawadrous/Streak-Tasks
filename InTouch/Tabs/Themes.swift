@@ -22,7 +22,7 @@ class Themes: UIViewController, SKPaymentTransactionObserver, SKProductsRequestD
         super.viewDidLoad()
 		
 		// Style
-		view.backgroundColor = Utils.getNextTableColour(0, reverse: false)
+//		view.backgroundColor = Utils.getNextTableColour(0, reverse: false)
 		restoreButton.image = Utils.imageResize(UIImage(named: "refresh")!, sizeChange: CGSize(width: 22, height: 22)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
 		
 		
@@ -70,7 +70,7 @@ class Themes: UIViewController, SKPaymentTransactionObserver, SKProductsRequestD
                     UserDefaults.standard.set(sender.titleLabel?.text, forKey: Constants.IAP.CURRENT_THEME)
                     
                     // Refresh theme
-                    view.backgroundColor = Utils.getNextTableColour(0, reverse: false)
+//                    view.backgroundColor = Utils.getNextTableColour(0, reverse: false)
 					
 					Utils.presentOkButtonAlert(self, message: (sender.titleLabel?.text)! + " has been set.")
                 }
@@ -241,7 +241,7 @@ class Themes: UIViewController, SKPaymentTransactionObserver, SKProductsRequestD
         }
         
         // Refresh theme
-        view.backgroundColor = Utils.getNextTableColour(0, reverse: false)
+//        view.backgroundColor = Utils.getNextTableColour(0, reverse: false)
     }
     
     func updatePurchasedThemesArray(_ theme: String) {

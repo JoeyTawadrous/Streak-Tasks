@@ -3,9 +3,9 @@ import Foundation
 class Constants {
 	
 	struct Classes {
-		static let ADD_CATCH_UP = "AddCatchUp"
-		static let CATCH_UP = "CatchUp"
-		static let CATCH_UPS = "CatchUps"
+		static let TASKS = "Tasks"
+		static let TASK = "Task"
+		static let ADD_TASK = "AddTask"
 		static let SETTINGS = "Settings"
 	}
 	
@@ -18,8 +18,8 @@ class Constants {
 	}
 	
 	struct CoreData {
-		static let CATCHUP = "CatchUp"
-		static let PERSON = "Person"
+		static let TASK = "Task"
+		static let GOAL = "Goal"
 		static let NAME = "name"
 		static let REASON = "reason"
 		static let THUMBNAIL = "thumbnail"
@@ -44,9 +44,9 @@ class Constants {
 	}
     
     struct LocalData {
-        static let SELECTED_PERSON = "selectedPerson"
-        static let SELECTED_CATCHUP_INDEX = "selectedCatchupIndex"
-        static let SELECTED_PERSON_INDEX = "selectedPersonIndex"
+        static let SELECTED_GOAL = "selectedGoal"
+		static let SELECTED_GOAL_INDEX = "selectedGoalIndex"
+        static let SELECTED_TASK_INDEX = "selectedTaskIndex"
         static let DATE_FORMAT = "h:mm a, d MMM, yyyy" // e.g. 4:30 PM, 28 March
     }
     

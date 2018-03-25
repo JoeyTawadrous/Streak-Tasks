@@ -6,16 +6,16 @@ import FontAwesome_swift
 class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     struct ClassConstants {
-        static let ADD_PERSON_TITLE = "Add A New Goal"
-        static let ADD_PERSON_MESSAGE = "that you will achieve...";
-        static let ADD_PERSON_NAME = "Enter Goal Name";
+        static let ADD_GOAL_TITLE = "Add A New Goal"
+        static let ADD_GOAL_MESSAGE = "that you will achieve...";
+        static let ADD_GOAL_NAME = "Enter Goal Name";
 	}
 	
 	@IBOutlet var tableView: UITableView!
 	@IBOutlet var addButton: UIBarButtonItem!
 	@IBOutlet var menuButton: UIBarButtonItem!
 	
-    var people = [AnyObject]()
+    var goals = [AnyObject]()
 	
 	
 	
@@ -29,8 +29,8 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		people = Utils.fetchCoreDataObject(Constants.CoreData.PERSON, predicate: "")
-		people = people.reversed() // newest first
+		goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+		goals = goals.reversed() // newest first
 		tableView.reloadData()
 		
 		// Styling
@@ -55,16 +55,16 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 	/* MARK: Button Actions
 	/////////////////////////////////////////// */
-    @IBAction func addPerson(_ sender: AnyObject) {
+    @IBAction func addGoal(_ sender: AnyObject) {
         let alert = SCLAlertView()
-        let textField = alert.addTextField(ClassConstants.ADD_PERSON_NAME)
+        let textField = alert.addTextField(ClassConstants.ADD_GOAL_NAME)
         alert.addButton(Constants.Common.SUBMIT) {
             if !textField.text!.isEmpty {
-                self.savePerson(textField.text!, thumbnail: Utils.getRandomImageString())
+                self.saveGoal(textField.text!, thumbnail: Utils.getRandomImageString())
                 self.tableView.reloadData()
             }
         }
-        alert.showEdit(ClassConstants.ADD_PERSON_TITLE, subTitle:ClassConstants.ADD_PERSON_MESSAGE)
+        alert.showEdit(ClassConstants.ADD_GOAL_TITLE, subTitle:ClassConstants.ADD_GOAL_MESSAGE)
 	}
 	
 	@IBAction func menuButtonPressed(_ sender: AnyObject) {
@@ -77,16 +77,14 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	/* MARK: Core Functionality
 	/////////////////////////////////////////// */
-	func savePerson(_ name: String, thumbnail: String) {
-		let person = Utils.createObject(Constants.CoreData.PERSON)
+	func saveGoal(_ name: String, thumbnail: String) {
+		let goal = Utils.createObject(Constants.CoreData.GOAL)
 		
-		person.setValue(name, forKey: Constants.CoreData.NAME)
-		person.setValue(thumbnail, forKey: Constants.CoreData.THUMBNAIL)
+		goal.setValue(name, forKey: Constants.CoreData.NAME)
+		goal.setValue(thumbnail, forKey: Constants.CoreData.THUMBNAIL)
 		Utils.saveObject()
 		
-		people.insert(person, at: 0)
-		
-		tableView.backgroundColor = Utils.getNextTableColour(people.count, reverse: false)
+		goals.insert(goal, at: 0)
 	}
 	
 	
@@ -94,34 +92,32 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Table Functionality
 	/////////////////////////////////////////// */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: PeopleTableViewCell! = tableView.dequeueReusableCell(withIdentifier: Constants.Common.CELL) as? PeopleTableViewCell
+        var cell: GoalTableViewCell! = tableView.dequeueReusableCell(withIdentifier: Constants.Common.CELL) as? GoalTableViewCell
         if cell == nil {
-            cell = PeopleTableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: Constants.Common.CELL)
+            cell = GoalTableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: Constants.Common.CELL)
         }
-        let person = people[indexPath.row]
+        let goal = goals[indexPath.row]
 		
 		
 		// Style
 		cell!.selectionStyle = .none
 		
         
-        let name = person.value(forKey: Constants.CoreData.NAME) as! String?
-        cell.personLabel!.text = name
+        let name = goal.value(forKey: Constants.CoreData.NAME) as! String?
+        cell.nameLabel!.text = name
         
         
-        let catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: name!)
-        let catchUpsCount: Int = catchUps.count
-        cell.catchUpCountLabel!.text = String(catchUpsCount)
+        let tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: name!)
+        cell.taskCountLabel!.text = String(tasks.count)
         
         
-        let thumbnail = person.value(forKey: Constants.CoreData.THUMBNAIL) as! String?
+        let thumbnail = goal.value(forKey: Constants.CoreData.THUMBNAIL) as! String?
         cell.thumbnailImageView!.image = UIImage(named: thumbnail!)
         cell.thumbnailImageView!.image = cell.thumbnailImageView!.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         cell.thumbnailImageView!.tintColor = UIColor.white
-        
-        cell.outerCircleImageView!.image = UIImage(named: "circle.png")
-        cell.outerCircleImageView!.image = cell.outerCircleImageView!.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-        cell.outerCircleImageView!.tintColor = UIColor.white
+		
+        cell.underlineImageView!.tintColor = UIColor.white
+		cell.underlineImageView!.addBorderBottom(size: 2.0, color: UIColor.white)
 		
         cell.updateConstraints()
 
@@ -132,23 +128,23 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if(editingStyle == UITableViewCellEditingStyle.delete) {
             
-            // Delete catchUps associated with this person
-            let catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: "")
-            let person = people[indexPath.row]
-            let selectedPerson = person.value(forKey: Constants.CoreData.NAME) as! String?
+            // Delete tasks associated with this goal
+            let tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+            let goal = goals[indexPath.row]
+            let selectedGoal = goal.value(forKey: Constants.CoreData.NAME) as! String?
             
-            for catchUp in catchUps {
-                if (selectedPerson == catchUp.name) {
-                    Tasks.deleteCatchUp(catchUp as! NSManagedObject)
+            for task in tasks {
+                if (selectedGoal == task.name) {
+                    Tasks.deleteTask(task as! NSManagedObject)
                 }
             }
             
             
-            // Now delete person
-            let personToDelete = people[indexPath.row]
+            // Now delete goal
+            let goalToDelete = goals[indexPath.row]
             
             let managedObjectContect = Utils.fetchManagedObjectContext()
-            managedObjectContect.delete(personToDelete as! NSManagedObject)
+            managedObjectContect.delete(goalToDelete as! NSManagedObject)
             
             do {
                 try managedObjectContect.save()
@@ -156,11 +152,10 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 print(error)
             }
             
-            people = Utils.fetchCoreDataObject(Constants.CoreData.PERSON, predicate: "")
-            people = people.reversed() // newest first
+            goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+            goals = goals.reversed() // newest first
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
-            tableView.backgroundColor = Utils.getNextTableColour(people.count, reverse: false)
         }
         
         tableView.reloadData()
@@ -168,20 +163,20 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+		
+        // Get selected goal name
+        let cell = tableView.cellForRow(at: indexPath) as! GoalTableViewCell
+        let selectedGoal = cell.nameLabel!.text
         
-        // Get selected person's name
-        let cell = tableView.cellForRow(at: indexPath) as! PeopleTableViewCell
-        let selectedPerson = cell.personLabel!.text
-        
-        // Set person's name in NSUserDefaults (so we can attach catch ups to it later)
+        // Set goal name in NSUserDefaults (so we can attach tasks to it later)
         let defaults = UserDefaults.standard
-        defaults.set(selectedPerson, forKey: Constants.LocalData.SELECTED_PERSON)
-        defaults.set(indexPath.row, forKey: Constants.LocalData.SELECTED_PERSON_INDEX)
+        defaults.set(selectedGoal, forKey: Constants.LocalData.SELECTED_GOAL)
+        defaults.set(indexPath.row, forKey: Constants.LocalData.SELECTED_GOAL_INDEX)
         
-        // Show CatchUps view
+        // Show tasks view
         let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
-        let catchUpsView = storyBoard.instantiateViewController(withIdentifier: Constants.Classes.CATCH_UPS) as! Tasks
-        self.show(catchUpsView as UIViewController, sender: catchUpsView)
+        let tasksView = storyBoard.instantiateViewController(withIdentifier: Constants.Classes.TASKS) as! Tasks
+        self.show(tasksView as UIViewController, sender: tasksView)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -189,7 +184,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		if people.count == 0 {
+		if goals.count == 0 {
 			let emptyView = UIView(frame: CGRect(x:0, y:0, width:self.view.bounds.size.width, height:self.view.bounds.size.height))
 			
 			let emptyImageView = UIImageView(frame: CGRect(x:0, y:0, width:150, height:150))
@@ -213,15 +208,15 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 			return 0
 		}
 		else {
-			return people.count
+			return goals.count
 		}
     }
 }
 
 
-class PeopleTableViewCell : UITableViewCell {
-    @IBOutlet var personLabel: UILabel?
-    @IBOutlet var catchUpCountLabel: UILabel?
+class GoalTableViewCell : UITableViewCell {
+    @IBOutlet var nameLabel: UILabel?
+    @IBOutlet var taskCountLabel: UILabel?
     @IBOutlet var thumbnailImageView: UIImageView?
-    @IBOutlet var outerCircleImageView: UIImageView?
+    @IBOutlet var underlineImageView: UIImageView?
 }

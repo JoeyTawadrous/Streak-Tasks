@@ -6,7 +6,6 @@ open class RoundedButton: UIButton {
 		super.layoutSubviews()
 		
 		self.layer.cornerRadius = 5
-		self.backgroundColor = Utils.getMainColor()
 	}
 }
 
@@ -51,8 +50,35 @@ extension UIFont {
 }
 
 
-extension UIApplication {
-	var statusBarView: UIView? {
-		return value(forKey: "statusBar") as? UIView
+extension UIView {
+	func setHeight(height: CGFloat) {
+		var frame: CGRect = self.frame
+		frame.size.height = height
+		self.frame = frame
+	}
+	
+	func setWidth(width: CGFloat) {
+		var frame: CGRect = self.frame
+		frame.size.width = width
+		self.frame = frame
+	}
+	
+	func addBorderTop(size: CGFloat, color: UIColor) {
+		addBorderUtility(x: 0, y: 0, width: frame.width, height: size, color: color)
+	}
+	func addBorderBottom(size: CGFloat, color: UIColor) {
+		addBorderUtility(x: 0, y: frame.height - size, width: frame.width, height: size, color: color)
+	}
+	func addBorderLeft(size: CGFloat, color: UIColor) {
+		addBorderUtility(x: 0, y: 0, width: size, height: frame.height, color: color)
+	}
+	func addBorderRight(size: CGFloat, color: UIColor) {
+		addBorderUtility(x: frame.width - size, y: 0, width: size, height: frame.height, color: color)
+	}
+	private func addBorderUtility(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, color: UIColor) {
+		let border = CALayer()
+		border.backgroundColor = color.cgColor
+		border.frame = CGRect(x: x, y: y, width: width, height: height)
+		layer.addSublayer(border)
 	}
 }

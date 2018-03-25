@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Void) {
         
         // Get catchUp attached to notification
-        catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: "")
+        catchUps = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         
         for catchUp in catchUps {
             let catchUpUUID = catchUp.value(forKey: Constants.CoreData.UUID) as! String
@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if (notificationUUID == catchUpUUID) {
                 switch (identifier!) {
                     case Constants.LocalNotifications.DONE_ACTION_IDENTIFIER:
-                        Tasks.deleteCatchUp(catchUp as! NSManagedObject)
+                        Tasks.deleteTask(catchUp as! NSManagedObject)
                     case Constants.LocalNotifications.REMIND_ACTION_IDENTIFIER:
                         Utils.scheduleReminder(catchUp as! NSManagedObject)
                     default: // switch statements must be exhaustive - this condition should never be met
@@ -82,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
-        catchUps = Utils.fetchCoreDataObject(Constants.CoreData.CATCHUP, predicate: "")
+        catchUps = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         
         let catchUpsDue = catchUps.filter({ (catchUp) -> Bool in
             let when = catchUp.value(forKey: Constants.CoreData.WHEN) as! Date

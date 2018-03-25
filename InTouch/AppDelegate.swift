@@ -6,8 +6,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var catchUps = [AnyObject]()
-    
-    
+	
 	
 	/* MARK: Init
 	/////////////////////////////////////////// */
@@ -16,13 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Styling
 		UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
 		UINavigationBar.appearance().shadowImage = UIImage()
+		UINavigationBar.appearance().isTranslucent = true
+		UINavigationBar.appearance().backgroundColor = .clear
 		UINavigationBar.appearance().tintColor = UIColor.white
-		UIApplication.shared.statusBarView?.backgroundColor = Utils.getMainColor()
-		
 		UINavigationBar.appearance().titleTextAttributes = [
-			NSFontAttributeName: UIFont.GothamProBold(size: 18.0)!,
-			NSForegroundColorAttributeName : UIColor.white
+			NSAttributedStringKey.foregroundColor : UIColor.white
 		]
+		window?.tintColor = UIColor.white
 		
 
         // Local notifications
@@ -62,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if (notificationUUID == catchUpUUID) {
                 switch (identifier!) {
                     case Constants.LocalNotifications.DONE_ACTION_IDENTIFIER:
-                        CatchUps.deleteCatchUp(catchUp as! NSManagedObject)
+                        Tasks.deleteCatchUp(catchUp as! NSManagedObject)
                     case Constants.LocalNotifications.REMIND_ACTION_IDENTIFIER:
                         Utils.scheduleReminder(catchUp as! NSManagedObject)
                     default: // switch statements must be exhaustive - this condition should never be met
@@ -98,7 +97,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	/* MARK: Core Data
 	/////////////////////////////////////////// */
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.joeyt.InTouch" in the application's documents Application Support directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.joeyt.Tasky" in the application's documents Application Support directory.
     lazy var applicationDocumentsDirectory: URL = {
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return urls[urls.count-1] as URL
@@ -106,7 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
     lazy var managedObjectModel: NSManagedObjectModel = {
-        let modelURL = Bundle.main.url(forResource: "InTouch", withExtension: "momd")!
+        let modelURL = Bundle.main.url(forResource: "Tasky", withExtension: "momd")!
         return NSManagedObjectModel(contentsOf: modelURL)!
     }()
     
@@ -114,7 +113,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Create the coordinator and store
     lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
         var coordinator: NSPersistentStoreCoordinator? = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.appendingPathComponent("InTouch.sqlite")
+        let url = self.applicationDocumentsDirectory.appendingPathComponent("Tasky.sqlite")
         
         var failureReason = "There was an error creating or loading the application's saved data."
         
@@ -158,4 +157,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
-

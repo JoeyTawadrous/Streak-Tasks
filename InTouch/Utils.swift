@@ -4,6 +4,7 @@ import Social
 
 class Utils {
 	
+	
 	/* MARK: Dates
 	/////////////////////////////////////////// */
 	class func getDayOfWeek(_ date:String) -> String? {
@@ -75,7 +76,7 @@ class Utils {
 	/* MARK: Colors
 	/////////////////////////////////////////// */
     class func getMainColor() -> UIColor {
-        return UIColor(hexString: "#2C3E50")
+        return UIColor(hex: "#2C3E50")
     }
     
     class func getNextTableColour(_ number: Int, reverse: DarwinBoolean) -> UIColor {
@@ -186,22 +187,22 @@ class Utils {
         }
         
         
-		var color = UIColor(hexString: "ffffff")
+		var color = UIColor(hex: "ffffff")
 		
         if number == 0 {
-            color = UIColor(hexString: colors[0])
+            color = UIColor(hex: colors[0])
         }
         else if number == 1 {
-            color = UIColor(hexString: colors[1])
+            color = UIColor(hex: colors[1])
         }
         else if number == 2 {
-            color = UIColor(hexString: colors[2])
+            color = UIColor(hex: colors[2])
         }
         else if number == 3 {
-            color = UIColor(hexString: colors[3])
+            color = UIColor(hex: colors[3])
         }
         else if number == 4 {
-            color = UIColor(hexString: colors[4])
+            color = UIColor(hex: colors[4])
         }
         
         
@@ -219,6 +220,22 @@ class Utils {
         let randomImageIndex = Int(arc4random_uniform(UInt32(imageArray.count)))
         return imageArray[randomImageIndex]
     }
+	
+	class func insertGradientIntoView(viewController: UIViewController) {
+		let gradientLayer = CAGradientLayer()
+		gradientLayer.frame.size = viewController.view.frame.size
+		gradientLayer.colors = [UIColor(hex: Colors.ROYAL_THEME_COLOR_1).cgColor, UIColor(hex: Colors.ROYAL_THEME_COLOR_2).cgColor]
+		viewController.view.layer.insertSublayer(gradientLayer, at: 0)
+	}
+	
+	class func insertGradientIntoTableView(viewController: UIViewController, tableView: UITableView) {
+		let gradientLayer = CAGradientLayer()
+		gradientLayer.frame.size = viewController.view.frame.size
+		gradientLayer.colors = [UIColor(hex: Colors.ROYAL_THEME_COLOR_1).cgColor, UIColor(hex: Colors.ROYAL_THEME_COLOR_2).cgColor]
+		let bgView = UIView.init(frame: tableView.frame)
+		bgView.layer.insertSublayer(gradientLayer, at: 0)
+		tableView.backgroundView = bgView
+	}
 	
 	
 	

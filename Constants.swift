@@ -63,3 +63,8 @@ class Constants {
 		static let CONTACT = "Please send us feedback via the apps settings table -> Send Feedback button!"
 	}
 }
+
+struct Colors {
+	static let ROYAL_THEME_COLOR_1 = "96e6a1"
+	static let ROYAL_THEME_COLOR_2 = "d4fc79"
+}

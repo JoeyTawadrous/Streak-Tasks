@@ -12,8 +12,8 @@ open class RoundedButton: UIButton {
 
 
 extension UIColor {
-	convenience init(hexString: String) {
-		let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+	convenience init(hex: String) {
+		let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
 		var int = UInt32()
 		Scanner(string: hex).scanHexInt32(&int)
 		let a, r, g, b: UInt32
@@ -32,13 +32,21 @@ extension UIColor {
 }
 
 
-extension UIFont {	
+extension UIFont {
+	class func GothamProBlack(size: CGFloat) -> UIFont? {
+		return UIFont(name: "GothamPro-Black", size: size)
+	}
+	
 	class func GothamProBold(size: CGFloat) -> UIFont? {
 		return UIFont(name: "GothamPro-Bold", size: size)
 	}
 	
-	class func GothamProBlack(size: CGFloat) -> UIFont? {
-		return UIFont(name: "GothamPro-Black", size: size)
+	class func GothamProMedium(size: CGFloat) -> UIFont? {
+		return UIFont(name: "GothamPro-Medium", size: size)
+	}
+	
+	class func GothamProRegular(size: CGFloat) -> UIFont? {
+		return UIFont(name: "GothamPro-Regular", size: size)
 	}
 }
 

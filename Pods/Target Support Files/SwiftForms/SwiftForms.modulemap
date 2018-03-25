@@ -1,0 +1,6 @@
+framework module SwiftForms {
+  umbrella header "SwiftForms-umbrella.h"
+
+  export *
+  module * { export * }
+}

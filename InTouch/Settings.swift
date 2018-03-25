@@ -8,7 +8,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
-		self.navigationController?.navigationBar.backgroundColor = Utils.getMainColor()
+		
 	}
 	
 

@@ -28,15 +28,10 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+		<string>GothamProBlack.ttf</string>
 		<string>GothamProMedium.ttf</string>
 		<string>GothamProBold.ttf</string>
 		<string>GothamProRegular.ttf</string>
-		<string>impact.ttf</string>
-		<string>Nunito-Bold.ttf</string>
-		<string>Nunito-Light.ttf</string>
-		<string>Nunito-Regular.ttf</string>
-		<string>OpenSans-Regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
@@ -49,7 +44,7 @@
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UIStatusBarHidden</key>
-	<false/>
+	<true/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>

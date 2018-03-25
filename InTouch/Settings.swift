@@ -2,48 +2,66 @@ import UIKit
 import Social
 import MessageUI
 
-class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate {
 
+class Settings: UITableViewController, UITextFieldDelegate {
+	
+	@IBOutlet var tableView: UITableView!
+	
+	
 	
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
-		
+		Utils.insertGradientIntoView(viewController: self)
+		Utils.insertGradientIntoTableView(viewController: self, tableView: self.tableView)
 	}
 	
-
+	override var prefersStatusBarHidden: Bool {
+		return true
+	}
+	
+	
 	
 	/* MARK: Button Action
 	/////////////////////////////////////////// */
-	@IBAction func shareToFacebookButtonPressed(_ sender: UIButton) {
-		Utils.post(toService: SLServiceTypeFacebook, view: self)
+	// APP
+	@IBAction func themesButtonPressed() {
+		Utils.presentView(self, viewName: Constants.Views.PURCHASES)
 	}
 	
-	@IBAction func shareToTwitterButtonPressed(_ sender: UIButton) {
-		Utils.post(toService: SLServiceTypeTwitter, view: self)
+	@IBAction func learnToCodeButtonPressed() {
+		Utils.openURL(url: Constants.Common.APP_STORE_LINK)
 	}
 	
-	@IBAction func shareButtonPressed(_ sender: UIButton) {
-		Utils.share(sender: sender, viewController: self)
-	}
-	
-	@IBAction func sendFeedbackButtonPressed(_ sender: UIButton) {
-		let mailComposer = MFMailComposeViewController()
-		mailComposer.mailComposeDelegate = self
-		mailComposer.setToRecipients(["joeytawadrous@gmail.com"])
-		mailComposer.setSubject(Constants.Common.APPNAME + " feedback.")
-		mailComposer.setMessageBody("I love the app! Keep up the great work!", isHTML: false)
-		
-		if MFMailComposeViewController.canSendMail() {
-			self.present(mailComposer, animated: true, completion: nil)
-		} else {
-			Utils.presentOkButtonAlert(self, message: "Your device could not send e-mail.  Please check e-mail configuration and try again.")
+	@IBAction func reviewButtonPressed(sender: UIButton) {
+		Utils.openReviewAppURL(appId: Constants.Common.APP_ID) { success in
+			// success
 		}
 	}
 	
+	@IBAction func sendFeedbackButtonPressed() {
+		Utils.openSendMailView(view: self, subject: Constants.Strings.SEND_FEEDBACK_SUBJECT, message: Constants.Strings.SEND_FEEDBACK_BODY + Constants.Strings.EMAIL_CLOSING)
+	}
 	
 	func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-		// Dismiss the mail compose view controller.
 		controller.dismiss(animated: true, completion: nil)
+	}
+	
+	
+	// SHARE
+	@IBAction func shareButtonPressed() {
+		Utils.openShareView(viewController: self)
+	}
+	
+	@IBAction func twitterButtonPressed() {
+		Utils.openURL(url: Constants.Common.APP_TWITTER_LINK)
+	}
+	
+	@IBAction func facebookButtonPressed() {
+		Utils.openURL(url: Constants.Common.APP_FACEBOOK_LINK)
+	}
+	
+	@IBAction func instagramButtonPressed() {
+		Utils.openURL(url: Constants.Common.APP_INSTAGRAM_LINK)
 	}
 }

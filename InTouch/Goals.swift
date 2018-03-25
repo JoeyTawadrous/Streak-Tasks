@@ -77,7 +77,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	@IBAction func menuButtonPressed(_ sender: AnyObject) {
 		let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
-		let settingsView = storyBoard.instantiateViewController(withIdentifier: Constants.Classes.SETTINGS) as! Settings
+		let settingsView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.SETTINGS) as! Settings
 		self.show(settingsView as UIViewController, sender: settingsView)
 	}
 	
@@ -175,7 +175,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         // Show tasks view
         let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
-        let tasksView = storyBoard.instantiateViewController(withIdentifier: Constants.Classes.TASKS) as! Tasks
+        let tasksView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.TASKS) as! Tasks
         self.show(tasksView as UIViewController, sender: tasksView)
     }
     

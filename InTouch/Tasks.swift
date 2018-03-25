@@ -168,7 +168,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
         // Show task view
         let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
-        let taskView = storyBoard.instantiateViewController(withIdentifier: Constants.Classes.TASK) as! Tasks
+        let taskView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.TASK) as! Tasks
         self.show(taskView as UIViewController, sender: taskView)
     }
 

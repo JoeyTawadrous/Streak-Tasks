@@ -2,16 +2,21 @@ import Foundation
 
 class Constants {
 	
-	struct Classes {
+	struct Views {
 		static let TASKS = "Tasks"
 		static let TASK = "Task"
 		static let ADD_TASK = "AddTask"
 		static let SETTINGS = "Settings"
+		static let PURCHASES = "Purchases"
 	}
 	
 	struct Common {
+		static let APP_ID = "id1195440882"
 		static let APPNAME = "Tasky"
-		static let APP_STORE_URL = "http://apple.co/2krwSkQ"
+		static let APP_STORE_LINK = "http://apple.co/2krwSkQ"
+		static let APP_TWITTER_LINK = "https://twitter.com/getlearnable"
+		static let APP_FACEBOOK_LINK = "https://www.facebook.com/getlearnable"
+		static let APP_INSTAGRAM_LINK = "https://www.instagram.com/learnableapp"
 		static let CELL = "cell"
 		static let MAIN_STORYBOARD = "Main"
 		static let SUBMIT = "Create"
@@ -31,6 +36,7 @@ class Constants {
 	
 	struct Design {
 		static let ICON_TROPHY = "trophy"
+		static let LOGO = "AppIcon"
 	}
 	
 	struct IAP {
@@ -63,9 +69,14 @@ class Constants {
 		static let REMIND_ACTION_TITLE = "Remind in 30 minutes"
 	}
 	
-	struct String {
-		static let SHARE = "Check out " + Constants.Common.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! " + Constants.Common.APP_STORE_URL
-		static let CONTACT = "Please send us feedback via the apps settings table -> Send Feedback button!"
+	struct Strings {
+		static let SHARE = "Check out " + Constants.Common.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! " + Constants.Common.APP_STORE_LINK
+		
+		// Send Feedback
+		static let EMAIL = "joeytawadrous@gmail.com"
+		static let SEND_FEEDBACK_SUBJECT = "Tasky Feedback"
+		static let SEND_FEEDBACK_BODY = "Hi there! I really like your app.. please keep updating it and I will be sure to rate you :)"
+		static let EMAIL_CLOSING = "\n\nThanks again, and have an amazing day!"
 	}
 }
 

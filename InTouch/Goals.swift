@@ -20,17 +20,14 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	
 	/* MARK: Init
-	/////////////////////////////////////////// */
-	override func viewDidLoad() {
-		Utils.insertGradientIntoView(viewController: self)
-	}
-	
+	/////////////////////////////////////////// */	
     override func viewWillAppear(_ animated: Bool) {
 		goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
 		goals = goals.reversed() // newest first
 		tableView.reloadData()
 		
 		// Styling
+		Utils.insertGradientIntoView(viewController: self)
 		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
 		
 		// Nav bar

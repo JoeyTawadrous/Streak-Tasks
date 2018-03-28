@@ -17,16 +17,13 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	/* MARK: Init
 	/////////////////////////////////////////// */
-	override func viewDidLoad() {
-		Utils.insertGradientIntoView(viewController: self)
-	}
-	
 	override func viewWillAppear(_ animated: Bool) {
 		tableView.delegate = self
 		tableView.dataSource = self
 		refresh();
 		
 		// Styling
+		Utils.insertGradientIntoView(viewController: self)
 		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
 		
 		// Nav bar
@@ -168,7 +165,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
         // Show task view
         let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
-        let taskView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.TASK) as! Tasks
+        let taskView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.TASK) as! Task
         self.show(taskView as UIViewController, sender: taskView)
     }
 

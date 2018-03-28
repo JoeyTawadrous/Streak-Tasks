@@ -44,15 +44,26 @@ class Constants {
 		static let PURCHASED_PRODUCTS = "PurchasedProducts"
 		static let TRANSACTION_IN_PROGRESS = "TransactionInProgress"
 		static let CURRENT_THEME = "CurrentTheme"
-		static let COLORFUL_THEME = "Colorful Theme"
-		static let GIRLY_THEME = "Girly Theme"
-		static let MANLY_THEME = "Manly Theme"
-		static let RAINBOW_THEME = "Rainbow Theme"
-		static let ROYAL_THEME = "Royal Theme"
-		static let SLIDE_THEME = "Slide Theme"
-		static let STYLE_THEME = "Style Theme"
-		static let TIDAL_THEME = "Tidal Theme"
-		static let WAVE_THEME = "Wave Theme"
+		
+		static let GRASSY_THEME = "grassy"
+		static let SUNRISE_THEME = "sunrise"
+		static let NIGHTLIGHT_THEME = "nightlight"
+		static let SALVATION_THEME = "salvation"
+		static let RIPE_THEME = "ripe"
+		static let MALIBU_THEME = "malibu"
+		static let LIFE_THEME = "life"
+		static let FIRE_THEME = "fire"
+		
+		static let Colors: [String : [String]] = [
+			GRASSY_THEME: ["96e6a1", "d4fc79"],
+			SUNRISE_THEME: ["f6d365", "fda085"],
+			NIGHTLIGHT_THEME: ["a18cd1", "fbc2eb"],
+			SALVATION_THEME: ["f43b47", "453a94"],
+			RIPE_THEME: ["f093fb", "f5576c"],
+			MALIBU_THEME: ["4facfe", "00f2fe"],
+			LIFE_THEME: ["43e97b", "38f9d7"],
+			FIRE_THEME: ["fa709a", "fee140"]
+		]
 	}
     
     struct LocalData {
@@ -79,9 +90,4 @@ class Constants {
 		static let SEND_FEEDBACK_BODY = "Hi there! I really like your app.. please keep updating it and I will be sure to rate you :)"
 		static let EMAIL_CLOSING = "\n\nThanks again, and have an amazing day!"
 	}
-}
-
-struct Colors {
-	static let ROYAL_THEME_COLOR_1 = "96e6a1"
-	static let ROYAL_THEME_COLOR_2 = "d4fc79"
 }

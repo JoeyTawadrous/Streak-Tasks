@@ -8,12 +8,9 @@ class Settings: UITableViewController, UITextFieldDelegate {
 	
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
-	override func viewDidLoad() {
-		self.view.backgroundColor = Utils.getMainColor()
-	}
-	
 	override func viewWillAppear(_ animated: Bool) {
 		// Styling
+		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
 		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
 		tableView.tableHeaderView?.tintColor = UIColor.white
 	}
@@ -43,10 +40,6 @@ class Settings: UITableViewController, UITextFieldDelegate {
 	/* MARK: Button Action
 	/////////////////////////////////////////// */
 	// APP
-	@IBAction func themesButtonPressed() {
-		Utils.presentView(self, viewName: Constants.Views.PURCHASES)
-	}
-	
 	@IBAction func learnToCodeButtonPressed() {
 		Utils.openURL(url: Constants.Common.LEARNABLE_STORE_LINK)
 	}

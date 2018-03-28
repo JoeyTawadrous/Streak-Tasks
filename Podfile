@@ -9,5 +9,6 @@ target 'Tasky' do
   pod 'SCLAlertView'
   pod 'FontAwesome.swift'
   pod 'SwiftForms'
+  pod 'SwiftyStoreKit'
 
 end

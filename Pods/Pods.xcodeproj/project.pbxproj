@@ -7,72 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0036BE60C9C8A1EDAE8E6EC5C2F0ECE6 /* FormStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F60A8C6B270EE49F4641D0F9C90C490 /* FormStepperCell.swift */; };
-		01555B7FA2F0B54C6A88499C38A1A127 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE93107338EB92D21CA75666807685 /* SCLAlertView.swift */; };
-		02F17803B2D65A9D3688F5868A56BC8D /* FormDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F9AB8BDA6535F078A89EBFEE38AA29 /* FormDateCell.swift */; };
-		02F832941E1198C964B6EFC58AE63B2D /* FormCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86788A50DF170064F7F311959E6578A4 /* FormCheckCell.swift */; };
-		075D8DF195687A4EB7059254A7D326A5 /* Pods-Tasky-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3301F492DFD78AF585EE7C3814B04D3B /* Pods-Tasky-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		085AC493E94CAA1126AB7B888D757624 /* FormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D673EBB34FD1A93F8806F29E61E652 /* FormBaseCell.swift */; };
-		0AA125C622C86BC121C3954B4F57EAC9 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4C6641FA15156208BD37126A8236A /* SCLAlertView-dummy.m */; };
-		0D653210D85A6C001AD083489E4F61C0 /* FormLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3C289DC47168D204A268E962FAAD /* FormLabelCell.swift */; };
-		0E07F7668C54463A03E5CA74AB787929 /* FormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BCB543D02322D17B6D65732BC11E9 /* FormSwitchCell.swift */; };
-		18148040AEF3BFBCF015F64CFF84666C /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6A09E30548B968A764AB95FDEB3550C /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B7A3898375844C027073E251B317E2 /* FormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770D5F818CB3AF95F8F11F301B4B9D8 /* FormButtonCell.swift */; };
-		24065029085002EAC70A3422A7D39EC1 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D1867BD7771F1167CAD3D357807ADD /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AE0F58A0988D92438C1448C861A154C /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E76A480E9A7462367AE2F2AA9FF745 /* FontAwesomeImageView.swift */; };
-		2B2C0C5BFEE2A29E86A7ED5DF048A830 /* SwiftForms-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E6516687207816FFEE6E623E5FF1A8 /* SwiftForms-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2EB81B5D40818F76F62B40041CEC5CF1 /* FormSectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0391EFB2CDC3F8AFEB57E9DF4F1DA746 /* FormSectionDescriptor.swift */; };
-		36A9303CB83A85008BB1A7C4826DF84B /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FB15C5D5048E1BC7B4F7B17F35C6F8 /* SCLExtensions.swift */; };
-		3D39E33E45E20BEF05BD94737BF84B66 /* FormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C37994CA61AF4BA27AB2148FEEC4D /* FormPickerCell.swift */; };
-		415B331DDC9B1C62E7ADC23401F75FC1 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61267AFC7CC4603743DBF3A9103160C /* FormViewController.swift */; };
-		41FAD1CDCD9272883A6CF33FE8FF44E0 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE089856444E09E34D97C7EED14A0E73 /* FontAwesomeSegmentedControl.swift */; };
-		4A892951B04F8843DDC816CE4D4A299D /* FormDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE31994F60D36A17E65F08269D6B4FB1 /* FormDescriptor.swift */; };
-		522BEF444AEAA78D1747B62ED49C688E /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5734C1107B245B03D73D41771B1B7D9E /* FontAwesomeView.swift */; };
-		589D19F8FC8F1E9D6360D950D26A7138 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA93F155EC9ABDE53F529810C590C20 /* FontAwesome.swift */; };
-		59BB7C15DE2EFEFDE268E3D2BE58B161 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4C5B50EA387CDB25D4CF593B66D04B6 /* FontAwesome.swift.bundle */; };
-		5AD3E160E28F5EFC4D17A8668CA322BD /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412287C3766C41F3B74880DDE23CF985 /* FontAwesomeBarButtonItem.swift */; };
-		65D01C54FCF24BF6E6FBCD49F6E7CCB1 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242F1ECE1B73C3B7D05D39E0FDB4830 /* FontAwesomeTabBarItem.swift */; };
+		021CE617C1D81D3C0043D6FE81E10664 /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B853BA59C06AB816BDA9A535A13CA1 /* InAppReceipt.swift */; };
+		149C77C4C6DDEA50B3CE15778D087DC9 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3AB65E39344428642D526F6522CBF /* SCLAlertView.swift */; };
+		19E0A3E329853FBEFFCC976F4EB52525 /* CompleteTransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E2CF3DDD51153A838AC63DDD1FAA39 /* CompleteTransactionsController.swift */; };
+		1EC1121927CDF0B2479CF07DE9C3D957 /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC2CBAD2C0ABE4A20C40185CF059EF /* SKProduct+LocalizedPrice.swift */; };
+		24065029085002EAC70A3422A7D39EC1 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 676AB6F542685295F1C8F03A34180E11 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2835D0C8B5776F8C908A0DEEBBB64B61 /* FormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8EA2DEA8626EBC6FB53902D368B26 /* FormSwitchCell.swift */; };
+		2AE0F58A0988D92438C1448C861A154C /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF7D6E3B191086BAA34A990E6D84D0B /* FontAwesomeImageView.swift */; };
+		2BD96E149C76E383EF2A897948944A6D /* SwiftyStoreKit+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E9EBE3F417585CEB8F522EBD8AD7F /* SwiftyStoreKit+Types.swift */; };
+		2BF1BF463CECEA471176EB35A7A2BCEC /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A579A556E7C602C9BCA91C364669386 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33795F96C03546C0B4313A3DA06A2435 /* FormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E4A663D7C525AD53A2DE0CCAA2C83 /* FormButtonCell.swift */; };
+		396BAB193FCC9B9EA9B6A248F3F0F92B /* FormDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED36ACC2FA4C319EC99CA229A699EE5 /* FormDateCell.swift */; };
+		3A68D589765E9F26719C88ED0A24271F /* FormLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0952DCC57532611512C26DD9DE745 /* FormLabelCell.swift */; };
+		3E13F32614CC83A56F9F80DB52DA04BA /* FormSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A738F21EF636AD9EDB3D42AB5116AB7 /* FormSelector.swift */; };
+		3F4C72E56CF051DEC78430446313AC59 /* SwiftForms-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BF44D620D16013D5488EE30A412362 /* SwiftForms-dummy.m */; };
+		41FAD1CDCD9272883A6CF33FE8FF44E0 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD741BFA77D819BC087084AFF942ABF /* FontAwesomeSegmentedControl.swift */; };
+		49C3F06EAF7660A879C3D935303B3D0F /* FormRowDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C221D9687297C7DD5A3E6BB5AE2B5F2 /* FormRowDescriptor.swift */; };
+		4C75858DB9032AF4EF4472D25AE87F4B /* SwiftyStoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BD9202734EE9BF09AF7845ACBB393D /* SwiftyStoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5179D355A424F23CB64EB984BC30184F /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F5DE1342B2E180073570F2D01D0B43 /* SCLExtensions.swift */; };
+		522BEF444AEAA78D1747B62ED49C688E /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A14A70CB4C50B33A160741F8AB2646 /* FontAwesomeView.swift */; };
+		53A28347545E91B59D999A8BB52C3FB0 /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6594CDBD6BD87DC07E39705CF0456F43 /* InAppReceiptVerificator.swift */; };
+		589D19F8FC8F1E9D6360D950D26A7138 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0A1FDAE4785D9401570E44CE6E22C /* FontAwesome.swift */; };
+		59BB7C15DE2EFEFDE268E3D2BE58B161 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6CEA60D934EE5CD0BD4CA3E6ECADE47 /* FontAwesome.swift.bundle */; };
+		5AD3E160E28F5EFC4D17A8668CA322BD /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C628942E88CA139D4BBD2E59F55D412 /* FontAwesomeBarButtonItem.swift */; };
+		5BBE03390CA4BF0E04680123303DCA3D /* FormSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC62314D09658A2D2DE669D960CFB6E /* FormSelectorCell.swift */; };
+		5DD45B542E596FAC543693E25DE9A47A /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA25A39F21172C723CF73A005F8680D /* FormViewController.swift */; };
+		65D01C54FCF24BF6E6FBCD49F6E7CCB1 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4129B6B6542BBB25689DF8C050190 /* FontAwesomeTabBarItem.swift */; };
+		680155A17A11483650BB925E7F8F9A8F /* FormSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D59192851F88BDC7DD6D74E20C17D /* FormSliderCell.swift */; };
 		684E126B8E890761BBB1A4EB590EA1F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */; };
-		75583077A73647C3D8B750A0B82631F0 /* FormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AE3F95AFF48FDEEF958D8E0854FD7 /* FormTextFieldCell.swift */; };
-		83BA92A88758129A3AEE03E0D0B3848C /* FormSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD9A7A1D13374C1005088628CBF6BE /* FormSliderCell.swift */; };
-		84266523CC9E0F51F4524273C7E0A5D9 /* FormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320453475E9F1059A2EDF9418F68D30D /* FormTextViewCell.swift */; };
-		9B90860ACEFE9566F353E425590DF128 /* FormValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72679EC408DEA28460B9EA669CA58D4E /* FormValueCell.swift */; };
-		B4EBB744A5B8C907B3081DB72EB53398 /* SwiftForms-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7B3ACCF12E2B5AB796D56786C593B3 /* SwiftForms-dummy.m */; };
-		BA158509B4673EB6F8D0D12961169AB1 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F1BAE2EC4809F18D3A51E4C539CD77 /* Enum.swift */; };
-		C3079113A27F987B6889C2E9C05A10DD /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7F68263E872B2CF13CA32026BEF5879 /* FontAwesome.otf */; };
+		6A49E8A45C22C5BFC66FA63EB4F00915 /* RestorePurchasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68770A205EE8135D2C879EC72A44046 /* RestorePurchasesController.swift */; };
+		6D8D2C6E76E2A9ECBCD45598DC336B35 /* FormErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F016D2A79FB5C0B2033EFE94E08F8C /* FormErrorType.swift */; };
+		77C8D3C9A4EC0B6902C354DB24819E06 /* PaymentQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FBAF2E99C34D8EE256DE04E1786EC0 /* PaymentQueueController.swift */; };
+		7A983575E2D1B01B3193B837733345DE /* FormStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5420B8933E843662F13535F473EC2F /* FormStepperCell.swift */; };
+		7E3046D2ED609A7D3FEFA9D347451034 /* PaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950913101C069B0BDA5A6EA714182910 /* PaymentsController.swift */; };
+		8167285AD2BB8119E66E11277F83140D /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9877D5BDBC2AFA913362D42F886D0B /* InAppProductQueryRequest.swift */; };
+		83C7D3F7EF9B2AB48A34EDF4E342B85F /* FormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C397305610D8963BD5366F861EE49 /* FormPickerCell.swift */; };
+		888CF35B11AE0D1809D0E2BED7458D7C /* FormSegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F06874DB6B040115B87E053CDF78C6C /* FormSegmentedControlCell.swift */; };
+		8E6478BB9054691FA2E9594D28DC4AAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		8EC28F318C8006FD99C4853C70023E3C /* FormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1A32F06597241DC0D057C902AA2E /* FormTextViewCell.swift */; };
+		92DAF90C21C895B6B3A0C81135D2255A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		930D635A833A7CB525DD68EFB8280342 /* FormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D23965D00849217EDA5164956B16AA /* FormTextFieldCell.swift */; };
+		93CB39C69FA4193FC29C4FB0A145AB50 /* FormTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D639144B95F37AEB98B4838C56E5FB /* FormTitleCell.swift */; };
+		982F41BF52BA585318AE4DEA90438BB8 /* Pods-Tasky-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3301F492DFD78AF585EE7C3814B04D3B /* Pods-Tasky-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AC79E726C80C604D55E194E1553C1A3 /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2467B57A037F2979630404E78E53F6 /* SwiftyStoreKit.swift */; };
+		9ADF809AAA8FB558B755ACDB3E58FCC8 /* FormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85361749C8988A498CDE176BA9C8E2D /* FormBaseCell.swift */; };
+		A08776E3B8D5EB827445F2FEF729FD7F /* SwiftyStoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D81269024493F25E196126CB91B4B44 /* SwiftyStoreKit-dummy.m */; };
+		A1A20B6E32BF0D81FC1868FE63B84908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		A5185974504F2C8CB99BFDFC22A4D539 /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1215FBD28A951DF42E67F6F5C05DE37 /* InAppReceiptRefreshRequest.swift */; };
+		A54B29996BE7DBECDE1F80C45BCA6EBB /* FormOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9796A13BBF9B240AB3A6B416AA59B5B1 /* FormOptionsViewController.swift */; };
+		A63E01D7E92AEE14203210A762E94A71 /* Pods-Tasky-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 844538633529A7DF7314C20301CA47AF /* Pods-Tasky-dummy.m */; };
+		ACA29479542BF76006A26A5DDE937195 /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A062F73D06C9BA3DA3A3674568364D /* AppleReceiptValidator.swift */; };
+		B245993DC12B29BA60638D7B3C219F22 /* SwiftForms-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B695CD0BEA3215E748E313F56EA1A603 /* SwiftForms-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B983056B2DB6287D974C2292561E765A /* FormValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDA586451CB7A9A6021A04B28B2DF3 /* FormValueCell.swift */; };
+		BA158509B4673EB6F8D0D12961169AB1 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D68EA72AECCA504FFA9C723E61348C /* Enum.swift */; };
+		C3079113A27F987B6889C2E9C05A10DD /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40D1102050BF6BE63B6115FC61541EA2 /* FontAwesome.otf */; };
 		C4EDDFD00880AD17F1BB7D66948F1D21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		C64B6766EDECACAA9F18C0DDC963EAD4 /* FormSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6362AB1023B32E763B240ED14BDE64E /* FormSelectorCell.swift */; };
-		C70227E77F81C4C0E0E647EFE8EB8636 /* FormSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8794460E35F31DFCCC139297248E9329 /* FormSelector.swift */; };
-		C879A43B7C8CC16E986D40441C2F2878 /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666565E10C488C35988BF61649ADAD04 /* FontAwesomeImageRepresentable.swift */; };
-		C99143C5952A9D914F41021A0607BD56 /* FormTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC2F16DDFD1AAF53E1B17724DD2ED56 /* FormTitleCell.swift */; };
-		CBD91B03AC387775166237F805EABC3A /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885855CB67739B2606AE5B4DB3644F3 /* FontAwesomeStateRequirement.swift */; };
-		D4A6D407AD87B7DFB448E236ADBBA0D2 /* FormOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92012C64F673AF2CFAD1B175C4BEB94 /* FormOptionsViewController.swift */; };
-		DA18F6E689C628C5111781FB17FA2895 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		C573CDFFB14BD284C1EEC6A230CF681F /* FormDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D39E3CA50C65B08F15C8974A64D070 /* FormDescriptor.swift */; };
+		C879A43B7C8CC16E986D40441C2F2878 /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B3BB92F764DA2184D8110CB20A2F8 /* FontAwesomeImageRepresentable.swift */; };
+		CB3AB306223B5ED2BA3A61C10B7E91C8 /* FormSectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFF394DCA18A0CFE714ADF10C1018C /* FormSectionDescriptor.swift */; };
+		CBD91B03AC387775166237F805EABC3A /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B122B4BF5BE76062FCD41CFCBC3CA3 /* FontAwesomeStateRequirement.swift */; };
+		CC1DEFAB66A2D9F34C406E5402BA6AFB /* FormCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4D3217A67C4800893BDBAAC0E5E8C /* FormCheckCell.swift */; };
+		D151B3CAD128B9C0E67C1D9C11C3E7DC /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9E56B70C5272F96F04449B8EFCB60 /* OS.swift */; };
 		DAC2CACA22AE100EB261D377EC6FBE3C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */; };
-		DFDF33184118092BF57760559C00ED5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		E07C37BB6C5F7FE3194F5F2767C2B643 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		E8A7F74C55311FF6378DE2B7587EBA28 /* FormErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08183D377B04539CB6CD8577C2D1ECC9 /* FormErrorType.swift */; };
-		ECA6B6E772F42563100C46216A36D311 /* FormRowDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE99ED65E29BCF05FE2635E3EE3DBC3 /* FormRowDescriptor.swift */; };
-		F7DD242BFD0DF63D7FEF6DB41E5CFC5C /* FormSegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1682623570EEDF19BF03148F09CCC912 /* FormSegmentedControlCell.swift */; };
-		FAA49F1A95623E8A5D3812304F79CC65 /* Pods-Tasky-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 844538633529A7DF7314C20301CA47AF /* Pods-Tasky-dummy.m */; };
-		FB64A64BD408EE7BBD70A4B048315C7D /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30311A5E40BE5E52FAB9F5B92D394C81 /* FontAwesomeTextRepresentable.swift */; };
-		FD8C615CEC6F1EBDB63BF3240583D2F3 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355FB45FEBF7FFC9EDCCD062ED759B2 /* FontAwesome.swift-dummy.m */; };
+		E59D2D125425025F3095F28CE261072D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		EBF24BF0AC32571AD3164A44D8065B9C /* ProductsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010652DAACDAAA6A897AFA50FCDC5F8A /* ProductsInfoController.swift */; };
+		F6930C10AA9C4B719BDC147E0020BC55 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D95D27A4C28C5A51D4C532DFD6DAF /* SCLAlertView-dummy.m */; };
+		FB64A64BD408EE7BBD70A4B048315C7D /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6B80D77F475C9ECFEA587F071CEB5 /* FontAwesomeTextRepresentable.swift */; };
+		FD8C615CEC6F1EBDB63BF3240583D2F3 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3C56736FD40EF79030836BB4BF7E2 /* FontAwesome.swift-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		54FC0651EB48F1F14DA85D8E3A2D7296 /* PBXContainerItemProxy */ = {
+		0406A2FD03CF395E5585B1FEE3CED607 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3FFE1CA9AEC387A3E3765AF0091694AF;
-			remoteInfo = SCLAlertView;
+			remoteGlobalIDString = CD11672B6619C297B6AEE3DFB8213C59;
+			remoteInfo = FontAwesome.swift;
 		};
-		5693E2FA4458A1CA535B126A86A0BFA9 /* PBXContainerItemProxy */ = {
+		722B76BAC9836E5EBBA17FB366916CCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1B49B4FAE022B2E3C96EFB37D5FF8E71;
-			remoteInfo = SwiftForms;
+			remoteGlobalIDString = A5F0CA101B6362C21E231F0E5F64D1A5;
+			remoteInfo = SCLAlertView;
 		};
 		A1E7ADA9414728070F39599079B02152 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -81,105 +98,141 @@
 			remoteGlobalIDString = 6991F49AED797519343B1F4591001691;
 			remoteInfo = "FontAwesome.swift-FontAwesome.swift";
 		};
-		EDCADAA220EB6ABB9663BF05FE75470A /* PBXContainerItemProxy */ = {
+		A7208BA3DAD0EE295C5CBF587426F97C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD11672B6619C297B6AEE3DFB8213C59;
-			remoteInfo = FontAwesome.swift;
+			remoteGlobalIDString = 2A32C83B782E1FD05E2618E9457E8AE0;
+			remoteInfo = SwiftyStoreKit;
+		};
+		CE213DE84713AFAE723FFE1EAB46E87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575CAEF58E732C8B6CE6E48210C76A11;
+			remoteInfo = SwiftForms;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0391EFB2CDC3F8AFEB57E9DF4F1DA746 /* FormSectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSectionDescriptor.swift; path = SwiftForms/descriptors/FormSectionDescriptor.swift; sourceTree = "<group>"; };
-		08183D377B04539CB6CD8577C2D1ECC9 /* FormErrorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormErrorType.swift; path = SwiftForms/FormErrorType.swift; sourceTree = "<group>"; };
-		0885855CB67739B2606AE5B4DB3644F3 /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
-		08A6E681680B9AC275CA8EBEE5107A35 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		010652DAACDAAA6A897AFA50FCDC5F8A /* ProductsInfoController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsInfoController.swift; path = SwiftyStoreKit/ProductsInfoController.swift; sourceTree = "<group>"; };
+		02A14A70CB4C50B33A160741F8AB2646 /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
+		07A062F73D06C9BA3DA3A3674568364D /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleReceiptValidator.swift; path = SwiftyStoreKit/AppleReceiptValidator.swift; sourceTree = "<group>"; };
+		07D39E3CA50C65B08F15C8974A64D070 /* FormDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormDescriptor.swift; path = SwiftForms/descriptors/FormDescriptor.swift; sourceTree = "<group>"; };
+		0A738F21EF636AD9EDB3D42AB5116AB7 /* FormSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSelector.swift; path = SwiftForms/controllers/FormSelector.swift; sourceTree = "<group>"; };
+		0C2467B57A037F2979630404E78E53F6 /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyStoreKit.swift; path = SwiftyStoreKit/SwiftyStoreKit.swift; sourceTree = "<group>"; };
+		0C5420B8933E843662F13535F473EC2F /* FormStepperCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormStepperCell.swift; path = SwiftForms/cells/FormStepperCell.swift; sourceTree = "<group>"; };
+		10D23965D00849217EDA5164956B16AA /* FormTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldCell.swift; path = SwiftForms/cells/FormTextFieldCell.swift; sourceTree = "<group>"; };
 		1156A125FBFD6F301378636F7C7DC15C /* Pods-Tasky.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tasky.modulemap"; sourceTree = "<group>"; };
-		1682623570EEDF19BF03148F09CCC912 /* FormSegmentedControlCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSegmentedControlCell.swift; path = SwiftForms/cells/FormSegmentedControlCell.swift; sourceTree = "<group>"; };
-		19938BF55DBD849D7AE0D717C3BABF0B /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
-		1A5DE20D44A2E10AA8C78198E96885AC /* SwiftForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftForms.framework; path = SwiftForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A32ACD6E63785792ACE987811F6EF3E /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyStoreKit.framework; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5DB94193906644A2D89CDC4D3A7672 /* Pods-Tasky-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tasky-resources.sh"; sourceTree = "<group>"; };
-		1FB4C6641FA15156208BD37126A8236A /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
-		23F9AB8BDA6535F078A89EBFEE38AA29 /* FormDateCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormDateCell.swift; path = SwiftForms/cells/FormDateCell.swift; sourceTree = "<group>"; };
 		27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		29713ECA67ED67BD217688113F956F97 /* Pods-Tasky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tasky.debug.xcconfig"; sourceTree = "<group>"; };
-		2F60A8C6B270EE49F4641D0F9C90C490 /* FormStepperCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormStepperCell.swift; path = SwiftForms/cells/FormStepperCell.swift; sourceTree = "<group>"; };
-		30311A5E40BE5E52FAB9F5B92D394C81 /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
-		320453475E9F1059A2EDF9418F68D30D /* FormTextViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextViewCell.swift; path = SwiftForms/cells/FormTextViewCell.swift; sourceTree = "<group>"; };
+		2ADC2CBAD2C0ABE4A20C40185CF059EF /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SKProduct+LocalizedPrice.swift"; path = "SwiftyStoreKit/SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		2C221D9687297C7DD5A3E6BB5AE2B5F2 /* FormRowDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormRowDescriptor.swift; path = SwiftForms/descriptors/FormRowDescriptor.swift; sourceTree = "<group>"; };
 		3301F492DFD78AF585EE7C3814B04D3B /* Pods-Tasky-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tasky-umbrella.h"; sourceTree = "<group>"; };
-		3355FB45FEBF7FFC9EDCCD062ED759B2 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
-		38E6516687207816FFEE6E623E5FF1A8 /* SwiftForms-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftForms-umbrella.h"; sourceTree = "<group>"; };
-		3919CE19EB141E7704AEB01104B18850 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BA93F155EC9ABDE53F529810C590C20 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
-		3F020268AE1C2BDD6B0483882B71AFD5 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		412287C3766C41F3B74880DDE23CF985 /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
+		343D95D27A4C28C5A51D4C532DFD6DAF /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		37BF44D620D16013D5488EE30A412362 /* SwiftForms-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftForms-dummy.m"; sourceTree = "<group>"; };
+		37FBAF2E99C34D8EE256DE04E1786EC0 /* PaymentQueueController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentQueueController.swift; path = SwiftyStoreKit/PaymentQueueController.swift; sourceTree = "<group>"; };
+		3834BF666D19800C1DFE57C01B314E34 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38ECE074E74B571E8804D06A1A801677 /* Pods_Tasky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tasky.framework; path = "Pods-Tasky.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AEDA586451CB7A9A6021A04B28B2DF3 /* FormValueCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormValueCell.swift; path = SwiftForms/cells/base/FormValueCell.swift; sourceTree = "<group>"; };
+		3BA25A39F21172C723CF73A005F8680D /* FormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormViewController.swift; path = SwiftForms/controllers/FormViewController.swift; sourceTree = "<group>"; };
+		3DD6096E8BA5901C595B0A46E78E4195 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		40D1102050BF6BE63B6115FC61541EA2 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
+		4906682ED866164D4C9A7648E33E9F41 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD741BFA77D819BC087084AFF942ABF /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
+		4BF7D6E3B191086BAA34A990E6D84D0B /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
 		50F2E47BDC0B600413B2E5F973ADE3F6 /* Pods-Tasky-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tasky-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5734C1107B245B03D73D41771B1B7D9E /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
-		59207B6616F723BFFEE53B3338BF1131 /* Pods_Tasky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tasky.framework; path = "Pods-Tasky.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		527E4A663D7C525AD53A2DE0CCAA2C83 /* FormButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormButtonCell.swift; path = SwiftForms/cells/FormButtonCell.swift; sourceTree = "<group>"; };
+		53AACDC07549BCFF40CC7CC6937D3AF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55D639144B95F37AEB98B4838C56E5FB /* FormTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTitleCell.swift; path = SwiftForms/cells/base/FormTitleCell.swift; sourceTree = "<group>"; };
+		56F4D88DADC7D7FB34EEF2FCB40C4A0E /* SwiftyStoreKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-prefix.pch"; sourceTree = "<group>"; };
+		577DDC21EF33F68BA1F04556876C3C17 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		5A579A556E7C602C9BCA91C364669386 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
 		5BEDCB7040F92FF7F149E1A5AF0E5D16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E5DAEB83FB25141F10631A5AF9E5D28 /* SwiftForms.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftForms.xcconfig; sourceTree = "<group>"; };
-		666565E10C488C35988BF61649ADAD04 /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
-		6F1A469B8BEB2D99E64BD091AA69F839 /* SwiftForms.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftForms.modulemap; sourceTree = "<group>"; };
+		5BF1146FA686BF61B853AC0ACC0C7A71 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
+		5F06874DB6B040115B87E053CDF78C6C /* FormSegmentedControlCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSegmentedControlCell.swift; path = SwiftForms/cells/FormSegmentedControlCell.swift; sourceTree = "<group>"; };
+		6237291973151BAB8FD1974A0E2F1373 /* SwiftForms-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftForms-prefix.pch"; sourceTree = "<group>"; };
+		6594CDBD6BD87DC07E39705CF0456F43 /* InAppReceiptVerificator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptVerificator.swift; path = SwiftyStoreKit/InAppReceiptVerificator.swift; sourceTree = "<group>"; };
+		676AB6F542685295F1C8F03A34180E11 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
+		69B122B4BF5BE76062FCD41CFCBC3CA3 /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
+		6D81269024493F25E196126CB91B4B44 /* SwiftyStoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyStoreKit-dummy.m"; sourceTree = "<group>"; };
+		6E20CF49B35D95038969F5D6331C0FD5 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
 		722605E88275E19AD31FDFB5AF9108A9 /* Pods-Tasky-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tasky-frameworks.sh"; sourceTree = "<group>"; };
-		72679EC408DEA28460B9EA669CA58D4E /* FormValueCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormValueCell.swift; path = SwiftForms/cells/base/FormValueCell.swift; sourceTree = "<group>"; };
-		727AE3F95AFF48FDEEF958D8E0854FD7 /* FormTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldCell.swift; path = SwiftForms/cells/FormTextFieldCell.swift; sourceTree = "<group>"; };
-		739869DF5C69CE360F844E0A30241585 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
-		76797C3B7B177F1A8EE10D8F6F3FDBF2 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
-		77F34E686C7015A1F7B0AC547E635491 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		815B0D6C431922F7283B3715F9BE7412 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
+		79A8EA2DEA8626EBC6FB53902D368B26 /* FormSwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSwitchCell.swift; path = SwiftForms/cells/FormSwitchCell.swift; sourceTree = "<group>"; };
+		7ED36ACC2FA4C319EC99CA229A699EE5 /* FormDateCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormDateCell.swift; path = SwiftForms/cells/FormDateCell.swift; sourceTree = "<group>"; };
+		7F1B3BB92F764DA2184D8110CB20A2F8 /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
+		80DA750E5322DBC0C76C91FA02A02267 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		828021D3537204B9D74D76EFE5895FBF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832A5EFF6E4BC7E923972EC10B408434 /* SwiftForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftForms.framework; path = SwiftForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		839070970BD839D5ABADDB9361B78397 /* SwiftForms.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftForms.xcconfig; sourceTree = "<group>"; };
 		844538633529A7DF7314C20301CA47AF /* Pods-Tasky-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tasky-dummy.m"; sourceTree = "<group>"; };
-		86788A50DF170064F7F311959E6578A4 /* FormCheckCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormCheckCell.swift; path = SwiftForms/cells/FormCheckCell.swift; sourceTree = "<group>"; };
-		86FB15C5D5048E1BC7B4F7B17F35C6F8 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
-		8794460E35F31DFCCC139297248E9329 /* FormSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSelector.swift; path = SwiftForms/controllers/FormSelector.swift; sourceTree = "<group>"; };
-		88BD9A7A1D13374C1005088628CBF6BE /* FormSliderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSliderCell.swift; path = SwiftForms/cells/FormSliderCell.swift; sourceTree = "<group>"; };
+		846769CE212977BC7F1EE301D8835774 /* SwiftForms.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftForms.modulemap; sourceTree = "<group>"; };
 		8A9BFDD70B4458738B8D7F639B15F331 /* Pods-Tasky-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tasky-acknowledgements.plist"; sourceTree = "<group>"; };
-		912A3C289DC47168D204A268E962FAAD /* FormLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormLabelCell.swift; path = SwiftForms/cells/FormLabelCell.swift; sourceTree = "<group>"; };
-		92E76A480E9A7462367AE2F2AA9FF745 /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
+		8AC9E56B70C5272F96F04449B8EFCB60 /* OS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OS.swift; path = SwiftyStoreKit/OS.swift; sourceTree = "<group>"; };
+		8AE4D3217A67C4800893BDBAAC0E5E8C /* FormCheckCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormCheckCell.swift; path = SwiftForms/cells/FormCheckCell.swift; sourceTree = "<group>"; };
+		8C6D59192851F88BDC7DD6D74E20C17D /* FormSliderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSliderCell.swift; path = SwiftForms/cells/FormSliderCell.swift; sourceTree = "<group>"; };
+		8FE3C56736FD40EF79030836BB4BF7E2 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1D673EBB34FD1A93F8806F29E61E652 /* FormBaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormBaseCell.swift; path = SwiftForms/cells/base/FormBaseCell.swift; sourceTree = "<group>"; };
-		A2D1867BD7771F1167CAD3D357807ADD /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
-		A61267AFC7CC4603743DBF3A9103160C /* FormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormViewController.swift; path = SwiftForms/controllers/FormViewController.swift; sourceTree = "<group>"; };
+		950913101C069B0BDA5A6EA714182910 /* PaymentsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentsController.swift; path = SwiftyStoreKit/PaymentsController.swift; sourceTree = "<group>"; };
+		95B853BA59C06AB816BDA9A535A13CA1 /* InAppReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceipt.swift; path = SwiftyStoreKit/InAppReceipt.swift; sourceTree = "<group>"; };
+		9651A41FFBD78DF8AFCC123BA7407F2B /* SwiftyStoreKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyStoreKit.xcconfig; sourceTree = "<group>"; };
+		96F2A8BF765E481EBAA1629A6E21389F /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		9796A13BBF9B240AB3A6B416AA59B5B1 /* FormOptionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormOptionsViewController.swift; path = SwiftForms/controllers/FormOptionsViewController.swift; sourceTree = "<group>"; };
+		9C628942E88CA139D4BBD2E59F55D412 /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
+		9EA4129B6B6542BBB25689DF8C050190 /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
+		A6CEA60D934EE5CD0BD4CA3E6ECADE47 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AEC2F16DDFD1AAF53E1B17724DD2ED56 /* FormTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTitleCell.swift; path = SwiftForms/cells/base/FormTitleCell.swift; sourceTree = "<group>"; };
-		B6A07C8728D3C7A0E82CB033EC1A0798 /* SwiftForms-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftForms-prefix.pch"; sourceTree = "<group>"; };
-		B92012C64F673AF2CFAD1B175C4BEB94 /* FormOptionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormOptionsViewController.swift; path = SwiftForms/controllers/FormOptionsViewController.swift; sourceTree = "<group>"; };
-		BE089856444E09E34D97C7EED14A0E73 /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
-		BEE99ED65E29BCF05FE2635E3EE3DBC3 /* FormRowDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormRowDescriptor.swift; path = SwiftForms/descriptors/FormRowDescriptor.swift; sourceTree = "<group>"; };
-		C3BD993E3C837ABC89E57BA9E8C1233E /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
-		C4011E7085EF54859A5BDB35613F352D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B695CD0BEA3215E748E313F56EA1A603 /* SwiftForms-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftForms-umbrella.h"; sourceTree = "<group>"; };
+		B7134C74EE8B004B000B3719B24959C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85361749C8988A498CDE176BA9C8E2D /* FormBaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormBaseCell.swift; path = SwiftForms/cells/base/FormBaseCell.swift; sourceTree = "<group>"; };
+		C12E9EBE3F417585CEB8F522EBD8AD7F /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyStoreKit+Types.swift"; path = "SwiftyStoreKit/SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
+		C1F5DE1342B2E180073570F2D01D0B43 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
 		C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		C6362AB1023B32E763B240ED14BDE64E /* FormSelectorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSelectorCell.swift; path = SwiftForms/cells/FormSelectorCell.swift; sourceTree = "<group>"; };
-		C85980473E5098D59295BEAE2406674C /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
-		CB1BCB543D02322D17B6D65732BC11E9 /* FormSwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSwitchCell.swift; path = SwiftForms/cells/FormSwitchCell.swift; sourceTree = "<group>"; };
-		CB7B3ACCF12E2B5AB796D56786C593B3 /* SwiftForms-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftForms-dummy.m"; sourceTree = "<group>"; };
-		D4C5B50EA387CDB25D4CF593B66D04B6 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5756D991E62F656EF9C549FCD5A42CE /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
-		D71C37994CA61AF4BA27AB2148FEEC4D /* FormPickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormPickerCell.swift; path = SwiftForms/cells/FormPickerCell.swift; sourceTree = "<group>"; };
-		D770D5F818CB3AF95F8F11F301B4B9D8 /* FormButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormButtonCell.swift; path = SwiftForms/cells/FormButtonCell.swift; sourceTree = "<group>"; };
-		D8DE93107338EB92D21CA75666807685 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
-		E0F1BAE2EC4809F18D3A51E4C539CD77 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
-		E242F1ECE1B73C3B7D05D39E0FDB4830 /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
-		E6A09E30548B968A764AB95FDEB3550C /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		C6E2CF3DDD51153A838AC63DDD1FAA39 /* CompleteTransactionsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompleteTransactionsController.swift; path = SwiftyStoreKit/CompleteTransactionsController.swift; sourceTree = "<group>"; };
+		CAB6B80D77F475C9ECFEA587F071CEB5 /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		D02C397305610D8963BD5366F861EE49 /* FormPickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormPickerCell.swift; path = SwiftForms/cells/FormPickerCell.swift; sourceTree = "<group>"; };
+		D1215FBD28A951DF42E67F6F5C05DE37 /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptRefreshRequest.swift; path = SwiftyStoreKit/InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
+		D3D0952DCC57532611512C26DD9DE745 /* FormLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormLabelCell.swift; path = SwiftForms/cells/FormLabelCell.swift; sourceTree = "<group>"; };
+		D3D68EA72AECCA504FFA9C723E61348C /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
+		DC5E1A32F06597241DC0D057C902AA2E /* FormTextViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextViewCell.swift; path = SwiftForms/cells/FormTextViewCell.swift; sourceTree = "<group>"; };
+		DDB0A1FDAE4785D9401570E44CE6E22C /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
+		DDBFF394DCA18A0CFE714ADF10C1018C /* FormSectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSectionDescriptor.swift; path = SwiftForms/descriptors/FormSectionDescriptor.swift; sourceTree = "<group>"; };
+		DEB3AB65E39344428642D526F6522CBF /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		E9BD9202734EE9BF09AF7845ACBB393D /* SwiftyStoreKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-umbrella.h"; sourceTree = "<group>"; };
+		EF02A8DBBB83998AA1A9E885F200B897 /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
+		F2F016D2A79FB5C0B2033EFE94E08F8C /* FormErrorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormErrorType.swift; path = SwiftForms/FormErrorType.swift; sourceTree = "<group>"; };
 		F5C1FE0BFD556F98C327C450BA22B268 /* Pods-Tasky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tasky.release.xcconfig"; sourceTree = "<group>"; };
-		F7F68263E872B2CF13CA32026BEF5879 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
-		FE31994F60D36A17E65F08269D6B4FB1 /* FormDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormDescriptor.swift; path = SwiftForms/descriptors/FormDescriptor.swift; sourceTree = "<group>"; };
+		F68770A205EE8135D2C879EC72A44046 /* RestorePurchasesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestorePurchasesController.swift; path = SwiftyStoreKit/RestorePurchasesController.swift; sourceTree = "<group>"; };
+		FBB3EF6CB3AD1618FADFDB2D0EDF5426 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		FD9877D5BDBC2AFA913362D42F886D0B /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppProductQueryRequest.swift; path = SwiftyStoreKit/InAppProductQueryRequest.swift; sourceTree = "<group>"; };
+		FDC62314D09658A2D2DE669D960CFB6E /* FormSelectorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSelectorCell.swift; path = SwiftForms/cells/FormSelectorCell.swift; sourceTree = "<group>"; };
+		FFFCC74F0F69240F9A99E0FAD60AD00B /* SwiftyStoreKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyStoreKit.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1059B589C3AE4CA119E5427D2BCD763F /* Frameworks */ = {
+		513FFCB78FC64E2F1C85EA1BE06DD96A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07C37BB6C5F7FE3194F5F2767C2B643 /* Foundation.framework in Frameworks */,
+				E59D2D125425025F3095F28CE261072D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D58A4CD763445297B1F09B2647D5665 /* Frameworks */ = {
+		5E63DF9009E69CCE1BCA005919AA9C15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFDF33184118092BF57760559C00ED5D /* Foundation.framework in Frameworks */,
+				92DAF90C21C895B6B3A0C81135D2255A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1FD5A49EDC84DD6443D2B232529E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6478BB9054691FA2E9594D28DC4AAB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +246,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87B60B89356168EEA0595CEAA101265B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A20B6E32BF0D81FC1868FE63B84908 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4E54942A2F6AE6BC8FF8B5031C56AFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,29 +261,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD8D4E4513F4103FDCF2B61DB6619AB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA18F6E689C628C5111781FB17FA2895 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04377B48E32F516027E83400E9245444 /* Support Files */ = {
+		0EC7AF5BEF429A0693712E85F138EF63 /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				3919CE19EB141E7704AEB01104B18850 /* Info.plist */,
-				C3BD993E3C837ABC89E57BA9E8C1233E /* SCLAlertView.modulemap */,
-				D5756D991E62F656EF9C549FCD5A42CE /* SCLAlertView.xcconfig */,
-				1FB4C6641FA15156208BD37126A8236A /* SCLAlertView-dummy.m */,
-				76797C3B7B177F1A8EE10D8F6F3FDBF2 /* SCLAlertView-prefix.pch */,
-				E6A09E30548B968A764AB95FDEB3550C /* SCLAlertView-umbrella.h */,
+				DEB3AB65E39344428642D526F6522CBF /* SCLAlertView.swift */,
+				C1F5DE1342B2E180073570F2D01D0B43 /* SCLExtensions.swift */,
+				30FD570FC5530C2975D24624CAB2CDDC /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SCLAlertView";
+			name = SCLAlertView;
+			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -233,49 +283,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		14FFC136EAC68E36A600C152FA90C50E /* Support Files */ = {
+		2A5444E94F6199A8A10F016659E44EC5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				77F34E686C7015A1F7B0AC547E635491 /* Info.plist */,
-				6F1A469B8BEB2D99E64BD091AA69F839 /* SwiftForms.modulemap */,
-				5E5DAEB83FB25141F10631A5AF9E5D28 /* SwiftForms.xcconfig */,
-				CB7B3ACCF12E2B5AB796D56786C593B3 /* SwiftForms-dummy.m */,
-				B6A07C8728D3C7A0E82CB033EC1A0798 /* SwiftForms-prefix.pch */,
-				38E6516687207816FFEE6E623E5FF1A8 /* SwiftForms-umbrella.h */,
+				AAB1B3B4733A8BEF5894948C9053498E /* FontAwesome.swift */,
+				0EC7AF5BEF429A0693712E85F138EF63 /* SCLAlertView */,
+				87725311A24C6EE4571253A51320390F /* SwiftForms */,
+				3F1F6306AB0862D8B73387B8F280326B /* SwiftyStoreKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30FD570FC5530C2975D24624CAB2CDDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53AACDC07549BCFF40CC7CC6937D3AF2 /* Info.plist */,
+				FBB3EF6CB3AD1618FADFDB2D0EDF5426 /* SCLAlertView.modulemap */,
+				577DDC21EF33F68BA1F04556876C3C17 /* SCLAlertView.xcconfig */,
+				343D95D27A4C28C5A51D4C532DFD6DAF /* SCLAlertView-dummy.m */,
+				96F2A8BF765E481EBAA1629A6E21389F /* SCLAlertView-prefix.pch */,
+				5A579A556E7C602C9BCA91C364669386 /* SCLAlertView-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftForms";
+			path = "../Target Support Files/SCLAlertView";
 			sourceTree = "<group>";
 		};
-		39969B504B535670B9803C4B12C92B5F /* FontAwesome.swift */ = {
+		3F1F6306AB0862D8B73387B8F280326B /* SwiftyStoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				E0F1BAE2EC4809F18D3A51E4C539CD77 /* Enum.swift */,
-				3BA93F155EC9ABDE53F529810C590C20 /* FontAwesome.swift */,
-				412287C3766C41F3B74880DDE23CF985 /* FontAwesomeBarButtonItem.swift */,
-				666565E10C488C35988BF61649ADAD04 /* FontAwesomeImageRepresentable.swift */,
-				92E76A480E9A7462367AE2F2AA9FF745 /* FontAwesomeImageView.swift */,
-				BE089856444E09E34D97C7EED14A0E73 /* FontAwesomeSegmentedControl.swift */,
-				0885855CB67739B2606AE5B4DB3644F3 /* FontAwesomeStateRequirement.swift */,
-				E242F1ECE1B73C3B7D05D39E0FDB4830 /* FontAwesomeTabBarItem.swift */,
-				30311A5E40BE5E52FAB9F5B92D394C81 /* FontAwesomeTextRepresentable.swift */,
-				5734C1107B245B03D73D41771B1B7D9E /* FontAwesomeView.swift */,
-				54FB1F4C3CD9BDFBF9C2F5F044A2D447 /* Resources */,
-				6C61F498E35D3E428752DA4B9945B981 /* Support Files */,
+				07A062F73D06C9BA3DA3A3674568364D /* AppleReceiptValidator.swift */,
+				C6E2CF3DDD51153A838AC63DDD1FAA39 /* CompleteTransactionsController.swift */,
+				FD9877D5BDBC2AFA913362D42F886D0B /* InAppProductQueryRequest.swift */,
+				95B853BA59C06AB816BDA9A535A13CA1 /* InAppReceipt.swift */,
+				D1215FBD28A951DF42E67F6F5C05DE37 /* InAppReceiptRefreshRequest.swift */,
+				6594CDBD6BD87DC07E39705CF0456F43 /* InAppReceiptVerificator.swift */,
+				8AC9E56B70C5272F96F04449B8EFCB60 /* OS.swift */,
+				37FBAF2E99C34D8EE256DE04E1786EC0 /* PaymentQueueController.swift */,
+				950913101C069B0BDA5A6EA714182910 /* PaymentsController.swift */,
+				010652DAACDAAA6A897AFA50FCDC5F8A /* ProductsInfoController.swift */,
+				F68770A205EE8135D2C879EC72A44046 /* RestorePurchasesController.swift */,
+				2ADC2CBAD2C0ABE4A20C40185CF059EF /* SKProduct+LocalizedPrice.swift */,
+				0C2467B57A037F2979630404E78E53F6 /* SwiftyStoreKit.swift */,
+				C12E9EBE3F417585CEB8F522EBD8AD7F /* SwiftyStoreKit+Types.swift */,
+				C1AA5B6C3315DD07841AB7E4F3AEC9A8 /* Support Files */,
 			);
-			name = FontAwesome.swift;
-			path = FontAwesome.swift;
-			sourceTree = "<group>";
-		};
-		3B996F478DD2879A8D3A56F1DBFD89AF /* SCLAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				D8DE93107338EB92D21CA75666807685 /* SCLAlertView.swift */,
-				86FB15C5D5048E1BC7B4F7B17F35C6F8 /* SCLExtensions.swift */,
-				04377B48E32F516027E83400E9245444 /* Support Files */,
-			);
-			name = SCLAlertView;
-			path = SCLAlertView;
+			name = SwiftyStoreKit;
+			path = SwiftyStoreKit;
 			sourceTree = "<group>";
 		};
 		4A4AE1ACCCBD5B79B69D01606BBBA30B /* Pods-Tasky */ = {
@@ -296,68 +349,18 @@
 			path = "Target Support Files/Pods-Tasky";
 			sourceTree = "<group>";
 		};
-		51D7C272A83E3F2C3AC5B5CA37DCE817 /* SwiftForms */ = {
+		7A3FFF31BC9FE00ECAE1771BE752A98E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A1D673EBB34FD1A93F8806F29E61E652 /* FormBaseCell.swift */,
-				D770D5F818CB3AF95F8F11F301B4B9D8 /* FormButtonCell.swift */,
-				86788A50DF170064F7F311959E6578A4 /* FormCheckCell.swift */,
-				23F9AB8BDA6535F078A89EBFEE38AA29 /* FormDateCell.swift */,
-				FE31994F60D36A17E65F08269D6B4FB1 /* FormDescriptor.swift */,
-				08183D377B04539CB6CD8577C2D1ECC9 /* FormErrorType.swift */,
-				912A3C289DC47168D204A268E962FAAD /* FormLabelCell.swift */,
-				B92012C64F673AF2CFAD1B175C4BEB94 /* FormOptionsViewController.swift */,
-				D71C37994CA61AF4BA27AB2148FEEC4D /* FormPickerCell.swift */,
-				BEE99ED65E29BCF05FE2635E3EE3DBC3 /* FormRowDescriptor.swift */,
-				0391EFB2CDC3F8AFEB57E9DF4F1DA746 /* FormSectionDescriptor.swift */,
-				1682623570EEDF19BF03148F09CCC912 /* FormSegmentedControlCell.swift */,
-				8794460E35F31DFCCC139297248E9329 /* FormSelector.swift */,
-				C6362AB1023B32E763B240ED14BDE64E /* FormSelectorCell.swift */,
-				88BD9A7A1D13374C1005088628CBF6BE /* FormSliderCell.swift */,
-				2F60A8C6B270EE49F4641D0F9C90C490 /* FormStepperCell.swift */,
-				CB1BCB543D02322D17B6D65732BC11E9 /* FormSwitchCell.swift */,
-				727AE3F95AFF48FDEEF958D8E0854FD7 /* FormTextFieldCell.swift */,
-				320453475E9F1059A2EDF9418F68D30D /* FormTextViewCell.swift */,
-				AEC2F16DDFD1AAF53E1B17724DD2ED56 /* FormTitleCell.swift */,
-				72679EC408DEA28460B9EA669CA58D4E /* FormValueCell.swift */,
-				A61267AFC7CC4603743DBF3A9103160C /* FormViewController.swift */,
-				14FFC136EAC68E36A600C152FA90C50E /* Support Files */,
-			);
-			name = SwiftForms;
-			path = SwiftForms;
-			sourceTree = "<group>";
-		};
-		54FB1F4C3CD9BDFBF9C2F5F044A2D447 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F7F68263E872B2CF13CA32026BEF5879 /* FontAwesome.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		6C61F498E35D3E428752DA4B9945B981 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				815B0D6C431922F7283B3715F9BE7412 /* FontAwesome.swift.modulemap */,
-				739869DF5C69CE360F844E0A30241585 /* FontAwesome.swift.xcconfig */,
-				3355FB45FEBF7FFC9EDCCD062ED759B2 /* FontAwesome.swift-dummy.m */,
-				19938BF55DBD849D7AE0D717C3BABF0B /* FontAwesome.swift-prefix.pch */,
-				A2D1867BD7771F1167CAD3D357807ADD /* FontAwesome.swift-umbrella.h */,
-				C4011E7085EF54859A5BDB35613F352D /* Info.plist */,
-				C85980473E5098D59295BEAE2406674C /* ResourceBundle-FontAwesome.swift-Info.plist */,
+				B7134C74EE8B004B000B3719B24959C3 /* Info.plist */,
+				846769CE212977BC7F1EE301D8835774 /* SwiftForms.modulemap */,
+				839070970BD839D5ABADDB9361B78397 /* SwiftForms.xcconfig */,
+				37BF44D620D16013D5488EE30A412362 /* SwiftForms-dummy.m */,
+				6237291973151BAB8FD1974A0E2F1373 /* SwiftForms-prefix.pch */,
+				B695CD0BEA3215E748E313F56EA1A603 /* SwiftForms-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/FontAwesome.swift";
-			sourceTree = "<group>";
-		};
-		7D8918C4DB57B790C879A8B98DD7DEB7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				39969B504B535670B9803C4B12C92B5F /* FontAwesome.swift */,
-				3B996F478DD2879A8D3A56F1DBFD89AF /* SCLAlertView */,
-				51D7C272A83E3F2C3AC5B5CA37DCE817 /* SwiftForms */,
-			);
-			name = Pods;
+			path = "../Target Support Files/SwiftForms";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -365,22 +368,103 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				7D8918C4DB57B790C879A8B98DD7DEB7 /* Pods */,
-				B1DE8E3FFF4623A204BB99707FD0A4E6 /* Products */,
+				2A5444E94F6199A8A10F016659E44EC5 /* Pods */,
+				A23FBDAE4AC3A13E79A55E177462232A /* Products */,
 				EF6837AAB8FD24A9BE68AECFBE304629 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B1DE8E3FFF4623A204BB99707FD0A4E6 /* Products */ = {
+		87725311A24C6EE4571253A51320390F /* SwiftForms */ = {
 			isa = PBXGroup;
 			children = (
-				D4C5B50EA387CDB25D4CF593B66D04B6 /* FontAwesome.swift.bundle */,
-				3F020268AE1C2BDD6B0483882B71AFD5 /* FontAwesome_swift.framework */,
-				59207B6616F723BFFEE53B3338BF1131 /* Pods_Tasky.framework */,
-				08A6E681680B9AC275CA8EBEE5107A35 /* SCLAlertView.framework */,
-				1A5DE20D44A2E10AA8C78198E96885AC /* SwiftForms.framework */,
+				B85361749C8988A498CDE176BA9C8E2D /* FormBaseCell.swift */,
+				527E4A663D7C525AD53A2DE0CCAA2C83 /* FormButtonCell.swift */,
+				8AE4D3217A67C4800893BDBAAC0E5E8C /* FormCheckCell.swift */,
+				7ED36ACC2FA4C319EC99CA229A699EE5 /* FormDateCell.swift */,
+				07D39E3CA50C65B08F15C8974A64D070 /* FormDescriptor.swift */,
+				F2F016D2A79FB5C0B2033EFE94E08F8C /* FormErrorType.swift */,
+				D3D0952DCC57532611512C26DD9DE745 /* FormLabelCell.swift */,
+				9796A13BBF9B240AB3A6B416AA59B5B1 /* FormOptionsViewController.swift */,
+				D02C397305610D8963BD5366F861EE49 /* FormPickerCell.swift */,
+				2C221D9687297C7DD5A3E6BB5AE2B5F2 /* FormRowDescriptor.swift */,
+				DDBFF394DCA18A0CFE714ADF10C1018C /* FormSectionDescriptor.swift */,
+				5F06874DB6B040115B87E053CDF78C6C /* FormSegmentedControlCell.swift */,
+				0A738F21EF636AD9EDB3D42AB5116AB7 /* FormSelector.swift */,
+				FDC62314D09658A2D2DE669D960CFB6E /* FormSelectorCell.swift */,
+				8C6D59192851F88BDC7DD6D74E20C17D /* FormSliderCell.swift */,
+				0C5420B8933E843662F13535F473EC2F /* FormStepperCell.swift */,
+				79A8EA2DEA8626EBC6FB53902D368B26 /* FormSwitchCell.swift */,
+				10D23965D00849217EDA5164956B16AA /* FormTextFieldCell.swift */,
+				DC5E1A32F06597241DC0D057C902AA2E /* FormTextViewCell.swift */,
+				55D639144B95F37AEB98B4838C56E5FB /* FormTitleCell.swift */,
+				3AEDA586451CB7A9A6021A04B28B2DF3 /* FormValueCell.swift */,
+				3BA25A39F21172C723CF73A005F8680D /* FormViewController.swift */,
+				7A3FFF31BC9FE00ECAE1771BE752A98E /* Support Files */,
+			);
+			name = SwiftForms;
+			path = SwiftForms;
+			sourceTree = "<group>";
+		};
+		A23FBDAE4AC3A13E79A55E177462232A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6CEA60D934EE5CD0BD4CA3E6ECADE47 /* FontAwesome.swift.bundle */,
+				4906682ED866164D4C9A7648E33E9F41 /* FontAwesome_swift.framework */,
+				38ECE074E74B571E8804D06A1A801677 /* Pods_Tasky.framework */,
+				3834BF666D19800C1DFE57C01B314E34 /* SCLAlertView.framework */,
+				832A5EFF6E4BC7E923972EC10B408434 /* SwiftForms.framework */,
+				1A32ACD6E63785792ACE987811F6EF3E /* SwiftyStoreKit.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AAB1B3B4733A8BEF5894948C9053498E /* FontAwesome.swift */ = {
+			isa = PBXGroup;
+			children = (
+				D3D68EA72AECCA504FFA9C723E61348C /* Enum.swift */,
+				DDB0A1FDAE4785D9401570E44CE6E22C /* FontAwesome.swift */,
+				9C628942E88CA139D4BBD2E59F55D412 /* FontAwesomeBarButtonItem.swift */,
+				7F1B3BB92F764DA2184D8110CB20A2F8 /* FontAwesomeImageRepresentable.swift */,
+				4BF7D6E3B191086BAA34A990E6D84D0B /* FontAwesomeImageView.swift */,
+				4BD741BFA77D819BC087084AFF942ABF /* FontAwesomeSegmentedControl.swift */,
+				69B122B4BF5BE76062FCD41CFCBC3CA3 /* FontAwesomeStateRequirement.swift */,
+				9EA4129B6B6542BBB25689DF8C050190 /* FontAwesomeTabBarItem.swift */,
+				CAB6B80D77F475C9ECFEA587F071CEB5 /* FontAwesomeTextRepresentable.swift */,
+				02A14A70CB4C50B33A160741F8AB2646 /* FontAwesomeView.swift */,
+				F5A67198A03C674E416727433E6C90FF /* Resources */,
+				B9E4B7F1C0451A7A319A3F949FE60697 /* Support Files */,
+			);
+			name = FontAwesome.swift;
+			path = FontAwesome.swift;
+			sourceTree = "<group>";
+		};
+		B9E4B7F1C0451A7A319A3F949FE60697 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E20CF49B35D95038969F5D6331C0FD5 /* FontAwesome.swift.modulemap */,
+				5BF1146FA686BF61B853AC0ACC0C7A71 /* FontAwesome.swift.xcconfig */,
+				8FE3C56736FD40EF79030836BB4BF7E2 /* FontAwesome.swift-dummy.m */,
+				3DD6096E8BA5901C595B0A46E78E4195 /* FontAwesome.swift-prefix.pch */,
+				676AB6F542685295F1C8F03A34180E11 /* FontAwesome.swift-umbrella.h */,
+				80DA750E5322DBC0C76C91FA02A02267 /* Info.plist */,
+				EF02A8DBBB83998AA1A9E885F200B897 /* ResourceBundle-FontAwesome.swift-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesome.swift";
+			sourceTree = "<group>";
+		};
+		C1AA5B6C3315DD07841AB7E4F3AEC9A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				828021D3537204B9D74D76EFE5895FBF /* Info.plist */,
+				FFFCC74F0F69240F9A99E0FAD60AD00B /* SwiftyStoreKit.modulemap */,
+				9651A41FFBD78DF8AFCC123BA7407F2B /* SwiftyStoreKit.xcconfig */,
+				6D81269024493F25E196126CB91B4B44 /* SwiftyStoreKit-dummy.m */,
+				56F4D88DADC7D7FB34EEF2FCB40C4A0E /* SwiftyStoreKit-prefix.pch */,
+				E9BD9202734EE9BF09AF7845ACBB393D /* SwiftyStoreKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyStoreKit";
 			sourceTree = "<group>";
 		};
 		EF6837AAB8FD24A9BE68AECFBE304629 /* Targets Support Files */ = {
@@ -389,6 +473,14 @@
 				4A4AE1ACCCBD5B79B69D01606BBBA30B /* Pods-Tasky */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F5A67198A03C674E416727433E6C90FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40D1102050BF6BE63B6115FC61541EA2 /* FontAwesome.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FF1CA95E532A8F990E19506982FA04EE /* iOS */ = {
@@ -404,6 +496,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		18915F101595BB475EB16CDEBEF070F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF1BF463CECEA471176EB35A7A2BCEC /* SCLAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		25E0772F87878D34BE9C9F522910F6B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,40 +512,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E320A36DDB1C2342DBDE5BBF3D66B26 /* Headers */ = {
+		85C1B50682CDAD229EEF96C48BC5F5BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18148040AEF3BFBCF015F64CFF84666C /* SCLAlertView-umbrella.h in Headers */,
+				4C75858DB9032AF4EF4472D25AE87F4B /* SwiftyStoreKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9334386F3D3110870065874016CFEBDB /* Headers */ = {
+		91E013BAE8E12A79A8C9CCA483B0B83F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2C0C5BFEE2A29E86A7ED5DF048A830 /* SwiftForms-umbrella.h in Headers */,
+				982F41BF52BA585318AE4DEA90438BB8 /* Pods-Tasky-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2792256CB7F44E850794E53D20D13AA /* Headers */ = {
+		D9C76A4FB70CC5CC3BFFAFCC2B0FC830 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				075D8DF195687A4EB7059254A7D326A5 /* Pods-Tasky-umbrella.h in Headers */,
+				B245993DC12B29BA60638D7B3C219F22 /* SwiftForms-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1B49B4FAE022B2E3C96EFB37D5FF8E71 /* SwiftForms */ = {
+		2A32C83B782E1FD05E2618E9457E8AE0 /* SwiftyStoreKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88223E6C8A12A02275A2255950551B18 /* Build configuration list for PBXNativeTarget "SwiftForms" */;
+			buildConfigurationList = E6167AE72BD221B4F46FFCF215FC4A88 /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */;
 			buildPhases = (
-				87F36E148D4B411F517FE3E674D3EABF /* Sources */,
-				FD8D4E4513F4103FDCF2B61DB6619AB3 /* Frameworks */,
-				9334386F3D3110870065874016CFEBDB /* Headers */,
+				3A196199A6948478795551C664FEA945 /* Sources */,
+				5E63DF9009E69CCE1BCA005919AA9C15 /* Frameworks */,
+				85C1B50682CDAD229EEF96C48BC5F5BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyStoreKit;
+			productName = SwiftyStoreKit;
+			productReference = 1A32ACD6E63785792ACE987811F6EF3E /* SwiftyStoreKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		575CAEF58E732C8B6CE6E48210C76A11 /* SwiftForms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C6218144427C806F9E6F89EEC3A3D4C /* Build configuration list for PBXNativeTarget "SwiftForms" */;
+			buildPhases = (
+				6B4B2E2B7A8003412D38000FD6F225BF /* Sources */,
+				5F1FD5A49EDC84DD6443D2B232529E51 /* Frameworks */,
+				D9C76A4FB70CC5CC3BFFAFCC2B0FC830 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -453,24 +570,7 @@
 			);
 			name = SwiftForms;
 			productName = SwiftForms;
-			productReference = 1A5DE20D44A2E10AA8C78198E96885AC /* SwiftForms.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3FFE1CA9AEC387A3E3765AF0091694AF /* SCLAlertView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 177C6F9B51EC598859C94A10BFE93261 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
-			buildPhases = (
-				CF5381FEDA68F59965C297717A761E92 /* Sources */,
-				1059B589C3AE4CA119E5427D2BCD763F /* Frameworks */,
-				7E320A36DDB1C2342DBDE5BBF3D66B26 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SCLAlertView;
-			productName = SCLAlertView;
-			productReference = 08A6E681680B9AC275CA8EBEE5107A35 /* SCLAlertView.framework */;
+			productReference = 832A5EFF6E4BC7E923972EC10B408434 /* SwiftForms.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6991F49AED797519343B1F4591001691 /* FontAwesome.swift-FontAwesome.swift */ = {
@@ -487,8 +587,46 @@
 			);
 			name = "FontAwesome.swift-FontAwesome.swift";
 			productName = "FontAwesome.swift-FontAwesome.swift";
-			productReference = D4C5B50EA387CDB25D4CF593B66D04B6 /* FontAwesome.swift.bundle */;
+			productReference = A6CEA60D934EE5CD0BD4CA3E6ECADE47 /* FontAwesome.swift.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		A5F0CA101B6362C21E231F0E5F64D1A5 /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25732D1253113ED7A18DF2E4092A0DF /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				2F1C1D07D0AB5E63DBC7963C14D5530F /* Sources */,
+				513FFCB78FC64E2F1C85EA1BE06DD96A /* Frameworks */,
+				18915F101595BB475EB16CDEBEF070F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = 3834BF666D19800C1DFE57C01B314E34 /* SCLAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAF7D4B0944FD76315C043C58A198A75 /* Pods-Tasky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB2B967D87599CF1862F4949687BF375 /* Build configuration list for PBXNativeTarget "Pods-Tasky" */;
+			buildPhases = (
+				2EE70221D164D8949C1EA193796BF1DD /* Sources */,
+				87B60B89356168EEA0595CEAA101265B /* Frameworks */,
+				91E013BAE8E12A79A8C9CCA483B0B83F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				689C8300FA1B7CF9E36EB5D2BE23B0FF /* PBXTargetDependency */,
+				EE07FCE9AE2D85654E20C7DC954CDC62 /* PBXTargetDependency */,
+				9A36F7F1703DD3D32F2FB4480B8EBA9C /* PBXTargetDependency */,
+				E359718A857C52EBEE8FCFE8B8B7ACB6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tasky";
+			productName = "Pods-Tasky";
+			productReference = 38ECE074E74B571E8804D06A1A801677 /* Pods_Tasky.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		CD11672B6619C297B6AEE3DFB8213C59 /* FontAwesome.swift */ = {
 			isa = PBXNativeTarget;
@@ -506,27 +644,7 @@
 			);
 			name = FontAwesome.swift;
 			productName = FontAwesome.swift;
-			productReference = 3F020268AE1C2BDD6B0483882B71AFD5 /* FontAwesome_swift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FA8614152BA8CE09BE6E3DD9A6FE40F6 /* Pods-Tasky */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F20A29ED033AB6E95AAD07290806D609 /* Build configuration list for PBXNativeTarget "Pods-Tasky" */;
-			buildPhases = (
-				609F5092981053E883C62A8BF1EFEFE7 /* Sources */,
-				5D58A4CD763445297B1F09B2647D5665 /* Frameworks */,
-				C2792256CB7F44E850794E53D20D13AA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42867AD1F8634C7D9B687723FD120C48 /* PBXTargetDependency */,
-				7C0051CBF1FA5B92B399408F3921099E /* PBXTargetDependency */,
-				1596F644550920A1303C8276A4B3518E /* PBXTargetDependency */,
-			);
-			name = "Pods-Tasky";
-			productName = "Pods-Tasky";
-			productReference = 59207B6616F723BFFEE53B3338BF1131 /* Pods_Tasky.framework */;
+			productReference = 4906682ED866164D4C9A7648E33E9F41 /* FontAwesome_swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -546,15 +664,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B1DE8E3FFF4623A204BB99707FD0A4E6 /* Products */;
+			productRefGroup = A23FBDAE4AC3A13E79A55E177462232A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CD11672B6619C297B6AEE3DFB8213C59 /* FontAwesome.swift */,
 				6991F49AED797519343B1F4591001691 /* FontAwesome.swift-FontAwesome.swift */,
-				FA8614152BA8CE09BE6E3DD9A6FE40F6 /* Pods-Tasky */,
-				3FFE1CA9AEC387A3E3765AF0091694AF /* SCLAlertView */,
-				1B49B4FAE022B2E3C96EFB37D5FF8E71 /* SwiftForms */,
+				AAF7D4B0944FD76315C043C58A198A75 /* Pods-Tasky */,
+				A5F0CA101B6362C21E231F0E5F64D1A5 /* SCLAlertView */,
+				575CAEF58E732C8B6CE6E48210C76A11 /* SwiftForms */,
+				2A32C83B782E1FD05E2618E9457E8AE0 /* SwiftyStoreKit */,
 			);
 		};
 /* End PBXProject section */
@@ -579,6 +698,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2EE70221D164D8949C1EA193796BF1DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63E01D7E92AEE14203210A762E94A71 /* Pods-Tasky-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F1C1D07D0AB5E63DBC7963C14D5530F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6930C10AA9C4B719BDC147E0020BC55 /* SCLAlertView-dummy.m in Sources */,
+				149C77C4C6DDEA50B3CE15778D087DC9 /* SCLAlertView.swift in Sources */,
+				5179D355A424F23CB64EB984BC30184F /* SCLExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30237CD8FFC618019ADDBFF6AF503934 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -597,51 +734,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		609F5092981053E883C62A8BF1EFEFE7 /* Sources */ = {
+		3A196199A6948478795551C664FEA945 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA49F1A95623E8A5D3812304F79CC65 /* Pods-Tasky-dummy.m in Sources */,
+				ACA29479542BF76006A26A5DDE937195 /* AppleReceiptValidator.swift in Sources */,
+				19E0A3E329853FBEFFCC976F4EB52525 /* CompleteTransactionsController.swift in Sources */,
+				8167285AD2BB8119E66E11277F83140D /* InAppProductQueryRequest.swift in Sources */,
+				021CE617C1D81D3C0043D6FE81E10664 /* InAppReceipt.swift in Sources */,
+				A5185974504F2C8CB99BFDFC22A4D539 /* InAppReceiptRefreshRequest.swift in Sources */,
+				53A28347545E91B59D999A8BB52C3FB0 /* InAppReceiptVerificator.swift in Sources */,
+				D151B3CAD128B9C0E67C1D9C11C3E7DC /* OS.swift in Sources */,
+				77C8D3C9A4EC0B6902C354DB24819E06 /* PaymentQueueController.swift in Sources */,
+				7E3046D2ED609A7D3FEFA9D347451034 /* PaymentsController.swift in Sources */,
+				EBF24BF0AC32571AD3164A44D8065B9C /* ProductsInfoController.swift in Sources */,
+				6A49E8A45C22C5BFC66FA63EB4F00915 /* RestorePurchasesController.swift in Sources */,
+				1EC1121927CDF0B2479CF07DE9C3D957 /* SKProduct+LocalizedPrice.swift in Sources */,
+				2BD96E149C76E383EF2A897948944A6D /* SwiftyStoreKit+Types.swift in Sources */,
+				A08776E3B8D5EB827445F2FEF729FD7F /* SwiftyStoreKit-dummy.m in Sources */,
+				9AC79E726C80C604D55E194E1553C1A3 /* SwiftyStoreKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87F36E148D4B411F517FE3E674D3EABF /* Sources */ = {
+		6B4B2E2B7A8003412D38000FD6F225BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				085AC493E94CAA1126AB7B888D757624 /* FormBaseCell.swift in Sources */,
-				20B7A3898375844C027073E251B317E2 /* FormButtonCell.swift in Sources */,
-				02F832941E1198C964B6EFC58AE63B2D /* FormCheckCell.swift in Sources */,
-				02F17803B2D65A9D3688F5868A56BC8D /* FormDateCell.swift in Sources */,
-				4A892951B04F8843DDC816CE4D4A299D /* FormDescriptor.swift in Sources */,
-				E8A7F74C55311FF6378DE2B7587EBA28 /* FormErrorType.swift in Sources */,
-				0D653210D85A6C001AD083489E4F61C0 /* FormLabelCell.swift in Sources */,
-				D4A6D407AD87B7DFB448E236ADBBA0D2 /* FormOptionsViewController.swift in Sources */,
-				3D39E33E45E20BEF05BD94737BF84B66 /* FormPickerCell.swift in Sources */,
-				ECA6B6E772F42563100C46216A36D311 /* FormRowDescriptor.swift in Sources */,
-				2EB81B5D40818F76F62B40041CEC5CF1 /* FormSectionDescriptor.swift in Sources */,
-				F7DD242BFD0DF63D7FEF6DB41E5CFC5C /* FormSegmentedControlCell.swift in Sources */,
-				C70227E77F81C4C0E0E647EFE8EB8636 /* FormSelector.swift in Sources */,
-				C64B6766EDECACAA9F18C0DDC963EAD4 /* FormSelectorCell.swift in Sources */,
-				83BA92A88758129A3AEE03E0D0B3848C /* FormSliderCell.swift in Sources */,
-				0036BE60C9C8A1EDAE8E6EC5C2F0ECE6 /* FormStepperCell.swift in Sources */,
-				0E07F7668C54463A03E5CA74AB787929 /* FormSwitchCell.swift in Sources */,
-				75583077A73647C3D8B750A0B82631F0 /* FormTextFieldCell.swift in Sources */,
-				84266523CC9E0F51F4524273C7E0A5D9 /* FormTextViewCell.swift in Sources */,
-				C99143C5952A9D914F41021A0607BD56 /* FormTitleCell.swift in Sources */,
-				9B90860ACEFE9566F353E425590DF128 /* FormValueCell.swift in Sources */,
-				415B331DDC9B1C62E7ADC23401F75FC1 /* FormViewController.swift in Sources */,
-				B4EBB744A5B8C907B3081DB72EB53398 /* SwiftForms-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF5381FEDA68F59965C297717A761E92 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AA125C622C86BC121C3954B4F57EAC9 /* SCLAlertView-dummy.m in Sources */,
-				01555B7FA2F0B54C6A88499C38A1A127 /* SCLAlertView.swift in Sources */,
-				36A9303CB83A85008BB1A7C4826DF84B /* SCLExtensions.swift in Sources */,
+				9ADF809AAA8FB558B755ACDB3E58FCC8 /* FormBaseCell.swift in Sources */,
+				33795F96C03546C0B4313A3DA06A2435 /* FormButtonCell.swift in Sources */,
+				CC1DEFAB66A2D9F34C406E5402BA6AFB /* FormCheckCell.swift in Sources */,
+				396BAB193FCC9B9EA9B6A248F3F0F92B /* FormDateCell.swift in Sources */,
+				C573CDFFB14BD284C1EEC6A230CF681F /* FormDescriptor.swift in Sources */,
+				6D8D2C6E76E2A9ECBCD45598DC336B35 /* FormErrorType.swift in Sources */,
+				3A68D589765E9F26719C88ED0A24271F /* FormLabelCell.swift in Sources */,
+				A54B29996BE7DBECDE1F80C45BCA6EBB /* FormOptionsViewController.swift in Sources */,
+				83C7D3F7EF9B2AB48A34EDF4E342B85F /* FormPickerCell.swift in Sources */,
+				49C3F06EAF7660A879C3D935303B3D0F /* FormRowDescriptor.swift in Sources */,
+				CB3AB306223B5ED2BA3A61C10B7E91C8 /* FormSectionDescriptor.swift in Sources */,
+				888CF35B11AE0D1809D0E2BED7458D7C /* FormSegmentedControlCell.swift in Sources */,
+				3E13F32614CC83A56F9F80DB52DA04BA /* FormSelector.swift in Sources */,
+				5BBE03390CA4BF0E04680123303DCA3D /* FormSelectorCell.swift in Sources */,
+				680155A17A11483650BB925E7F8F9A8F /* FormSliderCell.swift in Sources */,
+				7A983575E2D1B01B3193B837733345DE /* FormStepperCell.swift in Sources */,
+				2835D0C8B5776F8C908A0DEEBBB64B61 /* FormSwitchCell.swift in Sources */,
+				930D635A833A7CB525DD68EFB8280342 /* FormTextFieldCell.swift in Sources */,
+				8EC28F318C8006FD99C4853C70023E3C /* FormTextViewCell.swift in Sources */,
+				93CB39C69FA4193FC29C4FB0A145AB50 /* FormTitleCell.swift in Sources */,
+				B983056B2DB6287D974C2292561E765A /* FormValueCell.swift in Sources */,
+				5DD45B542E596FAC543693E25DE9A47A /* FormViewController.swift in Sources */,
+				3F4C72E56CF051DEC78430446313AC59 /* SwiftForms-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,30 +802,36 @@
 			target = 6991F49AED797519343B1F4591001691 /* FontAwesome.swift-FontAwesome.swift */;
 			targetProxy = A1E7ADA9414728070F39599079B02152 /* PBXContainerItemProxy */;
 		};
-		1596F644550920A1303C8276A4B3518E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftForms;
-			target = 1B49B4FAE022B2E3C96EFB37D5FF8E71 /* SwiftForms */;
-			targetProxy = 5693E2FA4458A1CA535B126A86A0BFA9 /* PBXContainerItemProxy */;
-		};
-		42867AD1F8634C7D9B687723FD120C48 /* PBXTargetDependency */ = {
+		689C8300FA1B7CF9E36EB5D2BE23B0FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FontAwesome.swift;
 			target = CD11672B6619C297B6AEE3DFB8213C59 /* FontAwesome.swift */;
-			targetProxy = EDCADAA220EB6ABB9663BF05FE75470A /* PBXContainerItemProxy */;
+			targetProxy = 0406A2FD03CF395E5585B1FEE3CED607 /* PBXContainerItemProxy */;
 		};
-		7C0051CBF1FA5B92B399408F3921099E /* PBXTargetDependency */ = {
+		9A36F7F1703DD3D32F2FB4480B8EBA9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftForms;
+			target = 575CAEF58E732C8B6CE6E48210C76A11 /* SwiftForms */;
+			targetProxy = CE213DE84713AFAE723FFE1EAB46E87C /* PBXContainerItemProxy */;
+		};
+		E359718A857C52EBEE8FCFE8B8B7ACB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyStoreKit;
+			target = 2A32C83B782E1FD05E2618E9457E8AE0 /* SwiftyStoreKit */;
+			targetProxy = A7208BA3DAD0EE295C5CBF587426F97C /* PBXContainerItemProxy */;
+		};
+		EE07FCE9AE2D85654E20C7DC954CDC62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCLAlertView;
-			target = 3FFE1CA9AEC387A3E3765AF0091694AF /* SCLAlertView */;
-			targetProxy = 54FC0651EB48F1F14DA85D8E3A2D7296 /* PBXContainerItemProxy */;
+			target = A5F0CA101B6362C21E231F0E5F64D1A5 /* SCLAlertView */;
+			targetProxy = 722B76BAC9836E5EBBA17FB366916CCD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0CD8C073B4C9447EFB17A9B1F698DCED /* Debug */ = {
+		0CBC9319DED3F1829D74F6764FF0C9C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5756D991E62F656EF9C549FCD5A42CE /* SCLAlertView.xcconfig */;
+			baseConfigurationReference = 9651A41FFBD78DF8AFCC123BA7407F2B /* SwiftyStoreKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -695,76 +842,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyStoreKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				PRODUCT_NAME = SCLAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1C46D5CA4D46F557A94040970A951142 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E5DAEB83FB25141F10631A5AF9E5D28 /* SwiftForms.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftForms/SwiftForms-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftForms/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftForms/SwiftForms.modulemap";
-				PRODUCT_NAME = SwiftForms;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1F8A5F08D08EBC1C5C262AD9505AE0C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5756D991E62F656EF9C549FCD5A42CE /* SCLAlertView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				PRODUCT_NAME = SCLAlertView;
+				MODULEMAP_FILE = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit.modulemap";
+				PRODUCT_NAME = SwiftyStoreKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -779,7 +863,7 @@
 		};
 		222A5960BDD29DEB20B10F4A8DFAF46E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 739869DF5C69CE360F844E0A30241585 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 5BF1146FA686BF61B853AC0ACC0C7A71 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
@@ -851,9 +935,72 @@
 			};
 			name = Release;
 		};
+		27029B4D8A3B09FEEA0EACDB86E91548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839070970BD839D5ABADDB9361B78397 /* SwiftForms.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftForms/SwiftForms-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftForms/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftForms/SwiftForms.modulemap";
+				PRODUCT_NAME = SwiftForms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3634EDA2D8AE3E1CDD6D3DED17872B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577DDC21EF33F68BA1F04556876C3C17 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4181C58E1B926984BF5B8C4567FD18EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 739869DF5C69CE360F844E0A30241585 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 5BF1146FA686BF61B853AC0ACC0C7A71 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -882,9 +1029,9 @@
 			};
 			name = Debug;
 		};
-		8B971214237F006445872020ECA7775D /* Debug */ = {
+		7424B1A4EBBA929F55AEA502107DB64D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E5DAEB83FB25141F10631A5AF9E5D28 /* SwiftForms.xcconfig */;
+			baseConfigurationReference = 29713ECA67ED67BD217688113F956F97 /* Pods-Tasky.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -895,25 +1042,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftForms/SwiftForms-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftForms/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tasky/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftForms/SwiftForms.modulemap";
-				PRODUCT_NAME = SwiftForms;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tasky/Pods-Tasky.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tasky;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A2A2C0C284C903D0205E107F3BDFA9FA /* Release */ = {
+		875859B3084A49CE5D877283393C4EBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5C1FE0BFD556F98C327C450BA22B268 /* Pods-Tasky.release.xcconfig */;
 			buildSettings = {
@@ -947,9 +1097,41 @@
 			};
 			name = Release;
 		};
+		BB541357086242987556101B733BBEF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577DDC21EF33F68BA1F04556876C3C17 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D6EE27F3DEF0DCD54A3411368103C46F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 739869DF5C69CE360F844E0A30241585 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 5BF1146FA686BF61B853AC0ACC0C7A71 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1042,9 +1224,71 @@
 			};
 			name = Debug;
 		};
+		F38ED04A4B5DE090084B4EB7716CFD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839070970BD839D5ABADDB9361B78397 /* SwiftForms.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftForms/SwiftForms-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftForms/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftForms/SwiftForms.modulemap";
+				PRODUCT_NAME = SwiftForms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA24AAA65C7CC8E0D0160065D8F82FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9651A41FFBD78DF8AFCC123BA7407F2B /* SwiftyStoreKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyStoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyStoreKit/SwiftyStoreKit.modulemap";
+				PRODUCT_NAME = SwiftyStoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FEE81985885E3F6B115EFBC0EB182EA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 739869DF5C69CE360F844E0A30241585 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 5BF1146FA686BF61B853AC0ACC0C7A71 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
@@ -1058,48 +1302,14 @@
 			};
 			name = Release;
 		};
-		FF8BDBED04A1766B30C9D173BE2B75DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29713ECA67ED67BD217688113F956F97 /* Pods-Tasky.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Tasky/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Tasky/Pods-Tasky.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Tasky;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		177C6F9B51EC598859C94A10BFE93261 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+		1C6218144427C806F9E6F89EEC3A3D4C /* Build configuration list for PBXNativeTarget "SwiftForms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CD8C073B4C9447EFB17A9B1F698DCED /* Debug */,
-				1F8A5F08D08EBC1C5C262AD9505AE0C2 /* Release */,
+				F38ED04A4B5DE090084B4EB7716CFD70 /* Debug */,
+				27029B4D8A3B09FEEA0EACDB86E91548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1109,15 +1319,6 @@
 			buildConfigurations = (
 				E2BF6D6731C31DE69900B7B24E6F0445 /* Debug */,
 				26F954BA177A9A46FFFD4E23ED11D67A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88223E6C8A12A02275A2255950551B18 /* Build configuration list for PBXNativeTarget "SwiftForms" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B971214237F006445872020ECA7775D /* Debug */,
-				1C46D5CA4D46F557A94040970A951142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1140,11 +1341,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F20A29ED033AB6E95AAD07290806D609 /* Build configuration list for PBXNativeTarget "Pods-Tasky" */ = {
+		DB2B967D87599CF1862F4949687BF375 /* Build configuration list for PBXNativeTarget "Pods-Tasky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF8BDBED04A1766B30C9D173BE2B75DD /* Debug */,
-				A2A2C0C284C903D0205E107F3BDFA9FA /* Release */,
+				7424B1A4EBBA929F55AEA502107DB64D /* Debug */,
+				875859B3084A49CE5D877283393C4EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25732D1253113ED7A18DF2E4092A0DF /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3634EDA2D8AE3E1CDD6D3DED17872B54 /* Debug */,
+				BB541357086242987556101B733BBEF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6167AE72BD221B4F46FFCF215FC4A88 /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA24AAA65C7CC8E0D0160065D8F82FD6 /* Debug */,
+				0CBC9319DED3F1829D74F6764FF0C9C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

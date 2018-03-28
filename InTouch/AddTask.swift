@@ -46,14 +46,23 @@ class AddTask: FormViewController {
 	
 	/* MARK: Init
 	/////////////////////////////////////////// */
-	override func viewDidLoad() {
+	override func viewWillAppear(_ animated: Bool) {
 		selectedGoal = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_GOAL)!
 		Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
 		
 		// Styling
-		Utils.insertGradientIntoView(viewController: self)
-		cancelButton.image = Utils.imageResize(UIImage(named: "cross")!, sizeChange: CGSize(width: 18, height: 18)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-		checkButton.image = Utils.imageResize(UIImage(named: "check")!, sizeChange: CGSize(width: 22, height: 22)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+		Utils.insertGradientIntoTableView(viewController: self, tableView: self.tableView)
+		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+		
+		// Nav bar
+		var attributes = [NSAttributedStringKey : Any]()
+		attributes = [.font: UIFont.fontAwesome(ofSize: 21)]
+		cancelButton.setTitleTextAttributes(attributes, for: .normal)
+		cancelButton.setTitleTextAttributes(attributes, for: .selected)
+		cancelButton.title = String.fontAwesomeIcon(name: .close)
+		checkButton.setTitleTextAttributes(attributes, for: .normal)
+		checkButton.setTitleTextAttributes(attributes, for: .selected)
+		checkButton.title = String.fontAwesomeIcon(name: .check)
 		
         // Disable scroll
         tableView.alwaysBounceVertical = false;
@@ -124,29 +133,29 @@ class AddTask: FormViewController {
         let section = FormSectionDescriptor(headerTitle: nil, footerTitle: nil)
 
         // Type
-//		type = FormRowDescriptor(tag: FormTypes.TYPE, type: .picker, title: FormTitles.TYPE_TITLE)
-//        type.configuration[FormRowDescriptor.Configuration.Options] = [TypeOptions.TYPE1, TypeOptions.TYPE2, TypeOptions.TYPE3, TypeOptions.TYPE4, TypeOptions.TYPE5, TypeOptions.TYPE6, TypeOptions.TYPE7, TypeOptions.TYPE8, TypeOptions.TYPE9]
-//        type.configuration[FormRowDescriptor.Configuration.TitleFormatterClosure] = { value in
-//            switch( value ) {
-//				default:
-//					return String(describing: value)
-//                }
-//            } as TitleFormatterClosure
-//        type.value = TypeOptions.TYPE1 as NSObject?
-//        type.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["backgroundColor" : UIColor.clear]
-//        section.addRow(type)
-//
-//        // Date and time
-//		date = FormRowDescriptor(tag: FormTypes.DATE, type: .dateAndTime, title: FormTitles.WHEN_TITLE)
-//        date.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["backgroundColor" : UIColor.clear]
-//        section.addRow(date)
-//
-//        // Reason
-//		reason = FormRowDescriptor(tag: FormTypes.REASON, type: .text, title: FormTitles.REASON_TITLE)
-//        reason.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["textField.placeholder" : FormPlaceholders.REASON_WHEN_NIL, "textField.textAlignment" : NSTextAlignment.right.rawValue, "backgroundColor" : UIColor.clear]
-//        section.addRow(reason)
-		
-        form.sections = [section]
-        self.form = form
+		type = FormRowDescriptor(tag: FormTypes.TYPE, type: .picker, title: FormTitles.TYPE_TITLE)
+		type.configuration.selection.options = [TypeOptions.TYPE1 as AnyObject, TypeOptions.TYPE2 as AnyObject, TypeOptions.TYPE3 as AnyObject, TypeOptions.TYPE4 as AnyObject, TypeOptions.TYPE5 as AnyObject, TypeOptions.TYPE6 as AnyObject, TypeOptions.TYPE7 as AnyObject, TypeOptions.TYPE8 as AnyObject, TypeOptions.TYPE9 as AnyObject]
+        type.configuration.selection.optionTitleClosure = { value in
+            switch(value) {
+				default:
+					return String(describing: value)
+			}
+		}
+        type.value = TypeOptions.TYPE1 as AnyObject?
+        type.configuration.cell.appearance = ["backgroundColor": UIColor.clear]
+        section.rows.append(type)
+
+        // Date and time
+		date = FormRowDescriptor(tag: FormTypes.DATE, type: .dateAndTime, title: FormTitles.WHEN_TITLE)
+		date.configuration.cell.appearance = ["backgroundColor": UIColor.clear]
+        section.rows.append(date)
+
+        // Reason
+		reason = FormRowDescriptor(tag: FormTypes.REASON, type: .text, title: FormTitles.REASON_TITLE)
+		reason.configuration.cell.appearance = ["textField.placeholder": FormPlaceholders.REASON_WHEN_NIL as AnyObject, "textField.textColor": UIColor.white, "textField.textAlignment": NSTextAlignment.right.rawValue as AnyObject, "backgroundColor": UIColor.clear]
+        section.rows.append(reason)
+
+		form.sections = [section]
+		self.form = form
     }
 }

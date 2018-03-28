@@ -31,10 +31,11 @@ open class FormTextViewCell : FormBaseCell, UITextViewDelegate {
         super.configure()
         
         selectionStyle = .none
+		
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         textField.translatesAutoresizingMaskIntoConstraints = false
-        
+		
         titleLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         textField.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         

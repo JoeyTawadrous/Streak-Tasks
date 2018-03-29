@@ -29,13 +29,11 @@
 		52CC532C1AAA4E8A002A51C1 /* Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52CC532A1AAA4E8A002A51C1 /* Tasky.xcdatamodeld */; };
 		52CC53331AAA4E8A002A51C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53321AAA4E8A002A51C1 /* Images.xcassets */; };
 		52CC53361AAA4E8A002A51C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53341AAA4E8A002A51C1 /* LaunchScreen.xib */; };
-		A44F9C0286A3D1BDFCFCB646 /* Pods_Tasky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC32E630AC07F5DE0F95F7C5 /* Pods_Tasky.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0DCABA9BDF59FBB07E4BF6C7 /* Pods-Contact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Contact/Pods-Contact.debug.xcconfig"; sourceTree = "<group>"; };
-		4432A06CFE1CD4581059A340 /* Pods_Contact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		521706D01BAD779E007BCE73 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		521706D01BAD779E007BCE73 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		522421FE1D32915A000ED4BC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		522422001D32915F000ED4BC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		5235B8D81AD9582800B3BAE2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 		52CC53351AAA4E8A002A51C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		795ECED415D047BE942023CC /* Pods-Tasky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tasky/Pods-Tasky.debug.xcconfig"; sourceTree = "<group>"; };
 		7B8A1998062DC460BEB45CEA /* Pods-Contact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact.release.xcconfig"; path = "Pods/Target Support Files/Pods-Contact/Pods-Contact.release.xcconfig"; sourceTree = "<group>"; };
-		BC32E630AC07F5DE0F95F7C5 /* Pods_Tasky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4700C8528F6B1217A2ACFAD /* Pods-Tasky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tasky/Pods-Tasky.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +70,6 @@
 				5252DB2F206795C000621E57 /* StoreKit.framework in Frameworks */,
 				522422011D32915F000ED4BC /* MessageUI.framework in Frameworks */,
 				522421FF1D32915A000ED4BC /* QuartzCore.framework in Frameworks */,
-				A44F9C0286A3D1BDFCFCB646 /* Pods_Tasky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +81,10 @@
 			children = (
 				521706D01BAD779E007BCE73 /* Constants.swift */,
 				52973ACD1E2ADF8A00D7DE3F /* Extensions.swift */,
-				5235B8D81AD9582800B3BAE2 /* Utils.swift */,
 				527E3120206C059400547173 /* Purchase.swift */,
+				5235B8D81AD9582800B3BAE2 /* Utils.swift */,
 			);
-			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		52973ADB1E2BAB0000D7DE3F /* Fonts */ = {
@@ -99,16 +95,16 @@
 				52973AD51E2BAAFC00D7DE3F /* GothamProMedium.ttf */,
 				52973AD61E2BAAFC00D7DE3F /* GothamProRegular.ttf */,
 			);
-			name = Fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		52CC531A1AAA4E8A002A51C1 = {
 			isa = PBXGroup;
 			children = (
-				52CC53251AAA4E8A002A51C1 /* Tasky */,
-				52CC53241AAA4E8A002A51C1 /* Products */,
-				688162C05E42C87235AA5BCC /* Pods */,
 				A56D755768525FE3A608B124 /* Frameworks */,
+				688162C05E42C87235AA5BCC /* Pods */,
+				52CC53241AAA4E8A002A51C1 /* Products */,
+				52CC53251AAA4E8A002A51C1 /* Tasky */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,29 +121,28 @@
 			children = (
 				52CC53261AAA4E8A002A51C1 /* Resources */,
 				52618C441CA0725D003192AF /* Utils */,
+				5264519B1AAF9194002C37A6 /* AddTask.swift */,
 				52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */,
 				52CC532D1AAA4E8A002A51C1 /* Goals.swift */,
-				526451991AAF644F002C37A6 /* Tasks.swift */,
-				52BB3EF41AE314BA00A12D0C /* Task.swift */,
-				5264519B1AAF9194002C37A6 /* AddTask.swift */,
 				52973AE61E2BD78B00D7DE3F /* Settings.swift */,
+				52BB3EF41AE314BA00A12D0C /* Task.swift */,
+				526451991AAF644F002C37A6 /* Tasks.swift */,
 				52C980ED1D315E9800F7E1B0 /* Themes.swift */,
 			);
-			name = Tasky;
-			path = InTouch;
+			path = Tasky;
 			sourceTree = "<group>";
 		};
 		52CC53261AAA4E8A002A51C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				52CC53321AAA4E8A002A51C1 /* Images.xcassets */,
 				52973ADB1E2BAB0000D7DE3F /* Fonts */,
+				52CC53321AAA4E8A002A51C1 /* Images.xcassets */,
 				52CC53271AAA4E8A002A51C1 /* Info.plist */,
-				52CC532A1AAA4E8A002A51C1 /* Tasky.xcdatamodeld */,
 				52CC53341AAA4E8A002A51C1 /* LaunchScreen.xib */,
 				523DA47B1ADC574B007F7F7D /* Main.storyboard */,
+				52CC532A1AAA4E8A002A51C1 /* Tasky.xcdatamodeld */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		688162C05E42C87235AA5BCC /* Pods */ = {
@@ -167,8 +162,6 @@
 				5252DB2E206795C000621E57 /* StoreKit.framework */,
 				522422001D32915F000ED4BC /* MessageUI.framework */,
 				522421FE1D32915A000ED4BC /* QuartzCore.framework */,
-				4432A06CFE1CD4581059A340 /* Pods_Contact.framework */,
-				BC32E630AC07F5DE0F95F7C5 /* Pods_Tasky.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -342,6 +335,7 @@
 				523DA47C1ADC574B007F7F7D /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		52CC53341AAA4E8A002A51C1 /* LaunchScreen.xib */ = {
@@ -350,6 +344,7 @@
 				52CC53351AAA4E8A002A51C1 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -470,7 +465,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				IBC_WARNINGS = NO;
 				IBSC_WARNINGS = NO;
-				INFOPLIST_FILE = InTouch/Info.plist;
+				INFOPLIST_FILE = Tasky/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
@@ -516,7 +511,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				IBC_WARNINGS = NO;
 				IBSC_WARNINGS = NO;
-				INFOPLIST_FILE = InTouch/Info.plist;
+				INFOPLIST_FILE = Tasky/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";

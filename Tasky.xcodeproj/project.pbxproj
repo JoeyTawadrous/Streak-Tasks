@@ -17,6 +17,7 @@
 		5264519A1AAF644F002C37A6 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526451991AAF644F002C37A6 /* Tasks.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5264519C1AAF9194002C37A6 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264519B1AAF9194002C37A6 /* AddTask.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		527E3121206C059400547173 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E3120206C059400547173 /* Purchase.swift */; };
+		527EBF79206D6DDA00F17038 /* Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 527EBF77206D6DDA00F17038 /* Tasky.xcdatamodeld */; };
 		52973ACE1E2ADF8A00D7DE3F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52973ACD1E2ADF8A00D7DE3F /* Extensions.swift */; };
 		52973AD71E2BAAFC00D7DE3F /* GothamProBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52973AD31E2BAAFC00D7DE3F /* GothamProBlack.ttf */; };
 		52973AD81E2BAAFC00D7DE3F /* GothamProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52973AD41E2BAAFC00D7DE3F /* GothamProBold.ttf */; };
@@ -26,7 +27,6 @@
 		52BB3EF51AE314BA00A12D0C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3EF41AE314BA00A12D0C /* Task.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52C980EE1D315E9800F7E1B0 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C980ED1D315E9800F7E1B0 /* Themes.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52CC53291AAA4E8A002A51C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
-		52CC532C1AAA4E8A002A51C1 /* Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52CC532A1AAA4E8A002A51C1 /* Tasky.xcdatamodeld */; };
 		52CC53331AAA4E8A002A51C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53321AAA4E8A002A51C1 /* Images.xcassets */; };
 		52CC53361AAA4E8A002A51C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53341AAA4E8A002A51C1 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
@@ -42,6 +42,7 @@
 		526451991AAF644F002C37A6 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		5264519B1AAF9194002C37A6 /* AddTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 		527E3120206C059400547173 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		527EBF78206D6DDA00F17038 /* InTouch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InTouch.xcdatamodel; sourceTree = "<group>"; };
 		52973ACD1E2ADF8A00D7DE3F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		52973AD31E2BAAFC00D7DE3F /* GothamProBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBlack.ttf; sourceTree = "<group>"; };
 		52973AD41E2BAAFC00D7DE3F /* GothamProBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBold.ttf; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		52CC53231AAA4E8A002A51C1 /* Tasky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC53271AAA4E8A002A51C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52CC532B1AAA4E8A002A51C1 /* InTouch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InTouch.xcdatamodel; sourceTree = "<group>"; };
 		52CC532D1AAA4E8A002A51C1 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		52CC53321AAA4E8A002A51C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		52CC53351AAA4E8A002A51C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 				52CC53271AAA4E8A002A51C1 /* Info.plist */,
 				52CC53341AAA4E8A002A51C1 /* LaunchScreen.xib */,
 				523DA47B1ADC574B007F7F7D /* Main.storyboard */,
-				52CC532A1AAA4E8A002A51C1 /* Tasky.xcdatamodeld */,
+				527EBF77206D6DDA00F17038 /* Tasky.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -313,11 +313,11 @@
 			files = (
 				5252DB3020679E2900621E57 /* Goals.swift in Sources */,
 				52973AE71E2BD78B00D7DE3F /* Settings.swift in Sources */,
+				527EBF79206D6DDA00F17038 /* Tasky.xcdatamodeld in Sources */,
 				52C980EE1D315E9800F7E1B0 /* Themes.swift in Sources */,
 				5264519C1AAF9194002C37A6 /* AddTask.swift in Sources */,
 				5235B8D91AD9582800B3BAE2 /* Utils.swift in Sources */,
 				5264519A1AAF644F002C37A6 /* Tasks.swift in Sources */,
-				52CC532C1AAA4E8A002A51C1 /* Tasky.xcdatamodeld in Sources */,
 				52973ACE1E2ADF8A00D7DE3F /* Extensions.swift in Sources */,
 				527E3121206C059400547173 /* Purchase.swift in Sources */,
 				52BB3EF51AE314BA00A12D0C /* Task.swift in Sources */,
@@ -549,12 +549,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		52CC532A1AAA4E8A002A51C1 /* Tasky.xcdatamodeld */ = {
+		527EBF77206D6DDA00F17038 /* Tasky.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				52CC532B1AAA4E8A002A51C1 /* InTouch.xcdatamodel */,
+				527EBF78206D6DDA00F17038 /* InTouch.xcdatamodel */,
 			);
-			currentVersion = 52CC532B1AAA4E8A002A51C1 /* InTouch.xcdatamodel */;
+			currentVersion = 527EBF78206D6DDA00F17038 /* InTouch.xcdatamodel */;
 			path = Tasky.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

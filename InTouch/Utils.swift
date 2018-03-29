@@ -12,13 +12,13 @@ class Utils {
 	}
 	
 	class func getCurrentTheme() -> [String] {
-		let currentTheme = UserDefaults.standard.string(forKey: Constants.IAP.CURRENT_THEME)
+		let currentTheme = UserDefaults.standard.string(forKey: Constants.Purchases.CURRENT_THEME)
 		
 		if (currentTheme != nil) {
-			return Constants.IAP.Colors[currentTheme!]!
+			return Constants.Purchases.Colors[currentTheme!]!
 		}
 		else {
-			return Constants.IAP.Colors[Constants.IAP.MALIBU_THEME]!
+			return Constants.Purchases.Colors[Constants.Purchases.MALIBU_THEME]!
 		}
 	}
 	
@@ -251,7 +251,7 @@ class Utils {
 		view.navigationController?.pushViewController(getViewController(viewName), animated: true)
 	}
 	
-	class func presentOkButtonAlert(_ view: UIViewController, message: String) {
+	class func showOkButtonDialog(view: UIViewController, message: String) {
 		let alert = UIAlertController(title: "Info", message: message, preferredStyle: UIAlertControllerStyle.alert)
 		alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in }))
 		

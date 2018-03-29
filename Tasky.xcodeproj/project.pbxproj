@@ -16,6 +16,7 @@
 		5252DB3020679E2900621E57 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC532D1AAA4E8A002A51C1 /* Goals.swift */; };
 		5264519A1AAF644F002C37A6 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526451991AAF644F002C37A6 /* Tasks.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5264519C1AAF9194002C37A6 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264519B1AAF9194002C37A6 /* AddTask.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
+		527E3121206C059400547173 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E3120206C059400547173 /* Purchase.swift */; };
 		52973ACE1E2ADF8A00D7DE3F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52973ACD1E2ADF8A00D7DE3F /* Extensions.swift */; };
 		52973AD71E2BAAFC00D7DE3F /* GothamProBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52973AD31E2BAAFC00D7DE3F /* GothamProBlack.ttf */; };
 		52973AD81E2BAAFC00D7DE3F /* GothamProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52973AD41E2BAAFC00D7DE3F /* GothamProBold.ttf */; };
@@ -23,7 +24,7 @@
 		52973ADA1E2BAAFC00D7DE3F /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52973AD61E2BAAFC00D7DE3F /* GothamProRegular.ttf */; };
 		52973AE71E2BD78B00D7DE3F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52973AE61E2BD78B00D7DE3F /* Settings.swift */; };
 		52BB3EF51AE314BA00A12D0C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3EF41AE314BA00A12D0C /* Task.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
-		52C980EE1D315E9800F7E1B0 /* Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C980ED1D315E9800F7E1B0 /* Purchases.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
+		52C980EE1D315E9800F7E1B0 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C980ED1D315E9800F7E1B0 /* Themes.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52CC53291AAA4E8A002A51C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52CC532C1AAA4E8A002A51C1 /* Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52CC532A1AAA4E8A002A51C1 /* Tasky.xcdatamodeld */; };
 		52CC53331AAA4E8A002A51C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53321AAA4E8A002A51C1 /* Images.xcassets */; };
@@ -42,6 +43,7 @@
 		5252DB2E206795C000621E57 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		526451991AAF644F002C37A6 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		5264519B1AAF9194002C37A6 /* AddTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
+		527E3120206C059400547173 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		52973ACD1E2ADF8A00D7DE3F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		52973AD31E2BAAFC00D7DE3F /* GothamProBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBlack.ttf; sourceTree = "<group>"; };
 		52973AD41E2BAAFC00D7DE3F /* GothamProBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBold.ttf; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		52973AD61E2BAAFC00D7DE3F /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
 		52973AE61E2BD78B00D7DE3F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		52BB3EF41AE314BA00A12D0C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		52C980ED1D315E9800F7E1B0 /* Purchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purchases.swift; sourceTree = "<group>"; };
+		52C980ED1D315E9800F7E1B0 /* Themes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		52CC53231AAA4E8A002A51C1 /* Tasky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC53271AAA4E8A002A51C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				521706D01BAD779E007BCE73 /* Constants.swift */,
 				52973ACD1E2ADF8A00D7DE3F /* Extensions.swift */,
 				5235B8D81AD9582800B3BAE2 /* Utils.swift */,
+				527E3120206C059400547173 /* Purchase.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 				52BB3EF41AE314BA00A12D0C /* Task.swift */,
 				5264519B1AAF9194002C37A6 /* AddTask.swift */,
 				52973AE61E2BD78B00D7DE3F /* Settings.swift */,
-				52C980ED1D315E9800F7E1B0 /* Purchases.swift */,
+				52C980ED1D315E9800F7E1B0 /* Themes.swift */,
 			);
 			name = Tasky;
 			path = InTouch;
@@ -317,12 +320,13 @@
 			files = (
 				5252DB3020679E2900621E57 /* Goals.swift in Sources */,
 				52973AE71E2BD78B00D7DE3F /* Settings.swift in Sources */,
-				52C980EE1D315E9800F7E1B0 /* Purchases.swift in Sources */,
+				52C980EE1D315E9800F7E1B0 /* Themes.swift in Sources */,
 				5264519C1AAF9194002C37A6 /* AddTask.swift in Sources */,
 				5235B8D91AD9582800B3BAE2 /* Utils.swift in Sources */,
 				5264519A1AAF644F002C37A6 /* Tasks.swift in Sources */,
 				52CC532C1AAA4E8A002A51C1 /* Tasky.xcdatamodeld in Sources */,
 				52973ACE1E2ADF8A00D7DE3F /* Extensions.swift in Sources */,
+				527E3121206C059400547173 /* Purchase.swift in Sources */,
 				52BB3EF51AE314BA00A12D0C /* Task.swift in Sources */,
 				52CC53291AAA4E8A002A51C1 /* AppDelegate.swift in Sources */,
 				521706D11BAD779E007BCE73 /* Constants.swift in Sources */,

@@ -44,7 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         actionCategory.setActions([doneAction, remindAction], for: .minimal)     // for when space is limited - 2 actions max
         
         application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: NSSet(array: [actionCategory]) as? Set<UIUserNotificationCategory>))
-    
+		
+
+		// Purchases
+		Purchase.supportStorePurchase()
+		Purchase.completeTransactions()
         
         return true
     }

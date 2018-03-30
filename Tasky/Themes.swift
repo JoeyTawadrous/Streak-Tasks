@@ -28,7 +28,6 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate, SKPa
 		restoreButton.title = String.fontAwesomeIcon(name: .refresh)
 		
         // IAP's
-        UserDefaults.standard.set(false, forKey: Constants.Purchases.TRANSACTION_IN_PROGRESS)
         SKPaymentQueue.default().add(self)
     }
     

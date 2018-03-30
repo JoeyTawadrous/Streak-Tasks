@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC88EE301AD98E05FD77E18 /* Pods_Tasky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71A8BDE7950392C12DA6D4F /* Pods_Tasky.framework */; };
 		521706D11BAD779E007BCE73 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521706D01BAD779E007BCE73 /* Constants.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		522421FF1D32915A000ED4BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522421FE1D32915A000ED4BC /* QuartzCore.framework */; };
 		522422011D32915F000ED4BC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522422001D32915F000ED4BC /* MessageUI.framework */; };
@@ -60,6 +61,7 @@
 		795ECED415D047BE942023CC /* Pods-Tasky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tasky/Pods-Tasky.debug.xcconfig"; sourceTree = "<group>"; };
 		7B8A1998062DC460BEB45CEA /* Pods-Contact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact.release.xcconfig"; path = "Pods/Target Support Files/Pods-Contact/Pods-Contact.release.xcconfig"; sourceTree = "<group>"; };
 		D4700C8528F6B1217A2ACFAD /* Pods-Tasky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tasky/Pods-Tasky.release.xcconfig"; sourceTree = "<group>"; };
+		D71A8BDE7950392C12DA6D4F /* Pods_Tasky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				5252DB2F206795C000621E57 /* StoreKit.framework in Frameworks */,
 				522422011D32915F000ED4BC /* MessageUI.framework in Frameworks */,
 				522421FF1D32915A000ED4BC /* QuartzCore.framework in Frameworks */,
+				0BC88EE301AD98E05FD77E18 /* Pods_Tasky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +165,7 @@
 				5252DB2E206795C000621E57 /* StoreKit.framework */,
 				522422001D32915F000ED4BC /* MessageUI.framework */,
 				522421FE1D32915A000ED4BC /* QuartzCore.framework */,
+				D71A8BDE7950392C12DA6D4F /* Pods_Tasky.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

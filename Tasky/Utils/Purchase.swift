@@ -12,6 +12,7 @@ class Purchase {
 			Purchase.updatePurchasedThemes(purchasedItem)
 			UserDefaults.standard.set(purchasedItem, forKey: Constants.Purchases.CURRENT_THEME)
 			Utils.insertGradientIntoView(viewController: view)
+			Utils.showOkButtonDialog(view: view, message: "Your new theme has been succesfully purchased and set. Enjoy :)")
 			
 		case .error(let error):
 			print("Purchase Failed: \(error)")

@@ -1,16 +1,13 @@
 import Foundation
 import UIKit
 import CoreData
-import StoreKit
 import SwiftyStoreKit
 
 
-class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate, SKPaymentTransactionObserver {
+class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	@IBOutlet var tableView: UITableView!
 	@IBOutlet var restoreButton: UIBarButtonItem!
-
-    var products = Array<SKProduct>()
     
 	
 	
@@ -26,9 +23,6 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate, SKPa
 		restoreButton.setTitleTextAttributes(attributes, for: .normal)
 		restoreButton.setTitleTextAttributes(attributes, for: .selected)
 		restoreButton.title = String.fontAwesomeIcon(name: .refresh)
-		
-        // IAP's
-        SKPaymentQueue.default().add(self)
     }
     
     
@@ -36,7 +30,7 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate, SKPa
     /* MARK: Button Actions
     /////////////////////////////////////////// */
     @IBAction func restoreButtonPressed(_ sender: UIButton) {
-        SKPaymentQueue.default().restoreCompletedTransactions()
+        Purchase.restorePurchases(view: self)
     }
 	
 	
@@ -95,55 +89,4 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate, SKPa
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return Constants.Purchases.Colors.count
 	}
-	
-
-	
-	
-    /* MARK: IAP's
-    /////////////////////////////////////////// */
-    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
-        for transaction in transactions {
-            switch transaction.transactionState {
-                case SKPaymentTransactionState.purchased:
-                    print("Transaction Approved")
-                    print("Product Identifier: \(transaction.payment.productIdentifier)")
-                    deliverProduct(transaction)
-                    SKPaymentQueue.default().finishTransaction(transaction)
-                    
-                case SKPaymentTransactionState.failed:
-                    print("Transaction Failed")
-                    SKPaymentQueue.default().finishTransaction(transaction)
-                
-                default:
-                    break
-            }
-        }
-    }
-    
-    func deliverProduct(_ transaction:SKPaymentTransaction) {
-        applyTheme(transaction.payment.productIdentifier)
-		Utils.showOkButtonDialog(view: self, message: "Your new theme has been succesfully purchased and set. Enjoy :)")
-    }
-    
-    func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) { // Restore past transactions
-        for transaction:SKPaymentTransaction in queue.transactions {
-            applyTheme(transaction.payment.productIdentifier)
-        }
-		
-		Utils.showOkButtonDialog(view: self, message: "Restored purchase(s) successfully.")
-    }
-    
-    func applyTheme(_ productIdentifier: String) {
-		let parts = productIdentifier.components(separatedBy: ".")
-		updatePurchasedThemes(parts[parts.count])
-		Utils.insertGradientIntoView(viewController: self)
-    }
-    
-    func updatePurchasedThemes(_ theme: String) {
-        var purchasedProducts = UserDefaults.standard.object(forKey: Constants.Purchases.PURCHASED_PRODUCTS) as? [String] ?? [String]()
-        purchasedProducts.append(theme)
-		
-		UserDefaults.standard.set(theme, forKey: Constants.Purchases.CURRENT_THEME)
-        UserDefaults.standard.set(purchasedProducts, forKey: Constants.Purchases.PURCHASED_PRODUCTS)
-    }
 }

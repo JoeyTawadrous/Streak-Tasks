@@ -2,6 +2,8 @@
 
 Store Link: http://apple.co/2krwSkQ
 
+<img alt="App Icon" width="200px" src="readme_assets/logo.jpeg">
+
 
 Keeping your life in order shouldn't be hard.
 
@@ -43,7 +45,7 @@ Get organized today.
 - Download today and get the productivity boost you've been looking for.
 
 
-<img alt="Screenshot" width="205px" src="readme-assets/1.png"><img alt="Screenshot2" width="205px" src="readme-assets/2.png"><img alt="Screenshot3" width="205px" src="readme-assets/3.png"><img alt="Screenshot3" width="205px" src="readme-assets/4.png">
+<img alt="Screenshot" width="205px" src="readme_assets/1.png"><img alt="Screenshot2" width="205px" src="readme_assets/2.png"><img alt="Screenshot3" width="205px" src="readme_assets/3.png"><img alt="Screenshot3" width="205px" src="readme_assets/4.png">
 
 
 # Tags

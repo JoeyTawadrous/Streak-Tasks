@@ -121,8 +121,8 @@
 			children = (
 				52CC53261AAA4E8A002A51C1 /* Resources */,
 				52618C441CA0725D003192AF /* Utils */,
-				5264519B1AAF9194002C37A6 /* AddTask.swift */,
 				52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */,
+				5264519B1AAF9194002C37A6 /* AddTask.swift */,
 				52CC532D1AAA4E8A002A51C1 /* Goals.swift */,
 				52973AE61E2BD78B00D7DE3F /* Settings.swift */,
 				52BB3EF41AE314BA00A12D0C /* Task.swift */,

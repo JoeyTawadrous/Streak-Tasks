@@ -1,60 +1,39 @@
 import SwiftyStoreKit
 import UIKit
 
+
 class Purchase {
-	
-	class func verifyReceipt() {
-		let appleValidator = AppleReceiptValidator(service: .production, sharedSecret: Constants.Purchases.SHARED_SECRET)
-		SwiftyStoreKit.verifyReceipt(using: appleValidator, forceRefresh: false) { result in
-			switch result {
-				case .success(let receipt):
-					
-					let purchaseResult = SwiftyStoreKit.verifyPurchase (
-						productId: Constants.Purchases.UNLOCK_KEY,
-						inReceipt: receipt
-					)
-					
-					switch purchaseResult {
-						case .purchased(let receiptItem):
-							UserDefaults.standard.set(true, forKey: Constants.Defaults.USER_HAS_UNLOCKED_APP)
-						case .notPurchased:
-							UserDefaults.standard.set(false, forKey: Constants.Defaults.USER_HAS_UNLOCKED_APP)
-					}
-				
-				case .error(let error):
-					print("Receipt verification failed: \(error)")
-			}
-		}
-	}
-	
-	
+
 	class func handlePurchaseResult(_ result: PurchaseResult, view: UIViewController, purchasedItem: String) {
 		switch result {
 		case .success(let productId):
 			print("Purchase Success: \(productId)")
-			UserDefaults.standard.set(true, forKey: purchasedItem)
+			
+			Purchase.updatePurchasedThemes(purchasedItem)
+			UserDefaults.standard.set(purchasedItem, forKey: Constants.Purchases.CURRENT_THEME)
+			Utils.insertGradientIntoView(viewController: view)
 			
 		case .error(let error):
 			print("Purchase Failed: \(error)")
 			
 			switch error.code {
-			case .storeProductNotAvailable:
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_AVAILABLE)
+				case .storeProductNotAvailable:
+					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_AVAILABLE)
 				
-			case .paymentInvalid:
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_IDENTIFIER_INVALID)
+				case .paymentInvalid:
+					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_IDENTIFIER_INVALID)
 				
-			case .paymentCancelled:
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_CANCELLED)
+				case .paymentCancelled:
+					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_CANCELLED)
 				
-			case .paymentNotAllowed:
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
+				case .paymentNotAllowed:
+					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
 				
-			case .clientInvalid:
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
+				case .clientInvalid:
+					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
 				
-			default:
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_UNKNOWN)
+				default:
+					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_UNKNOWN)
 			}
 		}
 	}
@@ -84,7 +63,20 @@ class Purchase {
 				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_RESTORE_ERROR)
 			}
 			else if results.restoredPurchases.count > 0 {
-				UserDefaults.standard.set(true, forKey: Constants.Defaults.USER_HAS_SUBSCRIPTION)
+				for purchase in results.restoredPurchases {
+					let downloads = purchase.transaction.downloads
+					if !downloads.isEmpty {
+						SwiftyStoreKit.start(downloads)
+					}
+					else if purchase.needsFinishTransaction {
+						for purchasedItem in purchase.transaction.downloads {
+							Purchase.updatePurchasedThemes(purchasedItem.contentIdentifier)
+						}
+						
+						SwiftyStoreKit.finishTransaction(purchase.transaction)
+					}
+				}
+				
 				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_RESTORE_SUCCESS)
 			}
 			else {
@@ -98,6 +90,12 @@ class Purchase {
 		SwiftyStoreKit.shouldAddStorePaymentHandler = { payment, product in
 			return true
 		}
+	}
+	
+	class func updatePurchasedThemes(_ theme: String) {
+		var purchasedProducts = UserDefaults.standard.object(forKey: Constants.Purchases.PURCHASED_PRODUCTS) as? [String] ?? [String]()
+		purchasedProducts.append(theme)
+		UserDefaults.standard.set(purchasedProducts, forKey: Constants.Purchases.PURCHASED_PRODUCTS)
 	}
 	
 	

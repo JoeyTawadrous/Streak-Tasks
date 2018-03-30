@@ -1,5 +1,6 @@
 import Foundation
 
+
 class Constants {
 	
 	struct Common {

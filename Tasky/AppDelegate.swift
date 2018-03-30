@@ -1,6 +1,7 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -23,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		]
 		window?.tintColor = UIColor.white
 		
-
         // Local notifications
         let doneAction = UIMutableUserNotificationAction()
         doneAction.identifier = Constants.LocalNotifications.DONE_ACTION_IDENTIFIER
@@ -45,14 +45,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: NSSet(array: [actionCategory]) as? Set<UIUserNotificationCategory>))
 		
-
 		// Purchases
 		Purchase.supportStorePurchase()
 		Purchase.completeTransactions()
+		
+		// Migration from old themes
+		let currentTheme = UserDefaults.standard.string(forKey: Constants.Purchases.CURRENT_THEME)
+		if currentTheme != Constants.Purchases.FIRE_THEME &&
+		   currentTheme != Constants.Purchases.GRASSY_THEME &&
+		   currentTheme != Constants.Purchases.LIFE_THEME &&
+		   currentTheme != Constants.Purchases.MALIBU_THEME &&
+		   currentTheme != Constants.Purchases.NIGHTLIGHT_THEME &&
+		   currentTheme != Constants.Purchases.RIPE_THEME &&
+		   currentTheme != Constants.Purchases.SALVATION_THEME &&
+		   currentTheme != Constants.Purchases.SUNRISE_THEME {
+			UserDefaults.standard.set(Constants.Purchases.MALIBU_THEME, forKey: Constants.Purchases.CURRENT_THEME)
+		}
         
         return true
     }
-    
+	
+	
     func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Void) {
         
         // Get task attached to notification
@@ -76,15 +89,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         completionHandler() // per developer documentation, app will terminate if we fail to call this
     }
-    
+	
+	
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
         NotificationCenter.default.post(name: Notification.Name(rawValue: "TodoListShouldRefresh"), object: self)
     }
+	
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         NotificationCenter.default.post(name: Notification.Name(rawValue: "TodoListShouldRefresh"), object: self)
     }
-    
+	
+	
     func applicationWillResignActive(_ application: UIApplication) {
         tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         

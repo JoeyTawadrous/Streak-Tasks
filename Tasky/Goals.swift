@@ -3,6 +3,7 @@ import CoreData
 import SCLAlertView
 import FontAwesome_swift
 
+
 class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     struct ClassConstants {
@@ -181,12 +182,12 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		if goals.count == 0 {
+		if goals.count == 0 || goals.count == 1 {
 			let emptyView = UIView(frame: CGRect(x:0, y:0, width:self.view.bounds.size.width, height:self.view.bounds.size.height))
 			
 			let emptyImageView = UIImageView(frame: CGRect(x:0, y:0, width:150, height:150))
 			emptyImageView.center = CGPoint(x:self.view.frame.width / 2, y: self.view.bounds.size.height * 0.30)
-			let emptyImage = Utils.imageResize(UIImage(named: "Custom")!, sizeChange: CGSize(width: 150, height: 150)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+			let emptyImage = Utils.imageResize(UIImage(named: "Hobbies")!, sizeChange: CGSize(width: 150, height: 150)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
 			emptyImageView.image = emptyImage
 			emptyImageView.tintColor = UIColor.white
 			emptyView.addSubview(emptyImageView)

@@ -1,35 +1,50 @@
-# Tasky Open Source iOS App (Habits, Goals & Tasks To-Do List Tracker)
+# Tasky: Your To-Do List Tracker - Habits, goals & life tasks
 
 Store Link: http://apple.co/2krwSkQ
 
+
 Keeping your life in order shouldn't be hard.
 
-
-# Core Concept
+Tasky allows you to organize your life with two simple concepts:
 1. You create goals you want to achieve.
 2. And then create tasks for each of your goals.
-3. Followed by gentle reminders just when you need them.
-4. Its. that. simple. Get organised today. 
+
+Followed by gentle reminders just when you need them.
+
+Its. that. simple. 
+Get organized today. 
 
 
-# Broad Features
-* Use separate goals & tasks to organize every aspect of your life.
-* Personalize your goals & tasks with multiple themes.
-* Useful list of all your goals & tasks
-* Easy way to manage & track what you want to achieve
-* Prioritise what is most important to you
-* Beautiful, simple & colorful design
-* Track your progress towards achieving a goal
-* Free, and with no ads!
+# How It Works
+
+- Use separate goals & tasks to organize every aspect of your life.
+- Create categories of your to-do list and tick each of them off one by one.
+- Create goals in all areas of your life. And make note of the tasks that you need to complete.
+- Personalize your goals & tasks with multiple themes.
+- Stay organized and get reminders at a scheduled time.
 
 
-# Core Features
-* Local notifications
-* Payments
+# Core Features:
+
+- A beautiful list of all your goals & tasks to keep you motivated.
+- An easy way to manage & track what you want to achieve.
+- Prioritise what is most important to you.
+- Elegant, simple & colorful design.
+- Track your progress towards achieving a goal.
+• Free, and with no ads!
+
+
+# Tasky Can Be Your:
+
+- Grocery shopping list
+- Fitness regime schedule
+- Car repair tasks
+- Mobile app creation steps
+- Download today and get the productivity boost you've been looking for.
 
 
 <img alt="Screenshot" width="205px" src="readme-assets/1.png"><img alt="Screenshot2" width="205px" src="readme-assets/2.png"><img alt="Screenshot3" width="205px" src="readme-assets/3.png"><img alt="Screenshot3" width="205px" src="readme-assets/4.png">
 
 
 # Tags
-task, goal, track, list, manager, prioritised, simple, achieve, design, colourful, trigger, add, progress, free
+achieve,chores,checklist,errand,habit,gamification,list,organize,priority,project,remind,task,todo

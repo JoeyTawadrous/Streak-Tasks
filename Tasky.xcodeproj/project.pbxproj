@@ -102,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				A56D755768525FE3A608B124 /* Frameworks */,
+				52CC53251AAA4E8A002A51C1 /* Tasky */,
 				688162C05E42C87235AA5BCC /* Pods */,
 				52CC53241AAA4E8A002A51C1 /* Products */,
-				52CC53251AAA4E8A002A51C1 /* Tasky */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +121,8 @@
 			children = (
 				52CC53261AAA4E8A002A51C1 /* Resources */,
 				52618C441CA0725D003192AF /* Utils */,
+				523DA47B1ADC574B007F7F7D /* Main.storyboard */,
+				52CC53321AAA4E8A002A51C1 /* Images.xcassets */,
 				52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */,
 				5264519B1AAF9194002C37A6 /* AddTask.swift */,
 				52CC532D1AAA4E8A002A51C1 /* Goals.swift */,
@@ -136,10 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				52973ADB1E2BAB0000D7DE3F /* Fonts */,
-				52CC53321AAA4E8A002A51C1 /* Images.xcassets */,
 				52CC53271AAA4E8A002A51C1 /* Info.plist */,
 				52CC53341AAA4E8A002A51C1 /* LaunchScreen.xib */,
-				523DA47B1ADC574B007F7F7D /* Main.storyboard */,
 				527EBF77206D6DDA00F17038 /* Tasky.xcdatamodeld */,
 			);
 			path = Resources;

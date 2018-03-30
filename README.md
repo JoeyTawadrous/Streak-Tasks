@@ -2,7 +2,7 @@
 
 Store Link: http://apple.co/2krwSkQ
 
-<img alt="App Logo" width="200px" src="readme_assets/logo.jpeg">
+<img alt="App Logo" width="200px" src="readme_assets/logo.jpg">
 
 
 Keeping your life in order shouldn't be hard.

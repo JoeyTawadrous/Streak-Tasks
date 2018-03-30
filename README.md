@@ -7,6 +7,9 @@ Store Link: http://apple.co/2krwSkQ
 
 Keeping your life in order shouldn't be hard.
 
+
+# About
+
 Tasky allows you to organize your life with two simple concepts:
 1. You create goals you want to achieve.
 2. And then create tasks for each of your goals.
@@ -26,7 +29,7 @@ Get organized today.
 - Stay organized and get reminders at a scheduled time.
 
 
-# Core Features:
+# Features
 
 - A beautiful list of all your goals & tasks to keep you motivated.
 - An easy way to manage & track what you want to achieve.
@@ -36,7 +39,7 @@ Get organized today.
 • Free, and with no ads!
 
 
-# Tasky Can Be Your:
+# Tasky Can Be Your
 
 - Grocery shopping list
 - Fitness regime schedule

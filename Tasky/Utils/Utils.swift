@@ -66,6 +66,50 @@ class Utils {
 	}
 	
 	
+	
+	/* MARK: Core Data
+	/////////////////////////////////////////// */
+	class func createObject(_ type: String) -> NSManagedObject {
+		let entity = NSEntityDescription.entity(forEntityName: type, in: fetchManagedObjectContext())
+		let object = NSManagedObject(entity: entity!, insertInto:fetchManagedObjectContext())
+		return object;
+	}
+	
+	class func saveObject() {
+		do {
+			try fetchManagedObjectContext().save()
+		}
+		catch {
+			print("Could not save \(error)")
+		}
+	}
+	
+	class func fetchCoreDataObject(_ key: String, predicate: String) -> [AnyObject] {
+		var fetchedResults = [AnyObject]()
+		let appDelegate = UIApplication.shared.delegate as! AppDelegate
+		let managedContext = appDelegate.managedObjectContext!
+		let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: key)
+		
+		if predicate != "" {
+			fetchRequest.predicate = NSPredicate(format:"name == %@", predicate)
+		}
+		
+		do {
+			fetchedResults = try managedContext.fetch(fetchRequest)
+		} catch {
+			print(error)
+		}
+		
+		return fetchedResults
+	}
+	
+	class func fetchManagedObjectContext() -> NSManagedObjectContext {
+		let appDelegate = UIApplication.shared.delegate as! AppDelegate
+		let managedContext = appDelegate.managedObjectContext!
+		return managedContext
+	}
+	
+	
 
 	/* MARK: Dates
 	/////////////////////////////////////////// */
@@ -115,50 +159,6 @@ class Utils {
 		
 		let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
 		return scaledImage!
-	}
-	
-	
-	
-	/* MARK: Core Data
-	/////////////////////////////////////////// */
-	class func createObject(_ type: String) -> NSManagedObject {
-		let entity = NSEntityDescription.entity(forEntityName: type, in: fetchManagedObjectContext())
-		let object = NSManagedObject(entity: entity!, insertInto:fetchManagedObjectContext())
-		return object;
-	}
-	
-	class func saveObject() {
-		do {
-			try fetchManagedObjectContext().save()
-		}
-		catch {
-			print("Could not save \(error)")
-		}
-	}
-	
-	class func fetchCoreDataObject(_ key: String, predicate: String) -> [AnyObject] {
-		var fetchedResults = [AnyObject]()
-		let appDelegate = UIApplication.shared.delegate as! AppDelegate
-		let managedContext = appDelegate.managedObjectContext!
-		let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: key)
-		
-		if predicate != "" {
-			fetchRequest.predicate = NSPredicate(format:"name == %@", predicate)
-		}
-		
-		do {
-			fetchedResults = try managedContext.fetch(fetchRequest)
-		} catch {
-			print(error)
-		}
-		
-		return fetchedResults
-	}
-	
-	class func fetchManagedObjectContext() -> NSManagedObjectContext {
-		let appDelegate = UIApplication.shared.delegate as! AppDelegate
-		let managedContext = appDelegate.managedObjectContext!
-		return managedContext
 	}
 	
 	

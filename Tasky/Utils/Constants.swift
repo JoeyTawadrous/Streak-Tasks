@@ -4,7 +4,7 @@ import Foundation
 class Constants {
 	
 	struct Common {
-		static let APP_ID = "id1195440882"
+		static let APP_ID = "1195440882"
 		static let APPNAME = "Tasky"
 		static let APP_STORE_LINK = "http://apple.co/2krwSkQ"
 		static let LEARNABLE_STORE_LINK = "http://apple.co/2vgq8hY"
@@ -54,10 +54,6 @@ class Constants {
 	
 	
 	struct Purchases {
-		static let SHARED_SECRET = "7e01d48a5e7646dd82282cf26a97af2c"
-		static let SUBSCRIPTION_KEY = "com.joeyt.learnable.subscription"
-		static let UNLOCK_KEY = "com.joeyt.learnable.unlock"
-		
 		static let PURCHASED_PRODUCTS = "PurchasedProducts"
 		static let CURRENT_THEME = "CurrentTheme"
 		static let PRODUCT_ID_PREFIX = "com.joeyt.tasky.iap.theme."

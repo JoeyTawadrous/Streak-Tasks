@@ -12,7 +12,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	@IBOutlet var addButton: UIBarButtonItem!
 	
     var tasks = [AnyObject]()
-    var selectedTask = String()
+    var selectedGoal = String()
 	
 	
 	
@@ -47,10 +47,10 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
 	func refresh() {
-		selectedTask = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_GOAL)!
-		self.title = selectedTask
+		selectedGoal = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_GOAL)!
+		self.title = selectedGoal
 		
-		tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedTask)
+		tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
 		tasks = tasks.reversed() // newest first
 		
 		self.tableView.reloadData()
@@ -147,7 +147,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
             Tasks.deleteTask(task)
 			
             // Refresh table
-            self.tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: self.selectedTask)
+            self.tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: self.selectedGoal)
             self.tasks = self.tasks.reversed() // newest first
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
@@ -187,7 +187,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 			
 			let emptyLabel = UILabel(frame: CGRect(x:0, y:0, width:self.view.bounds.size.width - 100, height:self.view.bounds.size.height))
 			emptyLabel.center = CGPoint(x:self.view.frame.width / 2, y: self.view.bounds.size.height * 0.53)
-			emptyLabel.text = "Now that you have created a goal, what will it take to achieve it? Well, don't tell me, create a task now!"
+			emptyLabel.text = "Now that you have created a goal, what will it take to achieve it? Create a task now!"
 			emptyLabel.font = UIFont.GothamProRegular(size: 15.0)
 			emptyLabel.textAlignment = NSTextAlignment.center
 			emptyLabel.textColor = UIColor.white

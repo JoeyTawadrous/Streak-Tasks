@@ -101,13 +101,7 @@ class AddTask: FormViewController {
 		if whenValue == nil { whenValue = tomorrow }
 		if reasonValue == nil { reasonValue = FormPlaceholders.REASON_WHEN_NIL as NSObject? }
 		
-		let task = Utils.createObject(Constants.CoreData.TASK)
-		task.setValue(selectedGoal, forKey: Constants.CoreData.NAME)
-		task.setValue(typeValue, forKey: Constants.CoreData.TYPE)
-		task.setValue(whenValue, forKey: Constants.CoreData.WHEN)
-		task.setValue(reasonValue, forKey: Constants.CoreData.REASON)
-		task.setValue(uuid, forKey: Constants.CoreData.UUID);
-		Utils.saveObject()
+		Utils.createTask(goalName: selectedGoal, type: typeValue!, when: whenValue!, reason: reasonValue!)
 		
 		// Create local notification
 		let notification = UILocalNotification()

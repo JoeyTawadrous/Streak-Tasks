@@ -7,11 +7,21 @@
 		<key>Tasky.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+		<key>TaskyUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>52BEF063206FF4DF001E925B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>52CC53221AAA4E8A002A51C1</key>
 		<dict>
 			<key>primary</key>

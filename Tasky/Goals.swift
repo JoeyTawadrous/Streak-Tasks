@@ -21,10 +21,15 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	
 	/* MARK: Init
-	/////////////////////////////////////////// */	
-    override func viewWillAppear(_ animated: Bool) {
+	/////////////////////////////////////////// */
+	override func viewWillAppear(_ animated: Bool) {
 		goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
 		goals = goals.reversed() // newest first
+		
+		//if goals.count == 0 {
+			//goals = Utils.createDemoData()
+		//}
+		
 		tableView.reloadData()
 		
 		// Styling
@@ -64,7 +69,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
 		alertView.addButton(Constants.Common.SUBMIT) {
 			if !textField.text!.isEmpty {
-				self.saveGoal(textField.text!, thumbnail: Utils.getRandomImageString())
+				self.goals.insert(Utils.createGoal(name: textField.text!), at: 0)
 				self.tableView.reloadData()
 			}
 		}
@@ -77,20 +82,6 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
 		let settingsView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.SETTINGS) as! Settings
 		self.show(settingsView as UIViewController, sender: settingsView)
-	}
-	
-	
-	
-	/* MARK: Core Functionality
-	/////////////////////////////////////////// */
-	func saveGoal(_ name: String, thumbnail: String) {
-		let goal = Utils.createObject(Constants.CoreData.GOAL)
-		
-		goal.setValue(name, forKey: Constants.CoreData.NAME)
-		goal.setValue(thumbnail, forKey: Constants.CoreData.THUMBNAIL)
-		Utils.saveObject()
-		
-		goals.insert(goal, at: 0)
 	}
 	
 	

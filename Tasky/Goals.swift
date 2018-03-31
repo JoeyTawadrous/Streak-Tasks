@@ -26,9 +26,10 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
 		goals = goals.reversed() // newest first
 		
-		//if goals.count == 0 {
-			//goals = Utils.createDemoData()
-		//}
+		// Demo data
+//		if goals.count == 0 {
+//			goals = Utils.createDemoData()
+//		}
 		
 		tableView.reloadData()
 		

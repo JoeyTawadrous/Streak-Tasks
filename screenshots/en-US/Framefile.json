@@ -1,38 +1,34 @@
 {
-    "device_frame_version": "latest",
     "default": {
-        "keyword": {
-            "font": "./arial.ttf"
-        },
         "title": {
-            "font": "./arial.ttf",
-            "color": "#FFFFFF"
+            "color": "#fff",
+            "font": "assets/GothamProMedium.ttf"
         },
-        "background": "./background.jpeg",
-        "show_complete_frame": true,
-        "padding": 60
+        "padding": 40,
+        "font_scale_factor": 0.2,
+        "show_complete_frame": true
     },
 
 
     "data": [{
-        "filter": "iPhone X-Goals",
-        "keyword": {
-            "color": "#f43b47"
-        },
+        "filter": "Goals",
+        "background": "assets/orange.jpeg",
         "title": {
-            "text": "All alarms will trigger 5-15 minutes earlier \nthan the time they are scheduled for ;)"
+            "text": "Create goals you would \nlike to achieve"
         }
     },
     {
-        "filter": "iPhone X-Tasks",
+        "filter": "Tasks",
+        "background": "assets/dark_blue.jpeg",
         "title": {
-            "text": "Set a time & ensure you're always on time!"
+            "text": "Add tasks to complete \nyour goals"
         }
     },
     {
-        "filter": "iPhone X-Task",
+        "filter": "Task",
+        "background": "assets/purple.jpeg",
         "title": {
-            "text": "Choose from a variety of alarm sounds"
+            "text": "Receive reminders for \neach of your tasks"
         }
     }]
 }

@@ -6,11 +6,14 @@ class Constants {
 	struct Common {
 		static let APP_ID = "1195440882"
 		static let APPNAME = "Tasky"
-		static let APP_STORE_LINK = "http://apple.co/2krwSkQ"
-		static let LEARNABLE_STORE_LINK = "http://apple.co/2vgq8hY"
-		static let APP_TWITTER_LINK = "https://twitter.com/getlearnable"
-		static let APP_FACEBOOK_LINK = "https://www.facebook.com/getlearnable"
-		static let APP_INSTAGRAM_LINK = "https://www.instagram.com/learnableapp"
+		
+		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Common.APP_ID
+		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
+		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
+		static let LINK_IOS_STORE = "https://itunes.apple.com/gb/app/tasky-your-to-do-list-tracker/id1195440882?mt=8"
+		static let LINK_LEARNABLE_IOS_STORE = "https://itunes.apple.com/gb/app/learnable-learn-to-code-from-scratch-level-up/id1254862243?mt=8"
+		static let LINK_TWITTER = "https://twitter.com/getlearnable"
+		
 		static let CELL = "cell"
 		static let MAIN_STORYBOARD = "Main"
 		static let SUBMIT = "Create"
@@ -30,8 +33,12 @@ class Constants {
 	}
 	
 	
+	struct Colors {
+		
+	}
+	
+	
 	struct Design {
-		static let ICON_TROPHY = "trophy"
 		static let LOGO = "AppIcon"
 	}
 	
@@ -81,7 +88,7 @@ class Constants {
 	
 	
 	struct Strings {
-		static let SHARE = "Check out " + Constants.Common.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! " + Constants.Common.APP_STORE_LINK
+		static let SHARE = "Check out " + Constants.Common.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! " + Constants.Common.LINK_IOS_STORE
 		
 		// Purchases
 		static let PURCHASE_ERROR_CONTACT_US = " Please contact us."
@@ -96,9 +103,8 @@ class Constants {
 		
 		// Send Feedback
 		static let EMAIL = "joeytawadrous@gmail.com"
-		static let SEND_FEEDBACK_SUBJECT = "Tasky Feedback"
-		static let SEND_FEEDBACK_BODY = "Hi there! I really like your app.. please keep updating it and I will be sure to rate you :)"
-		static let EMAIL_CLOSING = "\n\nThanks again, and have an amazing day!"
+		static let SEND_FEEDBACK_SUBJECT = "Tasky Feedback!"
+		static let SEND_FEEDBACK_BODY = "I want to make Tasky better. Here are my ideas... \n\n What I like about Tasky: \n 1. \n 2. \n 3. \n\n What I don't like about Tasky: \n 1. \n 2. \n 3. \n\n"
 	}
 	
 	

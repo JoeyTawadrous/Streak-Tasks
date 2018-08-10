@@ -65,7 +65,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		)
 		
 		let alertView = SCLAlertView(appearance: appearance)
-		let alertViewIcon = UIImage(named: Constants.Design.ICON_TROPHY)
+		let alertViewIcon = UIImage(named: "trophy")
 		let textField = alertView.addTextField(ClassConstants.ADD_GOAL_NAME)
 		
 		alertView.addButton(Constants.Common.SUBMIT) {

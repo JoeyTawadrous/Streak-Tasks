@@ -253,7 +253,7 @@ class Utils {
 	
 	class func openShareView(viewController: UIViewController) {
 		let share = Constants.Strings.SHARE
-		let link : NSURL = NSURL(string: Constants.Common.APP_STORE_LINK)!
+		let link : NSURL = NSURL(string: Constants.Common.LINK_IOS_STORE)!
 		let logo: UIImage = UIImage(named: Constants.Design.LOGO)!
 		
 		let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: [share, link, logo], applicationActivities: nil)

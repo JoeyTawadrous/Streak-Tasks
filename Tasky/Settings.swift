@@ -26,6 +26,7 @@ class Settings: UITableViewController, UITextFieldDelegate {
 		
 		// Styling
 		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
+		tableView.separatorColor = UIColor.clear
 	}
 	
 	override var prefersStatusBarHidden: Bool {
@@ -49,7 +50,7 @@ class Settings: UITableViewController, UITextFieldDelegate {
 	
 	override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
 		if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
-			(view as? UITableViewHeaderFooterView)?.textLabel?.text = "Version " + version + "\n© 2018 Sunrise Alarm\n"
+			(view as? UITableViewHeaderFooterView)?.textLabel?.text = "Version " + version + "\n© 2018 Tasky\n"
 		}
 		
 		(view as? UITableViewHeaderFooterView)?.textLabel?.font = UIFont.GothamProMedium(size: 12.5)

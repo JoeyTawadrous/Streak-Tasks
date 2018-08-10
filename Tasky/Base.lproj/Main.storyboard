@@ -641,7 +641,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Share" footerTitle="© 2018 Sunrise Alarm" id="Mqn-Yj-VRD" userLabel="Share">
+                            <tableViewSection headerTitle="Share" footerTitle="© 2018 Tasky" id="Mqn-Yj-VRD" userLabel="Share">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="gGk-Jp-3U8">
                                         <rect key="frame" x="0.0" y="251" width="375" height="44"/>

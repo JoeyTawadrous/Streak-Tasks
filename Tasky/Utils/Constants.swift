@@ -88,7 +88,7 @@ class Constants {
 	
 	
 	struct Strings {
-		static let SHARE = "Check out " + Constants.Common.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! " + Constants.Common.LINK_IOS_STORE
+		static let SHARE = "Check out " + Constants.Common.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! #Tasky #iOS \n\nDownload for free now: " + Constants.Common.LINK_IOS_STORE
 		
 		// Purchases
 		static let PURCHASE_ERROR_CONTACT_US = " Please contact us."

@@ -30,20 +30,15 @@ class Task: UIViewController {
 		
 		// Styling
 		Utils.insertGradientIntoView(viewController: self)
-		let borderWidth = CGFloat(3.5)
         
         // Reason label
-        reasonLabel?.text = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.REASON) as! String?
-        reasonLabel!.layer.borderWidth = borderWidth
-        reasonLabel!.layer.borderColor = UIColor.white.cgColor
+		reasonLabel?.text = "\"" + (tasks[selectedTaskIndex].value(forKey: Constants.CoreData.REASON) as! String?)! + "\""
 		
         // Goal thumbnail
         let thumbnailFile = goals[selectedGoalIndex].value(forKey: Constants.CoreData.THUMBNAIL) as! String?
         goalImageView!.image = UIImage(named: thumbnailFile!)
         goalImageView!.image! = Utils.imageResize(goalImageView!.image!, sizeChange: CGSize(width: 45, height: 45)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         goalImageView!.tintColor = UIColor.white
-		goalImageView!.addBorderLeft(size: borderWidth, color: UIColor.white)
-		goalImageView!.addBorderRight(size: borderWidth, color: UIColor.white)
 		
         // Date label
         let when = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.WHEN) as! Date?
@@ -52,25 +47,18 @@ class Task: UIViewController {
         let formattedWhen = dateFormatter.string(from: when!)
         let whenArray = formattedWhen.characters.split{$0 == ","}.map(String.init)
         dateLabel?.text = Utils.getDayOfWeek(formattedWhen)! + ", " + whenArray[1]
-		dateLabel?.addBorderBottom(size: borderWidth, color: UIColor.white)
-		dateLabel?.addBorderRight(size: borderWidth, color: UIColor.white)
 		
         // Time label
         timeLabel?.text = whenArray[0]
-		timeLabel?.addBorderRight(size: borderWidth, color: UIColor.white)
 		
         // Type label
         let type = tasks[selectedTaskIndex].value(forKey: Constants.CoreData.TYPE) as! String?
         typeLabel?.text = type!.uppercased()
-        typeLabel!.layer.borderWidth = borderWidth;
-		typeLabel!.layer.borderColor = UIColor.white.cgColor
 		
         // Type thumbnail
 		taskImageView!.image = UIImage(named: type!)
         taskImageView!.image! = Utils.imageResize(taskImageView!.image!, sizeChange: CGSize(width: 40, height: 40)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         taskImageView!.tintColor = UIColor.white
-		taskImageView?.addBorderBottom(size: borderWidth, color: UIColor.white)
-		taskImageView?.addBorderRight(size: borderWidth, color: UIColor.white)
 		
         // Title bar button
         titleButton?.title = Utils.getDayOfWeek(formattedWhen)! + ", " + whenArray[1] + " @ " + whenArray[0]

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g8F-4j-vSO">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,7 +24,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJj-4v-6v3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yBY-ty-j11">
-                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -43,7 +41,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="AddTask" id="8xn-yo-ov3" customClass="AddTask" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="gzS-QY-Guv">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <connections>
@@ -81,11 +79,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ycS-PH-eTg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XXb-N0-Dcj">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Reason" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="VzW-3U-lyc" userLabel="Reason Label">
-                                <rect key="frame" x="36" y="121" width="762" height="271"/>
+                                <rect key="frame" x="36" y="121" width="342" height="122"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="17"/>
@@ -93,44 +91,60 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nb1-zP-9bb">
-                                <rect key="frame" x="36" y="392" width="215.5" height="276.5"/>
+                                <rect key="frame" x="36" y="243" width="89" height="128"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="Z72-DM-84e"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday 2nd July" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXV-xp-Prd">
-                                <rect key="frame" x="251.5" y="392" width="546.5" height="143"/>
+                                <rect key="frame" x="125" y="244" width="253" height="64"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Gid-yO-zsv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="18"/>
                                 <color key="textColor" red="0.9949270486831665" green="0.9899754524230957" blue="0.99009978771209717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 p.m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN3-Zb-GxP">
-                                <rect key="frame" x="251.5" y="535" width="335" height="133.5"/>
+                                <rect key="frame" x="125" y="308" width="164" height="63"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Liq-W8-S9H"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="18"/>
                                 <color key="textColor" red="0.9949270486831665" green="0.9899754524230957" blue="0.99009978771209717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ThO-0G-Gvn">
-                                <rect key="frame" x="582.5" y="535" width="215.5" height="276"/>
+                                <rect key="frame" x="289" y="308" width="89" height="127"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="u97-6l-t5T"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfV-De-RUM">
-                                <rect key="frame" x="36" y="668.5" width="550.5" height="142.5"/>
+                                <rect key="frame" x="36" y="371" width="253" height="64"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Qy3-0M-QNp"/>
+                                    <constraint firstAttribute="width" constant="253" id="nay-g9-xRj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="18"/>
                                 <color key="textColor" red="0.9949270486831665" green="0.9899754524230957" blue="0.99009978771209717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAs-Q7-H1w">
-                                <rect key="frame" x="89" y="505" width="201" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAs-Q7-H1w">
+                                <rect key="frame" x="107" y="531" width="201" height="53"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="UAs-Q7-H1w" secondAttribute="height" multiplier="141:41" constant="18.731707317073187" id="B4T-79-8rN"/>
+                                    <constraint firstAttribute="width" constant="201" id="8l8-Ut-D9x"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="18"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,34 +158,28 @@
                         </subviews>
                         <color key="backgroundColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PfV-De-RUM" firstAttribute="top" secondItem="HN3-Zb-GxP" secondAttribute="bottom" id="0lv-EQ-izp"/>
-                            <constraint firstItem="Nb1-zP-9bb" firstAttribute="top" secondItem="VzW-3U-lyc" secondAttribute="bottom" id="1GT-Qg-FDh"/>
-                            <constraint firstItem="SXV-xp-Prd" firstAttribute="leading" secondItem="Nb1-zP-9bb" secondAttribute="trailing" id="9Tf-ce-2lM"/>
-                            <constraint firstItem="PfV-De-RUM" firstAttribute="top" secondItem="Nb1-zP-9bb" secondAttribute="bottom" id="9VC-bU-5rd"/>
-                            <constraint firstItem="HN3-Zb-GxP" firstAttribute="height" secondItem="SXV-xp-Prd" secondAttribute="height" multiplier="0.9" constant="5" id="CYW-uI-hOT"/>
-                            <constraint firstItem="ThO-0G-Gvn" firstAttribute="width" secondItem="VzW-3U-lyc" secondAttribute="width" multiplier="0.3" constant="-13.299999999999997" id="Djg-B5-BR5"/>
-                            <constraint firstItem="ycS-PH-eTg" firstAttribute="top" secondItem="UAs-Q7-H1w" secondAttribute="bottom" constant="554" id="Fmi-eL-dCb"/>
-                            <constraint firstItem="Nb1-zP-9bb" firstAttribute="height" secondItem="VzW-3U-lyc" secondAttribute="height" constant="5" id="HkV-mG-oja"/>
-                            <constraint firstItem="VzW-3U-lyc" firstAttribute="leading" secondItem="XXb-N0-Dcj" secondAttribute="leadingMargin" constant="16" id="J2w-tY-pj4"/>
-                            <constraint firstItem="ycS-PH-eTg" firstAttribute="top" secondItem="PfV-De-RUM" secondAttribute="bottom" constant="301" id="Kdh-dz-V9H"/>
-                            <constraint firstItem="Nb1-zP-9bb" firstAttribute="width" secondItem="VzW-3U-lyc" secondAttribute="width" multiplier="0.3" constant="-13.299999999999997" id="Ofv-QB-uM2"/>
-                            <constraint firstItem="SXV-xp-Prd" firstAttribute="top" secondItem="VzW-3U-lyc" secondAttribute="bottom" id="WCm-v2-Wjl"/>
-                            <constraint firstItem="VzW-3U-lyc" firstAttribute="top" secondItem="MDM-JA-Xjg" secondAttribute="bottom" constant="57" id="Xdv-bP-9Vg"/>
-                            <constraint firstItem="UAs-Q7-H1w" firstAttribute="centerX" secondItem="XXb-N0-Dcj" secondAttribute="centerX" constant="-227.5" id="aCE-na-HV0"/>
-                            <constraint firstItem="Nb1-zP-9bb" firstAttribute="leading" secondItem="VzW-3U-lyc" secondAttribute="leading" id="fS5-bP-ANP"/>
-                            <constraint firstItem="PfV-De-RUM" firstAttribute="leading" secondItem="VzW-3U-lyc" secondAttribute="leading" id="fdG-hY-huL"/>
-                            <constraint firstItem="ThO-0G-Gvn" firstAttribute="top" secondItem="SXV-xp-Prd" secondAttribute="bottom" id="gEp-Ws-gBv"/>
-                            <constraint firstItem="ThO-0G-Gvn" firstAttribute="trailing" secondItem="VzW-3U-lyc" secondAttribute="trailing" id="huI-xo-fbz"/>
-                            <constraint firstItem="VzW-3U-lyc" firstAttribute="height" secondItem="XXb-N0-Dcj" secondAttribute="height" multiplier="0.18" constant="70.840000000000003" id="nX1-dH-0Lq"/>
-                            <constraint firstItem="HN3-Zb-GxP" firstAttribute="top" secondItem="SXV-xp-Prd" secondAttribute="bottom" id="odM-d6-6Tj"/>
-                            <constraint firstItem="ThO-0G-Gvn" firstAttribute="leading" secondItem="PfV-De-RUM" secondAttribute="trailing" constant="-4" id="pQZ-sV-SSu"/>
-                            <constraint firstItem="HN3-Zb-GxP" firstAttribute="leading" secondItem="Nb1-zP-9bb" secondAttribute="trailing" id="peP-7V-qWR"/>
-                            <constraint firstItem="ThO-0G-Gvn" firstAttribute="height" secondItem="VzW-3U-lyc" secondAttribute="height" constant="5" id="rlK-qu-233"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VzW-3U-lyc" secondAttribute="trailing" constant="16" id="sMH-8j-53F"/>
-                            <constraint firstItem="PfV-De-RUM" firstAttribute="height" secondItem="SXV-xp-Prd" secondAttribute="height" id="sd7-6g-25y"/>
-                            <constraint firstItem="SXV-xp-Prd" firstAttribute="trailing" secondItem="VzW-3U-lyc" secondAttribute="trailing" id="tJh-PU-0c3"/>
-                            <constraint firstItem="ycS-PH-eTg" firstAttribute="top" secondItem="ThO-0G-Gvn" secondAttribute="bottom" constant="301" id="vW4-Gx-JUS"/>
-                            <constraint firstItem="ThO-0G-Gvn" firstAttribute="leading" secondItem="HN3-Zb-GxP" secondAttribute="trailing" constant="-4" id="vi9-1e-yNT"/>
+                            <constraint firstItem="ycS-PH-eTg" firstAttribute="top" secondItem="UAs-Q7-H1w" secondAttribute="bottom" constant="152" id="12Y-Rc-h2i"/>
+                            <constraint firstItem="HN3-Zb-GxP" firstAttribute="top" secondItem="SXV-xp-Prd" secondAttribute="bottom" id="GL9-FX-7dE"/>
+                            <constraint firstItem="VzW-3U-lyc" firstAttribute="leading" secondItem="Nb1-zP-9bb" secondAttribute="leading" id="JrH-BQ-ga3"/>
+                            <constraint firstItem="UAs-Q7-H1w" firstAttribute="top" secondItem="PfV-De-RUM" secondAttribute="bottom" constant="96" id="RLe-G1-vUc"/>
+                            <constraint firstItem="Nb1-zP-9bb" firstAttribute="top" secondItem="SXV-xp-Prd" secondAttribute="top" constant="-1" id="Rs7-OV-KqG"/>
+                            <constraint firstItem="SXV-xp-Prd" firstAttribute="trailing" secondItem="ThO-0G-Gvn" secondAttribute="trailing" id="V7L-54-Czg"/>
+                            <constraint firstItem="SXV-xp-Prd" firstAttribute="leading" secondItem="Nb1-zP-9bb" secondAttribute="trailing" id="WCR-lO-6GB"/>
+                            <constraint firstItem="ycS-PH-eTg" firstAttribute="top" secondItem="ThO-0G-Gvn" secondAttribute="bottom" constant="301" id="WPY-80-N4Q"/>
+                            <constraint firstItem="VzW-3U-lyc" firstAttribute="leading" secondItem="XXb-N0-Dcj" secondAttribute="leadingMargin" constant="16" id="Yon-48-6yw"/>
+                            <constraint firstItem="UAs-Q7-H1w" firstAttribute="centerX" secondItem="XXb-N0-Dcj" secondAttribute="centerX" id="bgF-Ik-hmM"/>
+                            <constraint firstItem="ThO-0G-Gvn" firstAttribute="leading" secondItem="PfV-De-RUM" secondAttribute="trailing" id="ekG-R6-aaR"/>
+                            <constraint firstItem="Nb1-zP-9bb" firstAttribute="top" secondItem="VzW-3U-lyc" secondAttribute="bottom" id="kEN-5b-dvh"/>
+                            <constraint firstItem="Nb1-zP-9bb" firstAttribute="leading" secondItem="PfV-De-RUM" secondAttribute="leading" id="mFH-Yv-DYU"/>
+                            <constraint firstItem="Nb1-zP-9bb" firstAttribute="bottom" secondItem="HN3-Zb-GxP" secondAttribute="bottom" id="pBS-TA-wlA"/>
+                            <constraint firstItem="PfV-De-RUM" firstAttribute="bottom" secondItem="ThO-0G-Gvn" secondAttribute="bottom" id="sHV-Hj-9vd"/>
+                            <constraint firstItem="ThO-0G-Gvn" firstAttribute="leading" secondItem="HN3-Zb-GxP" secondAttribute="trailing" id="umb-Fd-WdG"/>
+                            <constraint firstItem="SXV-xp-Prd" firstAttribute="leading" secondItem="HN3-Zb-GxP" secondAttribute="leading" id="vgj-OV-JRQ"/>
+                            <constraint firstItem="HN3-Zb-GxP" firstAttribute="top" secondItem="ThO-0G-Gvn" secondAttribute="top" id="wAF-OG-7Mi"/>
+                            <constraint firstItem="VzW-3U-lyc" firstAttribute="top" secondItem="MDM-JA-Xjg" secondAttribute="bottom" constant="57" id="wVN-f3-YYN"/>
+                            <constraint firstItem="VzW-3U-lyc" firstAttribute="trailing" secondItem="SXV-xp-Prd" secondAttribute="trailing" id="yCK-JL-lPD"/>
+                            <constraint firstItem="PfV-De-RUM" firstAttribute="top" secondItem="Nb1-zP-9bb" secondAttribute="bottom" id="yxl-3c-TdU"/>
+                            <constraint firstItem="VzW-3U-lyc" firstAttribute="centerX" secondItem="XXb-N0-Dcj" secondAttribute="centerX" id="zAN-pL-0C0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kht-a3-jEy">
@@ -190,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkv-81-xzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4653.6000000000004" y="165.06746626686657"/>
+            <point key="canvasLocation" x="4652.1739130434789" y="164.67391304347828"/>
         </scene>
         <!--Goals-->
         <scene sceneID="ZGN-js-3Hy">
@@ -201,7 +209,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dDL-wI-IIN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="erv-eX-yQe">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-sx-BSf">
@@ -213,29 +221,29 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qpg-KV-3Nj" id="XiL-O3-L1m">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zK-ar-8Sy">
-                                                    <rect key="frame" x="793" y="25" width="33" height="22"/>
+                                                    <rect key="frame" x="131.66666666666669" y="25" width="0.0" height="22"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ajP-tV-K2n">
-                                                    <rect key="frame" x="11" y="20" width="32" height="29"/>
+                                                    <rect key="frame" x="12.000000000000007" y="20" width="32" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="32" id="Dyd-s6-0So"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-EB-Mzf">
-                                                    <rect key="frame" x="794" y="23" width="32" height="27"/>
+                                                    <rect key="frame" x="116.33333333333334" y="23" width="32" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="32" id="K5p-SI-5l1"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-1c-Th9">
-                                                    <rect key="frame" x="73" y="20" width="707" height="30"/>
+                                                    <rect key="frame" x="74" y="20" width="44.666666666666657" height="30"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="19"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -302,7 +310,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="grs-G5-2fK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="v1i-yk-x6c">
-                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -321,7 +329,7 @@
                     <tabBarItem key="tabBarItem" title="Main" id="Ebl-Ee-anV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1Sc-c3-rj3">
-                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -345,7 +353,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Chc-Ca-FEe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Mbd-NM-mY1">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LK5-L6-0uX">
@@ -353,21 +361,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="76F-V9-Q6J" customClass="TasksTableViewCell" customModule="Tasky" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="76F-V9-Q6J" customClass="TasksTableViewCell" customModule="Tasky" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="76F-V9-Q6J" id="Eea-c9-Wxj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-g1-89A">
-                                                    <rect key="frame" x="24" y="29" width="64.5" height="15"/>
+                                                    <rect key="frame" x="25" y="29" width="70.666666666666671" height="15"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="19"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BPo-Sg-Crr">
-                                                    <rect key="frame" x="312" y="23" width="32" height="26"/>
+                                                    <rect key="frame" x="-43" y="23" width="32" height="26"/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="32" id="Yyf-HZ-owK"/>
@@ -420,7 +428,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7uY-hr-Cwe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Y7e-uJ-nDu">
-                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -444,18 +452,18 @@
                         <viewControllerLayoutGuide type="bottom" id="mm0-73-3xo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WyW-S6-Jz8">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="19x-e1-Leu">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="Jzq-l8-3nb">
-                                        <rect key="frame" x="0.0" y="28" width="834" height="74"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jzq-l8-3nb" id="1x8-da-d91">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="73.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -499,7 +507,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q6K-N9-3sW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fRc-ph-XCH">
-                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -516,17 +524,17 @@
             <objects>
                 <tableViewController storyboardIdentifier="Settings" id="CyB-It-t5J" customClass="Settings" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="kJq-1W-TRF">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection headerTitle="App" id="opY-HN-X0a">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="nGV-hw-Bw2">
-                                        <rect key="frame" x="0.0" y="55.5" width="834" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nGV-hw-Bw2" id="Fpa-RH-y9d">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrU-Fq-DpY">
@@ -541,7 +549,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uf-h4-UpQ">
-                                                    <rect key="frame" x="59" y="6" width="761" height="30"/>
+                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Learn to Code">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -562,10 +570,10 @@
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="BIe-Pg-hJe">
-                                        <rect key="frame" x="0.0" y="99.5" width="834" height="44"/>
+                                        <rect key="frame" x="0.0" y="99.333333333333343" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BIe-Pg-hJe" id="OMu-aM-brB">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLP-2E-DMn">
@@ -580,7 +588,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynq-dW-zmO">
-                                                    <rect key="frame" x="59" y="6" width="761" height="30"/>
+                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Review Tasky">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -601,10 +609,10 @@
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="tm6-5K-GLS">
-                                        <rect key="frame" x="0.0" y="143.5" width="834" height="44"/>
+                                        <rect key="frame" x="0.0" y="143.33333333333334" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tm6-5K-GLS" id="vae-be-Ium">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozk-Fc-o1m">
@@ -619,7 +627,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTn-l0-maA">
-                                                    <rect key="frame" x="59" y="6" width="761" height="30"/>
+                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Send Feedback">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -644,10 +652,10 @@
                             <tableViewSection headerTitle="Share" footerTitle="© 2018 Tasky" id="Mqn-Yj-VRD" userLabel="Share">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="gGk-Jp-3U8">
-                                        <rect key="frame" x="0.0" y="251" width="834" height="44"/>
+                                        <rect key="frame" x="0.0" y="250.66666666666669" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gGk-Jp-3U8" id="iGD-xB-3MB">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlc-ai-whG">
@@ -662,7 +670,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIG-4D-mcf">
-                                                    <rect key="frame" x="59" y="6" width="761" height="30"/>
+                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Share the love">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -683,10 +691,10 @@
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="pfy-J8-Osv">
-                                        <rect key="frame" x="0.0" y="295" width="834" height="44"/>
+                                        <rect key="frame" x="0.0" y="294.66666666666669" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pfy-J8-Osv" id="8FI-oa-Psd">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw8-7P-RUb">
@@ -701,7 +709,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyE-Hk-0dU">
-                                                    <rect key="frame" x="59" y="6" width="761" height="30"/>
+                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Follow us on Twitter">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -722,10 +730,10 @@
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="cHL-Vg-aTH">
-                                        <rect key="frame" x="0.0" y="339" width="834" height="44"/>
+                                        <rect key="frame" x="0.0" y="338.66666666666669" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cHL-Vg-aTH" id="fqC-mU-uop">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9V-d6-PfS">
@@ -740,7 +748,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ul-Ma-4ew">
-                                                    <rect key="frame" x="59" y="6" width="761" height="30"/>
+                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Like us on Facebook">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -761,10 +769,10 @@
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="SgG-9m-UZx">
-                                        <rect key="frame" x="0.0" y="383" width="834" height="44"/>
+                                        <rect key="frame" x="0.0" y="382.66666666666669" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SgG-9m-UZx" id="pvt-YM-GGo">
-                                            <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAV-RJ-6Vl">
@@ -779,7 +787,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldb-JC-ilP">
-                                                    <rect key="frame" x="59" y="6" width="761" height="30"/>
+                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Heart us on Instagram">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

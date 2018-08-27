@@ -3,7 +3,7 @@ import Social
 import MessageUI
 
 
-class Settings: UITableViewController, UITextFieldDelegate {
+class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate {
 	@IBOutlet weak var learnableiOSAppButtonIcon: UIButton!
 	@IBOutlet weak var reviewButtonIcon: UIButton!
 	@IBOutlet weak var sendFeedbackButtonIcon: UIButton!
@@ -75,7 +75,7 @@ class Settings: UITableViewController, UITextFieldDelegate {
 	}
 	
 	@IBAction func reviewButtonPressed() {
-		Utils.openURL(url: Constants.Common.LINK_IOS_STORE)
+		Utils.openURL(url: Constants.Common.LINK_APP_REVIEW)
 	}
 	
 	@IBAction func sendFeedbackButtonPressed() {
@@ -89,18 +89,18 @@ class Settings: UITableViewController, UITextFieldDelegate {
 		let emailBody = Constants.Strings.SEND_FEEDBACK_BODY + possibleVersion + " \n " + systemVersion + " \n " + modelName
 		
 		let mailComposer = MFMailComposeViewController()
-		mailComposer.mailComposeDelegate = view as? MFMailComposeViewControllerDelegate
+		mailComposer.mailComposeDelegate = self
 		mailComposer.setToRecipients([Constants.Strings.EMAIL])
 		mailComposer.setSubject(Constants.Strings.SEND_FEEDBACK_SUBJECT)
 		mailComposer.setMessageBody(emailBody, isHTML: false)
 		
 		if MFMailComposeViewController.canSendMail() {
-			self.present(mailComposer, animated: true, completion: nil)
+			present(mailComposer, animated: true)
 		}
 	}
 	
-	func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Swift.Error?){
-		controller.dismiss(animated: true) { () -> Void in }
+	public func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+		controller.dismiss(animated: true, completion: nil)
 	}
 	
 	

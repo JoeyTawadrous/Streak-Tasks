@@ -238,19 +238,6 @@ class Utils {
 	}
 	
 	
-	class func openSendMailView(view: UIViewController, subject: String, message: String) {
-		let mailComposer = MFMailComposeViewController()
-		mailComposer.mailComposeDelegate = view as? MFMailComposeViewControllerDelegate
-		mailComposer.setToRecipients([Constants.Strings.EMAIL])
-		mailComposer.setSubject(subject)
-		mailComposer.setMessageBody(message, isHTML: false)
-		
-		if MFMailComposeViewController.canSendMail() {
-			view.present(mailComposer, animated: true, completion: nil)
-		}
-	}
-	
-	
 	class func openShareView(viewController: UIViewController) {
 		let share = Constants.Strings.SHARE
 		let link : NSURL = NSURL(string: Constants.Common.LINK_IOS_STORE)!

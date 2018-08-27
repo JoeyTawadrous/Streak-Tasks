@@ -7,7 +7,7 @@ class Constants {
 		static let APP_ID = "1195440882"
 		static let APPNAME = "Tasky"
 		
-		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Common.APP_ID
+		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Common.APP_ID + "?action=write-review"
 		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
 		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
 		static let LINK_IOS_STORE = "https://itunes.apple.com/gb/app/tasky-your-to-do-list-tracker/id1195440882?mt=8"

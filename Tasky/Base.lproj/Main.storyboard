@@ -212,38 +212,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-sx-BSf">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-sx-BSf">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="qpg-KV-3Nj" customClass="GoalTableViewCell" customModule="Tasky" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="74"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="qpg-KV-3Nj" customClass="GoalTableViewCell" customModule="Tasky" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qpg-KV-3Nj" id="XiL-O3-L1m">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="73.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zK-ar-8Sy">
-                                                    <rect key="frame" x="131.66666666666669" y="25" width="0.0" height="22"/>
+                                                    <rect key="frame" x="378" y="25" width="23" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="oFq-wA-3gR"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ajP-tV-K2n">
-                                                    <rect key="frame" x="12.000000000000007" y="20" width="32" height="29"/>
+                                                    <rect key="frame" x="16" y="20" width="32" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="32" id="Dyd-s6-0So"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-EB-Mzf">
-                                                    <rect key="frame" x="116.33333333333334" y="23" width="32" height="27"/>
+                                                    <rect key="frame" x="374" y="23" width="32" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="32" id="K5p-SI-5l1"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-1c-Th9">
-                                                    <rect key="frame" x="74" y="20" width="44.666666666666657" height="30"/>
+                                                    <rect key="frame" x="78" y="20" width="287" height="30"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="19"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -281,6 +283,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zOR-sx-BSf" firstAttribute="leading" secondItem="erv-eX-yQe" secondAttribute="leading" id="Qt3-YW-AEq"/>
+                            <constraint firstItem="zOR-sx-BSf" firstAttribute="bottom" secondItem="dDL-wI-IIN" secondAttribute="top" id="YNc-6d-4wN"/>
+                            <constraint firstItem="zOR-sx-BSf" firstAttribute="top" secondItem="kyF-39-qgs" secondAttribute="bottom" id="jKT-wb-VgO"/>
+                            <constraint firstAttribute="trailing" secondItem="zOR-sx-BSf" secondAttribute="trailing" id="rFi-Di-OVa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Goals" id="uXa-fn-0pr">
                         <barButtonItem key="leftBarButtonItem" width="15" style="done" id="6fN-Nf-8tJ">
@@ -302,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qdk-4Z-9Lx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2280.8000000000002" y="166.8665667166417"/>
+            <point key="canvasLocation" x="2279.7101449275365" y="166.30434782608697"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xXb-VK-VM2">
@@ -356,26 +364,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LK5-L6-0uX">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LK5-L6-0uX">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="76F-V9-Q6J" customClass="TasksTableViewCell" customModule="Tasky" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="74"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="76F-V9-Q6J" customClass="TasksTableViewCell" customModule="Tasky" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="76F-V9-Q6J" id="Eea-c9-Wxj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="73.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-g1-89A">
-                                                    <rect key="frame" x="25" y="29" width="70.666666666666671" height="15"/>
+                                                    <rect key="frame" x="29" y="29" width="71" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="WXl-DO-8qD"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="19"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BPo-Sg-Crr">
-                                                    <rect key="frame" x="-43" y="23" width="32" height="26"/>
+                                                    <rect key="frame" x="346" y="23" width="32" height="26"/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="32" id="Yyf-HZ-owK"/>
@@ -405,6 +415,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LK5-L6-0uX" firstAttribute="top" secondItem="TN9-12-Gc7" secondAttribute="bottom" id="LuO-kI-dpm"/>
+                            <constraint firstItem="LK5-L6-0uX" firstAttribute="bottom" secondItem="Chc-Ca-FEe" secondAttribute="top" id="P0f-39-5Rx"/>
+                            <constraint firstItem="LK5-L6-0uX" firstAttribute="leading" secondItem="Mbd-NM-mY1" secondAttribute="leading" id="gWd-Fj-SDR"/>
+                            <constraint firstAttribute="trailing" secondItem="LK5-L6-0uX" secondAttribute="trailing" id="pXu-Fe-FER"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="9rE-4h-ubI">
                         <barButtonItem key="rightBarButtonItem" style="done" id="bXu-MN-oGJ">
@@ -420,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0U-FP-uDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3060" y="167.76611694152925"/>
+            <point key="canvasLocation" x="3059.4202898550725" y="167.11956521739131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s7N-Ti-Eja">
@@ -459,7 +475,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="Jzq-l8-3nb">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="Jzq-l8-3nb">
                                         <rect key="frame" x="0.0" y="28" width="414" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jzq-l8-3nb" id="1x8-da-d91">

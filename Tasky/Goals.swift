@@ -68,21 +68,19 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		let alertViewIcon = UIImage(named: "trophy")
 		let textField = alertView.addTextField(ClassConstants.ADD_GOAL_NAME)
 		
-		alertView.addButton(Constants.Common.SUBMIT) {
+		alertView.addButton(Constants.Strings.ALERT_SUBMIT) {
 			if !textField.text!.isEmpty {
 				self.goals.insert(Utils.createGoal(name: textField.text!), at: 0)
 				self.tableView.reloadData()
 			}
 		}
-		alertView.addButton(Constants.Common.CLOSE) {}
+		alertView.addButton(Constants.Strings.ALERT_CLOSE) {}
 		
 		alertView.showCustom(ClassConstants.ADD_GOAL_TITLE, subTitle: ClassConstants.ADD_GOAL_MESSAGE, color: Utils.getMainColor(), icon: alertViewIcon!, animationStyle: .leftToRight)
 	}
 	
 	@IBAction func menuButtonPressed(_ sender: AnyObject) {
-		let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
-		let settingsView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.SETTINGS) as! Settings
-		self.show(settingsView as UIViewController, sender: settingsView)
+		Utils.presentView(self, viewName: Constants.Views.SETTINGS_NAV_CONTROLLER)
 	}
 	
 	

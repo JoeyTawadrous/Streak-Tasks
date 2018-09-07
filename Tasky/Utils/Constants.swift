@@ -16,8 +16,6 @@ class Constants {
 		
 		static let CELL = "cell"
 		static let MAIN_STORYBOARD = "Main"
-		static let SUBMIT = "Create"
-		static let CLOSE = "Close"
 	}
 	
 	
@@ -30,11 +28,6 @@ class Constants {
 		static let TYPE = "type"
 		static let WHEN = "when"
 		static let UUID = "uuid"
-	}
-	
-	
-	struct Colors {
-		
 	}
 	
 	
@@ -88,7 +81,12 @@ class Constants {
 	
 	
 	struct Strings {
+		static let ALERT_SUBMIT = "Submit"
+		static let ALERT_CLOSE = "Close"
+		
+		
 		static let SHARE = "Check out " + Constants.Common.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! #Tasky #iOS \n\nDownload for free now: " + Constants.Common.LINK_IOS_STORE
+		
 		
 		// Purchases
 		static let PURCHASE_ERROR_CONTACT_US = " Please contact us."
@@ -101,6 +99,7 @@ class Constants {
 		static let PURCHASE_RESTORE_NOTHING = "You have no purchases to restore!"
 		static let PURCHASE_RESTORE_SUCCESS = "You have restored your previous purchase and now have access to the entire app!"
 		
+		
 		// Send Feedback
 		static let EMAIL = "joeytawadrous@gmail.com"
 		static let SEND_FEEDBACK_SUBJECT = "Tasky Feedback!"
@@ -109,10 +108,13 @@ class Constants {
 	
 	
 	struct Views {
-		static let TASKS = "Tasks"
-		static let TASK = "Task"
 		static let ADD_TASK = "AddTask"
+		static let TASK = "Task"
+		static let TASKS = "Tasks"
+		static let GOALS = "Goals"
+		static let GOALS_NAV_CONTROLLER = "GoalsNavController"
 		static let SETTINGS = "Settings"
+		static let SETTINGS_NAV_CONTROLLER = "SettingsNavController"
 		static let THEMES = "Themes"
 	}
 }

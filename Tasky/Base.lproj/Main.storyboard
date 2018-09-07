@@ -333,7 +333,7 @@
         <!--Main-->
         <scene sceneID="Q8W-3n-r9r">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g8F-4j-vSO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GoalsNavController" automaticallyAdjustsScrollViewInsets="NO" id="g8F-4j-vSO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Main" id="Ebl-Ee-anV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1Sc-c3-rj3">
@@ -520,7 +520,8 @@
         <!--Navigation Controller-->
         <scene sceneID="X86-J3-VBj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q6K-N9-3sW" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDJ-Oh-Day" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="SettingsNavController" automaticallyAdjustsScrollViewInsets="NO" id="Q6K-N9-3sW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fRc-ph-XCH">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -531,7 +532,6 @@
                         <segue destination="CyB-It-t5J" kind="relationship" relationship="rootViewController" id="yRH-pN-Um3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sDJ-Oh-Day" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5748" y="-571"/>
         </scene>
@@ -831,8 +831,16 @@
                             <outlet property="delegate" destination="CyB-It-t5J" id="qzt-2z-x9w"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="imb-zm-PBb"/>
+                    <navigationItem key="navigationItem" title="Settings" leftItemsSupplementBackButton="YES" id="uxe-yQ-qNA">
+                        <barButtonItem key="leftBarButtonItem" id="aeI-6B-R5C">
+                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backButtonPressed" destination="CyB-It-t5J" id="Pw5-jV-NYz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="backButton" destination="aeI-6B-R5C" id="Fh9-wR-MDS"/>
                         <outlet property="facebookButtonIcon" destination="q9V-d6-PfS" id="YuN-3h-p4r"/>
                         <outlet property="instagramButtonIcon" destination="vAV-RJ-6Vl" id="d04-Sc-wfB"/>
                         <outlet property="learnableiOSAppButtonIcon" destination="YrU-Fq-DpY" id="IVN-BN-dAF"/>

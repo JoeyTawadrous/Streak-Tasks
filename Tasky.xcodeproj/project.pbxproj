@@ -28,6 +28,8 @@
 		52BB3EF51AE314BA00A12D0C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BB3EF41AE314BA00A12D0C /* Task.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52BEF067206FF4DF001E925B /* TaskyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BEF066206FF4DF001E925B /* TaskyUITests.swift */; };
 		52BEF06F206FF61A001E925B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BEF06E206FF61A001E925B /* SnapshotHelper.swift */; };
+		52C703382143E09800AC839F /* Upgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C703372143E09800AC839F /* Upgrade.swift */; };
+		52C7033B2143F7F500AC839F /* Dialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7033A2143F7F500AC839F /* Dialogs.swift */; };
 		52C980EE1D315E9800F7E1B0 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C980ED1D315E9800F7E1B0 /* Themes.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52CC53291AAA4E8A002A51C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52CC53331AAA4E8A002A51C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53321AAA4E8A002A51C1 /* Images.xcassets */; };
@@ -66,6 +68,8 @@
 		52BEF066206FF4DF001E925B /* TaskyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskyUITests.swift; sourceTree = "<group>"; };
 		52BEF068206FF4DF001E925B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52BEF06E206FF61A001E925B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		52C703372143E09800AC839F /* Upgrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upgrade.swift; sourceTree = "<group>"; };
+		52C7033A2143F7F500AC839F /* Dialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialogs.swift; sourceTree = "<group>"; };
 		52C980ED1D315E9800F7E1B0 /* Themes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		52CC53231AAA4E8A002A51C1 /* Tasky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC53271AAA4E8A002A51C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				521706D01BAD779E007BCE73 /* Constants.swift */,
+				52C7033A2143F7F500AC839F /* Dialogs.swift */,
 				52973ACD1E2ADF8A00D7DE3F /* Extensions.swift */,
-				527E3120206C059400547173 /* Purchase.swift */,
 				5235B8D81AD9582800B3BAE2 /* Utils.swift */,
 			);
 			path = Utils;
@@ -130,6 +134,16 @@
 				52BEF068206FF4DF001E925B /* Info.plist */,
 			);
 			path = TaskyUITests;
+			sourceTree = "<group>";
+		};
+		52C703392143E0AB00AC839F /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				527E3120206C059400547173 /* Purchase.swift */,
+				52C980ED1D315E9800F7E1B0 /* Themes.swift */,
+				52C703372143E09800AC839F /* Upgrade.swift */,
+			);
+			path = Purchase;
 			sourceTree = "<group>";
 		};
 		52CC531A1AAA4E8A002A51C1 = {
@@ -157,6 +171,7 @@
 			children = (
 				52CC53261AAA4E8A002A51C1 /* Resources */,
 				52618C441CA0725D003192AF /* Utils */,
+				52C703392143E0AB00AC839F /* Purchase */,
 				523DA47B1ADC574B007F7F7D /* Main.storyboard */,
 				52CC53321AAA4E8A002A51C1 /* Images.xcassets */,
 				52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */,
@@ -165,7 +180,6 @@
 				52973AE61E2BD78B00D7DE3F /* Settings.swift */,
 				52BB3EF41AE314BA00A12D0C /* Task.swift */,
 				526451991AAF644F002C37A6 /* Tasks.swift */,
-				52C980ED1D315E9800F7E1B0 /* Themes.swift */,
 			);
 			path = Tasky;
 			sourceTree = "<group>";
@@ -231,7 +245,6 @@
 				52CC53201AAA4E8A002A51C1 /* Frameworks */,
 				52CC53211AAA4E8A002A51C1 /* Resources */,
 				C7BC58C9357ED37CCCAD6302 /* [CP] Embed Pods Frameworks */,
-				7120367BDFC20AED29A049A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,21 +327,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7120367BDFC20AED29A049A4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tasky/Pods-Tasky-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8FFB5322774703836E1B3832 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +356,7 @@
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftForms/SwiftForms.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -365,6 +364,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftForms.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -388,12 +388,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5252DB3020679E2900621E57 /* Goals.swift in Sources */,
+				52C7033B2143F7F500AC839F /* Dialogs.swift in Sources */,
 				52973AE71E2BD78B00D7DE3F /* Settings.swift in Sources */,
 				527EBF79206D6DDA00F17038 /* Tasky.xcdatamodeld in Sources */,
 				52C980EE1D315E9800F7E1B0 /* Themes.swift in Sources */,
 				5264519C1AAF9194002C37A6 /* AddTask.swift in Sources */,
 				5235B8D91AD9582800B3BAE2 /* Utils.swift in Sources */,
 				5264519A1AAF644F002C37A6 /* Tasks.swift in Sources */,
+				52C703382143E09800AC839F /* Upgrade.swift in Sources */,
 				52973ACE1E2ADF8A00D7DE3F /* Extensions.swift in Sources */,
 				527E3121206C059400547173 /* Purchase.swift in Sources */,
 				52BB3EF51AE314BA00A12D0C /* Task.swift in Sources */,

@@ -1,6 +1,7 @@
 import UIKit
 import Social
 import MessageUI
+import FontAwesome_swift
 
 
 class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate {
@@ -21,35 +22,29 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
-		setButtonIcon(button: upgradeButtonIcon, icon: String.fontAwesomeIcon(name: .trophy))
-		setButtonIcon(button: changeThemeButtonIcon, icon: String.fontAwesomeIcon(name: .star))
-		setButtonIcon(button: learnableiOSAppButtonIcon, icon: String.fontAwesomeIcon(name: .heart))
-		setButtonIcon(button: reviewButtonIcon, icon: String.fontAwesomeIcon(name: .gamepad))
-		setButtonIcon(button: sendFeedbackButtonIcon, icon: String.fontAwesomeIcon(name: .pencil))
-		setButtonIcon(button: shareButtonIcon, icon: String.fontAwesomeIcon(name: .rocket))
-		setButtonIcon(button: twitterButtonIcon, icon: String.fontAwesomeIcon(name: .twitter))
-		setButtonIcon(button: facebookButtonIcon, icon: String.fontAwesomeIcon(name: .facebook))
-		setButtonIcon(button: instagramButtonIcon, icon: String.fontAwesomeIcon(name: .instagram))
+		setButtonIcon(button: upgradeButtonIcon, icon: String.fontAwesomeIcon(name: .trophy), type: .solid)
+		setButtonIcon(button: changeThemeButtonIcon, icon: String.fontAwesomeIcon(name: .star), type: .solid)
+		setButtonIcon(button: learnableiOSAppButtonIcon, icon: String.fontAwesomeIcon(name: .heart), type: .solid)
+		setButtonIcon(button: reviewButtonIcon, icon: String.fontAwesomeIcon(name: .gem), type: .regular)
+		setButtonIcon(button: sendFeedbackButtonIcon, icon: String.fontAwesomeIcon(name: .pen), type: .solid)
+		setButtonIcon(button: shareButtonIcon, icon: String.fontAwesomeIcon(name: .rocket), type: .solid)
+		setButtonIcon(button: twitterButtonIcon, icon: String.fontAwesomeIcon(name: .twitter), type: .brands)
+		setButtonIcon(button: facebookButtonIcon, icon: String.fontAwesomeIcon(name: .facebook), type: .brands)
+		setButtonIcon(button: instagramButtonIcon, icon: String.fontAwesomeIcon(name: .instagram), type: .brands)
 		
 		// Styling
 		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
+		Utils.createFontAwesomeBarButton(button: backButton, icon: .arrowLeft, style: .solid)
 		tableView.separatorColor = UIColor.clear
-		
-		// Nav bar
-		var attributes = [NSAttributedStringKey : Any]()
-		attributes = [.font: UIFont.fontAwesome(ofSize: 21)]
-		backButton.setTitleTextAttributes(attributes, for: .normal)
-		backButton.setTitleTextAttributes(attributes, for: .selected)
-		backButton.title = String.fontAwesomeIcon(name: .arrowLeft)
+	}
+	
+	func setButtonIcon(button: UIButton, icon: String, type: FontAwesomeStyle) {
+		button.titleLabel?.font = UIFont.fontAwesome(ofSize: 21, style: type)
+		button.setTitle(icon, for: .normal)
 	}
 	
 	override var prefersStatusBarHidden: Bool {
 		return true
-	}
-	
-	func setButtonIcon(button: UIButton, icon: String) {
-		button.titleLabel?.font = UIFont.fontAwesome(ofSize: 22)
-		button.setTitle(icon, for: .normal)
 	}
 	
 	
@@ -89,7 +84,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	
 	// Premium
 	@IBAction func upgradeButtonPressed() {
-		Utils.presentView(self, viewName: Constants.Views.THEMES_NAV_CONTROLLER)
+		Utils.presentView(self, viewName: Constants.Views.UPGRADE)
 	}
 	
 	@IBAction func changeThemeButtonPressed() {
@@ -99,11 +94,11 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	
 	// App
 	@IBAction func learnableiOSAppButtonPressed() {
-		Utils.openURL(url: Constants.Common.LINK_LEARNABLE_IOS_STORE)
+		Utils.openURL(url: Constants.Strings.LINK_LEARNABLE_IOS_STORE)
 	}
 	
 	@IBAction func reviewButtonPressed() {
-		Utils.openURL(url: Constants.Common.LINK_APP_REVIEW)
+		Utils.openURL(url: Constants.Strings.LINK_APP_REVIEW)
 	}
 	
 	@IBAction func sendFeedbackButtonPressed() {
@@ -138,14 +133,14 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	}
 	
 	@IBAction func twitterButtonPressed() {
-		Utils.openURL(url: Constants.Common.LINK_TWITTER)
+		Utils.openURL(url: Constants.Strings.LINK_TWITTER)
 	}
 	
 	@IBAction func facebookButtonPressed() {
-		Utils.openURL(url: Constants.Common.LINK_FACEBOOK)
+		Utils.openURL(url: Constants.Strings.LINK_FACEBOOK)
 	}
 	
 	@IBAction func instagramButtonPressed() {
-		Utils.openURL(url: Constants.Common.LINK_INSTAGRAM)
+		Utils.openURL(url: Constants.Strings.LINK_INSTAGRAM)
 	}
 }

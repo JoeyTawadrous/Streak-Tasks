@@ -52,17 +52,9 @@ class AddTask: FormViewController {
 		
 		// Styling
 		Utils.insertGradientIntoTableView(viewController: self, tableView: self.tableView)
+		Utils.createFontAwesomeBarButton(button: cancelButton, icon: .times, style: .solid)
+		Utils.createFontAwesomeBarButton(button: checkButton, icon: .check, style: .solid)
 		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-		
-		// Nav bar
-		var attributes = [NSAttributedStringKey : Any]()
-		attributes = [.font: UIFont.fontAwesome(ofSize: 21)]
-		cancelButton.setTitleTextAttributes(attributes, for: .normal)
-		cancelButton.setTitleTextAttributes(attributes, for: .selected)
-		cancelButton.title = String.fontAwesomeIcon(name: .close)
-		checkButton.setTitleTextAttributes(attributes, for: .normal)
-		checkButton.setTitleTextAttributes(attributes, for: .selected)
-		checkButton.title = String.fontAwesomeIcon(name: .check)
 		
         // Disable scroll
         tableView.alwaysBounceVertical = false;

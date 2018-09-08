@@ -1,6 +1,6 @@
 // FontAwesomeImageRepresentable.swift
 //
-// Copyright (c) 2017 Maik639
+// Copyright (c) 2014-present FontAwesome.swift contributors
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@ import UIKit
 
 protocol FontAwesomeImageRepresentable: class {
 
-    typealias ImageConfig = (cssIconName: String, color: UIColor?, backgroundColor: UIColor?)
+    typealias ImageConfig = (cssIconName: String, style: FontAwesomeStyle, color: UIColor?, backgroundColor: UIColor?)
 
     var imageWidth: CGFloat { get }
     var imageConfigs: [ImageConfig] { get }
@@ -44,6 +44,7 @@ extension FontAwesomeImageRepresentable {
 
     private func createImage(config: ImageConfig, size: CGSize) -> UIImage? {
         return UIImage.fontAwesomeIcon(code: config.cssIconName,
+                                       style: config.style,
                                        textColor: config.color ?? .black,
                                        size: size,
                                        backgroundColor: config.backgroundColor ?? .clear)

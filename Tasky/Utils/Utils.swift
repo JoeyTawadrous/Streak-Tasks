@@ -1,6 +1,7 @@
 import UIKit
 import CoreData
 import MessageUI
+import FontAwesome_swift
 
 
 class Utils {
@@ -240,7 +241,7 @@ class Utils {
 	
 	class func openShareView(viewController: UIViewController) {
 		let share = Constants.Strings.SHARE
-		let link : NSURL = NSURL(string: Constants.Common.LINK_IOS_STORE)!
+		let link : NSURL = NSURL(string: Constants.Strings.LINK_IOS_STORE)!
 		let logo: UIImage = UIImage(named: Constants.Design.LOGO)!
 		
 		let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: [share, link, logo], applicationActivities: nil)
@@ -285,10 +286,11 @@ class Utils {
 		view.navigationController?.pushViewController(getViewController(viewName), animated: true)
 	}
 	
-	class func showOkButtonDialog(view: UIViewController, message: String) {
-		let alert = UIAlertController(title: "Info", message: message, preferredStyle: UIAlertControllerStyle.alert)
-		alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in }))
-		
-		view.present(alert, animated: true, completion: nil)
+	class func createFontAwesomeBarButton(button: UIBarButtonItem, icon: FontAwesome, style: FontAwesomeStyle) {
+		var attributes = [NSAttributedStringKey : Any]()
+		attributes = [.font: UIFont.fontAwesome(ofSize: 21, style: style)]
+		button.setTitleTextAttributes(attributes, for: .normal)
+		button.setTitleTextAttributes(attributes, for: .selected)
+		button.title = String.fontAwesomeIcon(name: icon)
 	}
 }

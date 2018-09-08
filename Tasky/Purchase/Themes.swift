@@ -16,17 +16,9 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
     /////////////////////////////////////////// */
     override func viewWillAppear(_ animated: Bool) {
         Utils.insertGradientIntoView(viewController: self)
+		Utils.createFontAwesomeBarButton(button: restoreButton, icon: .sync, style: .solid)
+		Utils.createFontAwesomeBarButton(button: backButton, icon: .arrowLeft, style: .solid)
 		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-		
-		// Nav bar
-		var attributes = [NSAttributedStringKey : Any]()
-		attributes = [.font: UIFont.fontAwesome(ofSize: 21)]
-		restoreButton.setTitleTextAttributes(attributes, for: .normal)
-		restoreButton.setTitleTextAttributes(attributes, for: .selected)
-		restoreButton.title = String.fontAwesomeIcon(name: .refresh)
-		backButton.setTitleTextAttributes(attributes, for: .normal)
-		backButton.setTitleTextAttributes(attributes, for: .selected)
-		backButton.title = String.fontAwesomeIcon(name: .arrowLeft)
     }
     
     
@@ -46,9 +38,9 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Table Functionality
 	/////////////////////////////////////////// */
 	internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: Constants.Common.CELL)
+		var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "cell")
 		if cell == nil {
-			cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: Constants.Common.CELL)
+			cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
 		}
 		
 		let themes = Constants.Purchases.Colors.keys
@@ -73,13 +65,13 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		let currentTheme = UserDefaults.standard.string(forKey: Constants.Purchases.CURRENT_THEME)
 		
 		if theme == currentTheme {
-			Utils.showOkButtonDialog(view: self, message: currentTheme! + " is Currently Set." + "Please select another theme to set as default.")
+			Dialogs.showOkButtonDialog(view: self, message: currentTheme! + " is Currently Set." + "Please select another theme to set as default.")
 		}
 		else {
 			let purchasedProducts = UserDefaults.standard.object(forKey: Constants.Purchases.PURCHASED_PRODUCTS) as? [String] ?? [String]()
 			
 			if theme != Constants.Purchases.MALIBU_THEME && !purchasedProducts.contains((theme)) {
-				SwiftyStoreKit.purchaseProduct(Constants.Purchases.PRODUCT_ID_PREFIX + theme, atomically: true) { result in
+				SwiftyStoreKit.purchaseProduct(Constants.Purchases.THEME_ID_PREFIX + theme, atomically: true) { result in
 					Purchase.handlePurchaseResult(result, view: self, purchasedItem: theme)
 				}
 			}

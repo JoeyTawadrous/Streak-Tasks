@@ -1,21 +1,32 @@
 PODS:
-  - FontAwesome.swift (1.3.2)
+  - FontAwesome.swift (1.4.4)
+  - paper-onboarding (4.1.0)
   - SCLAlertView (0.8)
   - SwiftForms (1.8.2)
-  - SwiftyStoreKit (0.13.1)
+  - SwiftyStoreKit (0.13.3)
 
 DEPENDENCIES:
   - FontAwesome.swift
+  - paper-onboarding
   - SCLAlertView
   - SwiftForms
   - SwiftyStoreKit
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FontAwesome.swift
+    - paper-onboarding
+    - SCLAlertView
+    - SwiftForms
+    - SwiftyStoreKit
+
 SPEC CHECKSUMS:
-  FontAwesome.swift: b4e4c8ccbbecb12f9b592bc533ff237af3706667
+  FontAwesome.swift: 17b93524b9f61136a8566344517b8556ed584e87
+  paper-onboarding: 344780cbb0bfc229cd1862f5b9bba446b23c5185
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SwiftForms: f0d4d30401e21de87d9b7b63a4691a3d4e22bab5
-  SwiftyStoreKit: c36bb7841dd51a485ce5c38abf9e96fba988741f
+  SwiftyStoreKit: 9ebd15971e28aa2989825fe8bc092eb5f75dd0b2
 
-PODFILE CHECKSUM: 00fea7ed3519b7a2f70b0cf7acfb654e1587ff9c
+PODFILE CHECKSUM: 5ca61bd73d6f0bd3ad44970059595c373cba160e
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

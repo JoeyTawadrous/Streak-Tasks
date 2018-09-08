@@ -25,22 +25,12 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
 		// Styling
 		Utils.insertGradientIntoView(viewController: self)
+		Utils.createFontAwesomeBarButton(button: addButton, icon: .plus, style: .solid)
 		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-		
-		// Nav bar
-		var attributes = [NSAttributedStringKey : Any]()
-		attributes = [.font: UIFont.fontAwesome(ofSize: 21)]
-		addButton.setTitleTextAttributes(attributes, for: .normal)
-		addButton.setTitleTextAttributes(attributes, for: .selected)
-		addButton.title = String.fontAwesomeIcon(name: .plus)
 		
 		// Observer for every notification received
 		NotificationCenter.default.addObserver(self, selector: #selector(Tasks.backgoundNofification(_:)), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil);
     }
-	
-	override var prefersStatusBarHidden: Bool {
-		return true
-	}
 	
 	@objc func backgoundNofification(_ noftification:Notification){
 		refresh()
@@ -54,6 +44,10 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		tasks = tasks.reversed() // newest first
 		
 		self.tableView.reloadData()
+	}
+	
+	override var prefersStatusBarHidden: Bool {
+		return true
 	}
 	
 	
@@ -117,9 +111,9 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Table Functionality
 	/////////////////////////////////////////// */
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: TasksTableViewCell! = tableView.dequeueReusableCell(withIdentifier: Constants.Common.CELL) as? TasksTableViewCell
+        var cell: TasksTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "cell") as? TasksTableViewCell
         if cell == nil {
-            cell = TasksTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: Constants.Common.CELL)
+            cell = TasksTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
         }
 		let tasks = self.tasks[indexPath.row]
 		let type = tasks.value(forKey: Constants.CoreData.TYPE) as! String?
@@ -165,7 +159,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
         defaults.set(NSInteger(indexPath.row), forKey: Constants.LocalData.SELECTED_TASK_INDEX)
 		
         // Show task view
-        let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let taskView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.TASK) as! Task
         self.show(taskView as UIViewController, sender: taskView)
     }

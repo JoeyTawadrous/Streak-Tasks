@@ -12,29 +12,29 @@ class Purchase {
 			Purchase.updatePurchasedThemes(purchasedItem)
 			UserDefaults.standard.set(purchasedItem, forKey: Constants.Purchases.CURRENT_THEME)
 			Utils.insertGradientIntoView(viewController: view)
-			Utils.showOkButtonDialog(view: view, message: "Your new theme has been succesfully purchased and set. Enjoy :)")
+			Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_SUCCESS)
 			
 		case .error(let error):
 			print("Purchase Failed: \(error)")
 			
 			switch error.code {
 				case .storeProductNotAvailable:
-					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_AVAILABLE)
+					Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_AVAILABLE)
 				
 				case .paymentInvalid:
-					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_IDENTIFIER_INVALID)
+					Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_IDENTIFIER_INVALID)
 				
 				case .paymentCancelled:
-					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_CANCELLED)
+					Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_CANCELLED)
 				
 				case .paymentNotAllowed:
-					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
+					Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
 				
 				case .clientInvalid:
-					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
+					Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
 				
 				default:
-					Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_UNKNOWN)
+					Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_UNKNOWN)
 			}
 		}
 	}
@@ -61,7 +61,7 @@ class Purchase {
 	class func restorePurchases(view: UIViewController) {
 		SwiftyStoreKit.restorePurchases(atomically: true) { results in
 			if results.restoreFailedPurchases.count > 0 {
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_RESTORE_ERROR)
+				Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_RESTORE_ERROR)
 			}
 			else if results.restoredPurchases.count > 0 {
 				for purchase in results.restoredPurchases {
@@ -78,10 +78,10 @@ class Purchase {
 					}
 				}
 				
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_RESTORE_SUCCESS)
+				Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_RESTORE_SUCCESS)
 			}
 			else {
-				Utils.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_RESTORE_NOTHING)
+				Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_RESTORE_NOTHING)
 			}
 		}
 	}
@@ -98,19 +98,4 @@ class Purchase {
 		purchasedProducts.append(theme)
 		UserDefaults.standard.set(purchasedProducts, forKey: Constants.Purchases.PURCHASED_PRODUCTS)
 	}
-	
-	
-	//  TEST
-	//	SwiftyStoreKit.retrieveProductsInfo(["com.joeyt.learnable.subscription"]) { result in
-	//	if let product = result.retrievedProducts.first {
-	//	let priceString = product.localizedPrice!
-	//	print("Product: \(product.localizedDescription), price: \(priceString)")
-	//	}
-	//	else if let invalidProductId = result.invalidProductIDs.first {
-	//	print("Invalid product identifier: \(invalidProductId)")
-	//	}
-	//	else {
-	//	print("Error: \(result.error)")
-	//	}
-	//	}
 }

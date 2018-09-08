@@ -8,6 +8,8 @@
 
 Use Font Awesome in your Swift projects
 
+To see the complete set of 3,652 icons in Font Awesome 5, please check the [FontAwesome.com](http://fontawesome.com/icons/) site.
+
 ## Installation
 
 Since this is a Swift project, integrating using Carthage is the recommended way. Releases which support CocoaPods might be delayed sometimes.
@@ -43,56 +45,54 @@ $ pod install
 And add `import FontAwesome_swift` to the top of the files using FontAwesome.
 
 ### Manually
-- Drag and drop `FontAwesome.otf` and all Swift files into your project
+- Drag and drop all `.otf` and `.swift` files into your project
 
 ## Examples
 
-### FontAwesome icon in label
 ```swift
-label.font = UIFont.fontAwesome(ofSize: 100)
+// FontAwesome icon in label
+label.font = UIFont.fontAwesome(ofSize: 100, style: .brands)
 label.text = String.fontAwesomeIcon(name: .github)
-```
 
-### FontAwesome icon in label from css class name
-```swift
-label.font = UIFont.fontAwesome(ofSize: 200)
-label.text = String.fontAwesomeIcon(code: "fa-github")
-```
+let attributes = [NSAttributedStringKey.font: UIFont.fontAwesome(ofSize: 20, style: .brands)]
 
-### FontAwesome icon in button
-```swift
-button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
+// FontAwesome icon in button
+button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .brands)
 button.setTitle(String.fontAwesomeIcon(name: .github), for: .normal)
-```
 
-### FontAwesome icon as navigation bar item
-```swift
-let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
-leftBarButton.setTitleTextAttributes(attributes, for: .normal)
-leftBarButton.title = String.fontAwesomeIcon(name: .github)
-```
+// FontAwesome icon as navigation bar item
+barButton.setTitleTextAttributes(attributes, for: .normal)
+barButton.title = String.fontAwesomeIcon(name: .github)
 
-### FontAwesome icon as toolbar item
-```swift
-let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
+// FontAwesome icon as toolbar item
 toolbarItem.setTitleTextAttributes(attributes, for: .normal)
 toolbarItem.title = String.fontAwesomeIcon(name: .github)
-```
 
-### FontAwesome icon as an image
-```swift
-tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
-```
+// FontAwesome icon as image
+imageView.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, textColor: .black, size: CGSize(width: 4000, height: 4000))
 
-### FontAwesome icon as an image with background color
-```swift
-tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
+// FontAwesome icon as image with background color
+imageViewColored.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, textColor: .white, size: CGSize(width: 4000, height: 4000), backgroundColor: .black)
 ```
 
 ## Requirements
 
 iOS 8 or later.
 
+## Development
+To update this project to include all the latest icons from the new verison of
+Font Awesome (replace `x.y.z` with the new font version):
+
+    bundle exec fastlane update_font version:x.y.z
+
+To release a new version `x.y.z` (replace `x.y.z` with a real version number):
+
+    bundle exec fastlane release version:x.y.z
+
+Since it will automatically make a new commit to bump version and push to CocoaPods
+trunk, make sure you have write access to this repo and be one of the podspec owners.
+If you are a maintainer but don't have these privilege yet, please let me know.
+
 ## License
-- FontAwesome.otf file licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
+- All font files licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
 - FontAwesome.swift licensed under [MIT](http://thi.mit-license.org/)

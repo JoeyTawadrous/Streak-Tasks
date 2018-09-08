@@ -3,19 +3,17 @@ import Foundation
 
 class Constants {
 	
-	struct Common {
+	struct Colors {
+		static let BLUE = "69CDFC"
+		static let GREEN = "2ecc71"
+		static let PURPLE = "B0B1F1"
+		static let PRIMARY_TEXT_GRAY = "5D5D5C"
+	}
+	
+	
+	struct Core {
 		static let APP_ID = "1195440882"
 		static let APPNAME = "Tasky"
-		
-		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Common.APP_ID + "?action=write-review"
-		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
-		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
-		static let LINK_IOS_STORE = "https://itunes.apple.com/gb/app/tasky-your-to-do-list-tracker/id1195440882?mt=8"
-		static let LINK_LEARNABLE_IOS_STORE = "https://itunes.apple.com/gb/app/learnable-learn-to-code-from-scratch-level-up/id1254862243?mt=8"
-		static let LINK_TWITTER = "https://twitter.com/getlearnable"
-		
-		static let CELL = "cell"
-		static let MAIN_STORYBOARD = "Main"
 	}
 	
 	
@@ -54,9 +52,16 @@ class Constants {
 	
 	
 	struct Purchases {
+		// Upgrade
+		static let SHARED_SECRET = "7e01d48a5e7646dd82282cf26a97af2c"
+		static let SUBSCRIPTION_MONTHLY_KEY = "com.joeyt.learnable.subscription.monthly"
+		static let SUBSCRIPTION_YEARLY_KEY = "com.joeyt.learnable.subscription.yearly"
+		static let UNLOCK_KEY = "com.joeyt.learnable.unlock"
+		
+		// Themes
 		static let PURCHASED_PRODUCTS = "PurchasedProducts"
 		static let CURRENT_THEME = "CurrentTheme"
-		static let PRODUCT_ID_PREFIX = "com.joeyt.tasky.iap.theme."
+		static let THEME_ID_PREFIX = "com.joeyt.tasky.iap.theme."
 		
 		static let GRASSY_THEME = "grassy"
 		static let SUNRISE_THEME = "sunrise"
@@ -81,14 +86,22 @@ class Constants {
 	
 	
 	struct Strings {
+		// Dialog: Alert
 		static let ALERT_SUBMIT = "Submit"
 		static let ALERT_CLOSE = "Close"
 		
 		
-		static let SHARE = "Check out " + Constants.Common.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! #Tasky #iOS \n\nDownload for free now: " + Constants.Common.LINK_IOS_STORE
+		// Links
+		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Core.APP_ID + "?action=write-review"
+		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
+		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
+		static let LINK_IOS_STORE = "https://itunes.apple.com/gb/app/tasky-your-to-do-list-tracker/id1195440882?mt=8"
+		static let LINK_LEARNABLE_IOS_STORE = "https://itunes.apple.com/gb/app/learnable-learn-to-code-from-scratch-level-up/id1254862243?mt=8"
+		static let LINK_TWITTER = "https://twitter.com/getlearnable"
+		static let LINK_WEB = "http://www.getlearnable.com"
 		
 		
-		// Purchases
+		// Purchases: Strings
 		static let PURCHASE_ERROR_CONTACT_US = " Please contact us."
 		static let PURCHASE_ERROR_NOT_AVAILABLE = "The product is not available in the current storefront." + PURCHASE_ERROR_CONTACT_US
 		static let PURCHASE_ERROR_IDENTIFIER_INVALID = "The purchase identifier was invalid." + PURCHASE_ERROR_CONTACT_US
@@ -98,12 +111,31 @@ class Constants {
 		static let PURCHASE_RESTORE_ERROR = "Restore error." + PURCHASE_ERROR_CONTACT_US
 		static let PURCHASE_RESTORE_NOTHING = "You have no purchases to restore!"
 		static let PURCHASE_RESTORE_SUCCESS = "You have restored your previous purchase and now have access to the entire app!"
+		static let PURCHASE_SUCCESS = "Your new theme has been succesfully purchased and set. Enjoy :)"
 		
+		
+		// Purchases: Upgrade Strings
+		static let UPGRADE_SCREEN_TITLE = "Tasky Premium"
+		static let UPGRADE_SCREEN_ONE_TITLE = "Unlock Everything"
+		static let UPGRADE_SCREEN_ONE_TEXT = "Gain access to all features, themes & unlockable content."
+		static let UPGRADE_SCREEN_TWO_TITLE = "Access Themes"
+		static let UPGRADE_SCREEN_TWO_TEXT = "Gain access to our Sunrise, Salvation, Nightlight themes & more."
+		static let UPGRADE_SCREEN_THREE_TITLE = "Unlimited Goals"
+		static let UPGRADE_SCREEN_THREE_TEXT = "Create unlimited goals & tasks to keep you motivated."
+		static let UPGRADE_SCREENS_MONTHLY_SUBSCRIBE_BUTTON_TITLE = "$1.99 \nmonth"
+		static let UPGRADE_SCREENS_YEARLY_SUBSCRIBE_BUTTON_TITLE = "$4.99 \nyear"
+		static let UPGRADE_SCREENS_UNLOCK_BUTTON_TITLE = "$6.99 \nonce"
+		static let UPGRADE_SCREENS_INFO = "You'll be charged $2.99/month at confirmation of purchase. Your subscription will renew after 1 month unless turned off 24-hours before the end of the subscription period. You can manage this in your App Store settings. For details, see " + Constants.Strings.LINK_WEB
+	
 		
 		// Send Feedback
 		static let EMAIL = "joeytawadrous@gmail.com"
 		static let SEND_FEEDBACK_SUBJECT = "Tasky Feedback!"
 		static let SEND_FEEDBACK_BODY = "I want to make Tasky better. Here are my ideas... \n\n What I like about Tasky: \n 1. \n 2. \n 3. \n\n What I don't like about Tasky: \n 1. \n 2. \n 3. \n\n"
+		
+		
+		// Share
+		static let SHARE = "Check out " + Constants.Core.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! #Tasky #iOS \n\nDownload for free now: " + Constants.Strings.LINK_IOS_STORE
 	}
 	
 	
@@ -117,5 +149,6 @@ class Constants {
 		static let SETTINGS_NAV_CONTROLLER = "SettingsNavController"
 		static let THEMES = "Themes"
 		static let THEMES_NAV_CONTROLLER = "ThemesNavController"
+		static let UPGRADE = "Upgrade"
 	}
 }

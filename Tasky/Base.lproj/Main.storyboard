@@ -376,7 +376,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-g1-89A">
-                                                    <rect key="frame" x="29" y="29" width="71" height="15"/>
+                                                    <rect key="frame" x="29.000000000000007" y="29" width="70.666666666666686" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="WXl-DO-8qD"/>
                                                     </constraints>
@@ -526,7 +526,6 @@
         <!--Navigation Controller-->
         <scene sceneID="X86-J3-VBj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sDJ-Oh-Day" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="SettingsNavController" automaticallyAdjustsScrollViewInsets="NO" id="Q6K-N9-3sW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fRc-ph-XCH">
@@ -538,6 +537,7 @@
                         <segue destination="CyB-It-t5J" kind="relationship" relationship="rootViewController" id="yRH-pN-Um3"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDJ-Oh-Day" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5748" y="-571"/>
         </scene>
@@ -571,7 +571,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uf-h4-UpQ">
-                                                    <rect key="frame" x="59" y="6.3333333333333321" width="341" height="29.999999999999996"/>
+                                                    <rect key="frame" x="59" y="7.3333333333333321" width="341" height="28.999999999999996"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Upgrade">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -610,7 +610,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6X-ow-bEc">
-                                                    <rect key="frame" x="59" y="6.3333333333333321" width="341" height="29.999999999999996"/>
+                                                    <rect key="frame" x="59" y="7.3333333333333321" width="341" height="28.999999999999996"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Change Theme">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -653,7 +653,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICE-zD-C6j">
-                                                    <rect key="frame" x="59" y="6.3333333333333321" width="341" height="29.999999999999996"/>
+                                                    <rect key="frame" x="59" y="7.3333333333333321" width="341" height="28.999999999999996"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Learn to Code">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -692,7 +692,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3Y-rT-Gzd">
-                                                    <rect key="frame" x="59" y="6.3333333333333321" width="341" height="29.999999999999996"/>
+                                                    <rect key="frame" x="59" y="7.3333333333333321" width="341" height="28.999999999999996"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Review Tasky">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -731,7 +731,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUL-Zy-Sni">
-                                                    <rect key="frame" x="59" y="6.3333333333333321" width="341" height="29.999999999999996"/>
+                                                    <rect key="frame" x="59" y="7.3333333333333321" width="341" height="28.999999999999996"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Send Feedback">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -774,7 +774,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIG-4D-mcf">
-                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
+                                                    <rect key="frame" x="59" y="7" width="341" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Share the love">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -813,7 +813,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyE-Hk-0dU">
-                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
+                                                    <rect key="frame" x="59" y="7" width="341" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Follow us on Twitter">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -852,7 +852,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ul-Ma-4ew">
-                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
+                                                    <rect key="frame" x="59" y="7" width="341" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Like us on Facebook">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -891,7 +891,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldb-JC-ilP">
-                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
+                                                    <rect key="frame" x="59" y="7" width="341" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Heart us on Instagram">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -961,6 +961,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40p-0w-cIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5747.826086956522" y="898.36956521739137"/>
+        </scene>
+        <!--Upgrade Scene-->
+        <scene sceneID="OEo-Uf-p4N">
+            <objects>
+                <viewController storyboardIdentifier="Upgrade" id="6ZK-as-BQI" userLabel="Upgrade Scene" customClass="Upgrade" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gmd-qM-IFt"/>
+                        <viewControllerLayoutGuide type="bottom" id="bno-U6-KFl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s5j-rQ-s0z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xg-th-uFD" userLabel="Onboarding" customClass="PaperOnboarding" customModule="paper_onboarding">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" red="0.2872858942" green="0.14020672440000001" blue="0.30659055709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6ZK-as-BQI" id="igE-YX-XzO"/>
+                                    <outlet property="delegate" destination="6ZK-as-BQI" id="e7N-kM-8hS"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0xg-th-uFD" firstAttribute="leading" secondItem="s5j-rQ-s0z" secondAttribute="leading" id="1hh-vE-7JZ"/>
+                            <constraint firstAttribute="height" secondItem="0xg-th-uFD" secondAttribute="height" id="2hQ-TR-crl"/>
+                            <constraint firstItem="bno-U6-KFl" firstAttribute="top" secondItem="0xg-th-uFD" secondAttribute="bottom" id="mjE-X3-nMA"/>
+                            <constraint firstAttribute="width" secondItem="0xg-th-uFD" secondAttribute="width" id="wgr-bC-WNR"/>
+                            <constraint firstItem="0xg-th-uFD" firstAttribute="top" secondItem="Gmd-qM-IFt" secondAttribute="bottom" id="zH8-de-xdv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onboarding" destination="0xg-th-uFD" id="Jo2-0J-560"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHZ-Nv-JVU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4883" y="898"/>
         </scene>
     </scenes>
     <resources>

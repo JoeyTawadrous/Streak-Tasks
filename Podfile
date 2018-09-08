@@ -10,6 +10,6 @@ target 'Tasky' do
   pod 'FontAwesome.swift'
   pod 'SwiftForms'
   pod 'SwiftyStoreKit'
-  pod 'paper-onboarding', '~> 2.0.1'
+  pod 'paper-onboarding'
 
 end

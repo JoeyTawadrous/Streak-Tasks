@@ -35,17 +35,9 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
 		// Styling
 		Utils.insertGradientIntoView(viewController: self)
+		Utils.createFontAwesomeBarButton(button: addButton, icon: .plus, style: .solid)
+		Utils.createFontAwesomeBarButton(button: menuButton, icon: .bars, style: .solid)
 		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-		
-		// Nav bar
-		var attributes = [NSAttributedStringKey : Any]()
-		attributes = [.font: UIFont.fontAwesome(ofSize: 21)]
-		addButton.setTitleTextAttributes(attributes, for: .normal)
-		addButton.setTitleTextAttributes(attributes, for: .selected)
-		addButton.title = String.fontAwesomeIcon(name: .plus)
-		menuButton.setTitleTextAttributes(attributes, for: .normal)
-		menuButton.setTitleTextAttributes(attributes, for: .selected)
-		menuButton.title = String.fontAwesomeIcon(name: .bars)
     }
 	
 	override var prefersStatusBarHidden: Bool {
@@ -88,9 +80,9 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Table Functionality
 	/////////////////////////////////////////// */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: GoalTableViewCell! = tableView.dequeueReusableCell(withIdentifier: Constants.Common.CELL) as? GoalTableViewCell
+        var cell: GoalTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "cell") as? GoalTableViewCell
         if cell == nil {
-            cell = GoalTableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: Constants.Common.CELL)
+            cell = GoalTableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "cell")
         }
         let goal = goals[indexPath.row]
 		
@@ -162,7 +154,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
         defaults.set(indexPath.row, forKey: Constants.LocalData.SELECTED_GOAL_INDEX)
         
         // Show tasks view
-        let storyBoard : UIStoryboard = UIStoryboard(name: Constants.Common.MAIN_STORYBOARD, bundle:nil)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let tasksView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.TASKS) as! Tasks
         self.show(tasksView as UIViewController, sender: tasksView)
     }

@@ -76,7 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	
 	func applicationWillEnterForeground(_ application: UIApplication) {
-		Purchase.restorePurchases(view: self.inputViewController!, showDialog: false)
+//		Purchase.restorePurchases(view: self.inputViewController!, showDialog: false)
 		Purchase.verifyReceiptCheck()
 	}
 	

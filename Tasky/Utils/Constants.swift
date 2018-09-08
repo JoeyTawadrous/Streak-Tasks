@@ -117,7 +117,7 @@ class Constants {
 		static let PURCHASE_RESTORE_ERROR = "Restore error." + PURCHASE_ERROR_CONTACT_US
 		static let PURCHASE_RESTORE_NOTHING = "You have no purchases to restore!"
 		static let PURCHASE_RESTORE_SUCCESS = "You have successfully restored your previous purchases."
-		static let PURCHASE_SUCCESS = "Your new theme has been succesfully purchased and set. Enjoy :)"
+		static let PURCHASE_SUCCESS = "Your new theme has been succesfully set. Enjoy :)"
 		
 		
 		// Purchases: Upgrade Strings

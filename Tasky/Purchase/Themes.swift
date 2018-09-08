@@ -71,6 +71,11 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		if theme == currentTheme {
 			Dialogs.showOkButtonDialog(view: self, message: currentTheme + " is Currently Set." + "Please select another theme to set as default.")
 		}
+		else if Utils.bool(key: Constants.Defaults.USER_HAS_MONTHLY_SUBSCRIPTION) || Utils.bool(key: Constants.Defaults.USER_HAS_YEARLY_SUBSCRIPTION) || Utils.bool(key: Constants.Defaults.USER_HAS_UNLOCKED_APP) {
+			Utils.set(key: Constants.Defaults.CURRENT_THEME, value: theme)
+			Utils.insertGradientIntoView(viewController: self)
+			Dialogs.showOkButtonDialog(view: self, message: Constants.Strings.PURCHASE_SUCCESS)
+		}
 		else {
 			if theme != Constants.Purchases.MALIBU_THEME {
 				if Utils.contains(key: Constants.Defaults.PURCHASED_THEMES) {

@@ -493,10 +493,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99492698907852173" green="0.98997539281845093" blue="0.99009978771209717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="19x-e1-Leu" secondAttribute="bottom" id="48I-Wg-y3h"/>
-                            <constraint firstAttribute="trailing" secondItem="19x-e1-Leu" secondAttribute="trailing" id="RzP-bO-pse"/>
-                            <constraint firstItem="19x-e1-Leu" firstAttribute="leading" secondItem="WyW-S6-Jz8" secondAttribute="leading" id="fWQ-vA-GHr"/>
-                            <constraint firstItem="19x-e1-Leu" firstAttribute="top" secondItem="WyW-S6-Jz8" secondAttribute="top" id="x9I-F2-yyK"/>
+                            <constraint firstItem="19x-e1-Leu" firstAttribute="width" secondItem="WyW-S6-Jz8" secondAttribute="width" id="5i1-bC-UCh"/>
+                            <constraint firstItem="19x-e1-Leu" firstAttribute="leading" secondItem="WyW-S6-Jz8" secondAttribute="leading" id="J0b-6T-vas"/>
+                            <constraint firstItem="19x-e1-Leu" firstAttribute="top" secondItem="WyW-S6-Jz8" secondAttribute="top" id="P4j-1X-InP"/>
+                            <constraint firstItem="19x-e1-Leu" firstAttribute="height" secondItem="WyW-S6-Jz8" secondAttribute="height" id="Rkc-80-jRb"/>
+                            <constraint firstAttribute="trailing" secondItem="19x-e1-Leu" secondAttribute="trailing" id="gZu-7f-eSq"/>
+                            <constraint firstAttribute="bottom" secondItem="19x-e1-Leu" secondAttribute="bottom" id="rrq-Fj-Bvg"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

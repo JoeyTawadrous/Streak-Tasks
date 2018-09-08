@@ -13,7 +13,7 @@ class Constants {
 	
 	struct Core {
 		static let APP_ID = "1195440882"
-		static let APPNAME = "Tasky"
+		static let APP_NAME = "Tasky"
 	}
 	
 	
@@ -29,17 +29,17 @@ class Constants {
 	}
 	
 	
-	struct Design {
-		static let LOGO = "AppIcon"
-	}
-	
-	
 	struct Defaults {
 		static let CURRENT_THEME = "CurrentTheme"
 		static let PURCHASED_THEMES = "PurchasedThemes"
 		static let USER_HAS_MONTHLY_SUBSCRIPTION = "userHasMonthlySubscription"
 		static let USER_HAS_YEARLY_SUBSCRIPTION = "userHasYearlySubscription"
 		static let USER_HAS_UNLOCKED_APP = "userHasUnlockedApp"
+	}
+	
+	
+	struct Design {
+		static let LOGO = "AppIcon"
 	}
 	
 	
@@ -141,7 +141,7 @@ class Constants {
 		
 		
 		// Share
-		static let SHARE = "Check out " + Constants.Core.APPNAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! #Tasky #iOS \n\nDownload for free now: " + Constants.Strings.LINK_IOS_STORE
+		static let SHARE = "Check out " + Constants.Core.APP_NAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! #Tasky #iOS \n\nDownload for free now: " + Constants.Strings.LINK_IOS_STORE
 	}
 	
 	

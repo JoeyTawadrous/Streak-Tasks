@@ -116,5 +116,6 @@ class Constants {
 		static let SETTINGS = "Settings"
 		static let SETTINGS_NAV_CONTROLLER = "SettingsNavController"
 		static let THEMES = "Themes"
+		static let THEMES_NAV_CONTROLLER = "ThemesNavController"
 	}
 }

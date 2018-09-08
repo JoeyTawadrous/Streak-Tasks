@@ -5,6 +5,8 @@ import MessageUI
 
 class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate {
 	
+	@IBOutlet var upgradeButtonIcon: UIButton!
+	@IBOutlet var changeThemeButtonIcon: UIButton!
 	@IBOutlet var learnableiOSAppButtonIcon: UIButton!
 	@IBOutlet var reviewButtonIcon: UIButton!
 	@IBOutlet var sendFeedbackButtonIcon: UIButton!
@@ -19,6 +21,8 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
+		setButtonIcon(button: upgradeButtonIcon, icon: String.fontAwesomeIcon(name: .trophy))
+		setButtonIcon(button: changeThemeButtonIcon, icon: String.fontAwesomeIcon(name: .star))
 		setButtonIcon(button: learnableiOSAppButtonIcon, icon: String.fontAwesomeIcon(name: .heart))
 		setButtonIcon(button: reviewButtonIcon, icon: String.fontAwesomeIcon(name: .gamepad))
 		setButtonIcon(button: sendFeedbackButtonIcon, icon: String.fontAwesomeIcon(name: .pencil))
@@ -69,7 +73,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	}
 	
 	public override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-		if section == 1 {
+		if section == 2 {
 			return 70.0
 		}
 		return 0
@@ -83,7 +87,17 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		Utils.presentView(self, viewName: Constants.Views.GOALS_NAV_CONTROLLER)
 	}
 	
-	// APP
+	// Premium
+	@IBAction func upgradeButtonPressed() {
+		Utils.presentView(self, viewName: Constants.Views.THEMES_NAV_CONTROLLER)
+	}
+	
+	@IBAction func changeThemeButtonPressed() {
+		Utils.presentView(self, viewName: Constants.Views.THEMES_NAV_CONTROLLER)
+	}
+	
+	
+	// App
 	@IBAction func learnableiOSAppButtonPressed() {
 		Utils.openURL(url: Constants.Common.LINK_LEARNABLE_IOS_STORE)
 	}
@@ -118,7 +132,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	}
 	
 	
-	// SHARE
+	// Share
 	@IBAction func shareButtonPressed() {
 		Utils.openShareView(viewController: self)
 	}

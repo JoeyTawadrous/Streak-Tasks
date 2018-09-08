@@ -7,6 +7,7 @@ import SwiftyStoreKit
 class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	@IBOutlet var tableView: UITableView!
+	@IBOutlet var backButton: UIBarButtonItem!
 	@IBOutlet var restoreButton: UIBarButtonItem!
     
 	
@@ -23,12 +24,19 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		restoreButton.setTitleTextAttributes(attributes, for: .normal)
 		restoreButton.setTitleTextAttributes(attributes, for: .selected)
 		restoreButton.title = String.fontAwesomeIcon(name: .refresh)
+		backButton.setTitleTextAttributes(attributes, for: .normal)
+		backButton.setTitleTextAttributes(attributes, for: .selected)
+		backButton.title = String.fontAwesomeIcon(name: .arrowLeft)
     }
     
     
     
     /* MARK: Button Actions
     /////////////////////////////////////////// */
+	@IBAction func backButtonPressed() {
+		Utils.presentView(self, viewName: Constants.Views.SETTINGS_NAV_CONTROLLER)
+	}
+	
     @IBAction func restoreButtonPressed(_ sender: UIButton) {
         Purchase.restorePurchases(view: self)
     }
@@ -48,7 +56,7 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
 		cell.textLabel?.text = theme.capitalizeFirst()
 		cell.textLabel?.textColor = UIColor.white
-		cell.textLabel?.font = UIFont.systemFont(ofSize: 20.0)
+		cell.textLabel?.font = UIFont.GothamProMedium(size: 20.0)
 		
 		cell.selectionStyle = .none
 		

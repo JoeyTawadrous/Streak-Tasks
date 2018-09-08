@@ -18,13 +18,12 @@ class Task: UIViewController {
 	/* MARK: Init
 	/////////////////////////////////////////// */
     override func viewWillAppear(_ animated: Bool) {
-		let defaults = UserDefaults.standard
         var goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
         goals = goals.reversed()
 		
-        let selectedGoal = defaults.string(forKey: Constants.LocalData.SELECTED_GOAL)!
-        let selectedGoalIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_GOAL_INDEX)
-        let selectedTaskIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_TASK_INDEX)
+        let selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
+        let selectedGoalIndex = Utils.int(key: Constants.LocalData.SELECTED_GOAL_INDEX)
+        let selectedTaskIndex = Utils.int(key: Constants.LocalData.SELECTED_TASK_INDEX)
         var tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
         tasks = tasks.reversed()
 		
@@ -79,9 +78,8 @@ class Task: UIViewController {
     @IBAction func markDoneButtonTapped(_ sender : UIButton!) {
         sender.isEnabled = false
 		
-        let defaults = UserDefaults.standard
-        let selectedGoal = defaults.string(forKey: Constants.LocalData.SELECTED_GOAL)!
-        let selectedTaskIndex = defaults.integer(forKey: Constants.LocalData.SELECTED_TASK_INDEX)
+        let selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
+        let selectedTaskIndex = Utils.int(key: Constants.LocalData.SELECTED_TASK_INDEX)
         var tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
         let task = tasks[selectedTaskIndex] as! NSManagedObject
         Tasks.deleteTask(task)

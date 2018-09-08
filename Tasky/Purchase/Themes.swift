@@ -30,7 +30,7 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	}
 	
     @IBAction func restoreButtonPressed(_ sender: UIButton) {
-        Purchase.restorePurchases(view: self)
+		Purchase.restorePurchases(view: self, showDialog: true)
     }
 	
 	
@@ -62,22 +62,26 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
 		let themes = Constants.Purchases.Colors.keys
 		let theme = Array(themes)[indexPath.row]
-		let currentTheme = UserDefaults.standard.string(forKey: Constants.Purchases.CURRENT_THEME)
+		let currentTheme = Utils.string(key: Constants.Purchases.CURRENT_THEME)
 		
 		if theme == currentTheme {
-			Dialogs.showOkButtonDialog(view: self, message: currentTheme! + " is Currently Set." + "Please select another theme to set as default.")
+			Dialogs.showOkButtonDialog(view: self, message: currentTheme + " is Currently Set." + "Please select another theme to set as default.")
 		}
 		else {
-			let purchasedProducts = UserDefaults.standard.object(forKey: Constants.Purchases.PURCHASED_PRODUCTS) as? [String] ?? [String]()
-			
-			if theme != Constants.Purchases.MALIBU_THEME && !purchasedProducts.contains((theme)) {
-				SwiftyStoreKit.purchaseProduct(Constants.Purchases.THEME_ID_PREFIX + theme, atomically: true) { result in
-					Purchase.handlePurchaseResult(result, view: self, purchasedItem: theme)
+			if theme != Constants.Purchases.MALIBU_THEME {
+				if Utils.contains(key: Constants.Purchases.PURCHASED_THEMES) {
+					let purchasedThemes = Utils.object(key: Constants.Purchases.PURCHASED_THEMES) as? [String]
+					if !(purchasedThemes?.contains(theme))! {
+						SwiftyStoreKit.purchaseProduct(Constants.Purchases.THEME_ID_PREFIX + theme, atomically: true) { result in
+							Purchase.handlePurchaseResult(result, view: self, purchaseItem: theme)
+						}
+					}
 				}
-			}
-			else {
-				UserDefaults.standard.set(theme, forKey: Constants.Purchases.CURRENT_THEME)
-				Utils.insertGradientIntoView(viewController: self)
+				else {
+					SwiftyStoreKit.purchaseProduct(Constants.Purchases.THEME_ID_PREFIX + theme, atomically: true) { result in
+						Purchase.handlePurchaseResult(result, view: self, purchaseItem: theme)
+					}
+				}
 			}
 		}
 	}

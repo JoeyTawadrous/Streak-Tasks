@@ -32,19 +32,19 @@ class Upgrade: UIViewController {
 	/////////////////////////////////////////// */
 	func createMonthlySubcriptionButton() {
 		let button = createUpgradeButton(title: Constants.Strings.UPGRADE_SCREENS_MONTHLY_SUBSCRIBE_BUTTON_TITLE, x: (view.frame.size.width - BUTTON_WIDTH)/2 - 100, y: view.center.y + BUTTON_POSITION_FROM_TOP)
-		button.addTarget(self, action: #selector(subscribeButtonPressed), for: .touchUpInside)
+		button.addTarget(self, action: #selector(subscribeMonthlyButtonPressed), for: .touchUpInside)
 		self.view.addSubview(button)
 	}
 	
 	func createYearlySubcriptionButton() {
 		let button = createUpgradeButton(title: Constants.Strings.UPGRADE_SCREENS_YEARLY_SUBSCRIBE_BUTTON_TITLE, x: (view.frame.size.width - BUTTON_WIDTH)/2, y: view.center.y + BUTTON_POSITION_FROM_TOP)
-		button.addTarget(self, action: #selector(subscribeButtonPressed), for: .touchUpInside)
+		button.addTarget(self, action: #selector(subscribeYearlyButtonPressed), for: .touchUpInside)
 		self.view.addSubview(button)
 	}
 	
 	func createUnlockButton() {
 		let button = createUpgradeButton(title: Constants.Strings.UPGRADE_SCREENS_UNLOCK_BUTTON_TITLE, x: (view.frame.size.width - BUTTON_WIDTH)/2 + 100, y: view.center.y + BUTTON_POSITION_FROM_TOP)
-		button.addTarget(self, action: #selector(subscribeButtonPressed), for: .touchUpInside)
+		button.addTarget(self, action: #selector(unlockButtonPressed), for: .touchUpInside)
 		self.view.addSubview(button)
 	}
 	
@@ -99,21 +99,21 @@ class Upgrade: UIViewController {
 		Utils.presentView(self, viewName: Constants.Views.SETTINGS_NAV_CONTROLLER)
 	}
 	
-	@objc func subscribeButtonPressed() {
+	@objc func subscribeMonthlyButtonPressed() {
 		SwiftyStoreKit.purchaseProduct(Constants.Purchases.SUBSCRIPTION_MONTHLY_KEY, atomically: true) { result in
-//			Purchase.handlePurchaseResult(result, view: self, purchasedItem: Constants.Defaults.USER_DATA_USER_HAS_SUBSCRIPTION)
+			Purchase.handlePurchaseResult(result, view: self, purchaseItem: Constants.Purchases.SUBSCRIPTION_MONTHLY_KEY)
 		}
 	}
 	
 	@objc func subscribeYearlyButtonPressed() {
 		SwiftyStoreKit.purchaseProduct(Constants.Purchases.SUBSCRIPTION_YEARLY_KEY, atomically: true) { result in
-//			Purchase.handlePurchaseResult(result, view: self, purchasedItem: Constants.Defaults.USER_DATA_USER_HAS_SUBSCRIPTION)
+			Purchase.handlePurchaseResult(result, view: self, purchaseItem: Constants.Purchases.SUBSCRIPTION_YEARLY_KEY)
 		}
 	}
 	
 	@objc func unlockButtonPressed() {
 		SwiftyStoreKit.purchaseProduct(Constants.Purchases.UNLOCK_KEY, atomically: true) { result in
-//			Purchase.handlePurchaseResult(result, view: self, purchasedItem: Constants.Defaults.USER_DATA_USER_HAS_UNLOCKED_APP)
+			Purchase.handlePurchaseResult(result, view: self, purchaseItem: Constants.Purchases.UNLOCK_KEY)
 		}
 	}
 }

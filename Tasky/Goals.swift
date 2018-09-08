@@ -148,10 +148,9 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath) as! GoalTableViewCell
         let selectedGoal = cell.nameLabel!.text
         
-        // Set goal name in NSUserDefaults (so we can attach tasks to it later)
-        let defaults = UserDefaults.standard
-        defaults.set(selectedGoal, forKey: Constants.LocalData.SELECTED_GOAL)
-        defaults.set(indexPath.row, forKey: Constants.LocalData.SELECTED_GOAL_INDEX)
+        // Set goal name in defaults (so we can attach tasks to it later)
+		Utils.set(key: Constants.LocalData.SELECTED_GOAL, value: selectedGoal!)
+		Utils.set(key: Constants.LocalData.SELECTED_GOAL_INDEX, value: indexPath.row)
         
         // Show tasks view
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)

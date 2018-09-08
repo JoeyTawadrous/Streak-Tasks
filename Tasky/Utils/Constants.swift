@@ -34,6 +34,13 @@ class Constants {
 	}
 	
 	
+	struct Defaults {
+		static let USER_HAS_MONTHLY_SUBSCRIPTION = "userHasMonthlySubscription"
+		static let USER_HAS_YEARLY_SUBSCRIPTION = "userHasYearlySubscription"
+		static let USER_HAS_UNLOCKED_APP = "userHasUnlockedApp"
+	}
+	
+	
     struct LocalData {
         static let SELECTED_GOAL = "selectedGoal"
 		static let SELECTED_GOAL_INDEX = "selectedGoalIndex"
@@ -53,13 +60,13 @@ class Constants {
 	
 	struct Purchases {
 		// Upgrade
-		static let SHARED_SECRET = "7e01d48a5e7646dd82282cf26a97af2c"
-		static let SUBSCRIPTION_MONTHLY_KEY = "com.joeyt.learnable.subscription.monthly"
-		static let SUBSCRIPTION_YEARLY_KEY = "com.joeyt.learnable.subscription.yearly"
-		static let UNLOCK_KEY = "com.joeyt.learnable.unlock"
+		static let SHARED_SECRET = "5e1830a7afcd4f49afb516046e071828"
+		static let SUBSCRIPTION_MONTHLY_KEY = "com.joeyt.tasky.subscription.monthly"
+		static let SUBSCRIPTION_YEARLY_KEY = "com.joeyt.tasky.subscription.yearly"
+		static let UNLOCK_KEY = "com.joeyt.tasky.unlock"
 		
 		// Themes
-		static let PURCHASED_PRODUCTS = "PurchasedProducts"
+		static let PURCHASED_THEMES = "PurchasedThemes"
 		static let CURRENT_THEME = "CurrentTheme"
 		static let THEME_ID_PREFIX = "com.joeyt.tasky.iap.theme."
 		
@@ -110,7 +117,7 @@ class Constants {
 		static let PURCHASE_ERROR_UNKNOWN = "Unknown error." + PURCHASE_ERROR_CONTACT_US
 		static let PURCHASE_RESTORE_ERROR = "Restore error." + PURCHASE_ERROR_CONTACT_US
 		static let PURCHASE_RESTORE_NOTHING = "You have no purchases to restore!"
-		static let PURCHASE_RESTORE_SUCCESS = "You have restored your previous purchase and now have access to the entire app!"
+		static let PURCHASE_RESTORE_SUCCESS = "You have successfully restored your previous purchases."
 		static let PURCHASE_SUCCESS = "Your new theme has been succesfully purchased and set. Enjoy :)"
 		
 		
@@ -125,7 +132,7 @@ class Constants {
 		static let UPGRADE_SCREENS_MONTHLY_SUBSCRIBE_BUTTON_TITLE = "$1.99 \nmonth"
 		static let UPGRADE_SCREENS_YEARLY_SUBSCRIBE_BUTTON_TITLE = "$4.99 \nyear"
 		static let UPGRADE_SCREENS_UNLOCK_BUTTON_TITLE = "$6.99 \nonce"
-		static let UPGRADE_SCREENS_INFO = "You'll be charged $2.99/month at confirmation of purchase. Your subscription will renew after 1 month unless turned off 24-hours before the end of the subscription period. You can manage this in your App Store settings. For details, see " + Constants.Strings.LINK_WEB
+		static let UPGRADE_SCREENS_INFO = "You'll be charged $1.99/month at confirmation of purchase. Your subscription will renew after 1 month unless turned off 24-hours before the end of the subscription period. You can manage this in your App Store settings. For details, see " + Constants.Strings.LINK_WEB
 	
 		
 		// Send Feedback

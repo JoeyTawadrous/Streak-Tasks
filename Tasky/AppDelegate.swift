@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	/////////////////////////////////////////// */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		
+		
 		// Styling
 		UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
 		UINavigationBar.appearance().shadowImage = UIImage()
@@ -23,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			NSAttributedStringKey.foregroundColor : UIColor.white
 		]
 		window?.tintColor = UIColor.white
+		
 		
         // Local notifications
         let doneAction = UIMutableUserNotificationAction()
@@ -45,12 +47,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: NSSet(array: [actionCategory]) as? Set<UIUserNotificationCategory>))
 		
+	
 		// Purchases
 		Purchase.supportStorePurchase()
 		Purchase.completeTransactions()
+		Purchase.verifyReceiptCheck()
+		
 		
 		// Migration from old themes
-		let currentTheme = UserDefaults.standard.string(forKey: Constants.Purchases.CURRENT_THEME)
+		let currentTheme = Utils.string(key: Constants.Purchases.CURRENT_THEME)
 		if currentTheme != Constants.Purchases.FIRE_THEME &&
 		   currentTheme != Constants.Purchases.GRASSY_THEME &&
 		   currentTheme != Constants.Purchases.LIFE_THEME &&
@@ -59,11 +64,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		   currentTheme != Constants.Purchases.RIPE_THEME &&
 		   currentTheme != Constants.Purchases.SALVATION_THEME &&
 		   currentTheme != Constants.Purchases.SUNRISE_THEME {
-			UserDefaults.standard.set(Constants.Purchases.MALIBU_THEME, forKey: Constants.Purchases.CURRENT_THEME)
+			Utils.set(key: Constants.Purchases.CURRENT_THEME, value: Constants.Purchases.MALIBU_THEME)
 		}
         
         return true
     }
+	
+	
+	func applicationWillEnterForeground(_ application: UIApplication) {
+		Purchase.restorePurchases(view: self.inputViewController!, showDialog: false)
+		Purchase.verifyReceiptCheck()
+	}
 	
 	
     func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Void) {

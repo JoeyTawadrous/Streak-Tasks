@@ -37,7 +37,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
 	func refresh() {
-		selectedGoal = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_GOAL)!
+		selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
 		self.title = selectedGoal
 		
 		tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
@@ -154,9 +154,8 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 		
-        // Set task in NSUserDefaults (so we can get task details it later)
-        let defaults = UserDefaults.standard
-        defaults.set(NSInteger(indexPath.row), forKey: Constants.LocalData.SELECTED_TASK_INDEX)
+        // Set task in defaults (so we can get task details it later)
+		Utils.set(key: Constants.LocalData.SELECTED_TASK_INDEX, value: NSInteger(indexPath.row))
 		
         // Show task view
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)

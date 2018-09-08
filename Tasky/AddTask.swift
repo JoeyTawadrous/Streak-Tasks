@@ -47,7 +47,7 @@ class AddTask: FormViewController {
 	/* MARK: Init
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
-		selectedGoal = UserDefaults.standard.string(forKey: Constants.LocalData.SELECTED_GOAL)!
+		selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
 		Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
 		
 		// Styling

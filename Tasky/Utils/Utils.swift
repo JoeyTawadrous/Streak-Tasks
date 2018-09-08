@@ -13,10 +13,8 @@ class Utils {
 	}
 	
 	class func getCurrentTheme() -> [String] {
-		let currentTheme = UserDefaults.standard.string(forKey: Constants.Purchases.CURRENT_THEME)
-		
-		if (currentTheme != nil) {
-			return Constants.Purchases.Colors[currentTheme!]!
+		if Utils.contains(key: Constants.Purchases.CURRENT_THEME) {
+			return Constants.Purchases.Colors[Utils.string(key: Constants.Purchases.CURRENT_THEME)]!
 		}
 		else {
 			return Constants.Purchases.Colors[Constants.Purchases.MALIBU_THEME]!
@@ -158,7 +156,43 @@ class Utils {
 	}
 	
 	
-
+	
+	/* MARK: Data
+	/////////////////////////////////////////// */
+	class func bool(key: String) -> Bool {
+		return UserDefaults.standard.bool(forKey: key)
+	}
+	
+	class func double(key: String) -> Double {
+		return UserDefaults.standard.double(forKey:key)
+	}
+	
+	class func int(key: String) -> Int {
+		return UserDefaults.standard.integer(forKey:key)
+	}
+	
+	class func object(key: String) -> Any {
+		return UserDefaults.standard.object(forKey: key)!
+	}
+	
+	class func string(key: String) -> String {
+		return UserDefaults.standard.string(forKey: key)!
+	}
+	
+	class func contains(key: String) -> Bool {
+		return UserDefaults.standard.object(forKey: key) != nil
+	}
+	
+	class func set(key: String, value: Any) {
+		UserDefaults.standard.set(value, forKey: key)
+	}
+	
+	class func remove(key: String) {
+		UserDefaults.standard.removeObject(forKey: key)
+	}
+	
+	
+	
 	/* MARK: Dates
 	/////////////////////////////////////////// */
 	class func getDayOfWeek(_ date:String) -> String? {

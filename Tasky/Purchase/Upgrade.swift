@@ -140,7 +140,7 @@ extension Upgrade: PaperOnboardingDataSource {
 							   titleFont: titleFont,
 							   descriptionFont: descriptionFont),
 			
-			OnboardingItemInfo(informationImage: UIImage(named: "controller")!,
+			OnboardingItemInfo(informationImage: UIImage(named: "creative")!,
 							   title: Constants.Strings.UPGRADE_SCREEN_TWO_TITLE,
 							   description: Constants.Strings.UPGRADE_SCREEN_TWO_TEXT,
 							   pageIcon: UIImage(named: "transparent")!,

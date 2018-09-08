@@ -1,15 +1,6 @@
 import UIKit
 
 
-open class RoundedButton: UIButton {
-	override open func layoutSubviews() {
-		super.layoutSubviews()
-		
-		self.layer.cornerRadius = 5
-	}
-}
-
-
 extension UIColor {
 	convenience init(hex: String) {
 		let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

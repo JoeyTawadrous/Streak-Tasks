@@ -19,7 +19,7 @@ class Purchase {
 				}
 				else {
 					Purchase.updatePurchasedThemes(purchaseItem)
-					Utils.set(key: Constants.Purchases.CURRENT_THEME, value: purchaseItem)
+					Utils.set(key: Constants.Defaults.CURRENT_THEME, value: purchaseItem)
 					Utils.insertGradientIntoView(viewController: view)
 					Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_SUCCESS)
 				}
@@ -93,7 +93,7 @@ class Purchase {
 							}
 							else {
 								Purchase.updatePurchasedThemes(purchasedItem.contentIdentifier)
-								Utils.set(key: Constants.Purchases.CURRENT_THEME, value: purchasedItem.contentIdentifier)
+								Utils.set(key: Constants.Defaults.CURRENT_THEME, value: purchasedItem.contentIdentifier)
 								if showDialog { Utils.insertGradientIntoView(viewController: view) }
 								if showDialog { Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_SUCCESS) }
 							}
@@ -120,9 +120,9 @@ class Purchase {
 	
 	
 	class func updatePurchasedThemes(_ theme: String) {
-		var purchasedProducts = Utils.object(key: Constants.Purchases.PURCHASED_THEMES) as? [String] ?? [String]()
+		var purchasedProducts = Utils.object(key: Constants.Defaults.PURCHASED_THEMES) as? [String] ?? [String]()
 		purchasedProducts.append(theme)
-		Utils.set(key: Constants.Purchases.PURCHASED_THEMES, value: purchasedProducts)
+		Utils.set(key: Constants.Defaults.PURCHASED_THEMES, value: purchasedProducts)
 	}
 	
 	

@@ -35,6 +35,8 @@ class Constants {
 	
 	
 	struct Defaults {
+		static let CURRENT_THEME = "CurrentTheme"
+		static let PURCHASED_THEMES = "PurchasedThemes"
 		static let USER_HAS_MONTHLY_SUBSCRIPTION = "userHasMonthlySubscription"
 		static let USER_HAS_YEARLY_SUBSCRIPTION = "userHasYearlySubscription"
 		static let USER_HAS_UNLOCKED_APP = "userHasUnlockedApp"
@@ -66,10 +68,7 @@ class Constants {
 		static let UNLOCK_KEY = "com.joeyt.tasky.unlock"
 		
 		// Themes
-		static let PURCHASED_THEMES = "PurchasedThemes"
-		static let CURRENT_THEME = "CurrentTheme"
 		static let THEME_ID_PREFIX = "com.joeyt.tasky.iap.theme."
-		
 		static let GRASSY_THEME = "grassy"
 		static let SUNRISE_THEME = "sunrise"
 		static let NIGHTLIGHT_THEME = "nightlight"

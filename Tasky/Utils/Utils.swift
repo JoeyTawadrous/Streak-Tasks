@@ -13,8 +13,8 @@ class Utils {
 	}
 	
 	class func getCurrentTheme() -> [String] {
-		if Utils.contains(key: Constants.Purchases.CURRENT_THEME) {
-			return Constants.Purchases.Colors[Utils.string(key: Constants.Purchases.CURRENT_THEME)]!
+		if Utils.contains(key: Constants.Defaults.CURRENT_THEME) {
+			return Constants.Purchases.Colors[Utils.string(key: Constants.Defaults.CURRENT_THEME)]!
 		}
 		else {
 			return Constants.Purchases.Colors[Constants.Purchases.MALIBU_THEME]!

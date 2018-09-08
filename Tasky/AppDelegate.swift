@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		
 		// Migration from old themes
-		let currentTheme = Utils.string(key: Constants.Purchases.CURRENT_THEME)
+		let currentTheme = Utils.string(key: Constants.Defaults.CURRENT_THEME)
 		if currentTheme != Constants.Purchases.FIRE_THEME &&
 		   currentTheme != Constants.Purchases.GRASSY_THEME &&
 		   currentTheme != Constants.Purchases.LIFE_THEME &&
@@ -64,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		   currentTheme != Constants.Purchases.RIPE_THEME &&
 		   currentTheme != Constants.Purchases.SALVATION_THEME &&
 		   currentTheme != Constants.Purchases.SUNRISE_THEME {
-			Utils.set(key: Constants.Purchases.CURRENT_THEME, value: Constants.Purchases.MALIBU_THEME)
+			Utils.set(key: Constants.Defaults.CURRENT_THEME, value: Constants.Purchases.MALIBU_THEME)
 		}
         
         return true

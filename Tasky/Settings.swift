@@ -8,6 +8,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	
 	@IBOutlet var upgradeButtonIcon: UIButton!
 	@IBOutlet var changeThemeButtonIcon: UIButton!
+	@IBOutlet var restorePurchasesButtonIcon: UIButton!
 	@IBOutlet var learnableiOSAppButtonIcon: UIButton!
 	@IBOutlet var reviewButtonIcon: UIButton!
 	@IBOutlet var sendFeedbackButtonIcon: UIButton!
@@ -15,6 +16,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	@IBOutlet var twitterButtonIcon: UIButton!
 	@IBOutlet var facebookButtonIcon: UIButton!
 	@IBOutlet var instagramButtonIcon: UIButton!
+	@IBOutlet var privacyAndTermsButtonIcon: UIButton!
 	@IBOutlet var backButton: UIBarButtonItem!
 	
 	
@@ -24,6 +26,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	override func viewWillAppear(_ animated: Bool) {
 		setButtonIcon(button: upgradeButtonIcon, icon: String.fontAwesomeIcon(name: .trophy), type: .solid)
 		setButtonIcon(button: changeThemeButtonIcon, icon: String.fontAwesomeIcon(name: .star), type: .solid)
+		setButtonIcon(button: restorePurchasesButtonIcon, icon: String.fontAwesomeIcon(name: .flask), type: .solid)
 		setButtonIcon(button: learnableiOSAppButtonIcon, icon: String.fontAwesomeIcon(name: .heart), type: .solid)
 		setButtonIcon(button: reviewButtonIcon, icon: String.fontAwesomeIcon(name: .gem), type: .regular)
 		setButtonIcon(button: sendFeedbackButtonIcon, icon: String.fontAwesomeIcon(name: .pen), type: .solid)
@@ -31,6 +34,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		setButtonIcon(button: twitterButtonIcon, icon: String.fontAwesomeIcon(name: .twitter), type: .brands)
 		setButtonIcon(button: facebookButtonIcon, icon: String.fontAwesomeIcon(name: .facebook), type: .brands)
 		setButtonIcon(button: instagramButtonIcon, icon: String.fontAwesomeIcon(name: .instagram), type: .brands)
+		setButtonIcon(button: privacyAndTermsButtonIcon, icon: String.fontAwesomeIcon(name: .book), type: .solid)
 		
 		// Styling
 		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
@@ -91,6 +95,10 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		Utils.presentView(self, viewName: Constants.Views.THEMES_NAV_CONTROLLER)
 	}
 	
+	@IBAction func restorePurchasesButtonPressed() {
+		Purchase.restorePurchases(view: self, showDialog: true)
+	}
+	
 	
 	// App
 	@IBAction func learnableiOSAppButtonPressed() {
@@ -124,6 +132,10 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	
 	public func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
 		controller.dismiss(animated: true, completion: nil)
+	}
+	
+	@IBAction func privacyAndTermsButtonPressed() {
+		Utils.openURL(url: Constants.Strings.LINK_PRIVACY_AND_TERMS)
 	}
 	
 	

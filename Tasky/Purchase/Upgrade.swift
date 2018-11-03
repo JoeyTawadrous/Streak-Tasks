@@ -161,8 +161,8 @@ extension Upgrade: PaperOnboardingDataSource {
 							   descriptionFont: descriptionFont),
 			
 			OnboardingItemInfo(informationImage: UIImage(named: "growth")!,
-							   title: Constants.Strings.UPGRADE_SCREEN_THREE_TITLE,
-							   description: Constants.Strings.UPGRADE_SCREEN_THREE_TEXT,
+							   title: Constants.Strings.UPGRADE_SCREEN_FOUR_TITLE,
+							   description: Constants.Strings.UPGRADE_SCREEN_FOUR_TEXT,
 							   pageIcon: UIImage(named: "transparent")!,
 							   color: UIColor(hex: Constants.Colors.GREEN),
 							   titleColor: UIColor.white,

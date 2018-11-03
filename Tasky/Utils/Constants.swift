@@ -184,7 +184,7 @@ class Constants {
 		static let UPGRADE_SCREEN_ONE_TITLE = "Unlock Everything"
 		static let UPGRADE_SCREEN_ONE_TEXT = "Gain access to all features, achievements, themes & unlockable content."
 		static let UPGRADE_SCREEN_TWO_TITLE = "Earn Achievements"
-		static let UPGRADE_SCREEN_TWO_TEXT = "Unlock badges and level up as your enjoy you relaxing meditation sessions."
+		static let UPGRADE_SCREEN_TWO_TEXT = "Complete tasks and unlock badges as you level up."
 		static let UPGRADE_SCREEN_THREE_TITLE = "Access Themes"
 		static let UPGRADE_SCREEN_THREE_TEXT = "Gain access to our Sunrise, Salvation, Nightlight themes & more."
 		static let UPGRADE_SCREEN_FOUR_TITLE = "Unlimited Goals"

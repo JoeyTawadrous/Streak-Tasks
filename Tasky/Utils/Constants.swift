@@ -8,7 +8,7 @@ class Constants {
 		
 		// Points
 		static let POINTS_TYPE = "pointsType"
-		static let ACHIEVEMENT1 = ["3p", COLORS[0], "virus", "Blast-off", "You've earned 10 points! Congrats!"]
+		static let ACHIEVEMENT1 = ["10p", COLORS[0], "virus", "Blast-off", "You've earned 10 points! Congrats!"]
 		static let ACHIEVEMENT2 = ["25p", COLORS[1], "virus-autoupdate", "Quarter", "You've earned 25 points! Congrats!"]
 		static let ACHIEVEMENT3 = ["50p", COLORS[2], "satellite", "Halves", "You've earned 50 points! Congrats!"]
 		static let ACHIEVEMENT4 = ["100p", COLORS[3], "satellite-dish", "Century", "You've earned 100 points! Congrats!"]
@@ -16,7 +16,7 @@ class Constants {
 		
 		// Goals Completed
 		static let GOALS_TYPE = "goalsType"
-		static let ACHIEVEMENT6 = ["1g", COLORS[5], "cloud", "Playtime", "You've created 3 goals! Congrats!"]
+		static let ACHIEVEMENT6 = ["3g", COLORS[5], "cloud", "Playtime", "You've created 3 goals! Congrats!"]
 		static let ACHIEVEMENT7 = ["7g", COLORS[6], "calculator", "In Tune", "You've created 7 goals! Congrats!"]
 		static let ACHIEVEMENT8 = ["15g", COLORS[7], "certificate", "Practitioner", "You've created 15 goals! Congrats!"]
 		static let ACHIEVEMENT9 = ["30g", COLORS[0], "best_product", "Monk", "You've created 30 goals! Congrats!"]
@@ -25,7 +25,7 @@ class Constants {
 		
 		// Tasks Completed
 		static let TASKS_TYPE = "tasksType"
-		static let ACHIEVEMENT12 = ["2t", COLORS[3], "basketball", "Student", "You've completed 30 tasks! Congrats!"]
+		static let ACHIEVEMENT12 = ["30t", COLORS[3], "basketball", "Student", "You've completed 30 tasks! Congrats!"]
 		static let ACHIEVEMENT13 = ["60t", COLORS[4], "apps", "Focused", "You've completed 60 tasks! Congrats!"]
 		static let ACHIEVEMENT14 = ["90t", COLORS[5], "fountain-pen-tip", "Sublime", "You've completed 90 tasks! Congrats!"]
 		static let ACHIEVEMENT15 = ["150t", COLORS[6], "fountain-pen", "Resolute", "You've completed 150 tasks! Congrats!"]
@@ -37,6 +37,7 @@ class Constants {
 		static let ACHIEVEMENTS_TASKS = [ACHIEVEMENT12, ACHIEVEMENT13, ACHIEVEMENT14, ACHIEVEMENT15, ACHIEVEMENT16, ACHIEVEMENT17]
 		static let ACHIEVEMENTS_ALL = [ACHIEVEMENT1, ACHIEVEMENT2, ACHIEVEMENT3, ACHIEVEMENT4, ACHIEVEMENT5, ACHIEVEMENT6, ACHIEVEMENT7, ACHIEVEMENT8, ACHIEVEMENT9, ACHIEVEMENT10, ACHIEVEMENT11, ACHIEVEMENT12, ACHIEVEMENT13, ACHIEVEMENT14, ACHIEVEMENT15, ACHIEVEMENT16, ACHIEVEMENT17]
 	}
+	
 	
 	struct Colors {
 		static let BLUE = "69CDFC"

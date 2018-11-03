@@ -18,8 +18,15 @@
         }
     },
     {
-        "filter": "Tasks",
+        "filter": "Achievements",
         "background": "assets/dark_blue.jpeg",
+        "title": {
+            "text": "Complete tasks to unlock \nbadges while you level up"
+        }
+    },
+    {
+        "filter": "Tasks",
+        "background": "assets/blue.jpeg",
         "title": {
             "text": "Add tasks to complete \nyour goals"
         }

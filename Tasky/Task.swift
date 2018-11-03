@@ -107,6 +107,5 @@ class Task: UIViewController {
 		if(ProgressManager.shouldLevelUp(points: (points - 3))) {
 			Dialogs.showLevelUpDialog(view: view, level: ProgressManager.getLevel(points: (points - 3)))
 		}
-
 	}
 }

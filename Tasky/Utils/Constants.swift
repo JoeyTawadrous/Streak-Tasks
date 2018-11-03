@@ -145,7 +145,7 @@ class Constants {
 		static let ACHIEVEMENT_DIALOG_CLOSE_BUTTON = "Let's continue :)"
 		static let ACHIEVEMENT_DIALOG_SHARE_BUTTON = "Share my achievement!"
 		static let ACHIEVEMENT_DIALOG_TITLE = "Congratulations!"
-		static let ACHIEVEMENT_COMPLETE_DIALOG_SUBTITLES = ["Congratulations! You have completed the lesson! :)", "Another one bites the dust! :)", "Well done to you, you have completed another chapter!", "Fantastic work. Onwards & upwards!", "Hard work beats talent where talent does not work hard.", "Slow and steady progress will overcome all obstacles."]
+		static let ACHIEVEMENT_COMPLETE_DIALOG_SUBTITLES = ["Congratulations! You are one step closer to your goal! :)", "Another one bites the dust! :)", "Well done to you", "Fantastic work. Onwards & upwards!", "Hard work beats talent where talent does not work hard.", "Slow and steady progress will overcome all obstacles."]
 		
 		
 		// Levels

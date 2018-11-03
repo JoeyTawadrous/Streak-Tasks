@@ -7,100 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2116700FA0CFFB7FB4903C53230FED /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 91BC10659B21381AB0CBDFFB0DB8149B /* Font Awesome 5 Brands-Regular-400.otf */; };
-		0C6B4ABC53660C590795D462B00DE7BF /* SwiftForms-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A296E741A50F20993CC73116E87C2CC /* SwiftForms-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EC8F51AC77DF8FC5E402D5C884D050D /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E16598EB6985DDFDEC06B5CE0B1FF /* InAppReceiptVerificator.swift */; };
-		0FE9C1DB0A04041F2D6D572B7B519367 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417C4B730027A1C947951E3FC64D5947 /* FontAwesomeTabBarItem.swift */; };
-		0FF663F919A014E6DE08F3726ED3D26F /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB7B833DD08708E9623CEE4BFF92E0 /* FontAwesomeStateRequirement.swift */; };
-		10BD6D329B02C3275995F12648C56B90 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BD641A4E654CD5FEC5FFC5A2B831C2 /* PageView.swift */; };
-		165A3C1C579D404BDE3B0F6F58F4F030 /* FormLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F2A676564085DD81B83E658011836 /* FormLabelCell.swift */; };
-		187FFB183F40A90F16DE9D63246659F9 /* FormSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEECFF221FAD0F7A5D575FC3B10F7A4B /* FormSelector.swift */; };
-		1F49C6B9599313F672DF3D79505F5DBD /* FormSectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B19633AE76F7D18A1771D57434457D /* FormSectionDescriptor.swift */; };
-		28077563E0E4C7AFFEE386AFC03FF056 /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37C1751B31975DE1A614A4C1A9193FA /* OS.swift */; };
-		2B476160A1663094CDFBDC35DC9EFD32 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 38E5C5AD0614F09F482DF7D8C76EAC24 /* FontAwesome.swift.bundle */; };
-		2D2A744B99745B1B88BFB22C987DB745 /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7E15AAE6E0831AD9AEA319B1CDBE7 /* InAppReceipt.swift */; };
-		2D2DD9882ED57FA4A43A5912F7325970 /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822864513A751D00EC8B4A47B634A9 /* FontAwesomeImageRepresentable.swift */; };
-		2D30889B4E1FC09CB6FDB15B96AD30E9 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CE3DDC0D4E02DD411E88BF9EABB24 /* GestureControl.swift */; };
-		31514774FEEC7F179F887E6F1CC84857 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F630575B825DD350F14797919D129DB9 /* Font Awesome 5 Free-Solid-900.otf */; };
-		3346ABD8DBFC61551BA6DD0AEC5CB9DE /* PageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F113D2D222394BC7F7592796D78616 /* PageContainer.swift */; };
-		33BACE6D37907B5561F1A0B46CBFAC3D /* SwiftForms-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E646442E3A6A277008D15D59AE0BE9 /* SwiftForms-dummy.m */; };
-		3692F711F7FAFB9C28AAE57B1596D703 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		39318E6FCF131F0A5191B7AB1E41D449 /* SwiftyStoreKit+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E9CDD3E26FAEB7C80E1E5736E84DF /* SwiftyStoreKit+Types.swift */; };
-		409BCBFBF2161753E6B85649EF6633C5 /* OnboardingContantViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08BBCE448B63FE35AF984666D6E6CB /* OnboardingContantViewItem.swift */; };
-		41B43921CA1A345734117D95950C02FB /* FormDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA966421FF9F4D3461075240238757E /* FormDescriptor.swift */; };
+		0115E77974A1399CEBF10AE1495680B0 /* FormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE8EC2AE2606D4CF3E39B92EB6BD78 /* FormButtonCell.swift */; };
+		01DBE6E7AAFBF3366F330B105CCB8287 /* KYCircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75CC07E9ADAF666418D6AD436E0F2 /* KYCircularProgress-dummy.m */; };
+		03D8F7C9C265E23048AB43DEB756ACEB /* FormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24116842D057C405865D3BBF4FDF5884 /* FormSwitchCell.swift */; };
+		0631028A3A7493A6CCD0168CC4F64630 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658F3DBE38034E2F9F5843C1E13112B /* SwiftyJSON.swift */; };
+		072B7254D21201F596888A9357CDC0E0 /* FormSegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBB73D731D2CF3CF382AAD4D4CFBF8 /* FormSegmentedControlCell.swift */; };
+		0B2116700FA0CFFB7FB4903C53230FED /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75E0850982BB40F1B76EAB6C0F1ADA2C /* Font Awesome 5 Brands-Regular-400.otf */; };
+		0C3D183CEECBA0B8FCEFB2EED73C4B26 /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB735B69D47210B7337E133D587713 /* InAppReceiptVerificator.swift */; };
+		0FE9C1DB0A04041F2D6D572B7B519367 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58B4417F4AA000F95DB80106F08AD3 /* FontAwesomeTabBarItem.swift */; };
+		0FF663F919A014E6DE08F3726ED3D26F /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DA5A62AE7F7B0E3D733517A11381AF /* FontAwesomeStateRequirement.swift */; };
+		10BD6D329B02C3275995F12648C56B90 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282DC624E75A3FC3687C7DA0FBABBF45 /* PageView.swift */; };
+		163EDBEAD5522C0FEB931006335EF2FA /* PaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A56E492349F5E31018276033BB07E6 /* PaymentsController.swift */; };
+		1970E6FEC31C42BC0BA1BBC2B31C4E99 /* FormValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526C475B06BCB5BDF16C4AA91047C28 /* FormValueCell.swift */; };
+		1A7036B2544B0A54EA53CA4BFB74CFD6 /* FormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B319D4D8EF1940BE29DA1971A1DD1D37 /* FormTextViewCell.swift */; };
+		1FEE73873096EEB9760B50F73524355B /* FormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1C7E405F2696E640831310E650C02 /* FormBaseCell.swift */; };
+		2690BD7288D3C1F439B2E05D62535E51 /* FormErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80B01CA9D5E957B6EEA52E90ABACB83 /* FormErrorType.swift */; };
+		26CDB5BC4011FAFA1C35F1A40288038E /* FormLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ACE3E3102C756B14AF70C967F50461 /* FormLabelCell.swift */; };
+		2B476160A1663094CDFBDC35DC9EFD32 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D3C600FCB988774CEEC6DD1E69A809C /* FontAwesome.swift.bundle */; };
+		2D2DD9882ED57FA4A43A5912F7325970 /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F3E6A6BE1D7D18A9FFA2BA3F60E7E /* FontAwesomeImageRepresentable.swift */; };
+		2D30889B4E1FC09CB6FDB15B96AD30E9 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D2BA0AA46DC109D07D30E1BC0E0EC /* GestureControl.swift */; };
+		31514774FEEC7F179F887E6F1CC84857 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7BAE0FFA2B7F5FD15C899E0BF71D33F /* Font Awesome 5 Free-Solid-900.otf */; };
+		3346ABD8DBFC61551BA6DD0AEC5CB9DE /* PageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167C887331230040B4149E0EF901B3D /* PageContainer.swift */; };
+		3D3E66534D57FAB0719657CDC7175CB9 /* FormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83CB708A58EF5C10F980F5E52885A5 /* FormTextFieldCell.swift */; };
+		409BCBFBF2161753E6B85649EF6633C5 /* OnboardingContantViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F4405C442D46B87EC035D3E7B2C9D /* OnboardingContantViewItem.swift */; };
+		4124FA9F1DF69FC15B7E665FFC193D9E /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54150A18AA1F10F6421FBAE5DC7F4777 /* InAppReceiptRefreshRequest.swift */; };
+		449932259059E3C2D27D802885AB59ED /* Pods-Tasky-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3301F492DFD78AF585EE7C3814B04D3B /* Pods-Tasky-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47610629C7A7408DFCBE1EEA5DB0A7E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */; };
-		48696FE82A4D8086055541E81DC94107 /* PageViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F48BE3447201660C5C881186902D91 /* PageViewItem.swift */; };
-		4C8DC360D48C7D6A56F87210EF6B5D39 /* ProductsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13B3FFFCEA1B4BA348D081E711920FB /* ProductsInfoController.swift */; };
-		4D2B5B1C55C5AB45B5B0AB9447937978 /* FormRowDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985942EE268D6FADFF80953E0C32D3A7 /* FormRowDescriptor.swift */; };
-		4F5FAA1BFB6846C4C80D881F3B9355A7 /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F543F637E2CF23BF3AD83C2CD6804E /* FillAnimationView.swift */; };
-		522B2F9FEED5E23EDA0AAD76D4F81875 /* FormOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAD39C546D4FFCAEF67BE2DA959520 /* FormOptionsViewController.swift */; };
-		532B94DAC89623F895B0D5C1F04DB994 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F512B1A51FDD28E86B00A86AFF5A9 /* FontAwesomeSegmentedControl.swift */; };
-		5A1AE014B6FF9AC20A3402A7B05BA7E5 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDC3D7696FD415F7C82CCA869C6B41 /* OnboardingContentView.swift */; };
-		5AAE2A28F35854C8E65135BAD1FDE1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		5AEFAC75F79FDAF80F72BF234FFE1934 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAB0F445CD7E9166E6C0600205CC6A /* FormViewController.swift */; };
-		5D5F3C2BB80810450C1EA7B5A5659B62 /* SwiftyStoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2234BC421CD2FDD66365DC1FBA36A /* SwiftyStoreKit-dummy.m */; };
-		5DED5721A2DADBFE30F2BE5C18EF0070 /* FormCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385D6F46086D32ADCBBD43DD0E0B11 /* FormCheckCell.swift */; };
-		61430A34EB37246ABC3F8E8E29806F38 /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE827339D0C2A726F6AA65411DC219 /* Configuring.swift */; };
-		62D85B410AC43EC2B7EF6D76239BB56D /* FormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A5F0E0842BC8A91654925933A20E3 /* FormTextFieldCell.swift */; };
-		662F7B5BA566B4005047090FB240CBDC /* RestorePurchasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CB4F778F75DE6FBE795A66CC2C28DA /* RestorePurchasesController.swift */; };
-		66D2E16A248430B979133176DCC3B109 /* PaperOnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DFFE66F61D96F9584C34F29050DA0B /* PaperOnboardingDelegate.swift */; };
-		69793AFCA21DE6C4E2BB2938FE29C30E /* FormSegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C3C5D778D7C947643653F98778AD82 /* FormSegmentedControlCell.swift */; };
-		6A8C383633DFFEDFD76C80C1AAED086D /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353CCE80DCFA02A0DBC8F369FD0BCE2 /* AppleReceiptValidator.swift */; };
-		6B5413138C15627AB31211A88A063709 /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA69795303A8BEC22B8027D5752BE6A8 /* FontAwesomeTextRepresentable.swift */; };
-		6CA3EABF5680572BA00A98576A085D34 /* FormSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AECAFD8CCB7FB54801DA4E0E4DCD4 /* FormSliderCell.swift */; };
+		47CC5E3E872D20A65E2C09DCCF61F534 /* PaymentQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0166153679B68350C5D7F39C40C53D56 /* PaymentQueueController.swift */; };
+		48696FE82A4D8086055541E81DC94107 /* PageViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4481EF55180F11D3A1E4A9AEE97EB /* PageViewItem.swift */; };
+		48AEFF5852339DD434BED8E2E803E721 /* FormDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1EB8F7F65D6CA533B5913865D7CC92 /* FormDateCell.swift */; };
+		4BB53A089A43915AF94E6049BC0C4053 /* FormTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD0553D4040B27FBDE55CE39E4C1361 /* FormTitleCell.swift */; };
+		4E078B2A0E72DC53707D09E6FE9B78DC /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7630F3CA0D2E471341B99E197EA2F0B3 /* SCLAlertView-dummy.m */; };
+		4F5FAA1BFB6846C4C80D881F3B9355A7 /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BFECA883F0EC9FC7FCB68089EE7B9B /* FillAnimationView.swift */; };
+		50EE09F357BF27C7B09984FEAC359095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		51D011A9DC5854567328D7626377AE17 /* FormOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557510EF27BFD5B7BA098835B5268C7 /* FormOptionsViewController.swift */; };
+		532B94DAC89623F895B0D5C1F04DB994 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78DBC485177EDAF87F5106E8677D8DF /* FontAwesomeSegmentedControl.swift */; };
+		545AE3C5E061CC97FB166DAF1C5143E8 /* KYCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EE172601CCC4A05277B23DA635F579 /* KYCircularProgress.swift */; };
+		54EED424749895C37BDE2E330E3DB3F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		59EF401D011A3D635E87E3E3F1D1523B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		5A1AE014B6FF9AC20A3402A7B05BA7E5 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F96993F8D92021325ED4CC78CCE8FAB /* OnboardingContentView.swift */; };
+		5A8FC61F46618825078778B33C64ACFC /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F975A3DE45D80877EEDF1BFC38AE3 /* InAppReceipt.swift */; };
+		5CF29744A4F25FABBF17B60C983F2A12 /* KYCircularProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC28926BBD92239A15EB45D58903E62 /* KYCircularProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EDF51BB149D0DDA5218404F29564AFC /* Pods-Tasky-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 844538633529A7DF7314C20301CA47AF /* Pods-Tasky-dummy.m */; };
+		61430A34EB37246ABC3F8E8E29806F38 /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E328FB67C91611EE8D7BE4269E395 /* Configuring.swift */; };
+		6297FB8ED345308867E1DBFB9350AEFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		635359686320D7E0F61054C68972F768 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B434DB0AF328DF866761FE825CD044 /* FormViewController.swift */; };
+		65ACDDF416DFF25127780276B5D3887F /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451151FA129ADD7A23F1E3D1B479B1E /* InAppProductQueryRequest.swift */; };
+		66D2E16A248430B979133176DCC3B109 /* PaperOnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0C387B90F95416A0C915A6BD7C94C /* PaperOnboardingDelegate.swift */; };
+		6B5413138C15627AB31211A88A063709 /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B27034F89960442CBF89549732E65 /* FontAwesomeTextRepresentable.swift */; };
+		6DFBEEC5E762A8DB3C825F97BAF6052B /* SwiftyStoreKit+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B45B3943D66D999A5B2782D82A65D /* SwiftyStoreKit+Types.swift */; };
 		6EC40D7BADA054B926209056DFBFE316 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */; };
-		6F32770C100934C4B24B3E4859572922 /* FormSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD56E33D3358A68D1723100FE5A1167A /* FormSelectorCell.swift */; };
-		6F9C78CE9BA836E9272D3D08F2EBD5AE /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABE6A96D66FA395C455AC511DCAF082 /* FontAwesomeExtension.swift */; };
-		72522C16CD8ABF686F74F02CDC1E4B29 /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D68081E6B282534D087598DB472BD3D /* InAppProductQueryRequest.swift */; };
-		7455C21A8CDE7750973B1EA649305312 /* paper-onboarding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E2E6D9E831AF043B1D0A42F3358E3D /* paper-onboarding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7598DECFCE69F5B63CBD6394310577C5 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD568A0D84E3386B9D6E360CA85DF7F /* SCLAlertView.swift */; };
-		767B53CEF266D54F40074DFA0462AD14 /* PaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F0736C46AE8D4A91773FE30841AAD /* PaymentsController.swift */; };
+		6F9C78CE9BA836E9272D3D08F2EBD5AE /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C119D6662CA5662C012359E753E47A3E /* FontAwesomeExtension.swift */; };
+		70E5295E68FCAFA690E03421503E7B6B /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF831B3D80097A487EF74540237845F /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72ABB35CECC39EE4B2BF9D8273E335A6 /* FormRowDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E3B32B42EBCBF9661A2ED0458F210 /* FormRowDescriptor.swift */; };
+		7455C21A8CDE7750973B1EA649305312 /* paper-onboarding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B90E86DE225C14CDAA1928199A4D5AC /* paper-onboarding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		773DE46A2BDFBACF8103335DD1A124F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		77FE8094EC6F71A7175130366829B988 /* ProductsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B709CF62A389ADD8193F3AAAC7A51 /* ProductsInfoController.swift */; };
+		7AA3579D7CE1332B141A338816B2FE16 /* FormSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B0990BEB8B7A3EB5BC980E0952378D /* FormSelector.swift */; };
 		7C214903E97437C9DE70A5F4C0B56041 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		828E84A639F7F74F9C871F82A4E252B9 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3655140E8642A3346914B1F262D075B /* Enum.swift */; };
-		8414790B070D205AE99172223C876971 /* FormValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D58A6F01D05326499F69949718C251 /* FormValueCell.swift */; };
-		85EE7A0CB68505A4ABBC14C8B528EABB /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A17D7EA6F240E7EEA5845AD2409E2 /* ConstraintsHelper.swift */; };
-		88621CCE3DA73512F315A29E90B53369 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F43E027FA38E01DF2ADC913D025EC /* SCLAlertView-dummy.m */; };
-		892141FFE2CE90EEEC98FC65C2E7AAE5 /* CompleteTransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220945E57EAFBB854B0523DD11BB600 /* CompleteTransactionsController.swift */; };
-		893CD69332FDD599DA84402E34EB2EEC /* Pods-Tasky-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 844538633529A7DF7314C20301CA47AF /* Pods-Tasky-dummy.m */; };
-		89F604C5071756146A5C682E03897724 /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EEA5997EF8B2F430A70357F579D14 /* FontAwesomeBarButtonItem.swift */; };
-		8B1BD6D34A659F1B155B05F212572531 /* FormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA886CDCCA7B2C8F01A70DE730F28D9 /* FormSwitchCell.swift */; };
-		8F489D25686FA8695FC8D5479E5BA263 /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32E8A3C15A9742278E5ADDB30187720 /* SwiftyStoreKit.swift */; };
-		900F7CF69187B4419F85FC4DA5849E48 /* Pods-Tasky-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3301F492DFD78AF585EE7C3814B04D3B /* Pods-Tasky-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93929E495F12F2702B2522EE518586C5 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3FA57B00C5D10FE20934CDCC7B7A1 /* FontAwesomeView.swift */; };
-		9419ACA668E00FFC1F70AA23359DF3E5 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D90A676D660862798EE9AB80F0BE88 /* FontAwesome.swift */; };
-		97E9B1B40EBD9DD370898987BC12701D /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E85CBB287AC0B157522B7B2A4168EDB2 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3088DBACC68068F17A9B20A8F442ACA /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F5F5A34346C033E458D91A58C53F2CF /* Font Awesome 5 Free-Regular-400.otf */; };
-		A3C62005B84A25F6F3619BE5427E3FCD /* FormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E371B220EA9D4CD3130BE6FCE5CD4C /* FormButtonCell.swift */; };
-		AEDDDB09AA048729954C1ADDECE7AD16 /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9227A450BAEC2C6B91FF1C01CF6FD72 /* SKProduct+LocalizedPrice.swift */; };
-		B22CD5BAA233DD92D22269BAF31049B9 /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53877AA2F835BEE4600D58507F3B151E /* FontAwesomeImageView.swift */; };
-		B47EA24B815C92186AFF561E38AD9A4C /* FormStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E35484A83EFD513A82EA394222B7C /* FormStepperCell.swift */; };
-		B633D850FB892345DDA1F0DB05213C58 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8A8F318A96F30B6C6D4069B9DD7823 /* FontAwesome.swift-dummy.m */; };
-		B696ADFEDDF6636CDF63686216712D2D /* FormDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC73E8B363534B9C6D7E9CFBA34FA840 /* FormDateCell.swift */; };
-		C8C2B368FCE96A19543EB8C60C8CB806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		CD0A71E316A3C77C88AE6C30C3562CB0 /* PaperOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9113F39D401C800AE67D32CC94D92E /* PaperOnboarding.swift */; };
-		CDEAFF50FED59401B66C354798994E30 /* PaperOnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44EF708A0ABF5DF28BB3997969073B /* PaperOnboardingDataSource.swift */; };
-		D1BBB5DE47E044839FC604952516BF5A /* FormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB648F03CF3EEC037995EAD1AA3CCA /* FormTextViewCell.swift */; };
-		DAA98BFA2B2447DF728865C3B361D010 /* FormErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A838A49D28DB9516FBC8410A42A8D2F /* FormErrorType.swift */; };
-		DAE7BD996823E2D7DB9B42FCADEACCD2 /* FormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BCF8BF497361B1B840DDAC3D59144 /* FormPickerCell.swift */; };
-		DB42AC24BC94FF46E0E54D59D1EF9A29 /* PaymentQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F16A9BCF2133EF8D3C157D8DEE403 /* PaymentQueueController.swift */; };
-		DC1474A8A5F9C27D852181B661944619 /* paper-onboarding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05762BEE741855F0F236A22BD788D7FF /* paper-onboarding-dummy.m */; };
-		DD296D6DF8AC3E1814624874847905C8 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C7433859D47FADE34964AC473575A8 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E64DC0DF2269D7E5E6807D9158DE2BCE /* SwiftyStoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8EDB221E5AA8EFB81E7A742BD0A6206 /* SwiftyStoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6E206ABB7BBE61CA75E131778D3888B /* FormTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FAF0C72B47C9701095B7E05F2B314 /* FormTitleCell.swift */; };
-		EA70440B22C8F25662D940D106B60441 /* FormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D44DB9264AF9F738198812ACCE835 /* FormBaseCell.swift */; };
-		F237B15EA282182316C511EB2C4EED78 /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C64DE48971D7320F5DFF4C8CF0124A /* InAppReceiptRefreshRequest.swift */; };
-		F3C46575738986AAC030F6160D881626 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45446DBD31ABE1DB106988D33EA6CE3A /* SCLExtensions.swift */; };
-		F840CC66E3086EBD6280194832A48885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		828E84A639F7F74F9C871F82A4E252B9 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DAE93EDB2BF55CD25D47DC20E046A2 /* Enum.swift */; };
+		85EE7A0CB68505A4ABBC14C8B528EABB /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67373DBEBD4E494082F09310C164F86 /* ConstraintsHelper.swift */; };
+		89F604C5071756146A5C682E03897724 /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440C6E75F3F2682283E1F9C798F197D4 /* FontAwesomeBarButtonItem.swift */; };
+		93929E495F12F2702B2522EE518586C5 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C1A3F8056C1EBD92D0958FB480D0C /* FontAwesomeView.swift */; };
+		9419ACA668E00FFC1F70AA23359DF3E5 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4E463B73D66612DE6B11B49558B1C /* FontAwesome.swift */; };
+		9F2D392C4D49B4AA1C15D5FD433F046E /* SwiftForms-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A98D7CC4B3B99C488381E80BF68D1 /* SwiftForms-dummy.m */; };
+		A2C04B916C8F0A0A66260EBD58F388F6 /* RestorePurchasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5441DDEEC37D0DA625CD8AEBE9477261 /* RestorePurchasesController.swift */; };
+		A3088DBACC68068F17A9B20A8F442ACA /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B6E668FE203F0CDFA2BA9183877B09D /* Font Awesome 5 Free-Regular-400.otf */; };
+		A394A3D71C944EAF504B1FF353795C16 /* FormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32C4D61F8F298A5B90D9E53D6506A41 /* FormPickerCell.swift */; };
+		A6F4E3482F81C7B6D8365F637E5D6599 /* FormStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800AF91F74F0FED6B7D491FCA0516D0 /* FormStepperCell.swift */; };
+		A82BB6DEBDF6C9490B1380AF22C8EA75 /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA302F6D22D359B6DEDF0E44D7AF1EB /* OS.swift */; };
+		A8CB894ACBC7DB45403B840F6CD40FCA /* FormSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9385ED9BD9DF459C412AA85F15B4B8CA /* FormSliderCell.swift */; };
+		AEC958E62DF131A2AA3C18995E3172DA /* FormSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37B90AABD4E425333424E690DEA25B7 /* FormSelectorCell.swift */; };
+		B22CD5BAA233DD92D22269BAF31049B9 /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2D314ADB9E38B7DFBBABD5AA29AFB9 /* FontAwesomeImageView.swift */; };
+		B633D850FB892345DDA1F0DB05213C58 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 293277431FAC3A814BF02FE388D0DBE1 /* FontAwesome.swift-dummy.m */; };
+		B69BD05C6FAD0292A70BE8800AC82F23 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F88C897514989236059890AC2E8F5 /* SwiftyJSON-dummy.m */; };
+		C2ECBC5499C0759DA5B4F7F3B055E8C5 /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40076677F8B38F267F4A736A4DF10060 /* SKProduct+LocalizedPrice.swift */; };
+		CD0A71E316A3C77C88AE6C30C3562CB0 /* PaperOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E49AA97603489614D46D3A47B6C3616 /* PaperOnboarding.swift */; };
+		CDEAFF50FED59401B66C354798994E30 /* PaperOnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61754D49AABD2FCB0335A611760B6BB /* PaperOnboardingDataSource.swift */; };
+		D2CE507D2599B7B4AC8ED07D7BA69D17 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B99C901851F8523B90FD718A15A0180 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC1474A8A5F9C27D852181B661944619 /* paper-onboarding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD7FB0A2CAD8B6E5534788594CD88B /* paper-onboarding-dummy.m */; };
+		DCC3C3CE0178A39704589D9469A5B921 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6100C71B2C24838CC03C054691EB5C8E /* SCLExtensions.swift */; };
+		DD296D6DF8AC3E1814624874847905C8 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7596999F92366EA53226159637805CE2 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF3EA136AE86B317D8D406FCE0FE8413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		E665038335D45D632DD55EAF99A23336 /* FormCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8EC3DE4A760652812CCA21D5F711BE /* FormCheckCell.swift */; };
+		E72D7FED7C98955B169037D22EBA056A /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432BC01FEBB2E5CA60C77FE738074CE7 /* SwiftyStoreKit.swift */; };
+		E74748F3521490699A66004FE911C868 /* SwiftyStoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D97F46B7B6EC5969FECC12668FEE96D /* SwiftyStoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAAC0CAA708E88B67A5709BD7906E6C7 /* FormDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4657C03C65B18BAD7A3AB3550BCFE7 /* FormDescriptor.swift */; };
+		F34D98B20477AA31EC339F5D09ADFC3D /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9107AFDF00F10657A99CB52DBBB898 /* SCLAlertView.swift */; };
+		F4CB9BCAE8E382773E5E2BA0418C74E9 /* FormSectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF38E6E4E4ED145D420C9D4049C15CBC /* FormSectionDescriptor.swift */; };
+		F58AEF6904D9B89868451D5F343C49F7 /* SwiftForms-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C03F1FA712CBA3C5931FBBC43ABB6D /* SwiftForms-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F96B427EE83B0BD908D10DE48C8B52F4 /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76962FB07CFC5C617DC00BD45685CDA6 /* AppleReceiptValidator.swift */; };
+		FAA5EE28881E0E26C78E907CBD973516 /* SwiftyStoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88663E0F5DB5B6420B070CEB690B17C1 /* SwiftyStoreKit-dummy.m */; };
+		FE9CE4CF6DAD91E9551572F402816257 /* CompleteTransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52B97BEB99249F617CAB6A4EE9AFDD /* CompleteTransactionsController.swift */; };
 		FFF5BA92707F567C4E4E7CB6A8FD4B70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09FD9D746D59ABBA5A17F5D67F127C3C /* PBXContainerItemProxy */ = {
+		06830C4C77EEBC96F370ED49D042F93C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDFA22104E5E2B25D382A0EA4241C82B;
-			remoteInfo = SwiftForms;
+			remoteGlobalIDString = 738B2050D3EE6CEF2F8FC5020EAB44A1;
+			remoteInfo = "paper-onboarding";
 		};
 		11C46040B80D714B8D493D1A3B1820AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -109,177 +117,215 @@
 			remoteGlobalIDString = CB2EAB5C326E4BB9AE6483289BB7C828;
 			remoteInfo = "FontAwesome.swift-FontAwesome.swift";
 		};
-		2144A6F57738385AC059E94158AC7C1A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 738B2050D3EE6CEF2F8FC5020EAB44A1;
-			remoteInfo = "paper-onboarding";
-		};
-		22E3622E4374B4DDB1CC3AEE51C35C83 /* PBXContainerItemProxy */ = {
+		540A6DD731B0426E434968CA162CFA06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 29124FF4E0F9AB7495AA7588B0A1A107;
 			remoteInfo = FontAwesome.swift;
 		};
-		3E9B7E1C9803B946999C77A33B82BFDF /* PBXContainerItemProxy */ = {
+		63664A4C115A8ACF10C2D5946A5F2910 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA3790FF189C14D032F19BC68768E32B;
+			remoteGlobalIDString = 0CF22F2A0F80AFB8F261BEDA637AC8A0;
 			remoteInfo = SCLAlertView;
 		};
-		3EEC048AE18CE74960537155BF122B6F /* PBXContainerItemProxy */ = {
+		6A86FCD862C65F2751D6C4F5570AEB83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C215EB891C2A39B5619C2D4D02C619B7;
+			remoteGlobalIDString = A170266429C4461274B1762931116260;
 			remoteInfo = SwiftyStoreKit;
+		};
+		84469F76A178969C234E475C8B8580BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71DBB120A3CC8A52EA96737422A8404D;
+			remoteInfo = SwiftForms;
+		};
+		C62C5651E04B551DE908F55620FA12BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C1F0BC8AD9DB9D282F6612636923786;
+			remoteInfo = KYCircularProgress;
+		};
+		E48651EF98EB06CB3B2B01463EE6981A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFDFDED93E6AD645E32B341C23F98C49;
+			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00DFFE66F61D96F9584C34F29050DA0B /* PaperOnboardingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboardingDelegate.swift; path = Source/PaperOnboardingDelegate.swift; sourceTree = "<group>"; };
-		05762BEE741855F0F236A22BD788D7FF /* paper-onboarding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "paper-onboarding-dummy.m"; sourceTree = "<group>"; };
-		0891088B7179179F29B807051A63488B /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
-		0A296E741A50F20993CC73116E87C2CC /* SwiftForms-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftForms-umbrella.h"; sourceTree = "<group>"; };
-		0D44EF708A0ABF5DF28BB3997969073B /* PaperOnboardingDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboardingDataSource.swift; path = Source/PaperOnboardingDataSource.swift; sourceTree = "<group>"; };
+		0166153679B68350C5D7F39C40C53D56 /* PaymentQueueController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentQueueController.swift; path = SwiftyStoreKit/PaymentQueueController.swift; sourceTree = "<group>"; };
+		01FC0618A68841E0AC64D75C49564073 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0452C9080F4956E5C0476C6315DC3403 /* Pods_Tasky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tasky.framework; path = "Pods-Tasky.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6E668FE203F0CDFA2BA9183877B09D /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		0B99C901851F8523B90FD718A15A0180 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		0E5F81EDCE8454C74DF9449783353E45 /* SwiftyStoreKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyStoreKit.xcconfig; sourceTree = "<group>"; };
 		1156A125FBFD6F301378636F7C7DC15C /* Pods-Tasky.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tasky.modulemap"; sourceTree = "<group>"; };
-		153DFD0951B201328A474BCBA9DE3A45 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
-		156D44DB9264AF9F738198812ACCE835 /* FormBaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormBaseCell.swift; path = SwiftForms/cells/base/FormBaseCell.swift; sourceTree = "<group>"; };
-		1A838A49D28DB9516FBC8410A42A8D2F /* FormErrorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormErrorType.swift; path = SwiftForms/FormErrorType.swift; sourceTree = "<group>"; };
+		143F5636A70EBA060C032FDE8E853E76 /* SwiftForms-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftForms-prefix.pch"; sourceTree = "<group>"; };
+		14B0990BEB8B7A3EB5BC980E0952378D /* FormSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSelector.swift; path = SwiftForms/controllers/FormSelector.swift; sourceTree = "<group>"; };
+		18DE8EC2AE2606D4CF3E39B92EB6BD78 /* FormButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormButtonCell.swift; path = SwiftForms/cells/FormButtonCell.swift; sourceTree = "<group>"; };
+		1B7EBC3EF15CFDFE523BA243592CDAA2 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		1CA302F6D22D359B6DEDF0E44D7AF1EB /* OS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OS.swift; path = SwiftyStoreKit/OS.swift; sourceTree = "<group>"; };
+		1D3C600FCB988774CEEC6DD1E69A809C /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4B709CF62A389ADD8193F3AAAC7A51 /* ProductsInfoController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsInfoController.swift; path = SwiftyStoreKit/ProductsInfoController.swift; sourceTree = "<group>"; };
 		1E5DB94193906644A2D89CDC4D3A7672 /* Pods-Tasky-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tasky-resources.sh"; sourceTree = "<group>"; };
-		1F9F4160919225B4F4263163D761AAA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		246E16598EB6985DDFDEC06B5CE0B1FF /* InAppReceiptVerificator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptVerificator.swift; path = SwiftyStoreKit/InAppReceiptVerificator.swift; sourceTree = "<group>"; };
-		25F113D2D222394BC7F7592796D78616 /* PageContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageContainer.swift; path = Source/PageView/PageContainerView/PageContainer.swift; sourceTree = "<group>"; };
-		26F543F637E2CF23BF3AD83C2CD6804E /* FillAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillAnimationView.swift; path = Source/FillAnimationView/FillAnimationView.swift; sourceTree = "<group>"; };
+		22F740ACE556BE75E0380AF43EDBF04C /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
+		24116842D057C405865D3BBF4FDF5884 /* FormSwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSwitchCell.swift; path = SwiftForms/cells/FormSwitchCell.swift; sourceTree = "<group>"; };
 		27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		27F0C387B90F95416A0C915A6BD7C94C /* PaperOnboardingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboardingDelegate.swift; path = Source/PaperOnboardingDelegate.swift; sourceTree = "<group>"; };
+		282DC624E75A3FC3687C7DA0FBABBF45 /* PageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = Source/PageView/PageView.swift; sourceTree = "<group>"; };
+		293277431FAC3A814BF02FE388D0DBE1 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
 		29713ECA67ED67BD217688113F956F97 /* Pods-Tasky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tasky.debug.xcconfig"; sourceTree = "<group>"; };
-		2C7B26AEFDA97AE3B7C3CABBB93CF2E9 /* SwiftyStoreKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-prefix.pch"; sourceTree = "<group>"; };
-		329B57DFB5CC31CF3304E6F0A26FCA92 /* SwiftyStoreKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyStoreKit.xcconfig; sourceTree = "<group>"; };
+		2B90E86DE225C14CDAA1928199A4D5AC /* paper-onboarding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "paper-onboarding-umbrella.h"; sourceTree = "<group>"; };
+		2EE1C7E405F2696E640831310E650C02 /* FormBaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormBaseCell.swift; path = SwiftForms/cells/base/FormBaseCell.swift; sourceTree = "<group>"; };
+		2FD0553D4040B27FBDE55CE39E4C1361 /* FormTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTitleCell.swift; path = SwiftForms/cells/base/FormTitleCell.swift; sourceTree = "<group>"; };
 		3301F492DFD78AF585EE7C3814B04D3B /* Pods-Tasky-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tasky-umbrella.h"; sourceTree = "<group>"; };
-		38E5C5AD0614F09F482DF7D8C76EAC24 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C9F16A9BCF2133EF8D3C157D8DEE403 /* PaymentQueueController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentQueueController.swift; path = SwiftyStoreKit/PaymentQueueController.swift; sourceTree = "<group>"; };
-		3DAB7B833DD08708E9623CEE4BFF92E0 /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
-		3F8BCF8BF497361B1B840DDAC3D59144 /* FormPickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormPickerCell.swift; path = SwiftForms/cells/FormPickerCell.swift; sourceTree = "<group>"; };
-		3FC01C11547940AEEE99DE7E7DC4273F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		417C4B730027A1C947951E3FC64D5947 /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
-		43C64DE48971D7320F5DFF4C8CF0124A /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptRefreshRequest.swift; path = SwiftyStoreKit/InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
-		45446DBD31ABE1DB106988D33EA6CE3A /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
-		48C3C5D778D7C947643653F98778AD82 /* FormSegmentedControlCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSegmentedControlCell.swift; path = SwiftForms/cells/FormSegmentedControlCell.swift; sourceTree = "<group>"; };
-		49F3FA57B00C5D10FE20934CDCC7B7A1 /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
-		4F4AA2D229A14D93CF1C0BEADAEF304E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3557510EF27BFD5B7BA098835B5268C7 /* FormOptionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormOptionsViewController.swift; path = SwiftForms/controllers/FormOptionsViewController.swift; sourceTree = "<group>"; };
+		3CF2EAC73553E677C081DD08A3E4366C /* SwiftForms.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftForms.xcconfig; sourceTree = "<group>"; };
+		40076677F8B38F267F4A736A4DF10060 /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SKProduct+LocalizedPrice.swift"; path = "SwiftyStoreKit/SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		432BC01FEBB2E5CA60C77FE738074CE7 /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyStoreKit.swift; path = SwiftyStoreKit/SwiftyStoreKit.swift; sourceTree = "<group>"; };
+		43A91A19576515080E65BA8367926B70 /* paper-onboarding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "paper-onboarding.modulemap"; sourceTree = "<group>"; };
+		440C6E75F3F2682283E1F9C798F197D4 /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
+		4526C475B06BCB5BDF16C4AA91047C28 /* FormValueCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormValueCell.swift; path = SwiftForms/cells/base/FormValueCell.swift; sourceTree = "<group>"; };
+		453A98D7CC4B3B99C488381E80BF68D1 /* SwiftForms-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftForms-dummy.m"; sourceTree = "<group>"; };
+		47B05AEAFC3887AF729E8327576A286C /* KYCircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYCircularProgress.xcconfig; sourceTree = "<group>"; };
+		4A83CB708A58EF5C10F980F5E52885A5 /* FormTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldCell.swift; path = SwiftForms/cells/FormTextFieldCell.swift; sourceTree = "<group>"; };
+		4BBB735B69D47210B7337E133D587713 /* InAppReceiptVerificator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptVerificator.swift; path = SwiftyStoreKit/InAppReceiptVerificator.swift; sourceTree = "<group>"; };
+		4D97F46B7B6EC5969FECC12668FEE96D /* SwiftyStoreKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-umbrella.h"; sourceTree = "<group>"; };
 		50F2E47BDC0B600413B2E5F973ADE3F6 /* Pods-Tasky-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tasky-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5353CCE80DCFA02A0DBC8F369FD0BCE2 /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleReceiptValidator.swift; path = SwiftyStoreKit/AppleReceiptValidator.swift; sourceTree = "<group>"; };
-		53877AA2F835BEE4600D58507F3B151E /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
-		549E632E4AFFF4B295785C3E35C1A07A /* Pods_Tasky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tasky.framework; path = "Pods-Tasky.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55D3B1C776E16A69B3056924E75E1B9D /* paper-onboarding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "paper-onboarding-prefix.pch"; sourceTree = "<group>"; };
+		54150A18AA1F10F6421FBAE5DC7F4777 /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptRefreshRequest.swift; path = SwiftyStoreKit/InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
+		5441DDEEC37D0DA625CD8AEBE9477261 /* RestorePurchasesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestorePurchasesController.swift; path = SwiftyStoreKit/RestorePurchasesController.swift; sourceTree = "<group>"; };
+		55ACE3E3102C756B14AF70C967F50461 /* FormLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormLabelCell.swift; path = SwiftForms/cells/FormLabelCell.swift; sourceTree = "<group>"; };
+		55BFECA883F0EC9FC7FCB68089EE7B9B /* FillAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillAnimationView.swift; path = Source/FillAnimationView/FillAnimationView.swift; sourceTree = "<group>"; };
+		56B05F229419EB192AE79445C58D42BE /* SwiftForms.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftForms.modulemap; sourceTree = "<group>"; };
 		5BEDCB7040F92FF7F149E1A5AF0E5D16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6348E057034AAB7CB9D94BD9F0C1312E /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
-		65729BDCBDAFD91F5CD131ECF5178D97 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
-		67D3A602744E7B8C9DBE460B782E4DB3 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
-		683E35484A83EFD513A82EA394222B7C /* FormStepperCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormStepperCell.swift; path = SwiftForms/cells/FormStepperCell.swift; sourceTree = "<group>"; };
-		6A7CE3DDC0D4E02DD411E88BF9EABB24 /* GestureControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureControl.swift; path = Source/GestureControl/GestureControl.swift; sourceTree = "<group>"; };
-		6C16FA2DE80D5345557ECAFC05F3F78D /* paper-onboarding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "paper-onboarding.xcconfig"; sourceTree = "<group>"; };
-		6D68081E6B282534D087598DB472BD3D /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppProductQueryRequest.swift; path = SwiftyStoreKit/InAppProductQueryRequest.swift; sourceTree = "<group>"; };
-		6F0AECAFD8CCB7FB54801DA4E0E4DCD4 /* FormSliderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSliderCell.swift; path = SwiftForms/cells/FormSliderCell.swift; sourceTree = "<group>"; };
-		6F5F5A34346C033E458D91A58C53F2CF /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		5C876C574777101BF7B862A89C0B8CBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E00A22B5766FBD54C5E11183C3C1176 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8EC3DE4A760652812CCA21D5F711BE /* FormCheckCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormCheckCell.swift; path = SwiftForms/cells/FormCheckCell.swift; sourceTree = "<group>"; };
+		6100C71B2C24838CC03C054691EB5C8E /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
+		6658F3DBE38034E2F9F5843C1E13112B /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		698D2BA0AA46DC109D07D30E1BC0E0EC /* GestureControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureControl.swift; path = Source/GestureControl/GestureControl.swift; sourceTree = "<group>"; };
+		6AAB85ABCF7FDD2CFB62870E529592AC /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		6B7F88C897514989236059890AC2E8F5 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		6F2A69E5002D487579E0CC83128F2279 /* paper-onboarding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "paper-onboarding-prefix.pch"; sourceTree = "<group>"; };
+		71F533C5FC7140454C455D8806427023 /* SwiftyStoreKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyStoreKit.modulemap; sourceTree = "<group>"; };
 		722605E88275E19AD31FDFB5AF9108A9 /* Pods-Tasky-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tasky-frameworks.sh"; sourceTree = "<group>"; };
-		72E2E6D9E831AF043B1D0A42F3358E3D /* paper-onboarding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "paper-onboarding-umbrella.h"; sourceTree = "<group>"; };
-		76BAD39C546D4FFCAEF67BE2DA959520 /* FormOptionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormOptionsViewController.swift; path = SwiftForms/controllers/FormOptionsViewController.swift; sourceTree = "<group>"; };
-		76E646442E3A6A277008D15D59AE0BE9 /* SwiftForms-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftForms-dummy.m"; sourceTree = "<group>"; };
-		7917A1A2FC5F9CAAD59EF24E3F2CFBF2 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
-		7A3A5F0E0842BC8A91654925933A20E3 /* FormTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldCell.swift; path = SwiftForms/cells/FormTextFieldCell.swift; sourceTree = "<group>"; };
-		7AA2234BC421CD2FDD66365DC1FBA36A /* SwiftyStoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyStoreKit-dummy.m"; sourceTree = "<group>"; };
-		7AB43F81FA51F546F6C76703601E597B /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C03F1FA712CBA3C5931FBBC43ABB6D /* SwiftForms-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftForms-umbrella.h"; sourceTree = "<group>"; };
+		7596999F92366EA53226159637805CE2 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
+		75E0850982BB40F1B76EAB6C0F1ADA2C /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Brands-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		7630F3CA0D2E471341B99E197EA2F0B3 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		76962FB07CFC5C617DC00BD45685CDA6 /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleReceiptValidator.swift; path = SwiftyStoreKit/AppleReceiptValidator.swift; sourceTree = "<group>"; };
+		76C492A6ADE4F2513C0C321F1A8C0445 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		77BD7FB0A2CAD8B6E5534788594CD88B /* paper-onboarding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "paper-onboarding-dummy.m"; sourceTree = "<group>"; };
+		7A9107AFDF00F10657A99CB52DBBB898 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		7E018CA540D9602E7E7A2877CAB3C888 /* paper-onboarding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "paper-onboarding.xcconfig"; sourceTree = "<group>"; };
+		7F96993F8D92021325ED4CC78CCE8FAB /* OnboardingContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingContentView.swift; path = Source/OnboardingContentView/OnboardingContentView.swift; sourceTree = "<group>"; };
+		804B27034F89960442CBF89549732E65 /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		81F4AE2B03AE8B9FDA87553A28461AF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844538633529A7DF7314C20301CA47AF /* Pods-Tasky-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tasky-dummy.m"; sourceTree = "<group>"; };
-		84D58A6F01D05326499F69949718C251 /* FormValueCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormValueCell.swift; path = SwiftForms/cells/base/FormValueCell.swift; sourceTree = "<group>"; };
-		8590CF7C85BB7C3D9DAD02B5277093F7 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
-		864D16A145E18C08A001E9B4B81598C6 /* SwiftyStoreKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyStoreKit.modulemap; sourceTree = "<group>"; };
+		87CD24ECEB86D2C781DCEBACFC306B69 /* KYCircularProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KYCircularProgress.modulemap; sourceTree = "<group>"; };
+		88663E0F5DB5B6420B070CEB690B17C1 /* SwiftyStoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyStoreKit-dummy.m"; sourceTree = "<group>"; };
+		88688D3A17A5737FB94DF17D0B7AF229 /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyStoreKit.framework; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9BFDD70B4458738B8D7F639B15F331 /* Pods-Tasky-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tasky-acknowledgements.plist"; sourceTree = "<group>"; };
-		8C4EEA5997EF8B2F430A70357F579D14 /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
-		8D4F723079BBB87756426C631AA5B875 /* SwiftForms.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftForms.modulemap; sourceTree = "<group>"; };
-		91BC10659B21381AB0CBDFFB0DB8149B /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Brands-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		8DDD9D8B332222C20A5887CB27970F81 /* KYCircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYCircularProgress-prefix.pch"; sourceTree = "<group>"; };
+		8E49AA97603489614D46D3A47B6C3616 /* PaperOnboarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboarding.swift; path = Source/PaperOnboarding.swift; sourceTree = "<group>"; };
+		8F1EB8F7F65D6CA533B5913865D7CC92 /* FormDateCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormDateCell.swift; path = SwiftForms/cells/FormDateCell.swift; sourceTree = "<group>"; };
+		9385ED9BD9DF459C412AA85F15B4B8CA /* FormSliderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSliderCell.swift; path = SwiftForms/cells/FormSliderCell.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97C7433859D47FADE34964AC473575A8 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
-		985942EE268D6FADFF80953E0C32D3A7 /* FormRowDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormRowDescriptor.swift; path = SwiftForms/descriptors/FormRowDescriptor.swift; sourceTree = "<group>"; };
-		9EA886CDCCA7B2C8F01A70DE730F28D9 /* FormSwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSwitchCell.swift; path = SwiftForms/cells/FormSwitchCell.swift; sourceTree = "<group>"; };
-		9FA4A90466CA74ED2466F088A986F324 /* paper-onboarding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "paper-onboarding.modulemap"; sourceTree = "<group>"; };
-		A51A138B2FFA9D4A3C02C4EFA41BE74D /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyStoreKit.framework; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6CB4F778F75DE6FBE795A66CC2C28DA /* RestorePurchasesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestorePurchasesController.swift; path = SwiftyStoreKit/RestorePurchasesController.swift; sourceTree = "<group>"; };
+		9451151FA129ADD7A23F1E3D1B479B1E /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppProductQueryRequest.swift; path = SwiftyStoreKit/InAppProductQueryRequest.swift; sourceTree = "<group>"; };
+		98DA5A62AE7F7B0E3D733517A11381AF /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
+		9B2D314ADB9E38B7DFBBABD5AA29AFB9 /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
+		9D5C1A3F8056C1EBD92D0958FB480D0C /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
+		9F8CD243BA96739E8FDBC2EDD5867A94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E6D051AEF940D339DE409C13F48478 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21E3B32B42EBCBF9661A2ED0458F210 /* FormRowDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormRowDescriptor.swift; path = SwiftForms/descriptors/FormRowDescriptor.swift; sourceTree = "<group>"; };
+		A61754D49AABD2FCB0335A611760B6BB /* PaperOnboardingDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboardingDataSource.swift; path = Source/PaperOnboardingDataSource.swift; sourceTree = "<group>"; };
+		A78DBC485177EDAF87F5106E8677D8DF /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
 		A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A8EDB221E5AA8EFB81E7A742BD0A6206 /* SwiftyStoreKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-umbrella.h"; sourceTree = "<group>"; };
-		AA69795303A8BEC22B8027D5752BE6A8 /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
-		AABE6A96D66FA395C455AC511DCAF082 /* FontAwesomeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeExtension.swift; path = FontAwesome/FontAwesomeExtension.swift; sourceTree = "<group>"; };
-		ACD568A0D84E3386B9D6E360CA85DF7F /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
-		ACE00178AA17B6D298F9C7E21CD57E2B /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACE836C1914A91B2ABAAC7DC61711149 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF822864513A751D00EC8B4A47B634A9 /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
-		B0DAB0F445CD7E9166E6C0600205CC6A /* FormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormViewController.swift; path = SwiftForms/controllers/FormViewController.swift; sourceTree = "<group>"; };
-		B32E8A3C15A9742278E5ADDB30187720 /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyStoreKit.swift; path = SwiftyStoreKit/SwiftyStoreKit.swift; sourceTree = "<group>"; };
-		B52E9CDD3E26FAEB7C80E1E5736E84DF /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyStoreKit+Types.swift"; path = "SwiftyStoreKit/SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
-		B72C85D7CAA81254333908F27727F12B /* SwiftForms.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftForms.xcconfig; sourceTree = "<group>"; };
-		B7F48BE3447201660C5C881186902D91 /* PageViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewItem.swift; path = Source/PageView/Item/PageViewItem.swift; sourceTree = "<group>"; };
-		B9B19633AE76F7D18A1771D57434457D /* FormSectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSectionDescriptor.swift; path = SwiftForms/descriptors/FormSectionDescriptor.swift; sourceTree = "<group>"; };
-		BB679E4643F35A0E66F3D1674F0CA4CC /* SwiftForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftForms.framework; path = SwiftForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBA082AC4359C0B196EE6F571C4898E4 /* paper_onboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = paper_onboarding.framework; path = "paper-onboarding.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF2F2A676564085DD81B83E658011836 /* FormLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormLabelCell.swift; path = SwiftForms/cells/FormLabelCell.swift; sourceTree = "<group>"; };
+		A8B434DB0AF328DF866761FE825CD044 /* FormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormViewController.swift; path = SwiftForms/controllers/FormViewController.swift; sourceTree = "<group>"; };
+		AA4657C03C65B18BAD7A3AB3550BCFE7 /* FormDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormDescriptor.swift; path = SwiftForms/descriptors/FormDescriptor.swift; sourceTree = "<group>"; };
+		AB58B4417F4AA000F95DB80106F08AD3 /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
+		AF38E6E4E4ED145D420C9D4049C15CBC /* FormSectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSectionDescriptor.swift; path = SwiftForms/descriptors/FormSectionDescriptor.swift; sourceTree = "<group>"; };
+		AFB59EECD97814FF53028B6541D81F21 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		B319D4D8EF1940BE29DA1971A1DD1D37 /* FormTextViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextViewCell.swift; path = SwiftForms/cells/FormTextViewCell.swift; sourceTree = "<group>"; };
+		B7BAE0FFA2B7F5FD15C899E0BF71D33F /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Solid-900.otf"; path = "FontAwesome/Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		B92F4405C442D46B87EC035D3E7B2C9D /* OnboardingContantViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingContantViewItem.swift; path = Source/OnboardingContentView/Item/OnboardingContantViewItem.swift; sourceTree = "<group>"; };
+		BB7F975A3DE45D80877EEDF1BFC38AE3 /* InAppReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceipt.swift; path = SwiftyStoreKit/InAppReceipt.swift; sourceTree = "<group>"; };
+		C01F3E6A6BE1D7D18A9FFA2BA3F60E7E /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
+		C0DAE93EDB2BF55CD25D47DC20E046A2 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
+		C119D6662CA5662C012359E753E47A3E /* FontAwesomeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeExtension.swift; path = FontAwesome/FontAwesomeExtension.swift; sourceTree = "<group>"; };
+		C167C887331230040B4149E0EF901B3D /* PageContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageContainer.swift; path = Source/PageView/PageContainerView/PageContainer.swift; sourceTree = "<group>"; };
+		C292A14B4C890B0964032918D3F58428 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		C7BD641A4E654CD5FEC5FFC5A2B831C2 /* PageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = Source/PageView/PageView.swift; sourceTree = "<group>"; };
-		C7E371B220EA9D4CD3130BE6FCE5CD4C /* FormButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormButtonCell.swift; path = SwiftForms/cells/FormButtonCell.swift; sourceTree = "<group>"; };
-		C8385D6F46086D32ADCBBD43DD0E0B11 /* FormCheckCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormCheckCell.swift; path = SwiftForms/cells/FormCheckCell.swift; sourceTree = "<group>"; };
-		CB2F0736C46AE8D4A91773FE30841AAD /* PaymentsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentsController.swift; path = SwiftyStoreKit/PaymentsController.swift; sourceTree = "<group>"; };
-		CBBDC3D7696FD415F7C82CCA869C6B41 /* OnboardingContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingContentView.swift; path = Source/OnboardingContentView/OnboardingContentView.swift; sourceTree = "<group>"; };
-		CD8A8F318A96F30B6C6D4069B9DD7823 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
-		CDEE827339D0C2A726F6AA65411DC219 /* Configuring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuring.swift; path = Source/Helpers/Configuring.swift; sourceTree = "<group>"; };
-		CEECFF221FAD0F7A5D575FC3B10F7A4B /* FormSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSelector.swift; path = SwiftForms/controllers/FormSelector.swift; sourceTree = "<group>"; };
-		CF9113F39D401C800AE67D32CC94D92E /* PaperOnboarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboarding.swift; path = Source/PaperOnboarding.swift; sourceTree = "<group>"; };
-		D3655140E8642A3346914B1F262D075B /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
-		D60F43E027FA38E01DF2ADC913D025EC /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
-		D7D1518E88DC50216313B9D5ED4F3465 /* SwiftForms-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftForms-prefix.pch"; sourceTree = "<group>"; };
-		D9227A450BAEC2C6B91FF1C01CF6FD72 /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SKProduct+LocalizedPrice.swift"; path = "SwiftyStoreKit/SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
-		DA4F512B1A51FDD28E86B00A86AFF5A9 /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
-		DBB7E15AAE6E0831AD9AEA319B1CDBE7 /* InAppReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceipt.swift; path = SwiftyStoreKit/InAppReceipt.swift; sourceTree = "<group>"; };
-		DC73E8B363534B9C6D7E9CFBA34FA840 /* FormDateCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormDateCell.swift; path = SwiftForms/cells/FormDateCell.swift; sourceTree = "<group>"; };
-		DD56E33D3358A68D1723100FE5A1167A /* FormSelectorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSelectorCell.swift; path = SwiftForms/cells/FormSelectorCell.swift; sourceTree = "<group>"; };
-		DDEB648F03CF3EEC037995EAD1AA3CCA /* FormTextViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextViewCell.swift; path = SwiftForms/cells/FormTextViewCell.swift; sourceTree = "<group>"; };
-		E220945E57EAFBB854B0523DD11BB600 /* CompleteTransactionsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompleteTransactionsController.swift; path = SwiftyStoreKit/CompleteTransactionsController.swift; sourceTree = "<group>"; };
-		E37C1751B31975DE1A614A4C1A9193FA /* OS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OS.swift; path = SwiftyStoreKit/OS.swift; sourceTree = "<group>"; };
-		E7206B3791C1D9C05E82CC2230569A3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E85CBB287AC0B157522B7B2A4168EDB2 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
-		ED4A17D7EA6F240E7EEA5845AD2409E2 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintsHelper.swift; path = Source/Helpers/ConstraintsHelper.swift; sourceTree = "<group>"; };
-		EFA966421FF9F4D3461075240238757E /* FormDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormDescriptor.swift; path = SwiftForms/descriptors/FormDescriptor.swift; sourceTree = "<group>"; };
-		F0D90A676D660862798EE9AB80F0BE88 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
-		F11FAF0C72B47C9701095B7E05F2B314 /* FormTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTitleCell.swift; path = SwiftForms/cells/base/FormTitleCell.swift; sourceTree = "<group>"; };
-		F13B3FFFCEA1B4BA348D081E711920FB /* ProductsInfoController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsInfoController.swift; path = SwiftyStoreKit/ProductsInfoController.swift; sourceTree = "<group>"; };
+		CB70F4722E1DF9BA9F85D350B39E91FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF52B97BEB99249F617CAB6A4EE9AFDD /* CompleteTransactionsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompleteTransactionsController.swift; path = SwiftyStoreKit/CompleteTransactionsController.swift; sourceTree = "<group>"; };
+		CFC28926BBD92239A15EB45D58903E62 /* KYCircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYCircularProgress-umbrella.h"; sourceTree = "<group>"; };
+		D32C4D61F8F298A5B90D9E53D6506A41 /* FormPickerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormPickerCell.swift; path = SwiftForms/cells/FormPickerCell.swift; sourceTree = "<group>"; };
+		D37D4DB615A8D979D3D6090B0B2614A6 /* KYCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KYCircularProgress.framework; path = KYCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C4481EF55180F11D3A1E4A9AEE97EB /* PageViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewItem.swift; path = Source/PageView/Item/PageViewItem.swift; sourceTree = "<group>"; };
+		D603689060D4F8EA9416BE342B398747 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		D67373DBEBD4E494082F09310C164F86 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintsHelper.swift; path = Source/Helpers/ConstraintsHelper.swift; sourceTree = "<group>"; };
+		D800AF91F74F0FED6B7D491FCA0516D0 /* FormStepperCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormStepperCell.swift; path = SwiftForms/cells/FormStepperCell.swift; sourceTree = "<group>"; };
+		D80B01CA9D5E957B6EEA52E90ABACB83 /* FormErrorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormErrorType.swift; path = SwiftForms/FormErrorType.swift; sourceTree = "<group>"; };
+		D936F496718C12DFBF98325563089BEA /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
+		DC049C6C79EF09964988CD45990906E5 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		DE8E328FB67C91611EE8D7BE4269E395 /* Configuring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuring.swift; path = Source/Helpers/Configuring.swift; sourceTree = "<group>"; };
+		DEFFB8A8A742183C67F4812AB6D6A1B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB75CC07E9ADAF666418D6AD436E0F2 /* KYCircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KYCircularProgress-dummy.m"; sourceTree = "<group>"; };
+		E0F4E463B73D66612DE6B11B49558B1C /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
+		E183056CA1BCD833968D294F76A32051 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E286FBBFC0395D2BA62DDC4D8E17C6AD /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		E96D80992D43BB3855E8557DD40C2F0C /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
+		EA178C6D4401A4FDFE710C75E246B44B /* SwiftyStoreKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyStoreKit-prefix.pch"; sourceTree = "<group>"; };
+		EE13361AD2836BCBBDDA86517804A131 /* paper_onboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = paper_onboarding.framework; path = "paper-onboarding.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDBB73D731D2CF3CF382AAD4D4CFBF8 /* FormSegmentedControlCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSegmentedControlCell.swift; path = SwiftForms/cells/FormSegmentedControlCell.swift; sourceTree = "<group>"; };
+		F37B90AABD4E425333424E690DEA25B7 /* FormSelectorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormSelectorCell.swift; path = SwiftForms/cells/FormSelectorCell.swift; sourceTree = "<group>"; };
 		F5C1FE0BFD556F98C327C450BA22B268 /* Pods-Tasky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tasky.release.xcconfig"; sourceTree = "<group>"; };
-		F630575B825DD350F14797919D129DB9 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Solid-900.otf"; path = "FontAwesome/Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
-		FB08BBCE448B63FE35AF984666D6E6CB /* OnboardingContantViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingContantViewItem.swift; path = Source/OnboardingContentView/Item/OnboardingContantViewItem.swift; sourceTree = "<group>"; };
+		F799A215391CA5870B0A73CF8F3B9F21 /* SwiftForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftForms.framework; path = SwiftForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A56E492349F5E31018276033BB07E6 /* PaymentsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentsController.swift; path = SwiftyStoreKit/PaymentsController.swift; sourceTree = "<group>"; };
+		F8EE172601CCC4A05277B23DA635F579 /* KYCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYCircularProgress.swift; path = Source/KYCircularProgress.swift; sourceTree = "<group>"; };
+		FE9B45B3943D66D999A5B2782D82A65D /* SwiftyStoreKit+Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyStoreKit+Types.swift"; path = "SwiftyStoreKit/SwiftyStoreKit+Types.swift"; sourceTree = "<group>"; };
+		FEF831B3D80097A487EF74540237845F /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		021E02FA3B1DB2E560A58F0168263FB2 /* Frameworks */ = {
+		007B6B5D043373A21571AB2CCB81113C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F840CC66E3086EBD6280194832A48885 /* Foundation.framework in Frameworks */,
+				6297FB8ED345308867E1DBFB9350AEFD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27E024F52A6FDE8C26BD51050CCAF495 /* Frameworks */ = {
+		00F28D70748E64998973BCC7B65B0D36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AAE2A28F35854C8E65135BAD1FDE1BE /* Foundation.framework in Frameworks */,
+				59EF401D011A3D635E87E3E3F1D1523B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B87DE34E64B02870B4B91EF5CE57141 /* Frameworks */ = {
+		23154230DB406E2CBD6E7BAC5556C699 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3692F711F7FAFB9C28AAE57B1596D703 /* Foundation.framework in Frameworks */,
+				50EE09F357BF27C7B09984FEAC359095 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233946D00D88A45B4EE05B823365748F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3EA136AE86B317D8D406FCE0FE8413 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,14 +336,6 @@
 				6EC40D7BADA054B926209056DFBFE316 /* CoreText.framework in Frameworks */,
 				FFF5BA92707F567C4E4E7CB6A8FD4B70 /* Foundation.framework in Frameworks */,
 				47610629C7A7408DFCBE1EEA5DB0A7E3 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		857FDCE613E398EA20C306087EFE8913 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C8C2B368FCE96A19543EB8C60C8CB806 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,17 +354,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB218EFED5AC6854B36129D3E2B3F4BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EED424749895C37BDE2E330E3DB3F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4988B6E6A6263E11C06AEEB7340079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773DE46A2BDFBACF8103335DD1A124F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C37090E0C3090642A3D3F2FAB1B8735 /* Resources */ = {
+		0B172AA0BC4C2D00F24C2A5BFAF8764B /* FontAwesome.swift */ = {
 			isa = PBXGroup;
 			children = (
-				91BC10659B21381AB0CBDFFB0DB8149B /* Font Awesome 5 Brands-Regular-400.otf */,
-				6F5F5A34346C033E458D91A58C53F2CF /* Font Awesome 5 Free-Regular-400.otf */,
-				F630575B825DD350F14797919D129DB9 /* Font Awesome 5 Free-Solid-900.otf */,
+				C0DAE93EDB2BF55CD25D47DC20E046A2 /* Enum.swift */,
+				E0F4E463B73D66612DE6B11B49558B1C /* FontAwesome.swift */,
+				440C6E75F3F2682283E1F9C798F197D4 /* FontAwesomeBarButtonItem.swift */,
+				C119D6662CA5662C012359E753E47A3E /* FontAwesomeExtension.swift */,
+				C01F3E6A6BE1D7D18A9FFA2BA3F60E7E /* FontAwesomeImageRepresentable.swift */,
+				9B2D314ADB9E38B7DFBBABD5AA29AFB9 /* FontAwesomeImageView.swift */,
+				A78DBC485177EDAF87F5106E8677D8DF /* FontAwesomeSegmentedControl.swift */,
+				98DA5A62AE7F7B0E3D733517A11381AF /* FontAwesomeStateRequirement.swift */,
+				AB58B4417F4AA000F95DB80106F08AD3 /* FontAwesomeTabBarItem.swift */,
+				804B27034F89960442CBF89549732E65 /* FontAwesomeTextRepresentable.swift */,
+				9D5C1A3F8056C1EBD92D0958FB480D0C /* FontAwesomeView.swift */,
+				32446F2722AF789D775B8EB3350CE075 /* Resources */,
+				C5BDFCCBE7AE470CC455762C53B72984 /* Support Files */,
 			);
-			name = Resources;
+			name = FontAwesome.swift;
+			path = FontAwesome.swift;
+			sourceTree = "<group>";
+		};
+		0C65ACCCC03C4F10C37552FBEA880845 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01FC0618A68841E0AC64D75C49564073 /* Info.plist */,
+				71F533C5FC7140454C455D8806427023 /* SwiftyStoreKit.modulemap */,
+				0E5F81EDCE8454C74DF9449783353E45 /* SwiftyStoreKit.xcconfig */,
+				88663E0F5DB5B6420B070CEB690B17C1 /* SwiftyStoreKit-dummy.m */,
+				EA178C6D4401A4FDFE710C75E246B44B /* SwiftyStoreKit-prefix.pch */,
+				4D97F46B7B6EC5969FECC12668FEE96D /* SwiftyStoreKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyStoreKit";
+			sourceTree = "<group>";
+		};
+		0F01E42DEB850B7D90D3662EC4A5C967 /* SwiftyStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				76962FB07CFC5C617DC00BD45685CDA6 /* AppleReceiptValidator.swift */,
+				CF52B97BEB99249F617CAB6A4EE9AFDD /* CompleteTransactionsController.swift */,
+				9451151FA129ADD7A23F1E3D1B479B1E /* InAppProductQueryRequest.swift */,
+				BB7F975A3DE45D80877EEDF1BFC38AE3 /* InAppReceipt.swift */,
+				54150A18AA1F10F6421FBAE5DC7F4777 /* InAppReceiptRefreshRequest.swift */,
+				4BBB735B69D47210B7337E133D587713 /* InAppReceiptVerificator.swift */,
+				1CA302F6D22D359B6DEDF0E44D7AF1EB /* OS.swift */,
+				0166153679B68350C5D7F39C40C53D56 /* PaymentQueueController.swift */,
+				F8A56E492349F5E31018276033BB07E6 /* PaymentsController.swift */,
+				1D4B709CF62A389ADD8193F3AAAC7A51 /* ProductsInfoController.swift */,
+				5441DDEEC37D0DA625CD8AEBE9477261 /* RestorePurchasesController.swift */,
+				40076677F8B38F267F4A736A4DF10060 /* SKProduct+LocalizedPrice.swift */,
+				432BC01FEBB2E5CA60C77FE738074CE7 /* SwiftyStoreKit.swift */,
+				FE9B45B3943D66D999A5B2782D82A65D /* SwiftyStoreKit+Types.swift */,
+				0C65ACCCC03C4F10C37552FBEA880845 /* Support Files */,
+			);
+			name = SwiftyStoreKit;
+			path = SwiftyStoreKit;
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -337,103 +439,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1531053F4C0D328198F05478DC2B42E9 /* SwiftForms */ = {
+		2295E91416F59740ADEC903C549588F5 /* paper-onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				156D44DB9264AF9F738198812ACCE835 /* FormBaseCell.swift */,
-				C7E371B220EA9D4CD3130BE6FCE5CD4C /* FormButtonCell.swift */,
-				C8385D6F46086D32ADCBBD43DD0E0B11 /* FormCheckCell.swift */,
-				DC73E8B363534B9C6D7E9CFBA34FA840 /* FormDateCell.swift */,
-				EFA966421FF9F4D3461075240238757E /* FormDescriptor.swift */,
-				1A838A49D28DB9516FBC8410A42A8D2F /* FormErrorType.swift */,
-				BF2F2A676564085DD81B83E658011836 /* FormLabelCell.swift */,
-				76BAD39C546D4FFCAEF67BE2DA959520 /* FormOptionsViewController.swift */,
-				3F8BCF8BF497361B1B840DDAC3D59144 /* FormPickerCell.swift */,
-				985942EE268D6FADFF80953E0C32D3A7 /* FormRowDescriptor.swift */,
-				B9B19633AE76F7D18A1771D57434457D /* FormSectionDescriptor.swift */,
-				48C3C5D778D7C947643653F98778AD82 /* FormSegmentedControlCell.swift */,
-				CEECFF221FAD0F7A5D575FC3B10F7A4B /* FormSelector.swift */,
-				DD56E33D3358A68D1723100FE5A1167A /* FormSelectorCell.swift */,
-				6F0AECAFD8CCB7FB54801DA4E0E4DCD4 /* FormSliderCell.swift */,
-				683E35484A83EFD513A82EA394222B7C /* FormStepperCell.swift */,
-				9EA886CDCCA7B2C8F01A70DE730F28D9 /* FormSwitchCell.swift */,
-				7A3A5F0E0842BC8A91654925933A20E3 /* FormTextFieldCell.swift */,
-				DDEB648F03CF3EEC037995EAD1AA3CCA /* FormTextViewCell.swift */,
-				F11FAF0C72B47C9701095B7E05F2B314 /* FormTitleCell.swift */,
-				84D58A6F01D05326499F69949718C251 /* FormValueCell.swift */,
-				B0DAB0F445CD7E9166E6C0600205CC6A /* FormViewController.swift */,
-				B94B39427B0F12923DF662A29BE7F83E /* Support Files */,
-			);
-			name = SwiftForms;
-			path = SwiftForms;
-			sourceTree = "<group>";
-		};
-		1C92FA9C4966AEDC61DD2A72927E62FC /* paper-onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				CDEE827339D0C2A726F6AA65411DC219 /* Configuring.swift */,
-				ED4A17D7EA6F240E7EEA5845AD2409E2 /* ConstraintsHelper.swift */,
-				26F543F637E2CF23BF3AD83C2CD6804E /* FillAnimationView.swift */,
-				6A7CE3DDC0D4E02DD411E88BF9EABB24 /* GestureControl.swift */,
-				FB08BBCE448B63FE35AF984666D6E6CB /* OnboardingContantViewItem.swift */,
-				CBBDC3D7696FD415F7C82CCA869C6B41 /* OnboardingContentView.swift */,
-				25F113D2D222394BC7F7592796D78616 /* PageContainer.swift */,
-				C7BD641A4E654CD5FEC5FFC5A2B831C2 /* PageView.swift */,
-				B7F48BE3447201660C5C881186902D91 /* PageViewItem.swift */,
-				CF9113F39D401C800AE67D32CC94D92E /* PaperOnboarding.swift */,
-				0D44EF708A0ABF5DF28BB3997969073B /* PaperOnboardingDataSource.swift */,
-				00DFFE66F61D96F9584C34F29050DA0B /* PaperOnboardingDelegate.swift */,
-				70819748883100470890264AAFCF6015 /* Support Files */,
+				DE8E328FB67C91611EE8D7BE4269E395 /* Configuring.swift */,
+				D67373DBEBD4E494082F09310C164F86 /* ConstraintsHelper.swift */,
+				55BFECA883F0EC9FC7FCB68089EE7B9B /* FillAnimationView.swift */,
+				698D2BA0AA46DC109D07D30E1BC0E0EC /* GestureControl.swift */,
+				B92F4405C442D46B87EC035D3E7B2C9D /* OnboardingContantViewItem.swift */,
+				7F96993F8D92021325ED4CC78CCE8FAB /* OnboardingContentView.swift */,
+				C167C887331230040B4149E0EF901B3D /* PageContainer.swift */,
+				282DC624E75A3FC3687C7DA0FBABBF45 /* PageView.swift */,
+				D3C4481EF55180F11D3A1E4A9AEE97EB /* PageViewItem.swift */,
+				8E49AA97603489614D46D3A47B6C3616 /* PaperOnboarding.swift */,
+				A61754D49AABD2FCB0335A611760B6BB /* PaperOnboardingDataSource.swift */,
+				27F0C387B90F95416A0C915A6BD7C94C /* PaperOnboardingDelegate.swift */,
+				CDF1B5BF044ED25FA81FC78422AC86E5 /* Support Files */,
 			);
 			name = "paper-onboarding";
 			path = "paper-onboarding";
 			sourceTree = "<group>";
 		};
-		34348796A43CA0099851845B9BB72988 /* FontAwesome.swift */ = {
+		32446F2722AF789D775B8EB3350CE075 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D3655140E8642A3346914B1F262D075B /* Enum.swift */,
-				F0D90A676D660862798EE9AB80F0BE88 /* FontAwesome.swift */,
-				8C4EEA5997EF8B2F430A70357F579D14 /* FontAwesomeBarButtonItem.swift */,
-				AABE6A96D66FA395C455AC511DCAF082 /* FontAwesomeExtension.swift */,
-				AF822864513A751D00EC8B4A47B634A9 /* FontAwesomeImageRepresentable.swift */,
-				53877AA2F835BEE4600D58507F3B151E /* FontAwesomeImageView.swift */,
-				DA4F512B1A51FDD28E86B00A86AFF5A9 /* FontAwesomeSegmentedControl.swift */,
-				3DAB7B833DD08708E9623CEE4BFF92E0 /* FontAwesomeStateRequirement.swift */,
-				417C4B730027A1C947951E3FC64D5947 /* FontAwesomeTabBarItem.swift */,
-				AA69795303A8BEC22B8027D5752BE6A8 /* FontAwesomeTextRepresentable.swift */,
-				49F3FA57B00C5D10FE20934CDCC7B7A1 /* FontAwesomeView.swift */,
-				0C37090E0C3090642A3D3F2FAB1B8735 /* Resources */,
-				C0B214799FDA4D8B00109FDE14E0E1B5 /* Support Files */,
+				75E0850982BB40F1B76EAB6C0F1ADA2C /* Font Awesome 5 Brands-Regular-400.otf */,
+				0B6E668FE203F0CDFA2BA9183877B09D /* Font Awesome 5 Free-Regular-400.otf */,
+				B7BAE0FFA2B7F5FD15C899E0BF71D33F /* Font Awesome 5 Free-Solid-900.otf */,
 			);
-			name = FontAwesome.swift;
-			path = FontAwesome.swift;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		41E6E4D83B9ED1B3DE0AEA3F1D984993 /* Pods */ = {
+		43229D6725E856621FD0CAE0D4238576 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34348796A43CA0099851845B9BB72988 /* FontAwesome.swift */,
-				1C92FA9C4966AEDC61DD2A72927E62FC /* paper-onboarding */,
-				891408AA4A5DA291B60EDA0DF73D0D71 /* SCLAlertView */,
-				1531053F4C0D328198F05478DC2B42E9 /* SwiftForms */,
-				6BC42FB1A3E4759DB2E1EED10F54C7E8 /* SwiftyStoreKit */,
+				1D3C600FCB988774CEEC6DD1E69A809C /* FontAwesome.swift.bundle */,
+				E183056CA1BCD833968D294F76A32051 /* FontAwesome_swift.framework */,
+				D37D4DB615A8D979D3D6090B0B2614A6 /* KYCircularProgress.framework */,
+				EE13361AD2836BCBBDDA86517804A131 /* paper_onboarding.framework */,
+				0452C9080F4956E5C0476C6315DC3403 /* Pods_Tasky.framework */,
+				C292A14B4C890B0964032918D3F58428 /* SCLAlertView.framework */,
+				F799A215391CA5870B0A73CF8F3B9F21 /* SwiftForms.framework */,
+				A1E6D051AEF940D339DE409C13F48478 /* SwiftyJSON.framework */,
+				88688D3A17A5737FB94DF17D0B7AF229 /* SwiftyStoreKit.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		486EA3FF4C20E45642949BAB9CBEDDDE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3FC01C11547940AEEE99DE7E7DC4273F /* Info.plist */,
-				864D16A145E18C08A001E9B4B81598C6 /* SwiftyStoreKit.modulemap */,
-				329B57DFB5CC31CF3304E6F0A26FCA92 /* SwiftyStoreKit.xcconfig */,
-				7AA2234BC421CD2FDD66365DC1FBA36A /* SwiftyStoreKit-dummy.m */,
-				2C7B26AEFDA97AE3B7C3CABBB93CF2E9 /* SwiftyStoreKit-prefix.pch */,
-				A8EDB221E5AA8EFB81E7A742BD0A6206 /* SwiftyStoreKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyStoreKit";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		4A4AE1ACCCBD5B79B69D01606BBBA30B /* Pods-Tasky */ = {
@@ -454,69 +504,18 @@
 			path = "Target Support Files/Pods-Tasky";
 			sourceTree = "<group>";
 		};
-		54E68A55C43D622737432F52AC680BBB /* Support Files */ = {
+		52426CE03963FD8716F15A23406C00B0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E7206B3791C1D9C05E82CC2230569A3B /* Info.plist */,
-				67D3A602744E7B8C9DBE460B782E4DB3 /* SCLAlertView.modulemap */,
-				7917A1A2FC5F9CAAD59EF24E3F2CFBF2 /* SCLAlertView.xcconfig */,
-				D60F43E027FA38E01DF2ADC913D025EC /* SCLAlertView-dummy.m */,
-				153DFD0951B201328A474BCBA9DE3A45 /* SCLAlertView-prefix.pch */,
-				E85CBB287AC0B157522B7B2A4168EDB2 /* SCLAlertView-umbrella.h */,
+				CB70F4722E1DF9BA9F85D350B39E91FF /* Info.plist */,
+				87CD24ECEB86D2C781DCEBACFC306B69 /* KYCircularProgress.modulemap */,
+				47B05AEAFC3887AF729E8327576A286C /* KYCircularProgress.xcconfig */,
+				DFB75CC07E9ADAF666418D6AD436E0F2 /* KYCircularProgress-dummy.m */,
+				8DDD9D8B332222C20A5887CB27970F81 /* KYCircularProgress-prefix.pch */,
+				CFC28926BBD92239A15EB45D58903E62 /* KYCircularProgress-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SCLAlertView";
-			sourceTree = "<group>";
-		};
-		68F5BB965F077B0323E7E5040CDF98E7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				38E5C5AD0614F09F482DF7D8C76EAC24 /* FontAwesome.swift.bundle */,
-				7AB43F81FA51F546F6C76703601E597B /* FontAwesome_swift.framework */,
-				BBA082AC4359C0B196EE6F571C4898E4 /* paper_onboarding.framework */,
-				549E632E4AFFF4B295785C3E35C1A07A /* Pods_Tasky.framework */,
-				ACE00178AA17B6D298F9C7E21CD57E2B /* SCLAlertView.framework */,
-				BB679E4643F35A0E66F3D1674F0CA4CC /* SwiftForms.framework */,
-				A51A138B2FFA9D4A3C02C4EFA41BE74D /* SwiftyStoreKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6BC42FB1A3E4759DB2E1EED10F54C7E8 /* SwiftyStoreKit */ = {
-			isa = PBXGroup;
-			children = (
-				5353CCE80DCFA02A0DBC8F369FD0BCE2 /* AppleReceiptValidator.swift */,
-				E220945E57EAFBB854B0523DD11BB600 /* CompleteTransactionsController.swift */,
-				6D68081E6B282534D087598DB472BD3D /* InAppProductQueryRequest.swift */,
-				DBB7E15AAE6E0831AD9AEA319B1CDBE7 /* InAppReceipt.swift */,
-				43C64DE48971D7320F5DFF4C8CF0124A /* InAppReceiptRefreshRequest.swift */,
-				246E16598EB6985DDFDEC06B5CE0B1FF /* InAppReceiptVerificator.swift */,
-				E37C1751B31975DE1A614A4C1A9193FA /* OS.swift */,
-				3C9F16A9BCF2133EF8D3C157D8DEE403 /* PaymentQueueController.swift */,
-				CB2F0736C46AE8D4A91773FE30841AAD /* PaymentsController.swift */,
-				F13B3FFFCEA1B4BA348D081E711920FB /* ProductsInfoController.swift */,
-				A6CB4F778F75DE6FBE795A66CC2C28DA /* RestorePurchasesController.swift */,
-				D9227A450BAEC2C6B91FF1C01CF6FD72 /* SKProduct+LocalizedPrice.swift */,
-				B32E8A3C15A9742278E5ADDB30187720 /* SwiftyStoreKit.swift */,
-				B52E9CDD3E26FAEB7C80E1E5736E84DF /* SwiftyStoreKit+Types.swift */,
-				486EA3FF4C20E45642949BAB9CBEDDDE /* Support Files */,
-			);
-			name = SwiftyStoreKit;
-			path = SwiftyStoreKit;
-			sourceTree = "<group>";
-		};
-		70819748883100470890264AAFCF6015 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F9F4160919225B4F4263163D761AAA2 /* Info.plist */,
-				9FA4A90466CA74ED2466F088A986F324 /* paper-onboarding.modulemap */,
-				6C16FA2DE80D5345557ECAFC05F3F78D /* paper-onboarding.xcconfig */,
-				05762BEE741855F0F236A22BD788D7FF /* paper-onboarding-dummy.m */,
-				55D3B1C776E16A69B3056924E75E1B9D /* paper-onboarding-prefix.pch */,
-				72E2E6D9E831AF043B1D0A42F3358E3D /* paper-onboarding-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/paper-onboarding";
+			path = "../Target Support Files/KYCircularProgress";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -524,50 +523,143 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				41E6E4D83B9ED1B3DE0AEA3F1D984993 /* Pods */,
-				68F5BB965F077B0323E7E5040CDF98E7 /* Products */,
+				935A23AA2FC970A74ADDE94FFB092BDB /* Pods */,
+				43229D6725E856621FD0CAE0D4238576 /* Products */,
 				EF6837AAB8FD24A9BE68AECFBE304629 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		891408AA4A5DA291B60EDA0DF73D0D71 /* SCLAlertView */ = {
+		935A23AA2FC970A74ADDE94FFB092BDB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ACD568A0D84E3386B9D6E360CA85DF7F /* SCLAlertView.swift */,
-				45446DBD31ABE1DB106988D33EA6CE3A /* SCLExtensions.swift */,
-				54E68A55C43D622737432F52AC680BBB /* Support Files */,
+				0B172AA0BC4C2D00F24C2A5BFAF8764B /* FontAwesome.swift */,
+				9C45DB0B1D8B910B221AAE4F6F7979DE /* KYCircularProgress */,
+				2295E91416F59740ADEC903C549588F5 /* paper-onboarding */,
+				D0278395CA8416DC655AEE08DC4B4F91 /* SCLAlertView */,
+				9A67330C58AFB8FD8A76A0285F8A3D86 /* SwiftForms */,
+				E3A90F989288DA727823FAEF271E34D4 /* SwiftyJSON */,
+				0F01E42DEB850B7D90D3662EC4A5C967 /* SwiftyStoreKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A67330C58AFB8FD8A76A0285F8A3D86 /* SwiftForms */ = {
+			isa = PBXGroup;
+			children = (
+				2EE1C7E405F2696E640831310E650C02 /* FormBaseCell.swift */,
+				18DE8EC2AE2606D4CF3E39B92EB6BD78 /* FormButtonCell.swift */,
+				5F8EC3DE4A760652812CCA21D5F711BE /* FormCheckCell.swift */,
+				8F1EB8F7F65D6CA533B5913865D7CC92 /* FormDateCell.swift */,
+				AA4657C03C65B18BAD7A3AB3550BCFE7 /* FormDescriptor.swift */,
+				D80B01CA9D5E957B6EEA52E90ABACB83 /* FormErrorType.swift */,
+				55ACE3E3102C756B14AF70C967F50461 /* FormLabelCell.swift */,
+				3557510EF27BFD5B7BA098835B5268C7 /* FormOptionsViewController.swift */,
+				D32C4D61F8F298A5B90D9E53D6506A41 /* FormPickerCell.swift */,
+				A21E3B32B42EBCBF9661A2ED0458F210 /* FormRowDescriptor.swift */,
+				AF38E6E4E4ED145D420C9D4049C15CBC /* FormSectionDescriptor.swift */,
+				EEDBB73D731D2CF3CF382AAD4D4CFBF8 /* FormSegmentedControlCell.swift */,
+				14B0990BEB8B7A3EB5BC980E0952378D /* FormSelector.swift */,
+				F37B90AABD4E425333424E690DEA25B7 /* FormSelectorCell.swift */,
+				9385ED9BD9DF459C412AA85F15B4B8CA /* FormSliderCell.swift */,
+				D800AF91F74F0FED6B7D491FCA0516D0 /* FormStepperCell.swift */,
+				24116842D057C405865D3BBF4FDF5884 /* FormSwitchCell.swift */,
+				4A83CB708A58EF5C10F980F5E52885A5 /* FormTextFieldCell.swift */,
+				B319D4D8EF1940BE29DA1971A1DD1D37 /* FormTextViewCell.swift */,
+				2FD0553D4040B27FBDE55CE39E4C1361 /* FormTitleCell.swift */,
+				4526C475B06BCB5BDF16C4AA91047C28 /* FormValueCell.swift */,
+				A8B434DB0AF328DF866761FE825CD044 /* FormViewController.swift */,
+				FAABBA12408BC56DF58D6FF1138A7CFF /* Support Files */,
+			);
+			name = SwiftForms;
+			path = SwiftForms;
+			sourceTree = "<group>";
+		};
+		9C45DB0B1D8B910B221AAE4F6F7979DE /* KYCircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				F8EE172601CCC4A05277B23DA635F579 /* KYCircularProgress.swift */,
+				52426CE03963FD8716F15A23406C00B0 /* Support Files */,
+			);
+			name = KYCircularProgress;
+			path = KYCircularProgress;
+			sourceTree = "<group>";
+		};
+		B2F80A172D32A93C1FA2DED4CCAC4AE2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81F4AE2B03AE8B9FDA87553A28461AF1 /* Info.plist */,
+				D603689060D4F8EA9416BE342B398747 /* SwiftyJSON.modulemap */,
+				E286FBBFC0395D2BA62DDC4D8E17C6AD /* SwiftyJSON.xcconfig */,
+				6B7F88C897514989236059890AC2E8F5 /* SwiftyJSON-dummy.m */,
+				AFB59EECD97814FF53028B6541D81F21 /* SwiftyJSON-prefix.pch */,
+				FEF831B3D80097A487EF74540237845F /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		C5BDFCCBE7AE470CC455762C53B72984 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E96D80992D43BB3855E8557DD40C2F0C /* FontAwesome.swift.modulemap */,
+				22F740ACE556BE75E0380AF43EDBF04C /* FontAwesome.swift.xcconfig */,
+				293277431FAC3A814BF02FE388D0DBE1 /* FontAwesome.swift-dummy.m */,
+				76C492A6ADE4F2513C0C321F1A8C0445 /* FontAwesome.swift-prefix.pch */,
+				7596999F92366EA53226159637805CE2 /* FontAwesome.swift-umbrella.h */,
+				DEFFB8A8A742183C67F4812AB6D6A1B4 /* Info.plist */,
+				D936F496718C12DFBF98325563089BEA /* ResourceBundle-FontAwesome.swift-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesome.swift";
+			sourceTree = "<group>";
+		};
+		CDF1B5BF044ED25FA81FC78422AC86E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F8CD243BA96739E8FDBC2EDD5867A94 /* Info.plist */,
+				43A91A19576515080E65BA8367926B70 /* paper-onboarding.modulemap */,
+				7E018CA540D9602E7E7A2877CAB3C888 /* paper-onboarding.xcconfig */,
+				77BD7FB0A2CAD8B6E5534788594CD88B /* paper-onboarding-dummy.m */,
+				6F2A69E5002D487579E0CC83128F2279 /* paper-onboarding-prefix.pch */,
+				2B90E86DE225C14CDAA1928199A4D5AC /* paper-onboarding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/paper-onboarding";
+			sourceTree = "<group>";
+		};
+		D0278395CA8416DC655AEE08DC4B4F91 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				7A9107AFDF00F10657A99CB52DBBB898 /* SCLAlertView.swift */,
+				6100C71B2C24838CC03C054691EB5C8E /* SCLExtensions.swift */,
+				D6D6D73B5403C552AB3E569528717611 /* Support Files */,
 			);
 			name = SCLAlertView;
 			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
-		B94B39427B0F12923DF662A29BE7F83E /* Support Files */ = {
+		D6D6D73B5403C552AB3E569528717611 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ACE836C1914A91B2ABAAC7DC61711149 /* Info.plist */,
-				8D4F723079BBB87756426C631AA5B875 /* SwiftForms.modulemap */,
-				B72C85D7CAA81254333908F27727F12B /* SwiftForms.xcconfig */,
-				76E646442E3A6A277008D15D59AE0BE9 /* SwiftForms-dummy.m */,
-				D7D1518E88DC50216313B9D5ED4F3465 /* SwiftForms-prefix.pch */,
-				0A296E741A50F20993CC73116E87C2CC /* SwiftForms-umbrella.h */,
+				5C876C574777101BF7B862A89C0B8CBB /* Info.plist */,
+				1B7EBC3EF15CFDFE523BA243592CDAA2 /* SCLAlertView.modulemap */,
+				6AAB85ABCF7FDD2CFB62870E529592AC /* SCLAlertView.xcconfig */,
+				7630F3CA0D2E471341B99E197EA2F0B3 /* SCLAlertView-dummy.m */,
+				DC049C6C79EF09964988CD45990906E5 /* SCLAlertView-prefix.pch */,
+				0B99C901851F8523B90FD718A15A0180 /* SCLAlertView-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftForms";
+			path = "../Target Support Files/SCLAlertView";
 			sourceTree = "<group>";
 		};
-		C0B214799FDA4D8B00109FDE14E0E1B5 /* Support Files */ = {
+		E3A90F989288DA727823FAEF271E34D4 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				65729BDCBDAFD91F5CD131ECF5178D97 /* FontAwesome.swift.modulemap */,
-				8590CF7C85BB7C3D9DAD02B5277093F7 /* FontAwesome.swift.xcconfig */,
-				CD8A8F318A96F30B6C6D4069B9DD7823 /* FontAwesome.swift-dummy.m */,
-				0891088B7179179F29B807051A63488B /* FontAwesome.swift-prefix.pch */,
-				97C7433859D47FADE34964AC473575A8 /* FontAwesome.swift-umbrella.h */,
-				4F4AA2D229A14D93CF1C0BEADAEF304E /* Info.plist */,
-				6348E057034AAB7CB9D94BD9F0C1312E /* ResourceBundle-FontAwesome.swift-Info.plist */,
+				6658F3DBE38034E2F9F5843C1E13112B /* SwiftyJSON.swift */,
+				B2F80A172D32A93C1FA2DED4CCAC4AE2 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FontAwesome.swift";
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		EF6837AAB8FD24A9BE68AECFBE304629 /* Targets Support Files */ = {
@@ -576,6 +668,20 @@
 				4A4AE1ACCCBD5B79B69D01606BBBA30B /* Pods-Tasky */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FAABBA12408BC56DF58D6FF1138A7CFF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E00A22B5766FBD54C5E11183C3C1176 /* Info.plist */,
+				56B05F229419EB192AE79445C58D42BE /* SwiftForms.modulemap */,
+				3CF2EAC73553E677C081DD08A3E4366C /* SwiftForms.xcconfig */,
+				453A98D7CC4B3B99C488381E80BF68D1 /* SwiftForms-dummy.m */,
+				143F5636A70EBA060C032FDE8E853E76 /* SwiftForms-prefix.pch */,
+				73C03F1FA712CBA3C5931FBBC43ABB6D /* SwiftForms-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftForms";
 			sourceTree = "<group>";
 		};
 		FF1CA95E532A8F990E19506982FA04EE /* iOS */ = {
@@ -591,11 +697,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		22CC285D49E4041ACC2E668C9F8E9470 /* Headers */ = {
+		177EE9844BF2F034BB03B7C06527EAF4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64DC0DF2269D7E5E6807D9158DE2BCE /* SwiftyStoreKit-umbrella.h in Headers */,
+				449932259059E3C2D27D802885AB59ED /* Pods-Tasky-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,19 +713,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42F5129655E2C8E3BDFC55912580EA42 /* Headers */ = {
+		31DC6B494809311B336FE23ADA477D90 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97E9B1B40EBD9DD370898987BC12701D /* SCLAlertView-umbrella.h in Headers */,
+				F58AEF6904D9B89868451D5F343C49F7 /* SwiftForms-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C7AFDAE0F544BCC675FD653692576D3 /* Headers */ = {
+		518CD07B388A2296B393D52D73CF9C57 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C6B4ABC53660C590795D462B00DE7BF /* SwiftForms-umbrella.h in Headers */,
+				70E5295E68FCAFA690E03421503E7B6B /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722E0A468137E46B7DD5B3B5971E1C00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF29744A4F25FABBF17B60C983F2A12 /* KYCircularProgress-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76094AFACADC58C935B6ADEC23D2527E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CE507D2599B7B4AC8ED07D7BA69D17 /* SCLAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,37 +753,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFA6A8A1F351D915BEFD320D57BFF1A9 /* Headers */ = {
+		F649139D9F33EAEFACA2FCB2B7252FAE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900F7CF69187B4419F85FC4DA5849E48 /* Pods-Tasky-umbrella.h in Headers */,
+				E74748F3521490699A66004FE911C868 /* SwiftyStoreKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		24D113AD9B2FB6E8F15CA0A33DB46128 /* Pods-Tasky */ = {
+		0CF22F2A0F80AFB8F261BEDA637AC8A0 /* SCLAlertView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F81818D6283E47FC309E23B04E4E12BC /* Build configuration list for PBXNativeTarget "Pods-Tasky" */;
+			buildConfigurationList = 3D08261C37083B6CAD1FC0AEEDC3D8DD /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
 			buildPhases = (
-				5E18682E2DEA0E4A86DFE944F9DE47FB /* Sources */,
-				27E024F52A6FDE8C26BD51050CCAF495 /* Frameworks */,
-				FFA6A8A1F351D915BEFD320D57BFF1A9 /* Headers */,
+				616D11D2843F39A785E1F0FD553081F7 /* Sources */,
+				23154230DB406E2CBD6E7BAC5556C699 /* Frameworks */,
+				76094AFACADC58C935B6ADEC23D2527E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				17C8EE4940EB514BE17E3D257C728DF6 /* PBXTargetDependency */,
-				D431F222BE376257F5E5721281A174C8 /* PBXTargetDependency */,
-				2A65A75871DA7362C843F328C399C139 /* PBXTargetDependency */,
-				6730993AF015583C01B3EF02CFBB48C4 /* PBXTargetDependency */,
-				211D026F83C9D6CCC4D908E55C23F457 /* PBXTargetDependency */,
 			);
-			name = "Pods-Tasky";
-			productName = "Pods-Tasky";
-			productReference = 549E632E4AFFF4B295785C3E35C1A07A /* Pods_Tasky.framework */;
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = C292A14B4C890B0964032918D3F58428 /* SCLAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		29124FF4E0F9AB7495AA7588B0A1A107 /* FontAwesome.swift */ = {
@@ -680,7 +797,41 @@
 			);
 			name = FontAwesome.swift;
 			productName = FontAwesome.swift;
-			productReference = 7AB43F81FA51F546F6C76703601E597B /* FontAwesome_swift.framework */;
+			productReference = E183056CA1BCD833968D294F76A32051 /* FontAwesome_swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C1F0BC8AD9DB9D282F6612636923786 /* KYCircularProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC3A72F55A00F6D6FE5E6F51DC1CC60 /* Build configuration list for PBXNativeTarget "KYCircularProgress" */;
+			buildPhases = (
+				076B314F7564797CE9EEF725033C13C1 /* Sources */,
+				00F28D70748E64998973BCC7B65B0D36 /* Frameworks */,
+				722E0A468137E46B7DD5B3B5971E1C00 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYCircularProgress;
+			productName = KYCircularProgress;
+			productReference = D37D4DB615A8D979D3D6090B0B2614A6 /* KYCircularProgress.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71DBB120A3CC8A52EA96737422A8404D /* SwiftForms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682DA3E221C477E8B94FAC16C62AB207 /* Build configuration list for PBXNativeTarget "SwiftForms" */;
+			buildPhases = (
+				9E63235E5859AE761574AF48597A946F /* Sources */,
+				007B6B5D043373A21571AB2CCB81113C /* Frameworks */,
+				31DC6B494809311B336FE23ADA477D90 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftForms;
+			productName = SwiftForms;
+			productReference = F799A215391CA5870B0A73CF8F3B9F21 /* SwiftForms.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		738B2050D3EE6CEF2F8FC5020EAB44A1 /* paper-onboarding */ = {
@@ -697,33 +848,40 @@
 			);
 			name = "paper-onboarding";
 			productName = "paper-onboarding";
-			productReference = BBA082AC4359C0B196EE6F571C4898E4 /* paper_onboarding.framework */;
+			productReference = EE13361AD2836BCBBDDA86517804A131 /* paper_onboarding.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AA3790FF189C14D032F19BC68768E32B /* SCLAlertView */ = {
+		8941DE8B3A047D7BCCC4A690A43A4CEA /* Pods-Tasky */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E349BAC86FF2AAFB84DFBD884C218E28 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildConfigurationList = 3C3321FA247BF45C074BCECB00A4C509 /* Build configuration list for PBXNativeTarget "Pods-Tasky" */;
 			buildPhases = (
-				1DDD5BE022AE1AD6C64C3AD254FF890E /* Sources */,
-				021E02FA3B1DB2E560A58F0168263FB2 /* Frameworks */,
-				42F5129655E2C8E3BDFC55912580EA42 /* Headers */,
+				750D6A9DF5BB72FB6C6C57F703D38C6A /* Sources */,
+				233946D00D88A45B4EE05B823365748F /* Frameworks */,
+				177EE9844BF2F034BB03B7C06527EAF4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D421451D10B019821721A49E3045ADE7 /* PBXTargetDependency */,
+				DB3572E9D15ACB1D9E1B66B48270F80B /* PBXTargetDependency */,
+				8BDADDDDD68411F55347F6558F468B9E /* PBXTargetDependency */,
+				DA69F3BA729922AA565EB7D5F26DA67C /* PBXTargetDependency */,
+				F5F76B85FA5151337B9A9B745839C890 /* PBXTargetDependency */,
+				FDB4217E34AF549C02DC996FE25CA590 /* PBXTargetDependency */,
+				405FEEE3A49447CF6A744E2EDD035C8F /* PBXTargetDependency */,
 			);
-			name = SCLAlertView;
-			productName = SCLAlertView;
-			productReference = ACE00178AA17B6D298F9C7E21CD57E2B /* SCLAlertView.framework */;
+			name = "Pods-Tasky";
+			productName = "Pods-Tasky";
+			productReference = 0452C9080F4956E5C0476C6315DC3403 /* Pods_Tasky.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C215EB891C2A39B5619C2D4D02C619B7 /* SwiftyStoreKit */ = {
+		A170266429C4461274B1762931116260 /* SwiftyStoreKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F0C87A907C2B58AD6D2980C0463B464 /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */;
+			buildConfigurationList = CC3941D9D9069847B95DAA2BC8B99065 /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */;
 			buildPhases = (
-				A0B6EF101CF9F5714741E8DDEB3A819D /* Sources */,
-				4B87DE34E64B02870B4B91EF5CE57141 /* Frameworks */,
-				22CC285D49E4041ACC2E668C9F8E9470 /* Headers */,
+				6EB48CC850E7875A08A576D72FEF1C27 /* Sources */,
+				BB218EFED5AC6854B36129D3E2B3F4BD /* Frameworks */,
+				F649139D9F33EAEFACA2FCB2B7252FAE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -731,7 +889,24 @@
 			);
 			name = SwiftyStoreKit;
 			productName = SwiftyStoreKit;
-			productReference = A51A138B2FFA9D4A3C02C4EFA41BE74D /* SwiftyStoreKit.framework */;
+			productReference = 88688D3A17A5737FB94DF17D0B7AF229 /* SwiftyStoreKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFDFDED93E6AD645E32B341C23F98C49 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE000FCB7F3656BC0806BF6A5FB4B05 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				5A25E0D205E27858F889883B7A6768F6 /* Sources */,
+				ED4988B6E6A6263E11C06AEEB7340079 /* Frameworks */,
+				518CD07B388A2296B393D52D73CF9C57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = A1E6D051AEF940D339DE409C13F48478 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CB2EAB5C326E4BB9AE6483289BB7C828 /* FontAwesome.swift-FontAwesome.swift */ = {
@@ -748,25 +923,8 @@
 			);
 			name = "FontAwesome.swift-FontAwesome.swift";
 			productName = "FontAwesome.swift-FontAwesome.swift";
-			productReference = 38E5C5AD0614F09F482DF7D8C76EAC24 /* FontAwesome.swift.bundle */;
+			productReference = 1D3C600FCB988774CEEC6DD1E69A809C /* FontAwesome.swift.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		DDFA22104E5E2B25D382A0EA4241C82B /* SwiftForms */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6C6A3701D9F7E1FCF2C391F2A58AFF57 /* Build configuration list for PBXNativeTarget "SwiftForms" */;
-			buildPhases = (
-				BF38709740F2D6E5207092742C506B87 /* Sources */,
-				857FDCE613E398EA20C306087EFE8913 /* Frameworks */,
-				6C7AFDAE0F544BCC675FD653692576D3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftForms;
-			productName = SwiftForms;
-			productReference = BB679E4643F35A0E66F3D1674F0CA4CC /* SwiftForms.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -785,17 +943,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 68F5BB965F077B0323E7E5040CDF98E7 /* Products */;
+			productRefGroup = 43229D6725E856621FD0CAE0D4238576 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				29124FF4E0F9AB7495AA7588B0A1A107 /* FontAwesome.swift */,
 				CB2EAB5C326E4BB9AE6483289BB7C828 /* FontAwesome.swift-FontAwesome.swift */,
+				5C1F0BC8AD9DB9D282F6612636923786 /* KYCircularProgress */,
 				738B2050D3EE6CEF2F8FC5020EAB44A1 /* paper-onboarding */,
-				24D113AD9B2FB6E8F15CA0A33DB46128 /* Pods-Tasky */,
-				AA3790FF189C14D032F19BC68768E32B /* SCLAlertView */,
-				DDFA22104E5E2B25D382A0EA4241C82B /* SwiftForms */,
-				C215EB891C2A39B5619C2D4D02C619B7 /* SwiftyStoreKit */,
+				8941DE8B3A047D7BCCC4A690A43A4CEA /* Pods-Tasky */,
+				0CF22F2A0F80AFB8F261BEDA637AC8A0 /* SCLAlertView */,
+				71DBB120A3CC8A52EA96737422A8404D /* SwiftForms */,
+				BFDFDED93E6AD645E32B341C23F98C49 /* SwiftyJSON */,
+				A170266429C4461274B1762931116260 /* SwiftyStoreKit */,
 			);
 		};
 /* End PBXProject section */
@@ -822,13 +982,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1DDD5BE022AE1AD6C64C3AD254FF890E /* Sources */ = {
+		076B314F7564797CE9EEF725033C13C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88621CCE3DA73512F315A29E90B53369 /* SCLAlertView-dummy.m in Sources */,
-				7598DECFCE69F5B63CBD6394310577C5 /* SCLAlertView.swift in Sources */,
-				F3C46575738986AAC030F6160D881626 /* SCLExtensions.swift in Sources */,
+				01DBE6E7AAFBF3366F330B105CCB8287 /* KYCircularProgress-dummy.m in Sources */,
+				545AE3C5E061CC97FB166DAF1C5143E8 /* KYCircularProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,11 +1011,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E18682E2DEA0E4A86DFE944F9DE47FB /* Sources */ = {
+		5A25E0D205E27858F889883B7A6768F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893CD69332FDD599DA84402E34EB2EEC /* Pods-Tasky-dummy.m in Sources */,
+				B69BD05C6FAD0292A70BE8800AC82F23 /* SwiftyJSON-dummy.m in Sources */,
+				0631028A3A7493A6CCD0168CC4F64630 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616D11D2843F39A785E1F0FD553081F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E078B2A0E72DC53707D09E6FE9B78DC /* SCLAlertView-dummy.m in Sources */,
+				F34D98B20477AA31EC339F5D09ADFC3D /* SCLAlertView.swift in Sources */,
+				DCC3C3CE0178A39704589D9469A5B921 /* SCLExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB48CC850E7875A08A576D72FEF1C27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96B427EE83B0BD908D10DE48C8B52F4 /* AppleReceiptValidator.swift in Sources */,
+				FE9CE4CF6DAD91E9551572F402816257 /* CompleteTransactionsController.swift in Sources */,
+				65ACDDF416DFF25127780276B5D3887F /* InAppProductQueryRequest.swift in Sources */,
+				5A8FC61F46618825078778B33C64ACFC /* InAppReceipt.swift in Sources */,
+				4124FA9F1DF69FC15B7E665FFC193D9E /* InAppReceiptRefreshRequest.swift in Sources */,
+				0C3D183CEECBA0B8FCEFB2EED73C4B26 /* InAppReceiptVerificator.swift in Sources */,
+				A82BB6DEBDF6C9490B1380AF22C8EA75 /* OS.swift in Sources */,
+				47CC5E3E872D20A65E2C09DCCF61F534 /* PaymentQueueController.swift in Sources */,
+				163EDBEAD5522C0FEB931006335EF2FA /* PaymentsController.swift in Sources */,
+				77FE8094EC6F71A7175130366829B988 /* ProductsInfoController.swift in Sources */,
+				A2C04B916C8F0A0A66260EBD58F388F6 /* RestorePurchasesController.swift in Sources */,
+				C2ECBC5499C0759DA5B4F7F3B055E8C5 /* SKProduct+LocalizedPrice.swift in Sources */,
+				6DFBEEC5E762A8DB3C825F97BAF6052B /* SwiftyStoreKit+Types.swift in Sources */,
+				FAA5EE28881E0E26C78E907CBD973516 /* SwiftyStoreKit-dummy.m in Sources */,
+				E72D7FED7C98955B169037D22EBA056A /* SwiftyStoreKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,55 +1071,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0B6EF101CF9F5714741E8DDEB3A819D /* Sources */ = {
+		750D6A9DF5BB72FB6C6C57F703D38C6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A8C383633DFFEDFD76C80C1AAED086D /* AppleReceiptValidator.swift in Sources */,
-				892141FFE2CE90EEEC98FC65C2E7AAE5 /* CompleteTransactionsController.swift in Sources */,
-				72522C16CD8ABF686F74F02CDC1E4B29 /* InAppProductQueryRequest.swift in Sources */,
-				2D2A744B99745B1B88BFB22C987DB745 /* InAppReceipt.swift in Sources */,
-				F237B15EA282182316C511EB2C4EED78 /* InAppReceiptRefreshRequest.swift in Sources */,
-				0EC8F51AC77DF8FC5E402D5C884D050D /* InAppReceiptVerificator.swift in Sources */,
-				28077563E0E4C7AFFEE386AFC03FF056 /* OS.swift in Sources */,
-				DB42AC24BC94FF46E0E54D59D1EF9A29 /* PaymentQueueController.swift in Sources */,
-				767B53CEF266D54F40074DFA0462AD14 /* PaymentsController.swift in Sources */,
-				4C8DC360D48C7D6A56F87210EF6B5D39 /* ProductsInfoController.swift in Sources */,
-				662F7B5BA566B4005047090FB240CBDC /* RestorePurchasesController.swift in Sources */,
-				AEDDDB09AA048729954C1ADDECE7AD16 /* SKProduct+LocalizedPrice.swift in Sources */,
-				39318E6FCF131F0A5191B7AB1E41D449 /* SwiftyStoreKit+Types.swift in Sources */,
-				5D5F3C2BB80810450C1EA7B5A5659B62 /* SwiftyStoreKit-dummy.m in Sources */,
-				8F489D25686FA8695FC8D5479E5BA263 /* SwiftyStoreKit.swift in Sources */,
+				5EDF51BB149D0DDA5218404F29564AFC /* Pods-Tasky-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF38709740F2D6E5207092742C506B87 /* Sources */ = {
+		9E63235E5859AE761574AF48597A946F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA70440B22C8F25662D940D106B60441 /* FormBaseCell.swift in Sources */,
-				A3C62005B84A25F6F3619BE5427E3FCD /* FormButtonCell.swift in Sources */,
-				5DED5721A2DADBFE30F2BE5C18EF0070 /* FormCheckCell.swift in Sources */,
-				B696ADFEDDF6636CDF63686216712D2D /* FormDateCell.swift in Sources */,
-				41B43921CA1A345734117D95950C02FB /* FormDescriptor.swift in Sources */,
-				DAA98BFA2B2447DF728865C3B361D010 /* FormErrorType.swift in Sources */,
-				165A3C1C579D404BDE3B0F6F58F4F030 /* FormLabelCell.swift in Sources */,
-				522B2F9FEED5E23EDA0AAD76D4F81875 /* FormOptionsViewController.swift in Sources */,
-				DAE7BD996823E2D7DB9B42FCADEACCD2 /* FormPickerCell.swift in Sources */,
-				4D2B5B1C55C5AB45B5B0AB9447937978 /* FormRowDescriptor.swift in Sources */,
-				1F49C6B9599313F672DF3D79505F5DBD /* FormSectionDescriptor.swift in Sources */,
-				69793AFCA21DE6C4E2BB2938FE29C30E /* FormSegmentedControlCell.swift in Sources */,
-				187FFB183F40A90F16DE9D63246659F9 /* FormSelector.swift in Sources */,
-				6F32770C100934C4B24B3E4859572922 /* FormSelectorCell.swift in Sources */,
-				6CA3EABF5680572BA00A98576A085D34 /* FormSliderCell.swift in Sources */,
-				B47EA24B815C92186AFF561E38AD9A4C /* FormStepperCell.swift in Sources */,
-				8B1BD6D34A659F1B155B05F212572531 /* FormSwitchCell.swift in Sources */,
-				62D85B410AC43EC2B7EF6D76239BB56D /* FormTextFieldCell.swift in Sources */,
-				D1BBB5DE47E044839FC604952516BF5A /* FormTextViewCell.swift in Sources */,
-				E6E206ABB7BBE61CA75E131778D3888B /* FormTitleCell.swift in Sources */,
-				8414790B070D205AE99172223C876971 /* FormValueCell.swift in Sources */,
-				5AEFAC75F79FDAF80F72BF234FFE1934 /* FormViewController.swift in Sources */,
-				33BACE6D37907B5561F1A0B46CBFAC3D /* SwiftForms-dummy.m in Sources */,
+				1FEE73873096EEB9760B50F73524355B /* FormBaseCell.swift in Sources */,
+				0115E77974A1399CEBF10AE1495680B0 /* FormButtonCell.swift in Sources */,
+				E665038335D45D632DD55EAF99A23336 /* FormCheckCell.swift in Sources */,
+				48AEFF5852339DD434BED8E2E803E721 /* FormDateCell.swift in Sources */,
+				EAAC0CAA708E88B67A5709BD7906E6C7 /* FormDescriptor.swift in Sources */,
+				2690BD7288D3C1F439B2E05D62535E51 /* FormErrorType.swift in Sources */,
+				26CDB5BC4011FAFA1C35F1A40288038E /* FormLabelCell.swift in Sources */,
+				51D011A9DC5854567328D7626377AE17 /* FormOptionsViewController.swift in Sources */,
+				A394A3D71C944EAF504B1FF353795C16 /* FormPickerCell.swift in Sources */,
+				72ABB35CECC39EE4B2BF9D8273E335A6 /* FormRowDescriptor.swift in Sources */,
+				F4CB9BCAE8E382773E5E2BA0418C74E9 /* FormSectionDescriptor.swift in Sources */,
+				072B7254D21201F596888A9357CDC0E0 /* FormSegmentedControlCell.swift in Sources */,
+				7AA3579D7CE1332B141A338816B2FE16 /* FormSelector.swift in Sources */,
+				AEC958E62DF131A2AA3C18995E3172DA /* FormSelectorCell.swift in Sources */,
+				A8CB894ACBC7DB45403B840F6CD40FCA /* FormSliderCell.swift in Sources */,
+				A6F4E3482F81C7B6D8365F637E5D6599 /* FormStepperCell.swift in Sources */,
+				03D8F7C9C265E23048AB43DEB756ACEB /* FormSwitchCell.swift in Sources */,
+				3D3E66534D57FAB0719657CDC7175CB9 /* FormTextFieldCell.swift in Sources */,
+				1A7036B2544B0A54EA53CA4BFB74CFD6 /* FormTextViewCell.swift in Sources */,
+				4BB53A089A43915AF94E6049BC0C4053 /* FormTitleCell.swift in Sources */,
+				1970E6FEC31C42BC0BA1BBC2B31C4E99 /* FormValueCell.swift in Sources */,
+				635359686320D7E0F61054C68972F768 /* FormViewController.swift in Sources */,
+				9F2D392C4D49B4AA1C15D5FD433F046E /* SwiftForms-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,42 +1125,54 @@
 			target = CB2EAB5C326E4BB9AE6483289BB7C828 /* FontAwesome.swift-FontAwesome.swift */;
 			targetProxy = 11C46040B80D714B8D493D1A3B1820AC /* PBXContainerItemProxy */;
 		};
-		17C8EE4940EB514BE17E3D257C728DF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FontAwesome.swift;
-			target = 29124FF4E0F9AB7495AA7588B0A1A107 /* FontAwesome.swift */;
-			targetProxy = 22E3622E4374B4DDB1CC3AEE51C35C83 /* PBXContainerItemProxy */;
-		};
-		211D026F83C9D6CCC4D908E55C23F457 /* PBXTargetDependency */ = {
+		405FEEE3A49447CF6A744E2EDD035C8F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "paper-onboarding";
 			target = 738B2050D3EE6CEF2F8FC5020EAB44A1 /* paper-onboarding */;
-			targetProxy = 2144A6F57738385AC059E94158AC7C1A /* PBXContainerItemProxy */;
+			targetProxy = 06830C4C77EEBC96F370ED49D042F93C /* PBXContainerItemProxy */;
 		};
-		2A65A75871DA7362C843F328C399C139 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftForms;
-			target = DDFA22104E5E2B25D382A0EA4241C82B /* SwiftForms */;
-			targetProxy = 09FD9D746D59ABBA5A17F5D67F127C3C /* PBXContainerItemProxy */;
-		};
-		6730993AF015583C01B3EF02CFBB48C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyStoreKit;
-			target = C215EB891C2A39B5619C2D4D02C619B7 /* SwiftyStoreKit */;
-			targetProxy = 3EEC048AE18CE74960537155BF122B6F /* PBXContainerItemProxy */;
-		};
-		D431F222BE376257F5E5721281A174C8 /* PBXTargetDependency */ = {
+		8BDADDDDD68411F55347F6558F468B9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCLAlertView;
-			target = AA3790FF189C14D032F19BC68768E32B /* SCLAlertView */;
-			targetProxy = 3E9B7E1C9803B946999C77A33B82BFDF /* PBXContainerItemProxy */;
+			target = 0CF22F2A0F80AFB8F261BEDA637AC8A0 /* SCLAlertView */;
+			targetProxy = 63664A4C115A8ACF10C2D5946A5F2910 /* PBXContainerItemProxy */;
+		};
+		D421451D10B019821721A49E3045ADE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesome.swift;
+			target = 29124FF4E0F9AB7495AA7588B0A1A107 /* FontAwesome.swift */;
+			targetProxy = 540A6DD731B0426E434968CA162CFA06 /* PBXContainerItemProxy */;
+		};
+		DA69F3BA729922AA565EB7D5F26DA67C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftForms;
+			target = 71DBB120A3CC8A52EA96737422A8404D /* SwiftForms */;
+			targetProxy = 84469F76A178969C234E475C8B8580BC /* PBXContainerItemProxy */;
+		};
+		DB3572E9D15ACB1D9E1B66B48270F80B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KYCircularProgress;
+			target = 5C1F0BC8AD9DB9D282F6612636923786 /* KYCircularProgress */;
+			targetProxy = C62C5651E04B551DE908F55620FA12BE /* PBXContainerItemProxy */;
+		};
+		F5F76B85FA5151337B9A9B745839C890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = BFDFDED93E6AD645E32B341C23F98C49 /* SwiftyJSON */;
+			targetProxy = E48651EF98EB06CB3B2B01463EE6981A /* PBXContainerItemProxy */;
+		};
+		FDB4217E34AF549C02DC996FE25CA590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyStoreKit;
+			target = A170266429C4461274B1762931116260 /* SwiftyStoreKit */;
+			targetProxy = 6A86FCD862C65F2751D6C4F5570AEB83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0368DB7F56FAD3EE42EC0D3F39D9DDD3 /* Debug */ = {
+		1908032A2FC9446DC6FC5FE24605E5CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 329B57DFB5CC31CF3304E6F0A26FCA92 /* SwiftyStoreKit.xcconfig */;
+			baseConfigurationReference = 0E5F81EDCE8454C74DF9449783353E45 /* SwiftyStoreKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1004,13 +1194,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1077,7 +1268,7 @@
 		};
 		21B519DB3A7D9E3BF95432CAB50F2332 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8590CF7C85BB7C3D9DAD02B5277093F7 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 22F740ACE556BE75E0380AF43EDBF04C /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
@@ -1091,9 +1282,9 @@
 			};
 			name = Release;
 		};
-		33481895FAF00AAB4B6F5DAD0D9701E5 /* Debug */ = {
+		49E382917D90F9CC8053C3EB9D169DAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7917A1A2FC5F9CAAD59EF24E3F2CFBF2 /* SCLAlertView.xcconfig */;
+			baseConfigurationReference = 22F740ACE556BE75E0380AF43EDBF04C /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1104,14 +1295,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				PRODUCT_MODULE_NAME = SCLAlertView;
-				PRODUCT_NAME = SCLAlertView;
+				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
+				PRODUCT_MODULE_NAME = FontAwesome_swift;
+				PRODUCT_NAME = FontAwesome_swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1123,9 +1314,9 @@
 			};
 			name = Debug;
 		};
-		3C2EE7297A6F1F91C1A1F0A12A9C0E28 /* Release */ = {
+		626267B3882CD838FFC0C28FBD744316 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 329B57DFB5CC31CF3304E6F0A26FCA92 /* SwiftyStoreKit.xcconfig */;
+			baseConfigurationReference = 0E5F81EDCE8454C74DF9449783353E45 /* SwiftyStoreKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1147,39 +1338,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		49E382917D90F9CC8053C3EB9D169DAF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8590CF7C85BB7C3D9DAD02B5277093F7 /* FontAwesome.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
-				PRODUCT_MODULE_NAME = FontAwesome_swift;
-				PRODUCT_NAME = FontAwesome_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1188,10 +1346,11 @@
 			};
 			name = Debug;
 		};
-		71FAF8CA4F0BFB7A763A077A7A89B159 /* Release */ = {
+		6C711DC431A20AF1C675A93DD91FB216 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B72C85D7CAA81254333908F27727F12B /* SwiftForms.xcconfig */;
+			baseConfigurationReference = 29713ECA67ED67BD217688113F956F97 /* Pods-Tasky.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1201,52 +1360,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftForms/SwiftForms-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftForms/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tasky/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftForms/SwiftForms.modulemap";
-				PRODUCT_MODULE_NAME = SwiftForms;
-				PRODUCT_NAME = SwiftForms;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tasky/Pods-Tasky.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7D0391B2BC071589518A0BF0E0BF5866 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B72C85D7CAA81254333908F27727F12B /* SwiftForms.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftForms/SwiftForms-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftForms/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftForms/SwiftForms.modulemap";
-				PRODUCT_MODULE_NAME = SwiftForms;
-				PRODUCT_NAME = SwiftForms;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1255,7 +1383,7 @@
 		};
 		819B2F5087C8630DC6A642BBABEDCAE5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8590CF7C85BB7C3D9DAD02B5277093F7 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 22F740ACE556BE75E0380AF43EDBF04C /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1286,9 +1414,73 @@
 			};
 			name = Release;
 		};
+		90CF6106971F3CDB37C18D533C7FB7D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CF2EAC73553E677C081DD08A3E4366C /* SwiftForms.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftForms/SwiftForms-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftForms/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftForms/SwiftForms.modulemap";
+				PRODUCT_MODULE_NAME = SwiftForms;
+				PRODUCT_NAME = SwiftForms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99C598AFEBC6B6516FB2D3581465EA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E286FBBFC0395D2BA62DDC4D8E17C6AD /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9E94B853A7284D8B491B0751772C5170 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8590CF7C85BB7C3D9DAD02B5277093F7 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 22F740ACE556BE75E0380AF43EDBF04C /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
@@ -1302,9 +1494,75 @@
 			};
 			name = Debug;
 		};
-		BE91F7602CB33E369E45556997A5BD89 /* Release */ = {
+		9F356F22ED3A12DDC82ED5E0DEA6ED03 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7917A1A2FC5F9CAAD59EF24E3F2CFBF2 /* SCLAlertView.xcconfig */;
+			baseConfigurationReference = E286FBBFC0395D2BA62DDC4D8E17C6AD /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA7451EA94FEAEC6DD888324B7B58858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CF2EAC73553E677C081DD08A3E4366C /* SwiftForms.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftForms/SwiftForms-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftForms/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftForms/SwiftForms.modulemap";
+				PRODUCT_MODULE_NAME = SwiftForms;
+				PRODUCT_NAME = SwiftForms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BFB2B083592297A2C98906D66CB6661D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAB85ABCF7FDD2CFB62870E529592AC /* SCLAlertView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1335,9 +1593,42 @@
 			};
 			name = Release;
 		};
+		CEBFBB8CD6FCCAC178CF6DBDBB6D07E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B05AEAFC3887AF729E8327576A286C /* KYCircularProgress.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KYCircularProgress/KYCircularProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KYCircularProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KYCircularProgress/KYCircularProgress.modulemap";
+				PRODUCT_MODULE_NAME = KYCircularProgress;
+				PRODUCT_NAME = KYCircularProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		CF3D8714A0AA06B4B3517888FEB1E919 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C16FA2DE80D5345557ECAFC05F3F78D /* paper-onboarding.xcconfig */;
+			baseConfigurationReference = 7E018CA540D9602E7E7A2877CAB3C888 /* paper-onboarding.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1368,9 +1659,41 @@
 			};
 			name = Release;
 		};
+		D0B5EA50895154CD4FE34299ACE56B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAB85ABCF7FDD2CFB62870E529592AC /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				PRODUCT_MODULE_NAME = SCLAlertView;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		DA1C5D110AB0E86320E5D1977E9AAFDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C16FA2DE80D5345557ECAFC05F3F78D /* paper-onboarding.xcconfig */;
+			baseConfigurationReference = 7E018CA540D9602E7E7A2877CAB3C888 /* paper-onboarding.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1400,7 +1723,7 @@
 			};
 			name = Debug;
 		};
-		EA1573B95A182DE61D4B7726668777A5 /* Release */ = {
+		ECB1785BF590C42EB81D32E72E628B4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5C1FE0BFD556F98C327C450BA22B268 /* Pods-Tasky.release.xcconfig */;
 			buildSettings = {
@@ -1435,11 +1758,10 @@
 			};
 			name = Release;
 		};
-		F7574F1B29900CA3065CA0340EA606E7 /* Debug */ = {
+		FC82286DA45AB0CC4C19700A6FC8D5D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29713ECA67ED67BD217688113F956F97 /* Pods-Tasky.debug.xcconfig */;
+			baseConfigurationReference = 47B05AEAFC3887AF729E8327576A286C /* KYCircularProgress.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1449,21 +1771,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Tasky/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KYCircularProgress/KYCircularProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KYCircularProgress/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Tasky/Pods-Tasky.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/KYCircularProgress/KYCircularProgress.modulemap";
+				PRODUCT_MODULE_NAME = KYCircularProgress;
+				PRODUCT_NAME = KYCircularProgress;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1540,15 +1860,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F0C87A907C2B58AD6D2980C0463B464 /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0368DB7F56FAD3EE42EC0D3F39D9DDD3 /* Debug */,
-				3C2EE7297A6F1F91C1A1F0A12A9C0E28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1558,11 +1869,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C6A3701D9F7E1FCF2C391F2A58AFF57 /* Build configuration list for PBXNativeTarget "SwiftForms" */ = {
+		3C3321FA247BF45C074BCECB00A4C509 /* Build configuration list for PBXNativeTarget "Pods-Tasky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D0391B2BC071589518A0BF0E0BF5866 /* Debug */,
-				71FAF8CA4F0BFB7A763A077A7A89B159 /* Release */,
+				6C711DC431A20AF1C675A93DD91FB216 /* Debug */,
+				ECB1785BF590C42EB81D32E72E628B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D08261C37083B6CAD1FC0AEEDC3D8DD /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B5EA50895154CD4FE34299ACE56B9C /* Debug */,
+				BFB2B083592297A2C98906D66CB6661D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682DA3E221C477E8B94FAC16C62AB207 /* Build configuration list for PBXNativeTarget "SwiftForms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90CF6106971F3CDB37C18D533C7FB7D1 /* Debug */,
+				AA7451EA94FEAEC6DD888324B7B58858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE000FCB7F3656BC0806BF6A5FB4B05 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99C598AFEBC6B6516FB2D3581465EA55 /* Debug */,
+				9F356F22ED3A12DDC82ED5E0DEA6ED03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1576,11 +1914,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E349BAC86FF2AAFB84DFBD884C218E28 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+		CC3941D9D9069847B95DAA2BC8B99065 /* Build configuration list for PBXNativeTarget "SwiftyStoreKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33481895FAF00AAB4B6F5DAD0D9701E5 /* Debug */,
-				BE91F7602CB33E369E45556997A5BD89 /* Release */,
+				626267B3882CD838FFC0C28FBD744316 /* Debug */,
+				1908032A2FC9446DC6FC5FE24605E5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC3A72F55A00F6D6FE5E6F51DC1CC60 /* Build configuration list for PBXNativeTarget "KYCircularProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC82286DA45AB0CC4C19700A6FC8D5D9 /* Debug */,
+				CEBFBB8CD6FCCAC178CF6DBDBB6D07E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1590,15 +1937,6 @@
 			buildConfigurations = (
 				9E94B853A7284D8B491B0751772C5170 /* Debug */,
 				21B519DB3A7D9E3BF95432CAB50F2332 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F81818D6283E47FC309E23B04E4E12BC /* Build configuration list for PBXNativeTarget "Pods-Tasky" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7574F1B29900CA3065CA0340EA606E7 /* Debug */,
-				EA1573B95A182DE61D4B7726668777A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -130,7 +130,7 @@ extension Upgrade: PaperOnboardingDataSource {
 		let descriptionFont = UIFont.GothamProRegular(size: CGFloat(15)) ?? UIFont.systemFont(ofSize: CGFloat(15))
 		
 		return [
-			OnboardingItemInfo(informationImage: UIImage(named: "trophy")!,
+			OnboardingItemInfo(informationImage: UIImage(named: "rocket")!,
 							   title: Constants.Strings.UPGRADE_SCREEN_ONE_TITLE,
 							   description: Constants.Strings.UPGRADE_SCREEN_ONE_TEXT,
 							   pageIcon: UIImage(named: "transparent")!,
@@ -140,11 +140,11 @@ extension Upgrade: PaperOnboardingDataSource {
 							   titleFont: titleFont,
 							   descriptionFont: descriptionFont),
 			
-			OnboardingItemInfo(informationImage: UIImage(named: "creative")!,
+			OnboardingItemInfo(informationImage: UIImage(named: "trophy")!,
 							   title: Constants.Strings.UPGRADE_SCREEN_TWO_TITLE,
 							   description: Constants.Strings.UPGRADE_SCREEN_TWO_TEXT,
 							   pageIcon: UIImage(named: "transparent")!,
-							   color: UIColor(hex: Constants.Colors.GREEN),
+							   color: UIColor(hex: Constants.Colors.PURPLE),
 							   titleColor: UIColor.white,
 							   descriptionColor: UIColor.white,
 							   titleFont: titleFont,
@@ -154,7 +154,17 @@ extension Upgrade: PaperOnboardingDataSource {
 							   title: Constants.Strings.UPGRADE_SCREEN_THREE_TITLE,
 							   description: Constants.Strings.UPGRADE_SCREEN_THREE_TEXT,
 							   pageIcon: UIImage(named: "transparent")!,
-							   color: UIColor(hex: Constants.Colors.PURPLE),
+							   color: UIColor(hex: Constants.Colors.ORANGE),
+							   titleColor: UIColor.white,
+							   descriptionColor: UIColor.white,
+							   titleFont: titleFont,
+							   descriptionFont: descriptionFont),
+			
+			OnboardingItemInfo(informationImage: UIImage(named: "growth")!,
+							   title: Constants.Strings.UPGRADE_SCREEN_THREE_TITLE,
+							   description: Constants.Strings.UPGRADE_SCREEN_THREE_TEXT,
+							   pageIcon: UIImage(named: "transparent")!,
+							   color: UIColor(hex: Constants.Colors.GREEN),
 							   titleColor: UIColor.white,
 							   descriptionColor: UIColor.white,
 							   titleFont: titleFont,
@@ -163,6 +173,6 @@ extension Upgrade: PaperOnboardingDataSource {
 	}
 	
 	func onboardingItemsCount() -> Int {
-		return 3
+		return 4
 	}
 }

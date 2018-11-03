@@ -2,6 +2,8 @@ import UIKit
 import CoreData
 import MessageUI
 import FontAwesome_swift
+import SwiftyJSON
+import KYCircularProgress
 
 
 class Utils {
@@ -159,16 +161,33 @@ class Utils {
 	
 	/* MARK: Data
 	/////////////////////////////////////////// */
+	class func getCurrentDateString() -> String {
+		let date = Date()
+		let formatter = DateFormatter()
+		formatter.dateFormat = "dd.MM.yyyy"
+		return formatter.string(from: date)
+	}
+	
 	class func bool(key: String) -> Bool {
 		return UserDefaults.standard.bool(forKey: key)
 	}
 	
 	class func double(key: String) -> Double {
-		return UserDefaults.standard.double(forKey:key)
+		if Utils.contains(key: key) {
+			return UserDefaults.standard.double(forKey:key)
+		}
+		else {
+			return 0.0
+		}
 	}
 	
 	class func int(key: String) -> Int {
-		return UserDefaults.standard.integer(forKey:key)
+		if Utils.contains(key: key) {
+			return UserDefaults.standard.integer(forKey:key)
+		}
+		else {
+			return 0
+		}
 	}
 	
 	class func object(key: String) -> Any {
@@ -189,6 +208,28 @@ class Utils {
 	
 	class func remove(key: String) {
 		UserDefaults.standard.removeObject(forKey: key)
+	}
+	
+	class func appData() -> JSON {
+		var appData = JSON()
+		
+		if Utils.contains(key: Constants.Defaults.APP_DATA) {
+			if let dataFromString = Utils.string(key: Constants.Defaults.APP_DATA).data(using: .utf8, allowLossyConversion: false) {
+				do {
+					appData = try JSON(data: dataFromString)
+				} catch let error {
+					print(error.localizedDescription)
+				}
+			}
+		}
+		
+		return appData
+	}
+	
+	class func setAppData(key: String, json: JSON) {
+		var appData = Utils.appData()
+		appData[key] = json
+		Utils.set(key: Constants.Defaults.APP_DATA, value: appData.rawString()!)
 	}
 	
 	
@@ -300,6 +341,84 @@ class Utils {
 		]
 		
 		viewController.present(activityViewController, animated: true, completion: nil)
+	}
+	
+	
+	
+	// MARK: Visual: Images
+	/////////////////////////////////////////// */
+	class func createHexagonImageView(imageView: UIImageView, lineWidth: CGFloat, lineColor: UIColor) {
+		let path = Utils.roundedPolygonPath(rect: imageView.bounds, lineWidth: lineWidth, sides: 6, cornerRadius: 10, rotationOffset: CGFloat(M_PI / 2.0))
+		
+		let mask = CAShapeLayer()
+		mask.path = path.cgPath
+		mask.lineWidth = lineWidth
+		mask.strokeColor = UIColor.clear.cgColor
+		mask.fillColor = UIColor.white.cgColor
+		imageView.layer.mask = mask
+		
+		let border = CAShapeLayer()
+		border.path = path.cgPath
+		border.lineWidth = lineWidth
+		border.strokeColor = lineColor.cgColor
+		border.fillColor = UIColor.clear.cgColor
+		imageView.layer.addSublayer(border)
+	}
+	
+	class func roundedPolygonPath(rect: CGRect, lineWidth: CGFloat, sides: NSInteger, cornerRadius: CGFloat, rotationOffset: CGFloat = 0)
+		-> UIBezierPath {
+			let path = UIBezierPath()
+			let theta: CGFloat = CGFloat(2.0 * M_PI) / CGFloat(sides) // How much to turn at every corner
+			let offset: CGFloat = cornerRadius * tan(theta / 2.0)     // Offset from which to start rounding corners
+			let width = min(rect.size.width, rect.size.height)        // Width of the square
+			
+			let center = CGPoint(x: rect.origin.x + width / 2.0, y: rect.origin.y + width / 2.0)
+			
+			// Radius of the circle that encircles the polygon
+			// Notice that the radius is adjusted for the corners, that way the largest outer
+			// dimension of the resulting shape is always exactly the width - linewidth
+			let radius = (width - lineWidth + cornerRadius - (cos(theta) * cornerRadius)) / 2.0
+			
+			// Start drawing at a point, which by default is at the right hand edge
+			// but can be offset
+			var angle = CGFloat(rotationOffset)
+			
+			let corner = CGPoint(x: center.x + (radius - cornerRadius) * cos(angle), y: center.y + (radius - cornerRadius) * sin(angle))
+			path.move(to: CGPoint(x: corner.x + cornerRadius * cos(angle + theta), y: corner.y + cornerRadius * sin(angle + theta)))
+			
+			for _ in 0 ..< sides {
+				angle += theta
+				
+				let corner = CGPoint(x: center.x + (radius - cornerRadius) * cos(angle), y: center.y + (radius - cornerRadius) * sin(angle))
+				let tip = CGPoint(x: center.x + radius * cos(angle), y: center.y + radius * sin(angle))
+				let start = CGPoint(x: corner.x + cornerRadius * cos(angle - theta), y: corner.y + cornerRadius * sin(angle - theta))
+				let end = CGPoint(x: corner.x + cornerRadius * cos(angle + theta), y: corner.y + cornerRadius * sin(angle + theta))
+				
+				path.addLine(to: start)
+				path.addQuadCurve(to: end, controlPoint: tip)
+			}
+			
+			path.close()
+			
+			// Move the path to the correct origins
+			let bounds = path.bounds
+			let transform = CGAffineTransform(translationX: -bounds.origin.x + rect.origin.x + lineWidth / 2.0,
+											  y: -bounds.origin.y + rect.origin.y + lineWidth / 2.0)
+			path.apply(transform)
+			
+			return path
+	}
+	
+	
+	
+	// MARK: Visual: UI Elements
+	/////////////////////////////////////////// */
+	class func createProgressView(progressView: KYCircularProgress, color: String, guideColor: String) -> KYCircularProgress {
+		progressView.colors = [UIColor(hex: color)]
+		progressView.guideColor = UIColor(hex: guideColor)
+		progressView.lineCap = kCALineCapRound
+		progressView.guideLineWidth = 6.0
+		return progressView
 	}
 	
 	

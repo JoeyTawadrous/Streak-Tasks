@@ -15,6 +15,8 @@
 		523DA47D1ADC574B007F7F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523DA47B1ADC574B007F7F7D /* Main.storyboard */; };
 		5252DB2F206795C000621E57 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252DB2E206795C000621E57 /* StoreKit.framework */; };
 		5252DB3020679E2900621E57 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC532D1AAA4E8A002A51C1 /* Goals.swift */; };
+		52579C8A218E385500C1DEA1 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52579C89218E385500C1DEA1 /* Achievements.swift */; };
+		52579C8C218E387700C1DEA1 /* ProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52579C8B218E387700C1DEA1 /* ProgressManager.swift */; };
 		5264519A1AAF644F002C37A6 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526451991AAF644F002C37A6 /* Tasks.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		5264519C1AAF9194002C37A6 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264519B1AAF9194002C37A6 /* AddTask.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		527E3121206C059400547173 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E3120206C059400547173 /* Purchase.swift */; };
@@ -54,6 +56,8 @@
 		5235B8D81AD9582800B3BAE2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		523DA47C1ADC574B007F7F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5252DB2E206795C000621E57 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		52579C89218E385500C1DEA1 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		52579C8B218E387700C1DEA1 /* ProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressManager.swift; sourceTree = "<group>"; };
 		526451991AAF644F002C37A6 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		5264519B1AAF9194002C37A6 /* AddTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 		527E3120206C059400547173 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52579C88218E381000C1DEA1 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				52579C89218E385500C1DEA1 /* Achievements.swift */,
+				52579C8B218E387700C1DEA1 /* ProgressManager.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
 		52618C441CA0725D003192AF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +195,7 @@
 				52CC532D1AAA4E8A002A51C1 /* Goals.swift */,
 				526451991AAF644F002C37A6 /* Tasks.swift */,
 				52BB3EF41AE314BA00A12D0C /* Task.swift */,
+				52579C88218E381000C1DEA1 /* Achievements */,
 				52973AE61E2BD78B00D7DE3F /* Settings.swift */,
 			);
 			path = Tasky;
@@ -356,16 +370,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tasky/Pods-Tasky-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/KYCircularProgress/KYCircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftForms/SwiftForms.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYCircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftForms.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
 			);
@@ -395,12 +413,14 @@
 				52C7034221441D1E00AC839F /* CustomClasses.swift in Sources */,
 				52973AE71E2BD78B00D7DE3F /* Settings.swift in Sources */,
 				527EBF79206D6DDA00F17038 /* Tasky.xcdatamodeld in Sources */,
+				52579C8A218E385500C1DEA1 /* Achievements.swift in Sources */,
 				52C980EE1D315E9800F7E1B0 /* Themes.swift in Sources */,
 				5264519C1AAF9194002C37A6 /* AddTask.swift in Sources */,
 				5235B8D91AD9582800B3BAE2 /* Utils.swift in Sources */,
 				5264519A1AAF644F002C37A6 /* Tasks.swift in Sources */,
 				52C703382143E09800AC839F /* Upgrade.swift in Sources */,
 				52973ACE1E2ADF8A00D7DE3F /* Extensions.swift in Sources */,
+				52579C8C218E387700C1DEA1 /* ProgressManager.swift in Sources */,
 				527E3121206C059400547173 /* Purchase.swift in Sources */,
 				52BB3EF51AE314BA00A12D0C /* Task.swift in Sources */,
 				52CC53291AAA4E8A002A51C1 /* AppDelegate.swift in Sources */,

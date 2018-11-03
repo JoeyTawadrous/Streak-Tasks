@@ -3,9 +3,45 @@ import Foundation
 
 class Constants {
 	
+	struct Achievements {
+		static let COLORS = ["1abc9c", "2ecc71", "3498db", "9b59b6", "f1c40f", "e67e22", "e74c3c", "34495e"]
+		
+		// Points
+		static let POINTS_TYPE = "pointsType"
+		static let ACHIEVEMENT1 = ["3p", COLORS[0], "virus", "Blast-off", "You've earned 10 points! Congrats!"]
+		static let ACHIEVEMENT2 = ["25p", COLORS[1], "virus-autoupdate", "Quarter", "You've earned 25 points! Congrats!"]
+		static let ACHIEVEMENT3 = ["50p", COLORS[2], "satellite", "Halves", "You've earned 50 points! Congrats!"]
+		static let ACHIEVEMENT4 = ["100p", COLORS[3], "satellite-dish", "Century", "You've earned 100 points! Congrats!"]
+		static let ACHIEVEMENT5 = ["250p", COLORS[4], "atom", "Two-fifty", "You've earned 250 points! Congrats!"]
+		
+		// Goals Completed
+		static let GOALS_TYPE = "goalsType"
+		static let ACHIEVEMENT6 = ["1g", COLORS[5], "cloud", "Playtime", "You've created 3 goals! Congrats!"]
+		static let ACHIEVEMENT7 = ["7g", COLORS[6], "calculator", "In Tune", "You've created 7 goals! Congrats!"]
+		static let ACHIEVEMENT8 = ["15g", COLORS[7], "certificate", "Practitioner", "You've created 15 goals! Congrats!"]
+		static let ACHIEVEMENT9 = ["30g", COLORS[0], "best_product", "Monk", "You've created 30 goals! Congrats!"]
+		static let ACHIEVEMENT10 = ["50g", COLORS[1], "leaf", "Buddhist", "You've created 50 goals! Congrats!"]
+		static let ACHIEVEMENT11 = ["100g", COLORS[2], "diamond-1", "Zen Master", "You've created 100 goals! Congrats!"]
+		
+		// Tasks Completed
+		static let TASKS_TYPE = "tasksType"
+		static let ACHIEVEMENT12 = ["2t", COLORS[3], "basketball", "Student", "You've completed 30 tasks! Congrats!"]
+		static let ACHIEVEMENT13 = ["60t", COLORS[4], "apps", "Focused", "You've completed 60 tasks! Congrats!"]
+		static let ACHIEVEMENT14 = ["90t", COLORS[5], "fountain-pen-tip", "Sublime", "You've completed 90 tasks! Congrats!"]
+		static let ACHIEVEMENT15 = ["150t", COLORS[6], "fountain-pen", "Resolute", "You've completed 150 tasks! Congrats!"]
+		static let ACHIEVEMENT16 = ["300t", COLORS[7], "brightness", "Zen", "You've completed 300 tasks! Congrats!"]
+		static let ACHIEVEMENT17 = ["500t", COLORS[0], "balance", "At Peace", "You've completed 500 tasks! Congrats!"]
+		
+		static let ACHIEVEMENTS_POINTS = [ACHIEVEMENT1, ACHIEVEMENT2, ACHIEVEMENT3, ACHIEVEMENT4, ACHIEVEMENT5]
+		static let ACHIEVEMENTS_GOALS = [ACHIEVEMENT6, ACHIEVEMENT7, ACHIEVEMENT8, ACHIEVEMENT9, ACHIEVEMENT10, ACHIEVEMENT11]
+		static let ACHIEVEMENTS_TASKS = [ACHIEVEMENT12, ACHIEVEMENT13, ACHIEVEMENT14, ACHIEVEMENT15, ACHIEVEMENT16, ACHIEVEMENT17]
+		static let ACHIEVEMENTS_ALL = [ACHIEVEMENT1, ACHIEVEMENT2, ACHIEVEMENT3, ACHIEVEMENT4, ACHIEVEMENT5, ACHIEVEMENT6, ACHIEVEMENT7, ACHIEVEMENT8, ACHIEVEMENT9, ACHIEVEMENT10, ACHIEVEMENT11, ACHIEVEMENT12, ACHIEVEMENT13, ACHIEVEMENT14, ACHIEVEMENT15, ACHIEVEMENT16, ACHIEVEMENT17]
+	}
+	
 	struct Colors {
 		static let BLUE = "69CDFC"
 		static let GREEN = "2ecc71"
+		static let ORANGE = "f39c12"
 		static let PURPLE = "B0B1F1"
 		static let PRIMARY_TEXT_GRAY = "5D5D5C"
 	}
@@ -30,6 +66,13 @@ class Constants {
 	
 	
 	struct Defaults {
+		// Achievements
+		static let APP_DATA = "appData"
+		static let APP_DATA_ACHIEVEMENTS = "achievements"
+		static let APP_DATA_TOTAL_POINTS = "totalPoints"
+		static let APP_DATA_TOTAL_GOALS_CREATED = "totalGoalsCreated" // + 3p each
+		static let APP_DATA_TOTAL_TASKS_COMPLETED = "totalTasksCompleted" // + 1p each
+		
 		static let CURRENT_THEME = "CurrentTheme"
 		static let PURCHASED_THEMES = "PurchasedThemes"
 		static let USER_HAS_MONTHLY_SUBSCRIPTION = "userHasMonthlySubscription"
@@ -97,6 +140,20 @@ class Constants {
 		static let ALERT_CLOSE = "Close"
 		
 		
+		// Dialog: Achievements
+		static let ACHIEVEMENT_DIALOG_CLOSE_BUTTON = "Let's continue :)"
+		static let ACHIEVEMENT_DIALOG_SHARE_BUTTON = "Share my achievement!"
+		static let ACHIEVEMENT_DIALOG_TITLE = "Congratulations!"
+		static let ACHIEVEMENT_COMPLETE_DIALOG_SUBTITLES = ["Congratulations! You have completed the lesson! :)", "Another one bites the dust! :)", "Well done to you, you have completed another chapter!", "Fantastic work. Onwards & upwards!", "Hard work beats talent where talent does not work hard.", "Slow and steady progress will overcome all obstacles."]
+		
+		
+		// Levels
+		static let LEVEL = "Level "
+		static let LEVEL_THRESHOLDS = [0, 5, 15, 30, 50, 75, 125, 200, 300, 450, 600, 800]
+		static let LEVEL_UP = "\n Level Up! You're amazing ;) \n Welcome to level "
+		static let POINTS_CIRCULAR_VIEW_DESCRIPTION_LABEL = "Total Points: "
+		
+		
 		// Links
 		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Core.APP_ID + "?action=write-review"
 		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
@@ -124,11 +181,13 @@ class Constants {
 		// Purchases: Upgrade Strings
 		static let UPGRADE_SCREEN_TITLE = "Tasky Premium"
 		static let UPGRADE_SCREEN_ONE_TITLE = "Unlock Everything"
-		static let UPGRADE_SCREEN_ONE_TEXT = "Gain access to all features, themes & unlockable content."
-		static let UPGRADE_SCREEN_TWO_TITLE = "Access Themes"
-		static let UPGRADE_SCREEN_TWO_TEXT = "Gain access to our Sunrise, Salvation, Nightlight themes & more."
-		static let UPGRADE_SCREEN_THREE_TITLE = "Unlimited Goals"
-		static let UPGRADE_SCREEN_THREE_TEXT = "Create unlimited goals & tasks to keep you motivated."
+		static let UPGRADE_SCREEN_ONE_TEXT = "Gain access to all features, achievements, themes & unlockable content."
+		static let UPGRADE_SCREEN_TWO_TITLE = "Earn Achievements"
+		static let UPGRADE_SCREEN_TWO_TEXT = "Unlock badges and level up as your enjoy you relaxing meditation sessions."
+		static let UPGRADE_SCREEN_THREE_TITLE = "Access Themes"
+		static let UPGRADE_SCREEN_THREE_TEXT = "Gain access to our Sunrise, Salvation, Nightlight themes & more."
+		static let UPGRADE_SCREEN_FOUR_TITLE = "Unlimited Goals"
+		static let UPGRADE_SCREEN_FOUR_TEXT = "Create unlimited goals & tasks to keep you motivated."
 		static let UPGRADE_SCREENS_MONTHLY_SUBSCRIBE_BUTTON_TITLE = "$1.99 \nmonth"
 		static let UPGRADE_SCREENS_YEARLY_SUBSCRIBE_BUTTON_TITLE = "$4.99 \nyear"
 		static let UPGRADE_SCREENS_UNLOCK_BUTTON_TITLE = "$6.99 \nonce"
@@ -147,6 +206,7 @@ class Constants {
 	
 	
 	struct Views {
+		static let ACHIEVEMENTS = "Achievements"
 		static let ADD_TASK = "AddTask"
 		static let TASK = "Task"
 		static let TASKS = "Tasks"

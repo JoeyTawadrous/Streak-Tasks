@@ -6,10 +6,12 @@ target 'Tasky' do
   use_frameworks!
 
   # Pods for Tasky
+  pod 'KYCircularProgress'
   pod 'SCLAlertView'
   pod 'FontAwesome.swift'
   pod 'SwiftForms'
   pod 'SwiftyStoreKit'
   pod 'paper-onboarding'
+  pod 'SwiftyJSON'
 
 end

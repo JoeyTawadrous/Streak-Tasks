@@ -84,6 +84,29 @@ class Task: UIViewController {
         let task = tasks[selectedTaskIndex] as! NSManagedObject
         Tasks.deleteTask(task)
 		
+		// Achievements
+		Task.updateTasksCompleted(view: self)
+		
         navigationController?.popViewController(animated: true)
     }
+	
+	class func updateTasksCompleted(view: UIViewController) {
+		var totalTasksCompleted = Utils.double(key: Constants.Defaults.APP_DATA_TOTAL_TASKS_COMPLETED)
+		totalTasksCompleted = totalTasksCompleted + 1
+		Utils.set(key: Constants.Defaults.APP_DATA_TOTAL_TASKS_COMPLETED, value: totalTasksCompleted)
+		
+		var totalPoints = Utils.double(key: Constants.Defaults.APP_DATA_TOTAL_POINTS)
+		totalPoints = totalPoints + 2
+		Utils.set(key: Constants.Defaults.APP_DATA_TOTAL_POINTS, value: totalPoints)
+		
+		// Has the user reached an achievement?
+		ProgressManager.checkAndSetAchievementReached(view: view, type: Constants.Achievements.POINTS_TYPE)
+		ProgressManager.checkAndSetAchievementReached(view: view, type: Constants.Achievements.TASKS_TYPE)
+		
+		let points = Utils.int(key: Constants.Defaults.APP_DATA_TOTAL_POINTS)
+		if(ProgressManager.shouldLevelUp(points: (points - 3))) {
+			Dialogs.showLevelUpDialog(view: view, level: ProgressManager.getLevel(points: (points - 3)))
+		}
+
+	}
 }

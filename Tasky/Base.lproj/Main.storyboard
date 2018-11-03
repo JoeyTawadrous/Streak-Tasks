@@ -7,6 +7,8 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -291,11 +293,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Goals" id="uXa-fn-0pr">
-                        <barButtonItem key="leftBarButtonItem" width="15" style="done" id="6fN-Nf-8tJ">
-                            <connections>
-                                <action selector="addGoal:" destination="sPF-jW-pTJ" id="lul-3E-Fg0"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem width="15" style="done" id="6fN-Nf-8tJ">
+                                <connections>
+                                    <action selector="addGoal:" destination="sPF-jW-pTJ" id="lul-3E-Fg0"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="done" id="aqh-pQ-9vA">
+                                <connections>
+                                    <action selector="achievementsButtonPressed:" destination="sPF-jW-pTJ" id="qXj-cY-GMj"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" width="15" style="done" id="cxj-GW-hnE">
                             <connections>
                                 <action selector="menuButtonPressed:" destination="sPF-jW-pTJ" id="6Mw-AQ-eRj"/>
@@ -303,6 +312,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="achievementsButton" destination="aqh-pQ-9vA" id="i5U-vL-6c6"/>
                         <outlet property="addButton" destination="6fN-Nf-8tJ" id="Awg-zb-jOb"/>
                         <outlet property="menuButton" destination="cxj-GW-hnE" id="7gS-Zh-Z8P"/>
                         <outlet property="tableView" destination="zOR-sx-BSf" id="lPn-6Y-9Nt"/>
@@ -1082,9 +1092,136 @@
             </objects>
             <point key="canvasLocation" x="4883" y="898"/>
         </scene>
+        <!--Achievements-->
+        <scene sceneID="gZg-ac-PWc">
+            <objects>
+                <viewController storyboardIdentifier="Achievements" id="efw-Ex-n20" userLabel="Achievements" customClass="Achievements" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uTh-Qc-gmG"/>
+                        <viewControllerLayoutGuide type="bottom" id="TTh-X6-6PS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MX7-AV-hHr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FO0-Fs-afD">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CAF-PL-DNj"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Achievements" id="iD9-9z-StI">
+                                        <barButtonItem key="leftBarButtonItem" id="sB2-6T-gzA">
+                                            <connections>
+                                                <action selector="backButtonPressed" destination="efw-Ex-n20" id="6jO-92-z4c"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6c9-TR-0C2">
+                                <rect key="frame" x="0.0" y="205" width="414" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g5K-XV-pcw">
+                                    <size key="itemSize" width="110" height="109"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="achievementCollectionViewCell" id="qoh-Vs-UtB" customClass="AchievementCollectionViewCell" customModule="Meditation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ztl-JH-fZb">
+                                                    <rect key="frame" x="19" y="9" width="88" height="88"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="88" id="AY1-xI-ZP9"/>
+                                                        <constraint firstAttribute="height" constant="88" id="Xqq-CD-LjE"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eht-VL-2cp">
+                                                    <rect key="frame" x="14" y="106" width="93" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="93" id="Fh4-5c-6Y2"/>
+                                                        <constraint firstAttribute="height" constant="21" id="kTt-yO-KVt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5bY-6U-YTX">
+                                                    <rect key="frame" x="34" y="27" width="52" height="52"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="52" id="bfc-xU-Ude"/>
+                                                        <constraint firstAttribute="width" constant="52" id="yKY-yN-FLA"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="eht-VL-2cp" firstAttribute="top" secondItem="ztl-JH-fZb" secondAttribute="bottom" constant="9" id="JCy-nS-7Rg"/>
+                                            <constraint firstItem="5bY-6U-YTX" firstAttribute="top" secondItem="ztl-JH-fZb" secondAttribute="top" constant="18" id="Qn9-MU-uJK"/>
+                                            <constraint firstItem="ztl-JH-fZb" firstAttribute="top" secondItem="qoh-Vs-UtB" secondAttribute="topMargin" constant="1" id="ZTy-01-19P"/>
+                                            <constraint firstItem="ztl-JH-fZb" firstAttribute="centerX" secondItem="qoh-Vs-UtB" secondAttribute="centerX" constant="0.5" id="ctN-9d-mwg"/>
+                                            <constraint firstItem="5bY-6U-YTX" firstAttribute="centerX" secondItem="ztl-JH-fZb" secondAttribute="centerX" constant="-3" id="jxH-xI-P2K"/>
+                                            <constraint firstItem="eht-VL-2cp" firstAttribute="centerX" secondItem="qoh-Vs-UtB" secondAttribute="centerX" constant="-2.5" id="xmi-1P-e7k"/>
+                                        </constraints>
+                                        <size key="customSize" width="125" height="125"/>
+                                        <connections>
+                                            <outlet property="containerImageView" destination="ztl-JH-fZb" id="g0D-rD-szJ"/>
+                                            <outlet property="iconImageView" destination="5bY-6U-YTX" id="1hm-pR-gPH"/>
+                                            <outlet property="titleLabel" destination="eht-VL-2cp" id="IjH-gl-uSu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="efw-Ex-n20" id="rY9-LT-Yvx"/>
+                                    <outlet property="delegate" destination="efw-Ex-n20" id="d1i-iw-yqb"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFg-UF-3ap">
+                                <rect key="frame" x="0.0" y="61" width="414" height="136"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="fd8-Uc-qP7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6c9-TR-0C2" firstAttribute="height" secondItem="MX7-AV-hHr" secondAttribute="height" constant="-182" id="26g-ew-MtK"/>
+                            <constraint firstItem="6c9-TR-0C2" firstAttribute="top" secondItem="FO0-Fs-afD" secondAttribute="bottom" constant="141" id="2KH-Pv-gGa"/>
+                            <constraint firstItem="eFg-UF-3ap" firstAttribute="trailing" secondItem="FO0-Fs-afD" secondAttribute="trailing" id="9a1-AG-TtO"/>
+                            <constraint firstItem="FO0-Fs-afD" firstAttribute="width" secondItem="MX7-AV-hHr" secondAttribute="width" id="OCR-nX-G7e"/>
+                            <constraint firstItem="FO0-Fs-afD" firstAttribute="leading" secondItem="MX7-AV-hHr" secondAttribute="leading" id="Q0Y-yC-0dI"/>
+                            <constraint firstItem="FO0-Fs-afD" firstAttribute="leading" secondItem="6c9-TR-0C2" secondAttribute="leading" id="XJv-KS-BHB"/>
+                            <constraint firstItem="FO0-Fs-afD" firstAttribute="top" secondItem="uTh-Qc-gmG" secondAttribute="bottom" id="eJp-TD-tiH"/>
+                            <constraint firstItem="6c9-TR-0C2" firstAttribute="width" secondItem="MX7-AV-hHr" secondAttribute="width" id="s3K-lc-Cyd"/>
+                            <constraint firstItem="eFg-UF-3ap" firstAttribute="leading" secondItem="FO0-Fs-afD" secondAttribute="leading" id="v3X-v4-c2q"/>
+                            <constraint firstItem="eFg-UF-3ap" firstAttribute="top" secondItem="uTh-Qc-gmG" secondAttribute="bottom" constant="41" id="xRx-9B-e3M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="52h-y3-kFP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="achievements" id="fF2-Xr-Scm"/>
+                    <connections>
+                        <outlet property="backButton" destination="sB2-6T-gzA" id="9Pp-s4-Ukh"/>
+                        <outlet property="collectionView" destination="6c9-TR-0C2" id="VPY-65-lCq"/>
+                        <outlet property="topView" destination="eFg-UF-3ap" id="oRN-s3-OvH"/>
+                        <outlet property="view" destination="MX7-AV-hHr" id="fmv-2v-oUd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OO7-DM-6xR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3844.9275362318845" y="-1369.5652173913045"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1" width="64" height="64"/>
         <image name="10" width="64" height="64"/>
+        <image name="achievements" width="16" height="16"/>
     </resources>
 </document>

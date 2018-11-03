@@ -146,6 +146,9 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.reloadData()
+			
+			// Achievements
+			Task.updateTasksCompleted(view: self)
         }
         
         return [deleteAction]

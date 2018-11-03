@@ -14,7 +14,7 @@ class Constants {
 		static let ACHIEVEMENT4 = ["100p", COLORS[3], "satellite-dish", "Century", "You've earned 100 points! Congrats!"]
 		static let ACHIEVEMENT5 = ["250p", COLORS[4], "atom", "Two-fifty", "You've earned 250 points! Congrats!"]
 		
-		// Goals Completed
+		// Goals Created
 		static let GOALS_TYPE = "goalsType"
 		static let ACHIEVEMENT6 = ["3g", COLORS[5], "cloud", "Playtime", "You've created 3 goals! Congrats!"]
 		static let ACHIEVEMENT7 = ["7g", COLORS[6], "calculator", "In Tune", "You've created 7 goals! Congrats!"]

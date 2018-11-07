@@ -172,7 +172,7 @@ class Constants {
 		static let PURCHASE_ERROR_IDENTIFIER_INVALID = "The purchase identifier was invalid." + PURCHASE_ERROR_CONTACT_US
 		static let PURCHASE_ERROR_CANCELLED = "Your payment was cancelled." + PURCHASE_ERROR_CONTACT_US
 		static let PURCHASE_ERROR_NOT_ALLOWED = "You are not allowed to make payments." + PURCHASE_ERROR_CONTACT_US
-		static let PURCHASE_ERROR_UNKNOWN = "Unknown error." + PURCHASE_ERROR_CONTACT_US
+		static let PURCHASE_ERROR_LOGIN = "You must login to your App Store account before your payment can be completed."
 		static let PURCHASE_RESTORE_ERROR = "Restore error." + PURCHASE_ERROR_CONTACT_US
 		static let PURCHASE_RESTORE_NOTHING = "You have no purchases to restore!"
 		static let PURCHASE_RESTORE_SUCCESS = "You have successfully restored your previous purchases."

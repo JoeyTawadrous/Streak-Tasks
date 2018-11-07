@@ -43,7 +43,7 @@ class Purchase {
 						Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_NOT_ALLOWED)
 					
 					default:
-						Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_UNKNOWN)
+						Dialogs.showOkButtonDialog(view: view, message: Constants.Strings.PURCHASE_ERROR_LOGIN)
 				}
 		}
 	}

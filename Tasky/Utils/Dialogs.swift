@@ -46,9 +46,15 @@ class Dialogs {
 	
 	
 	class func showOkButtonDialog(view: UIViewController, message: String) {
-		let alert = UIAlertController(title: "Info", message: message, preferredStyle: UIAlertControllerStyle.alert)
-		alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in }))
+		let appearance = SCLAlertView.SCLAppearance(
+			kCircleHeight: 100.0,
+			kCircleIconHeight: 60.0,
+			kTitleTop: 62.0
+		)
 		
-		view.present(alert, animated: true, completion: nil)
+		let alertView = SCLAlertView(appearance: appearance)
+		let alertViewIcon = UIImage(named: "diamond-1")
+		
+		alertView.showCustom(Constants.Strings.ALERT_DIALOG_INFO, subTitle: message, color: UIColor(hex: Constants.Colors.BLUE), icon: alertViewIcon!, animationStyle: .leftToRight)
 	}
 }

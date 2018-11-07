@@ -137,8 +137,9 @@ class Constants {
 	
 	struct Strings {
 		// Dialog: Alert
-		static let ALERT_SUBMIT = "Submit"
-		static let ALERT_CLOSE = "Close"
+		static let ALERT_DIALOG_CLOSE = "Close"
+		static let ALERT_DIALOG_INFO = "Info"
+		static let ALERT_DIALOG_SUBMIT = "Submit"
 		
 		
 		// Dialog: Achievements

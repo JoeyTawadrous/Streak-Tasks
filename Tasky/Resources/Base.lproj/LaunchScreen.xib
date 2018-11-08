@@ -8,15 +8,50 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamProBold.ttf">
+            <string>GothamPro-Bold</string>
+        </array>
+        <array key="GothamProMedium.ttf">
+            <string>GothamPro-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo list and habit tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-1z-MOj">
+                    <rect key="frame" x="55" y="269" width="265" height="145"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="145" id="VjT-ne-6wL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasky" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2C-tL-2SA">
+                    <rect key="frame" x="55" y="252" width="265" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="X3F-O8-QVR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="0.30980392156862746" green="0.67450980392156867" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="V2C-tL-2SA" firstAttribute="trailing" secondItem="aUJ-1z-MOj" secondAttribute="trailing" id="5sl-sC-LCD"/>
+                <constraint firstItem="V2C-tL-2SA" firstAttribute="leading" secondItem="aUJ-1z-MOj" secondAttribute="leading" id="LA2-qA-c9A"/>
+                <constraint firstItem="V2C-tL-2SA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dTW-ty-4t1"/>
+                <constraint firstItem="V2C-tL-2SA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="55" id="hL0-GK-cAB"/>
+                <constraint firstItem="V2C-tL-2SA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="252" id="sRd-w5-6B4"/>
+                <constraint firstItem="aUJ-1z-MOj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="269" id="unE-n7-TeZ"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>

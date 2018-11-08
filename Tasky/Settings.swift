@@ -19,7 +19,6 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	@IBOutlet var twitterButtonIcon: UIButton!
 	@IBOutlet var facebookButtonIcon: UIButton!
 	@IBOutlet var instagramButtonIcon: UIButton!
-	@IBOutlet var privacyAndTermsButtonIcon: UIButton!
 	@IBOutlet var backButton: UIBarButtonItem!
 	
 	
@@ -39,7 +38,6 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		setButtonIcon(button: twitterButtonIcon, icon: String.fontAwesomeIcon(name: .twitter), type: .brands)
 		setButtonIcon(button: facebookButtonIcon, icon: String.fontAwesomeIcon(name: .facebook), type: .brands)
 		setButtonIcon(button: instagramButtonIcon, icon: String.fontAwesomeIcon(name: .instagram), type: .brands)
-		setButtonIcon(button: privacyAndTermsButtonIcon, icon: String.fontAwesomeIcon(name: .book), type: .solid)
 		
 		// Styling
 		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
@@ -150,10 +148,6 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	
 	public func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
 		controller.dismiss(animated: true, completion: nil)
-	}
-	
-	@IBAction func privacyAndTermsButtonPressed() {
-		Utils.openURL(url: Constants.Strings.LINK_PRIVACY_AND_TERMS)
 	}
 	
 	

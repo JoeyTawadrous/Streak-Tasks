@@ -6,12 +6,15 @@ import FontAwesome_swift
 
 class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate {
 	
+	@IBOutlet var aboutButton: UIButton!
+	@IBOutlet var aboutButtonIcon: UIButton!
 	@IBOutlet var upgradeButtonIcon: UIButton!
 	@IBOutlet var changeThemeButtonIcon: UIButton!
 	@IBOutlet var restorePurchasesButtonIcon: UIButton!
 	@IBOutlet var learnableiOSAppButtonIcon: UIButton!
 	@IBOutlet var reviewButtonIcon: UIButton!
 	@IBOutlet var sendFeedbackButtonIcon: UIButton!
+	@IBOutlet var followDeveloperButtonIcon: UIButton!
 	@IBOutlet var shareButtonIcon: UIButton!
 	@IBOutlet var twitterButtonIcon: UIButton!
 	@IBOutlet var facebookButtonIcon: UIButton!
@@ -24,12 +27,14 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
+		setButtonIcon(button: aboutButtonIcon, icon: String.fontAwesomeIcon(name: .chessRook), type: .solid)
 		setButtonIcon(button: upgradeButtonIcon, icon: String.fontAwesomeIcon(name: .trophy), type: .solid)
 		setButtonIcon(button: changeThemeButtonIcon, icon: String.fontAwesomeIcon(name: .star), type: .solid)
 		setButtonIcon(button: restorePurchasesButtonIcon, icon: String.fontAwesomeIcon(name: .flask), type: .solid)
 		setButtonIcon(button: learnableiOSAppButtonIcon, icon: String.fontAwesomeIcon(name: .heart), type: .solid)
 		setButtonIcon(button: reviewButtonIcon, icon: String.fontAwesomeIcon(name: .gem), type: .regular)
 		setButtonIcon(button: sendFeedbackButtonIcon, icon: String.fontAwesomeIcon(name: .pen), type: .solid)
+		setButtonIcon(button: followDeveloperButtonIcon, icon: String.fontAwesomeIcon(name: .userAstronaut), type: .solid)
 		setButtonIcon(button: shareButtonIcon, icon: String.fontAwesomeIcon(name: .rocket), type: .solid)
 		setButtonIcon(button: twitterButtonIcon, icon: String.fontAwesomeIcon(name: .twitter), type: .brands)
 		setButtonIcon(button: facebookButtonIcon, icon: String.fontAwesomeIcon(name: .facebook), type: .brands)
@@ -40,6 +45,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		Utils.insertGradientIntoTableView(viewController: self, tableView: tableView)
 		Utils.createFontAwesomeBarButton(button: backButton, icon: .arrowLeft, style: .solid)
 		tableView.separatorColor = UIColor.clear
+		aboutButton?.titleLabel?.numberOfLines = 15
 	}
 	
 	func setButtonIcon(button: UIButton, icon: String, type: FontAwesomeStyle) {
@@ -71,8 +77,15 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		(view as? UITableViewHeaderFooterView)?.textLabel?.textAlignment = .center
 	}
 	
+	public override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		if indexPath.row == 0 && indexPath.section == 0 {
+			return 140.0
+		}
+		return 44.0
+	}
+	
 	public override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-		if section == 2 {
+		if section == 3 {
 			return 70.0
 		}
 		return 0
@@ -85,6 +98,11 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	@IBAction func backButtonPressed() {
 		Utils.presentView(self, viewName: Constants.Views.GOALS_NAV_CONTROLLER)
 	}
+	
+	@IBAction func aboutButtonPressed() {
+		Utils.openURL(url: Constants.Strings.LINK_TWITTER_JOEY)
+	}
+	
 	
 	// Premium
 	@IBAction func upgradeButtonPressed() {

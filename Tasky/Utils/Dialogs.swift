@@ -25,6 +25,21 @@ class Dialogs {
 	}
 	
 	
+	class func showInfoDialog(title: String, subTitle: String) {
+		let appearance = SCLAlertView.SCLAppearance(
+			kCircleHeight: 100.0,
+			kCircleIconHeight: 60.0,
+			kTitleTop: 62.0,
+			showCloseButton: true
+		)
+		
+		let alertView = SCLAlertView(appearance: appearance)
+		let alertViewIcon = UIImage(named: "diamond-1")
+		
+		alertView.showCustom(title, subTitle: subTitle, color: UIColor(hex: Constants.Colors.BLUE), icon: alertViewIcon!, animationStyle: .rightToLeft)
+	}
+	
+	
 	class func showLevelUpDialog(view: UIViewController, level: Int) {
 		let appearance = SCLAlertView.SCLAppearance(
 			kCircleHeight: 100.0,

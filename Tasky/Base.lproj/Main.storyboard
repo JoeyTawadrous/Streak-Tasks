@@ -1162,6 +1162,11 @@
                                                 <action selector="backButtonPressed" destination="efw-Ex-n20" id="6jO-92-z4c"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" id="49g-rR-LvX">
+                                            <connections>
+                                                <action selector="infoButtonPressed" destination="efw-Ex-n20" id="jIL-dn-Jvd"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1256,6 +1261,7 @@
                     <connections>
                         <outlet property="backButton" destination="sB2-6T-gzA" id="9Pp-s4-Ukh"/>
                         <outlet property="collectionView" destination="6c9-TR-0C2" id="VPY-65-lCq"/>
+                        <outlet property="infoButton" destination="49g-rR-LvX" id="7aX-zg-Yey"/>
                         <outlet property="topView" destination="eFg-UF-3ap" id="oRN-s3-OvH"/>
                         <outlet property="view" destination="MX7-AV-hHr" id="fmv-2v-oUd"/>
                     </connections>

@@ -7,6 +7,7 @@ class Achievements: UIViewController, UICollectionViewDataSource, UICollectionVi
 	@IBOutlet var collectionView: UICollectionView!
 	@IBOutlet var topView: UIView?
 	@IBOutlet var backButton: UIBarButtonItem!
+	@IBOutlet var infoButton: UIBarButtonItem!
 	
 	// Points
 	private var levelsLabel: UILabel?
@@ -23,6 +24,7 @@ class Achievements: UIViewController, UICollectionViewDataSource, UICollectionVi
 		// Refresh here once so the user is not waiting (as they would be in viewDidAppear)
 		collectionView.reloadData()
 		Utils.createFontAwesomeBarButton(button: backButton, icon: .arrowLeft, style: .solid)
+		Utils.createFontAwesomeBarButton(button: infoButton, icon: .info, style: .solid)
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
@@ -59,6 +61,10 @@ class Achievements: UIViewController, UICollectionViewDataSource, UICollectionVi
 	/////////////////////////////////////////// */
 	@IBAction func backButtonPressed() {
 		Utils.presentView(self, viewName: Constants.Views.GOALS_NAV_CONTROLLER)
+	}
+	
+	@IBAction func infoButtonPressed() {
+		Dialogs.showInfoDialog(title: Constants.Strings.ACHIEVEMENTS_INFO_DIALOG_TITLE, subTitle: Constants.Strings.ACHIEVEMENTS_INFO_DIALOG_SUBTITLE)
 	}
 	
 	

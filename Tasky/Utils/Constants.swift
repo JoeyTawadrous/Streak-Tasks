@@ -72,7 +72,7 @@ class Constants {
 		static let APP_DATA_ACHIEVEMENTS = "achievements"
 		static let APP_DATA_TOTAL_POINTS = "totalPoints"
 		static let APP_DATA_TOTAL_GOALS_CREATED = "totalGoalsCreated" // + 3p each
-		static let APP_DATA_TOTAL_TASKS_COMPLETED = "totalTasksCompleted" // + 1p each
+		static let APP_DATA_TOTAL_TASKS_COMPLETED = "totalTasksCompleted" // + 2p each
 		
 		static let CURRENT_THEME = "CurrentTheme"
 		static let PURCHASED_THEMES = "PurchasedThemes"
@@ -141,6 +141,11 @@ class Constants {
 		static let ALERT_DIALOG_INFO = "Info"
 		static let ALERT_DIALOG_SUBMIT = "Submit"
 		
+		
+		// Dialog: Achievements
+		static let ACHIEVEMENTS_INFO_DIALOG_TITLE = "How to Earn Points"
+		static let ACHIEVEMENTS_INFO_DIALOG_SUBTITLE = "\nEvery goal created will earn you three points. \n\nEvery task completed will earn you 2 points. \n\nEvery goal created/task completed/point gained brings you closer to earning achievement bagdes and levelling up :) \n"
+
 		
 		// Dialog: Achievements
 		static let ACHIEVEMENT_DIALOG_CLOSE_BUTTON = "Let's continue :)"

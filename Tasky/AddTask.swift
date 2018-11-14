@@ -48,7 +48,7 @@ class AddTask: FormViewController {
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
 		selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
-		Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
+		CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
 		
 		// Styling
 		Utils.insertGradientIntoTableView(viewController: self, tableView: self.tableView)
@@ -93,7 +93,7 @@ class AddTask: FormViewController {
 		if whenValue == nil { whenValue = tomorrow }
 		if reasonValue == nil { reasonValue = FormPlaceholders.REASON_WHEN_NIL as NSObject? }
 		
-		Utils.createTask(goalName: selectedGoal, type: typeValue!, when: whenValue!, reason: reasonValue!)
+		CoreData.createTask(goalName: selectedGoal, type: typeValue!, when: whenValue!, reason: reasonValue!)
 		
 		// Create local notification
 		let notification = UILocalNotification()

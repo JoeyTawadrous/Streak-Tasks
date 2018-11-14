@@ -24,7 +24,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Init
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
-		goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+		goals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
 		goals = goals.reversed() // newest first
 		
 		// Demo data
@@ -64,7 +64,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
 		alertView.addButton(Constants.Strings.ALERT_DIALOG_SUBMIT) {
 			if !textField.text!.isEmpty {
-				self.goals.insert(Utils.createGoal(name: textField.text!), at: 0)
+				self.goals.insert(CoreData.createGoal(name: textField.text!), at: 0)
 				self.tableView.reloadData()
 				
 				
@@ -117,7 +117,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let name = goal.value(forKey: Constants.CoreData.NAME) as! String?
         cell.nameLabel!.text = name
         
-        let tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: name!)
+        let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: name!)
         cell.taskCountLabel!.text = String(tasks.count)
         
         let thumbnail = goal.value(forKey: Constants.CoreData.THUMBNAIL) as! String?
@@ -135,7 +135,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
         if(editingStyle == UITableViewCellEditingStyle.delete) {
             
             // Delete tasks associated with this goal
-            let tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+            let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
             let goal = goals[indexPath.row]
             let selectedGoal = goal.value(forKey: Constants.CoreData.NAME) as! String?
             
@@ -148,7 +148,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
             // Delete goal
             let goalToDelete = goals[indexPath.row]
             
-            let managedObjectContect = Utils.fetchManagedObjectContext()
+            let managedObjectContect = CoreData.fetchManagedObjectContext()
             managedObjectContect.delete(goalToDelete as! NSManagedObject)
             
             do {
@@ -157,7 +157,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 print(error)
             }
             
-            goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+            goals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
             goals = goals.reversed() // newest first
             
             tableView.deleteRows(at: [indexPath], with: .automatic)

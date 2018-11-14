@@ -40,7 +40,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
 		self.title = selectedGoal
 		
-		tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
+		tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
 		tasks = tasks.reversed() // newest first
 		
 		self.tableView.reloadData()
@@ -69,7 +69,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
         Tasks.setBadgeNumbers()
 		
         // Remove task object
-        let managedObjectContect = Utils.fetchManagedObjectContext()
+        let managedObjectContect = CoreData.fetchManagedObjectContext()
         managedObjectContect.delete(task)
         do {
             try managedObjectContect.save()
@@ -81,7 +81,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     class func setBadgeNumbers() {
         let notifications = UIApplication.shared.scheduledLocalNotifications // all scheduled notifications
-        let tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+        let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         
         UIApplication.shared.cancelAllLocalNotifications()
         
@@ -141,7 +141,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
             Tasks.deleteTask(task)
 			
             // Refresh table
-            self.tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: self.selectedGoal)
+            self.tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: self.selectedGoal)
             self.tasks = self.tasks.reversed() // newest first
             
             tableView.deleteRows(at: [indexPath], with: .automatic)

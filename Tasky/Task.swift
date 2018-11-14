@@ -18,13 +18,13 @@ class Task: UIViewController {
 	/* MARK: Init
 	/////////////////////////////////////////// */
     override func viewWillAppear(_ animated: Bool) {
-        var goals = Utils.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+        var goals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
         goals = goals.reversed()
 		
         let selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
         let selectedGoalIndex = Utils.int(key: Constants.LocalData.SELECTED_GOAL_INDEX)
         let selectedTaskIndex = Utils.int(key: Constants.LocalData.SELECTED_TASK_INDEX)
-        var tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
+        var tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
         tasks = tasks.reversed()
 		
 		// Styling
@@ -80,7 +80,7 @@ class Task: UIViewController {
 		
         let selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
         let selectedTaskIndex = Utils.int(key: Constants.LocalData.SELECTED_TASK_INDEX)
-        var tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
+        var tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
         let task = tasks[selectedTaskIndex] as! NSManagedObject
         Tasks.deleteTask(task)
 		

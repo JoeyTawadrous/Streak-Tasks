@@ -84,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Void) {
         
         // Get task attached to notification
-        tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+        tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         
         for task in tasks {
             let taskUUID = task.value(forKey: Constants.CoreData.UUID) as! String
@@ -117,7 +117,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	
     func applicationWillResignActive(_ application: UIApplication) {
-        tasks = Utils.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+        tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
         
         let tasksDue = tasks.filter({ (task) -> Bool in
             let when = task.value(forKey: Constants.CoreData.WHEN) as! Date

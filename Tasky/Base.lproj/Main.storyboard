@@ -584,7 +584,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52L-ey-6eR">
-                                                    <rect key="frame" x="59" y="6.6666666666666679" width="341" height="29.000000000000004"/>
+                                                    <rect key="frame" x="59" y="6.6666666666666661" width="331" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal">
                                                         <string key="title">Your life is already complicated enough without having to worry about all your todos. In any given day you have 101 things you need to get done. I know, because I've been there! I sympathize with you. Don't let it stress you out. You can get all your jobs done and have fun too.</string>
@@ -598,7 +598,7 @@
                                             <constraints>
                                                 <constraint firstItem="52L-ey-6eR" firstAttribute="centerY" secondItem="a9m-qZ-W4k" secondAttribute="centerY" id="7H6-cD-knB"/>
                                                 <constraint firstItem="52L-ey-6eR" firstAttribute="leading" secondItem="a9m-qZ-W4k" secondAttribute="leadingMargin" constant="39" id="BDi-az-hg4"/>
-                                                <constraint firstItem="52L-ey-6eR" firstAttribute="centerX" secondItem="a9m-qZ-W4k" secondAttribute="centerX" constant="22.5" id="s1T-Mt-B7L"/>
+                                                <constraint firstItem="52L-ey-6eR" firstAttribute="centerX" secondItem="a9m-qZ-W4k" secondAttribute="centerX" constant="17.5" id="s1T-Mt-B7L"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

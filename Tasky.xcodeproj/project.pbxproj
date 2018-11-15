@@ -15,6 +15,7 @@
 		523DA47D1ADC574B007F7F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523DA47B1ADC574B007F7F7D /* Main.storyboard */; };
 		5252DB2F206795C000621E57 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252DB2E206795C000621E57 /* StoreKit.framework */; };
 		5252DB3020679E2900621E57 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC532D1AAA4E8A002A51C1 /* Goals.swift */; };
+		5252F1AC219DD58000DEC276 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F1AB219DD57F00DEC276 /* CoreData.swift */; };
 		52579C8A218E385500C1DEA1 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52579C89218E385500C1DEA1 /* Achievements.swift */; };
 		52579C8C218E387700C1DEA1 /* ProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52579C8B218E387700C1DEA1 /* ProgressManager.swift */; };
 		5264519A1AAF644F002C37A6 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526451991AAF644F002C37A6 /* Tasks.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -56,6 +57,7 @@
 		5235B8D81AD9582800B3BAE2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		523DA47C1ADC574B007F7F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5252DB2E206795C000621E57 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5252F1AB219DD57F00DEC276 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		52579C89218E385500C1DEA1 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
 		52579C8B218E387700C1DEA1 /* ProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressManager.swift; sourceTree = "<group>"; };
 		526451991AAF644F002C37A6 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		52618C441CA0725D003192AF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5252F1AB219DD57F00DEC276 /* CoreData.swift */,
 				521706D01BAD779E007BCE73 /* Constants.swift */,
 				52C7034121441D1E00AC839F /* CustomClasses.swift */,
 				52C7033A2143F7F500AC839F /* Dialogs.swift */,
@@ -412,6 +415,7 @@
 				52C7033B2143F7F500AC839F /* Dialogs.swift in Sources */,
 				52C7034221441D1E00AC839F /* CustomClasses.swift in Sources */,
 				52973AE71E2BD78B00D7DE3F /* Settings.swift in Sources */,
+				5252F1AC219DD58000DEC276 /* CoreData.swift in Sources */,
 				527EBF79206D6DDA00F17038 /* Tasky.xcdatamodeld in Sources */,
 				52579C8A218E385500C1DEA1 /* Achievements.swift in Sources */,
 				52C980EE1D315E9800F7E1B0 /* Themes.swift in Sources */,

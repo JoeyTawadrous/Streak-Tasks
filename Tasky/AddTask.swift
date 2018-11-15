@@ -100,6 +100,7 @@ class AddTask: FormViewController {
 		notification.alertBody = "\(selectedGoal): \(reasonValue as! NSString)" // text that will be displayed in the notification
 		notification.alertAction = "Open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
 		notification.fireDate = whenValue // NOTE: dates in the past, chosen by the user, will not create a notification
+		notification.repeatInterval = NSCalendar.Unit.day
 		notification.soundName = UILocalNotificationDefaultSoundName // play default sound
 		notification.userInfo = ["UUID": uuid]
 		notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER

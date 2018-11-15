@@ -94,12 +94,11 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 if (notificationUUID == taskUUID) {
                     let overdueTasks = tasks.filter({ (task) -> Bool in
                         let when = task.value(forKey: Constants.CoreData.WHEN) as! Date
-						notification.repeatInterval = NSCalendar.Unit.day
                         let dateComparisionResult: ComparisonResult = notification.fireDate!.compare(when)
-                        
                         return dateComparisionResult == ComparisonResult.orderedAscending
                     })
-                    
+					
+					notification.repeatInterval = NSCalendar.Unit.day
                     notification.applicationIconBadgeNumber = overdueTasks.count   // set new badge number
                     UIApplication.shared.scheduleLocalNotification(notification)      // reschedule notification
                 }

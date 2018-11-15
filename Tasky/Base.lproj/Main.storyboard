@@ -386,7 +386,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-g1-89A">
-                                                    <rect key="frame" x="29.000000000000007" y="29" width="70.666666666666686" height="15"/>
+                                                    <rect key="frame" x="29" y="29" width="305" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="WXl-DO-8qD"/>
                                                     </constraints>
@@ -404,6 +404,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="2OB-g1-89A" firstAttribute="centerY" secondItem="BPo-Sg-Crr" secondAttribute="centerY" id="CzP-bF-jcz"/>
+                                                <constraint firstItem="2OB-g1-89A" firstAttribute="trailing" secondItem="BPo-Sg-Crr" secondAttribute="trailing" constant="-44" id="EFo-s1-Gqh"/>
                                                 <constraint firstItem="2OB-g1-89A" firstAttribute="leading" secondItem="Eea-c9-Wxj" secondAttribute="leadingMargin" constant="9" id="bha-bd-Coz"/>
                                                 <constraint firstItem="2OB-g1-89A" firstAttribute="top" secondItem="Eea-c9-Wxj" secondAttribute="topMargin" constant="18" id="k9Y-rr-Wfo"/>
                                                 <constraint firstItem="2OB-g1-89A" firstAttribute="centerY" secondItem="Eea-c9-Wxj" secondAttribute="centerY" id="kJ3-PM-HoA"/>

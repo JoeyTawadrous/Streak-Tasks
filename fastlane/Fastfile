@@ -1,0 +1,30 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+build_app(workspace: "Tasky.xcworkspace", scheme: "Tasky")
+
+deliver(
+  submit_for_review: true,
+  automatic_release: true,
+  force: true, 						# no screenshots generated html status page
+  metadata_path: "./metadata",
+  skip_screenshots: true,
+  skip_metadata: false,
+  app_version: "3.5.0",
+  run_precheck_before_submit: false,
+  reject_if_possible: true
+)

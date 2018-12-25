@@ -1,4 +1,4 @@
-# Tasky: Your To-Do List Tracker - Habits, goals & life tasks
+# Streak Tasks Habit Tracker
 
 Store Link: http://apple.co/2krwSkQ
 
@@ -10,7 +10,7 @@ Keeping your life in order shouldn't be hard.
 
 # About
 
-Tasky allows you to organize your life with two simple concepts:
+Streak Tasks allows you to organize your life with two simple concepts:
 1. You create goals you want to achieve.
 2. And then create tasks for each of your goals.
 
@@ -39,7 +39,7 @@ Get organized today.
 • Free, and with no ads!
 
 
-# Tasky Can Be Your
+# Streak Tasks Can Be Your
 
 - Grocery shopping list
 - Fitness regime schedule

@@ -72,7 +72,9 @@ class Achievements: UIViewController, UICollectionViewDataSource, UICollectionVi
 	/* MARK: Points Functionality
 	/////////////////////////////////////////// */
 	func initPointsView() {
-		circularPointsView = createProgressCircle(x: (UIScreen.main.bounds.width / 2) - 55, color: "f6d365")
+		let xValue:CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 55 : 90
+		circularPointsView = createProgressCircle(x: (UIScreen.main.bounds.width / 2) - xValue, color: "f6d365")
+		
 		topView?.addSubview(circularPointsView)
 		
 		levelsLabel = createProgressLabel(center: circularPointsView.center)
@@ -130,7 +132,8 @@ class Achievements: UIViewController, UICollectionViewDataSource, UICollectionVi
 	}
 	
 	func createProgressCircle(x: CGFloat, color: String) -> KYCircularProgress {
-		let progressView = KYCircularProgress(frame: CGRect(x: x, y: 5, width: 110, height: 110), showGuide: true)
+		let heightWidth:CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 110 : 180
+		let progressView = KYCircularProgress(frame: CGRect(x: x, y: 5, width: heightWidth, height: heightWidth), showGuide: true)
 		return Utils.createProgressView(progressView: progressView, color: color, guideColor: "fff")
 	}
 	
@@ -181,7 +184,7 @@ class Achievements: UIViewController, UICollectionViewDataSource, UICollectionVi
 	
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let width = collectionView.bounds.width / 3.0
+		let width = UIDevice.current.userInterfaceIdiom == .phone ? collectionView.bounds.width / 3.0 : collectionView.bounds.width / 5.0
 		return CGSize(width: width, height: width + 20)
 	}
 	

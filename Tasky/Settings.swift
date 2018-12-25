@@ -7,7 +7,6 @@ import FontAwesome_swift
 class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate {
 	
 	@IBOutlet var aboutButton: UIButton!
-	@IBOutlet var aboutButtonIcon: UIButton!
 	@IBOutlet var upgradeButtonIcon: UIButton!
 	@IBOutlet var changeThemeButtonIcon: UIButton!
 	@IBOutlet var restorePurchasesButtonIcon: UIButton!
@@ -26,7 +25,6 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
-		setButtonIcon(button: aboutButtonIcon, icon: String.fontAwesomeIcon(name: .chessRook), type: .solid)
 		setButtonIcon(button: upgradeButtonIcon, icon: String.fontAwesomeIcon(name: .trophy), type: .solid)
 		setButtonIcon(button: changeThemeButtonIcon, icon: String.fontAwesomeIcon(name: .star), type: .solid)
 		setButtonIcon(button: restorePurchasesButtonIcon, icon: String.fontAwesomeIcon(name: .flask), type: .solid)

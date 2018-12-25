@@ -166,7 +166,7 @@ class Constants {
 		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
 		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
 		static let LINK_IOS_STORE = "https://itunes.apple.com/gb/app/tasky-your-to-do-list-tracker/id1195440882?mt=8"
-		static let LINK_PRIVACY_AND_TERMS = "https://www.getLearnable.com/privacy&terms.php"
+		static let LINK_PRIVACY_AND_TERMS = "https://www.getLearnable.com/privacy.php"
 		static let LINK_LEARNABLE_IOS_STORE = "https://itunes.apple.com/gb/app/learnable-learn-to-code-from-scratch-level-up/id1254862243?mt=8"
 		static let LINK_TWITTER = "https://twitter.com/getlearnable"
 		static let LINK_TWITTER_JOEY = "https://twitter.com/joeytawadrous"

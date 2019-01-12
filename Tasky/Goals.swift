@@ -188,8 +188,10 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        let emptyView = UIView(frame: CGRect(x:0, y:0, width:self.view.bounds.size.width, height:self.view.bounds.size.height))
+        
 		if goals.count == 0 {
-			let emptyView = UIView(frame: CGRect(x:0, y:0, width:self.view.bounds.size.width, height:self.view.bounds.size.height))
 			
 			let emptyImageView = UIImageView(frame: CGRect(x:0, y:0, width:150, height:150))
 			emptyImageView.center = CGPoint(x:self.view.frame.width / 2, y: self.view.bounds.size.height * 0.30)
@@ -212,6 +214,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 			return 0
 		}
 		else {
+            self.tableView.backgroundView = emptyView
 			return goals.count
 		}
     }

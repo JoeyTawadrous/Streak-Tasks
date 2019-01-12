@@ -4,37 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Tasky.xcscheme</key>
+		<key>Tasky.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>isShown</key>
-			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
-		<key>TaskyUITests.xcscheme</key>
+		<key>TaskyWidgets.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>isShown</key>
-			<true/>
 			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>52BEF063206FF4DF001E925B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>52CC53221AAA4E8A002A51C1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>52CC533A1AAA4E8A002A51C1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
+			<integer>2</integer>
 		</dict>
 	</dict>
 </dict>

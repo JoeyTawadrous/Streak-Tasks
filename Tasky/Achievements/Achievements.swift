@@ -8,7 +8,9 @@ class Achievements: UIViewController, UICollectionViewDataSource, UICollectionVi
 	@IBOutlet var topView: UIView?
 	@IBOutlet var backButton: UIBarButtonItem!
 	@IBOutlet var infoButton: UIBarButtonItem!
-	
+    @IBOutlet weak var collectionViewTopSpace: NSLayoutConstraint!
+    
+    
 	// Points
 	private var levelsLabel: UILabel?
 	private var pointsLabel: UILabel?
@@ -22,6 +24,12 @@ class Achievements: UIViewController, UICollectionViewDataSource, UICollectionVi
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
 		// Refresh here once so the user is not waiting (as they would be in viewDidAppear)
+        
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            self.collectionViewTopSpace.constant = 100
+        }
+        
+        
 		collectionView.reloadData()
 		Utils.createFontAwesomeBarButton(button: backButton, icon: .arrowLeft, style: .solid)
 		Utils.createFontAwesomeBarButton(button: infoButton, icon: .info, style: .solid)

@@ -38,10 +38,11 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Table Functionality
 	/////////////////////////////////////////// */
 	internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "cell")
-		if cell == nil {
-			cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
-		}
+//        var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "cell")
+//        if cell == nil {
+//            cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
+//        }
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 		
 		let themes = Constants.Purchases.Colors.keys
 		let theme = Array(themes)[indexPath.row]

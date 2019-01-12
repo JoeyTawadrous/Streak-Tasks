@@ -65,6 +65,9 @@ class Constants {
 		static let UUID = "uuid"
 	}
 	
+    struct AppGroup {
+        static let NAME = "group.com.joeyt.streaktasks"
+    }
 	
 	struct Defaults {
 		// Achievements

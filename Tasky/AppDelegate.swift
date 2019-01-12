@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	/////////////////////////////////////////// */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		
+        // Migrate Core Data to App Group
+        self.migratePersistentStore()
 		
 		// Styling
 		UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
@@ -128,7 +130,72 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.applicationIconBadgeNumber = tasksDue.count
     }
 
-	
+    //* MARK: migrate Core Data
+    func migratePersistentStore(){
+        
+        let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+        var storeOptions = [AnyHashable : Any]()
+        storeOptions[NSMigratePersistentStoresAutomaticallyOption] = true
+        storeOptions[NSInferMappingModelAutomaticallyOption] = true
+        let oldStoreUrl = self.applicationDocumentsDirectory.appendingPathComponent("Tasky.sqlite")
+        let newStoreUrl = self.secureAppGroupPersistentStoreURL.appendingPathComponent("Tasky.sqlite")
+        var targetUrl : URL? = nil
+        var needMigrate = false
+        var needDeleteOld = false
+        
+        if FileManager.default.fileExists(atPath: oldStoreUrl.path){
+            needMigrate = true
+            targetUrl = oldStoreUrl
+        }
+        
+        if FileManager.default.fileExists(atPath: newStoreUrl.path){
+            needMigrate = false
+            targetUrl = newStoreUrl
+            
+            if FileManager.default.fileExists(atPath: oldStoreUrl.path){
+                needDeleteOld = true
+            }
+        }
+        if targetUrl == nil {
+            targetUrl = newStoreUrl
+        }
+        if needMigrate {
+            do {
+                try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: targetUrl!, options: storeOptions)
+                if let store = coordinator.persistentStore(for: targetUrl!)
+                {
+                    do {
+                        try coordinator.migratePersistentStore(store, to: newStoreUrl, options: storeOptions, withType: NSSQLiteStoreType)
+                        
+                    } catch let error {
+                        print("migrate failed with error : \(error)")
+                    }
+                }
+            } catch let error {
+                print(error)
+            }
+        }
+        if needDeleteOld {
+            self.deleteDocumentAtUrl(url: oldStoreUrl)
+            let shmDocumentUrl = self.applicationDocumentsDirectory.appendingPathComponent("NoddApp.sqlite-shm")
+            self.deleteDocumentAtUrl(url: shmDocumentUrl)
+            let walDocumentUrl = self.applicationDocumentsDirectory.appendingPathComponent("NoddApp.sqlite-wal")
+            self.deleteDocumentAtUrl(url: walDocumentUrl)
+        }
+    }
+    
+    func deleteDocumentAtUrl(url: URL!){
+        let fileCoordinator = NSFileCoordinator(filePresenter: nil)
+        fileCoordinator.coordinate(writingItemAt: url, options: .forDeleting, error: nil, byAccessor: {
+            (urlForModifying) -> Void in
+            do {
+                try FileManager.default.removeItem(at: urlForModifying)
+            }catch let error {
+                print("Failed to remove item with error: \(error.localizedDescription)")
+            }
+        })
+    }
+    
 	
 	/* MARK: Core Data
 	/////////////////////////////////////////// */
@@ -136,6 +203,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: URL = {
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return urls[urls.count-1] as URL
+    }()
+    
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.joeyt.contact" in the application's App Group Application Support directory.
+    lazy var secureAppGroupPersistentStoreURL : URL = {
+        let fileManager = FileManager.default
+        let groupDirectory = fileManager.containerURL(forSecurityApplicationGroupIdentifier: Constants.AppGroup.NAME)!
+        return groupDirectory
     }()
     
     // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
@@ -148,7 +222,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Create the coordinator and store
     lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
         var coordinator: NSPersistentStoreCoordinator? = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.appendingPathComponent("Tasky.sqlite")
+        let url = self.secureAppGroupPersistentStoreURL.appendingPathComponent("Tasky.sqlite")
         
         var failureReason = "There was an error creating or loading the application's saved data."
         

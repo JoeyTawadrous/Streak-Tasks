@@ -190,7 +190,7 @@ class Constants {
 		
 		
 		// Purchases: Upgrade Strings
-		static let UPGRADE_SCREEN_TITLE = "Tasky Premium"
+		static let UPGRADE_SCREEN_TITLE = "Streak Tasks Premium"
 		static let UPGRADE_SCREEN_ONE_TITLE = "Unlock Everything"
 		static let UPGRADE_SCREEN_ONE_TEXT = "Gain access to all features, achievements, themes & unlockable content."
 		static let UPGRADE_SCREEN_TWO_TITLE = "Earn Achievements"

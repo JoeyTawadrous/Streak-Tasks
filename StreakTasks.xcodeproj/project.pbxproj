@@ -39,7 +39,7 @@
 		E3D170B721DB997900DDBB6D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D170B621DB997900DDBB6D /* NotificationCenter.framework */; };
 		E3D170BA21DB997900DDBB6D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D170B921DB997900DDBB6D /* TodayViewController.swift */; };
 		E3D170BD21DB997900DDBB6D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D170BB21DB997900DDBB6D /* MainInterface.storyboard */; };
-		E3D170C121DB997900DDBB6D /* TaskyWidgets.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E3D170B521DB997900DDBB6D /* TaskyWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E3D170C121DB997900DDBB6D /* StreakTasksWidgets.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E3D170B521DB997900DDBB6D /* StreakTasksWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E3D170C821DBA32700DDBB6D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521706D01BAD779E007BCE73 /* Constants.swift */; };
 		E3D170CA21DBC95100DDBB6D /* Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 527EBF77206D6DDA00F17038 /* Tasky.xcdatamodeld */; };
 		E3D170CB21DBCE6F00DDBB6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53321AAA4E8A002A51C1 /* Images.xcassets */; };
@@ -62,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E3D170C121DB997900DDBB6D /* TaskyWidgets.appex in Embed App Extensions */,
+				E3D170C121DB997900DDBB6D /* StreakTasksWidgets.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,7 +94,7 @@
 		52C7033A2143F7F500AC839F /* Dialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialogs.swift; sourceTree = "<group>"; };
 		52C7034121441D1E00AC839F /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
 		52C980ED1D315E9800F7E1B0 /* Themes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
-		52CC53231AAA4E8A002A51C1 /* Tasky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CC53231AAA4E8A002A51C1 /* StreakTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreakTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC53271AAA4E8A002A51C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CC532D1AAA4E8A002A51C1 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		795ECED415D047BE942023CC /* Pods-Tasky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tasky/Pods-Tasky.debug.xcconfig"; sourceTree = "<group>"; };
 		D4700C8528F6B1217A2ACFAD /* Pods-Tasky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tasky/Pods-Tasky.release.xcconfig"; sourceTree = "<group>"; };
 		D71A8BDE7950392C12DA6D4F /* Pods_Tasky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3D170B521DB997900DDBB6D /* TaskyWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TaskyWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D170B521DB997900DDBB6D /* StreakTasksWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StreakTasksWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D170B621DB997900DDBB6D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		E3D170B921DB997900DDBB6D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		E3D170BC21DB997900DDBB6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -192,8 +192,8 @@
 		52CC53241AAA4E8A002A51C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52CC53231AAA4E8A002A51C1 /* Tasky.app */,
-				E3D170B521DB997900DDBB6D /* TaskyWidgets.appex */,
+				52CC53231AAA4E8A002A51C1 /* StreakTasks.app */,
+				E3D170B521DB997900DDBB6D /* StreakTasksWidgets.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,9 +264,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		52CC53221AAA4E8A002A51C1 /* Tasky */ = {
+		52CC53221AAA4E8A002A51C1 /* StreakTasks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52CC53451AAA4E8A002A51C1 /* Build configuration list for PBXNativeTarget "Tasky" */;
+			buildConfigurationList = 52CC53451AAA4E8A002A51C1 /* Build configuration list for PBXNativeTarget "StreakTasks" */;
 			buildPhases = (
 				8FFB5322774703836E1B3832 /* [CP] Check Pods Manifest.lock */,
 				52CC531F1AAA4E8A002A51C1 /* Sources */,
@@ -280,14 +280,14 @@
 			dependencies = (
 				E3D170C021DB997900DDBB6D /* PBXTargetDependency */,
 			);
-			name = Tasky;
+			name = StreakTasks;
 			productName = InTouch;
-			productReference = 52CC53231AAA4E8A002A51C1 /* Tasky.app */;
+			productReference = 52CC53231AAA4E8A002A51C1 /* StreakTasks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E3D170B421DB997900DDBB6D /* TaskyWidgets */ = {
+		E3D170B421DB997900DDBB6D /* StreakTasksWidgets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3D170C221DB997900DDBB6D /* Build configuration list for PBXNativeTarget "TaskyWidgets" */;
+			buildConfigurationList = E3D170C221DB997900DDBB6D /* Build configuration list for PBXNativeTarget "StreakTasksWidgets" */;
 			buildPhases = (
 				E3D170B121DB997900DDBB6D /* Sources */,
 				E3D170B221DB997900DDBB6D /* Frameworks */,
@@ -297,9 +297,9 @@
 			);
 			dependencies = (
 			);
-			name = TaskyWidgets;
+			name = StreakTasksWidgets;
 			productName = TaskyWidgets;
-			productReference = E3D170B521DB997900DDBB6D /* TaskyWidgets.appex */;
+			productReference = E3D170B521DB997900DDBB6D /* StreakTasksWidgets.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +339,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 52CC531E1AAA4E8A002A51C1 /* Build configuration list for PBXProject "Tasky" */;
+			buildConfigurationList = 52CC531E1AAA4E8A002A51C1 /* Build configuration list for PBXProject "StreakTasks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -352,8 +352,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				52CC53221AAA4E8A002A51C1 /* Tasky */,
-				E3D170B421DB997900DDBB6D /* TaskyWidgets */,
+				52CC53221AAA4E8A002A51C1 /* StreakTasks */,
+				E3D170B421DB997900DDBB6D /* StreakTasksWidgets */,
 			);
 		};
 /* End PBXProject section */
@@ -476,7 +476,7 @@
 /* Begin PBXTargetDependency section */
 		E3D170C021DB997900DDBB6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E3D170B421DB997900DDBB6D /* TaskyWidgets */;
+			target = E3D170B421DB997900DDBB6D /* StreakTasksWidgets */;
 			targetProxy = E3D170BF21DB997900DDBB6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -658,7 +658,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.tasky;
-				PRODUCT_NAME = Tasky;
+				PRODUCT_NAME = StreakTasks;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -709,7 +709,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.tasky;
-				PRODUCT_NAME = Tasky;
+				PRODUCT_NAME = StreakTasks;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -805,7 +805,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52CC531E1AAA4E8A002A51C1 /* Build configuration list for PBXProject "Tasky" */ = {
+		52CC531E1AAA4E8A002A51C1 /* Build configuration list for PBXProject "StreakTasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52CC53431AAA4E8A002A51C1 /* Debug */,
@@ -814,7 +814,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52CC53451AAA4E8A002A51C1 /* Build configuration list for PBXNativeTarget "Tasky" */ = {
+		52CC53451AAA4E8A002A51C1 /* Build configuration list for PBXNativeTarget "StreakTasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52CC53461AAA4E8A002A51C1 /* Debug */,
@@ -823,7 +823,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3D170C221DB997900DDBB6D /* Build configuration list for PBXNativeTarget "TaskyWidgets" */ = {
+		E3D170C221DB997900DDBB6D /* Build configuration list for PBXNativeTarget "StreakTasksWidgets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3D170C321DB997900DDBB6D /* Debug */,

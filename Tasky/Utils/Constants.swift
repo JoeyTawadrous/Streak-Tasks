@@ -50,7 +50,7 @@ class Constants {
 	
 	struct Core {
 		static let APP_ID = "1195440882"
-		static let APP_NAME = "Tasky"
+		static let APP_NAME = "Streak Tasks"
 	}
 	
 	
@@ -168,7 +168,7 @@ class Constants {
 		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Core.APP_ID + "?action=write-review"
 		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
 		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
-		static let LINK_IOS_STORE = "https://itunes.apple.com/gb/app/tasky-your-to-do-list-tracker/id1195440882?mt=8"
+		static let LINK_IOS_STORE = "https://itunes.apple.com/us/app/streak-tasks-habit-tracker/id1195440882?mt=8"
 		static let LINK_PRIVACY_AND_TERMS = "https://www.getLearnable.com/privacy.php"
 		static let LINK_LEARNABLE_IOS_STORE = "https://itunes.apple.com/gb/app/learnable-learn-to-code-from-scratch-level-up/id1254862243?mt=8"
 		static let LINK_TWITTER = "https://twitter.com/getlearnable"
@@ -207,12 +207,12 @@ class Constants {
 		
 		// Send Feedback
 		static let EMAIL = "joeytawadrous@gmail.com"
-		static let SEND_FEEDBACK_SUBJECT = "Tasky Feedback!"
-		static let SEND_FEEDBACK_BODY = "I want to make Tasky better. Here are my ideas... \n\n What I like about Tasky: \n 1. \n 2. \n 3. \n\n What I don't like about Tasky: \n 1. \n 2. \n 3. \n\n"
+		static let SEND_FEEDBACK_SUBJECT = "Streak Tasks Feedback!"
+		static let SEND_FEEDBACK_BODY = "I want to make Streak Tasks better. Here are my ideas... \n\n What I like about Streak Tasks: \n 1. \n 2. \n 3. \n\n What I don't like about Streak Tasks: \n 1. \n 2. \n 3. \n\n"
 		
 		
 		// Share
-		static let SHARE = "Check out " + Constants.Core.APP_NAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! #Tasky #iOS \n\nDownload for free now: " + Constants.Strings.LINK_IOS_STORE
+		static let SHARE = "Check out " + Constants.Core.APP_NAME + " on the App Store, where you can easily create goals and tasks to achieve those goals! #Streak Tasks #iOS \n\nDownload for free now: " + Constants.Strings.LINK_IOS_STORE
 	}
 	
 	

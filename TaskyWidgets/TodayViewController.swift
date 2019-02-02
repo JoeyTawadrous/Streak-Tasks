@@ -1,11 +1,3 @@
-//
-//  TodayViewController.swift
-//  TaskyWidgets
-//
-//  Created by Kaushik Gadhiya on 01/01/19.
-//  Copyright © 2019 Joey Tawadrous. All rights reserved.
-//
-
 import UIKit
 import NotificationCenter
 import CoreData

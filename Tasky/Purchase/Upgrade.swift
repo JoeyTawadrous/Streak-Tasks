@@ -19,7 +19,7 @@ class Upgrade: UIViewController {
 		createMonthlySubcriptionButton()
 		createYearlySubcriptionButton()
 		createUnlockButton()
-		createTermsLabel()
+		createTermsTextView()
 	}
 	
 	override var prefersStatusBarHidden: Bool {
@@ -81,14 +81,28 @@ class Upgrade: UIViewController {
 		self.view.addSubview(label)
 	}
 	
-	func createTermsLabel() {
-		let label: UILabel = UILabel(frame: CGRect(x: (self.view.frame.size.width - 350)/2, y: view.center.y + CGFloat(170), width: 350, height: 120))
-		label.text = Constants.Strings.UPGRADE_SCREENS_INFO
-		label.font = UIFont.systemFont(ofSize: 10.0)
-		label.textColor = UIColor.white
-		label.textAlignment = .center
-		label.numberOfLines = 6
-		self.view.addSubview(label)
+	func createTermsTextView() {
+		var textView = UITextView(frame: CGRect(x: (self.view.frame.size.width - 350)/2, y: view.center.y + CGFloat(200), width: 350.0, height: 60))
+		
+		let modelName = UIDevice.modelName
+		if modelName.range(of: "iPad") != nil {
+			textView = UITextView(frame: CGRect(x: (self.view.frame.size.width - 350)/2, y: view.center.y + CGFloat(200), width: 350.0, height: 300))
+			let button = UIButton(frame: CGRect(x: (self.view.frame.size.width - 350)/2, y: view.center.y + CGFloat(200), width: 350.0, height: 300))
+			button.addTarget(self, action: #selector(termsTextViewPressed), for: .touchUpInside)
+			self.view.addSubview(button)
+		}
+		
+		let attributedString = NSMutableAttributedString(string: Constants.Strings.UPGRADE_SCREENS_INFO)
+		attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0, length: Constants.Strings.UPGRADE_SCREENS_INFO.count - 10))
+		attributedString.setAsLink(textToFind: Constants.Strings.LINK_PRIVACY_AND_TERMS, linkURL: Constants.Strings.LINK_PRIVACY_AND_TERMS)
+
+		textView.textAlignment = NSTextAlignment.center
+		textView.isEditable = false
+		textView.attributedText = attributedString
+		textView.textAlignment = .center
+		textView.backgroundColor = nil
+		textView.font = UIFont.systemFont(ofSize: 14.0)
+		self.view.addSubview(textView)
 	}
 	
 	
@@ -97,6 +111,10 @@ class Upgrade: UIViewController {
 	/////////////////////////////////////////// */
 	@objc func closeButtonPressed() {
 		Utils.presentView(self, viewName: Constants.Views.SETTINGS_NAV_CONTROLLER)
+	}
+	
+	@objc func termsTextViewPressed() {
+		Utils.openURL(url: Constants.Strings.LINK_PRIVACY_AND_TERMS)
 	}
 	
 	@objc func subscribeMonthlyButtonPressed() {

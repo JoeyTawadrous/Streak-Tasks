@@ -169,7 +169,8 @@ class Constants {
 		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
 		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
 		static let LINK_IOS_STORE = "https://itunes.apple.com/us/app/streak-tasks-habit-tracker/id1195440882?mt=8"
-		static let LINK_PRIVACY_AND_TERMS = "https://www.getLearnable.com/privacy.php"
+		static let LINK_PRIVACY = "https://www.getLearnable.com/privacy.php"
+		static let LINK_TERMS = "https://www.getLearnable.com/terms.php"
 		static let LINK_LEARNABLE_IOS_STORE = "https://itunes.apple.com/gb/app/learnable-learn-to-code-from-scratch-level-up/id1254862243?mt=8"
 		static let LINK_TWITTER = "https://twitter.com/getlearnable"
 		static let LINK_TWITTER_JOEY = "https://twitter.com/joeytawadrous"
@@ -202,7 +203,7 @@ class Constants {
 		static let UPGRADE_SCREENS_MONTHLY_SUBSCRIBE_BUTTON_TITLE = "$1.99 \nmonth"
 		static let UPGRADE_SCREENS_YEARLY_SUBSCRIBE_BUTTON_TITLE = "$4.99 \nyear"
 		static let UPGRADE_SCREENS_UNLOCK_BUTTON_TITLE = "$6.99 \nonce"
-		static let UPGRADE_SCREENS_INFO = "You'll be charged $1.99/$4.99 month at confirmation of purchase. Your subscription will renew after 1 month unless turned off 24-hours before the end of the subscription period. You can manage this in your App Store settings. For details, see " + Constants.Strings.LINK_PRIVACY_AND_TERMS
+		static let UPGRADE_SCREENS_INFO = "You'll be charged $1.99/$4.99 month at confirmation of purchase. Your subscription will renew after 1 month unless turned off 24-hours before the end of the subscription period. You can manage this in your App Store settings. For details, see " + Constants.Strings.LINK_PRIVACY + " & " + Constants.Strings.LINK_TERMS
 	
 		
 		// Send Feedback

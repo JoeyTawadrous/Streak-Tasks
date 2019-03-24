@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0409333821DE87D000758D06 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0409333721DE87D000758D06 /* StoreKit.framework */; };
-		0BC88EE301AD98E05FD77E18 /* Pods_Tasky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71A8BDE7950392C12DA6D4F /* Pods_Tasky.framework */; };
+		0888B7F6B586457AA5013E97 /* Pods_StreakTasksWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1067F09889C66D9B79F6639F /* Pods_StreakTasksWidgets.framework */; };
 		521706D11BAD779E007BCE73 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521706D01BAD779E007BCE73 /* Constants.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		522421FF1D32915A000ED4BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522421FE1D32915A000ED4BC /* QuartzCore.framework */; };
 		522422011D32915F000ED4BC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522422001D32915F000ED4BC /* MessageUI.framework */; };
@@ -36,6 +36,9 @@
 		52CC53291AAA4E8A002A51C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52CC53331AAA4E8A002A51C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53321AAA4E8A002A51C1 /* Images.xcassets */; };
 		52CC53361AAA4E8A002A51C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53341AAA4E8A002A51C1 /* LaunchScreen.xib */; };
+		6DCC49EA224010940034FCBF /* StreakTasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC49E9224010940034FCBF /* StreakTasksUITests.swift */; };
+		6DCC49F4224011AB0034FCBF /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC49F3224011AB0034FCBF /* SnapshotHelper.swift */; };
+		B9EA23C3DC0DDB92DD51DFE5 /* Pods_StreakTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B5B322A9CC0D3356AC212 /* Pods_StreakTasks.framework */; };
 		E3D170B721DB997900DDBB6D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D170B621DB997900DDBB6D /* NotificationCenter.framework */; };
 		E3D170BA21DB997900DDBB6D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D170B921DB997900DDBB6D /* TodayViewController.swift */; };
 		E3D170BD21DB997900DDBB6D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D170BB21DB997900DDBB6D /* MainInterface.storyboard */; };
@@ -46,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6DCC49EC224010940034FCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CC531B1AAA4E8A002A51C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CC53221AAA4E8A002A51C1;
+			remoteInfo = StreakTasks;
+		};
 		E3D170BF21DB997900DDBB6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52CC531B1AAA4E8A002A51C1 /* Project object */;
@@ -71,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		0409333721DE87D000758D06 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1067F09889C66D9B79F6639F /* Pods_StreakTasksWidgets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreakTasksWidgets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2748561BA87601A573D46FE2 /* Pods-StreakTasksWidgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreakTasksWidgets.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreakTasksWidgets/Pods-StreakTasksWidgets.release.xcconfig"; sourceTree = "<group>"; };
 		521706D01BAD779E007BCE73 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		522421FE1D32915A000ED4BC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		522422001D32915F000ED4BC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -100,9 +112,14 @@
 		52CC532D1AAA4E8A002A51C1 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		52CC53321AAA4E8A002A51C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		52CC53351AAA4E8A002A51C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		795ECED415D047BE942023CC /* Pods-Tasky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tasky/Pods-Tasky.debug.xcconfig"; sourceTree = "<group>"; };
-		D4700C8528F6B1217A2ACFAD /* Pods-Tasky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tasky/Pods-Tasky.release.xcconfig"; sourceTree = "<group>"; };
-		D71A8BDE7950392C12DA6D4F /* Pods_Tasky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB43110D8F868BA5F124D4B /* Pods-StreakTasksWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreakTasksWidgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreakTasksWidgets/Pods-StreakTasksWidgets.debug.xcconfig"; sourceTree = "<group>"; };
+		67EF2CA912152745B1452B9F /* Pods-StreakTasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreakTasks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreakTasks/Pods-StreakTasks.debug.xcconfig"; sourceTree = "<group>"; };
+		6A0B5B322A9CC0D3356AC212 /* Pods_StreakTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreakTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCC49E7224010940034FCBF /* StreakTasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreakTasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCC49E9224010940034FCBF /* StreakTasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakTasksUITests.swift; sourceTree = "<group>"; };
+		6DCC49EB224010940034FCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DCC49F3224011AB0034FCBF /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		E1B04B76106EBF5CE3DE0C15 /* Pods-StreakTasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreakTasks.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreakTasks/Pods-StreakTasks.release.xcconfig"; sourceTree = "<group>"; };
 		E3D170B521DB997900DDBB6D /* StreakTasksWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StreakTasksWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D170B621DB997900DDBB6D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		E3D170B921DB997900DDBB6D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -119,8 +136,15 @@
 			files = (
 				522422011D32915F000ED4BC /* MessageUI.framework in Frameworks */,
 				522421FF1D32915A000ED4BC /* QuartzCore.framework in Frameworks */,
-				0BC88EE301AD98E05FD77E18 /* Pods_Tasky.framework in Frameworks */,
 				0409333821DE87D000758D06 /* StoreKit.framework in Frameworks */,
+				B9EA23C3DC0DDB92DD51DFE5 /* Pods_StreakTasks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCC49E4224010940034FCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,12 +153,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D170B721DB997900DDBB6D /* NotificationCenter.framework in Frameworks */,
+				0888B7F6B586457AA5013E97 /* Pods_StreakTasksWidgets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4A32F6E0712D53FC7888CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67EF2CA912152745B1452B9F /* Pods-StreakTasks.debug.xcconfig */,
+				E1B04B76106EBF5CE3DE0C15 /* Pods-StreakTasks.release.xcconfig */,
+				5EB43110D8F868BA5F124D4B /* Pods-StreakTasksWidgets.debug.xcconfig */,
+				2748561BA87601A573D46FE2 /* Pods-StreakTasksWidgets.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		52579C88218E381000C1DEA1 /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,9 +219,10 @@
 			children = (
 				52CC53251AAA4E8A002A51C1 /* Tasky */,
 				E3D170B821DB997900DDBB6D /* TaskyWidgets */,
+				6DCC49E8224010940034FCBF /* StreakTasksUITests */,
 				A56D755768525FE3A608B124 /* Frameworks */,
-				688162C05E42C87235AA5BCC /* Pods */,
 				52CC53241AAA4E8A002A51C1 /* Products */,
+				1C4A32F6E0712D53FC7888CA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +231,7 @@
 			children = (
 				52CC53231AAA4E8A002A51C1 /* StreakTasks.app */,
 				E3D170B521DB997900DDBB6D /* StreakTasksWidgets.appex */,
+				6DCC49E7224010940034FCBF /* StreakTasksUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,13 +267,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		688162C05E42C87235AA5BCC /* Pods */ = {
+		6DCC49E8224010940034FCBF /* StreakTasksUITests */ = {
 			isa = PBXGroup;
 			children = (
-				795ECED415D047BE942023CC /* Pods-Tasky.debug.xcconfig */,
-				D4700C8528F6B1217A2ACFAD /* Pods-Tasky.release.xcconfig */,
+				6DCC49E9224010940034FCBF /* StreakTasksUITests.swift */,
+				6DCC49EB224010940034FCBF /* Info.plist */,
+				6DCC49F3224011AB0034FCBF /* SnapshotHelper.swift */,
 			);
-			name = Pods;
+			path = StreakTasksUITests;
 			sourceTree = "<group>";
 		};
 		A56D755768525FE3A608B124 /* Frameworks */ = {
@@ -244,8 +283,9 @@
 				0409333721DE87D000758D06 /* StoreKit.framework */,
 				522422001D32915F000ED4BC /* MessageUI.framework */,
 				522421FE1D32915A000ED4BC /* QuartzCore.framework */,
-				D71A8BDE7950392C12DA6D4F /* Pods_Tasky.framework */,
 				E3D170B621DB997900DDBB6D /* NotificationCenter.framework */,
+				6A0B5B322A9CC0D3356AC212 /* Pods_StreakTasks.framework */,
+				1067F09889C66D9B79F6639F /* Pods_StreakTasksWidgets.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,12 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52CC53451AAA4E8A002A51C1 /* Build configuration list for PBXNativeTarget "StreakTasks" */;
 			buildPhases = (
-				8FFB5322774703836E1B3832 /* [CP] Check Pods Manifest.lock */,
+				6C62E72FB45D62AEE986EA86 /* [CP] Check Pods Manifest.lock */,
 				52CC531F1AAA4E8A002A51C1 /* Sources */,
 				52CC53201AAA4E8A002A51C1 /* Frameworks */,
 				52CC53211AAA4E8A002A51C1 /* Resources */,
-				C7BC58C9357ED37CCCAD6302 /* [CP] Embed Pods Frameworks */,
 				E3D170C521DB997900DDBB6D /* Embed App Extensions */,
+				CE5868281A35603BEB1974BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,10 +325,29 @@
 			productReference = 52CC53231AAA4E8A002A51C1 /* StreakTasks.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6DCC49E6224010940034FCBF /* StreakTasksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DCC49F0224010940034FCBF /* Build configuration list for PBXNativeTarget "StreakTasksUITests" */;
+			buildPhases = (
+				6DCC49E3224010940034FCBF /* Sources */,
+				6DCC49E4224010940034FCBF /* Frameworks */,
+				6DCC49E5224010940034FCBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DCC49ED224010940034FCBF /* PBXTargetDependency */,
+			);
+			name = StreakTasksUITests;
+			productName = StreakTasksUITests;
+			productReference = 6DCC49E7224010940034FCBF /* StreakTasksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E3D170B421DB997900DDBB6D /* StreakTasksWidgets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3D170C221DB997900DDBB6D /* Build configuration list for PBXNativeTarget "StreakTasksWidgets" */;
 			buildPhases = (
+				B96E7F5528D49FF1DE669DA0 /* [CP] Check Pods Manifest.lock */,
 				E3D170B121DB997900DDBB6D /* Sources */,
 				E3D170B221DB997900DDBB6D /* Frameworks */,
 				E3D170B321DB997900DDBB6D /* Resources */,
@@ -327,6 +386,11 @@
 							};
 						};
 					};
+					6DCC49E6224010940034FCBF = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52CC53221AAA4E8A002A51C1;
+					};
 					E3D170B421DB997900DDBB6D = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = P5Z7RL76WF;
@@ -354,6 +418,7 @@
 			targets = (
 				52CC53221AAA4E8A002A51C1 /* StreakTasks */,
 				E3D170B421DB997900DDBB6D /* StreakTasksWidgets */,
+				6DCC49E6224010940034FCBF /* StreakTasksUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -373,6 +438,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DCC49E5224010940034FCBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3D170B321DB997900DDBB6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,31 +457,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8FFB5322774703836E1B3832 /* [CP] Check Pods Manifest.lock */ = {
+		6C62E72FB45D62AEE986EA86 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Tasky-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StreakTasks-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C7BC58C9357ED37CCCAD6302 /* [CP] Embed Pods Frameworks */ = {
+		B96E7F5528D49FF1DE669DA0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Tasky/Pods-Tasky-frameworks.sh",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StreakTasksWidgets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE5868281A35603BEB1974BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StreakTasks/Pods-StreakTasks-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/KYCircularProgress/KYCircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
@@ -419,6 +519,8 @@
 				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYCircularProgress.framework",
@@ -430,7 +532,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tasky/Pods-Tasky-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreakTasks/Pods-StreakTasks-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -461,6 +563,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DCC49E3224010940034FCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCC49EA224010940034FCBF /* StreakTasksUITests.swift in Sources */,
+				6DCC49F4224011AB0034FCBF /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3D170B121DB997900DDBB6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +585,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6DCC49ED224010940034FCBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CC53221AAA4E8A002A51C1 /* StreakTasks */;
+			targetProxy = 6DCC49EC224010940034FCBF /* PBXContainerItemProxy */;
+		};
 		E3D170C021DB997900DDBB6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E3D170B421DB997900DDBB6D /* StreakTasksWidgets */;
@@ -514,6 +630,7 @@
 		52CC53431AAA4E8A002A51C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -564,6 +681,7 @@
 				PRODUCT_NAME = Tasky;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
@@ -571,6 +689,7 @@
 		52CC53441AAA4E8A002A51C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -613,6 +732,7 @@
 				PRODUCT_NAME = Tasky;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
 				USER_HEADER_SEARCH_PATHS = "Pods/**";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -620,9 +740,9 @@
 		};
 		52CC53461AAA4E8A002A51C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 795ECED415D047BE942023CC /* Pods-Tasky.debug.xcconfig */;
+			baseConfigurationReference = 67EF2CA912152745B1452B9F /* Pods-StreakTasks.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_WARNINGS = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -656,14 +776,14 @@
 				INFOPLIST_FILE = Tasky/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.tasky;
 				PRODUCT_NAME = StreakTasks;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
@@ -671,9 +791,9 @@
 		};
 		52CC53471AAA4E8A002A51C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4700C8528F6B1217A2ACFAD /* Pods-Tasky.release.xcconfig */;
+			baseConfigurationReference = E1B04B76106EBF5CE3DE0C15 /* Pods-StreakTasks.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_WARNINGS = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -707,21 +827,78 @@
 				INFOPLIST_FILE = Tasky/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.tasky;
 				PRODUCT_NAME = StreakTasks;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
-		E3D170C321DB997900DDBB6D /* Debug */ = {
+		6DCC49EE224010940034FCBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StreakTasksUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faust.StreakTasksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StreakTasks;
+			};
+			name = Debug;
+		};
+		6DCC49EF224010940034FCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StreakTasksUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faust.StreakTasksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StreakTasks;
+			};
+			name = Release;
+		};
+		E3D170C321DB997900DDBB6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB43110D8F868BA5F124D4B /* Pods-StreakTasksWidgets.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -756,14 +933,16 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		E3D170C421DB997900DDBB6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2748561BA87601A573D46FE2 /* Pods-StreakTasksWidgets.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -797,7 +976,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -819,6 +998,15 @@
 			buildConfigurations = (
 				52CC53461AAA4E8A002A51C1 /* Debug */,
 				52CC53471AAA4E8A002A51C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DCC49F0224010940034FCBF /* Build configuration list for PBXNativeTarget "StreakTasksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCC49EE224010940034FCBF /* Debug */,
+				6DCC49EF224010940034FCBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

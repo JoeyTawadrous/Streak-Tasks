@@ -26,10 +26,10 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		// Styling
 		Utils.insertGradientIntoView(viewController: self)
 		Utils.createFontAwesomeBarButton(button: addButton, icon: .plus, style: .solid)
-		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
 		
 		// Observer for every notification received
-		NotificationCenter.default.addObserver(self, selector: #selector(Tasks.backgoundNofification(_:)), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(Tasks.backgoundNofification(_:)), name: UIApplication.willEnterForegroundNotification, object: nil);
     }
 	
 	@objc func backgoundNofification(_ noftification:Notification){
@@ -113,7 +113,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: TasksTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "cell") as? TasksTableViewCell
         if cell == nil {
-            cell = TasksTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
+            cell = TasksTableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "cell")
         }
 		let tasks = self.tasks[indexPath.row]
 		let type = tasks.value(forKey: Constants.CoreData.TYPE) as! String?
@@ -123,7 +123,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		
         cell.reasonLabel!.text = tasks.value(forKey: Constants.CoreData.REASON) as! String?
 		cell.thumbnailImageView!.image = UIImage(named: type!)
-        cell.thumbnailImageView!.image = cell.thumbnailImageView!.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        cell.thumbnailImageView!.image = cell.thumbnailImageView!.image!.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         cell.thumbnailImageView!.tintColor = UIColor.white
 		
         cell.updateConstraints()
@@ -178,7 +178,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
 			
 			let emptyImageView = UIImageView(frame: CGRect(x:0, y:0, width:150, height:150))
 			emptyImageView.center = CGPoint(x:self.view.frame.width / 2, y: self.view.bounds.size.height * 0.30)
-			let emptyImage = Utils.imageResize(UIImage(named: "Fitness")!, sizeChange: CGSize(width: 150, height: 150)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            let emptyImage = Utils.imageResize(UIImage(named: "Fitness")!, sizeChange: CGSize(width: 150, height: 150)).withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
 			emptyImageView.image = emptyImage
 			emptyImageView.tintColor = UIColor.white
 			emptyView.addSubview(emptyImageView)

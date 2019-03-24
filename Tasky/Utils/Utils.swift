@@ -19,7 +19,7 @@ class Utils {
 			return Constants.Purchases.Colors[Utils.string(key: Constants.Defaults.CURRENT_THEME)]!
 		}
 		else {
-			return Constants.Purchases.Colors[Constants.Purchases.MALIBU_THEME]!
+			return Constants.Purchases.Colors[Constants.Purchases.WHITE_THEME]!
 		}
 	}
 	
@@ -227,14 +227,14 @@ class Utils {
 		
 		// Anything you want to exclude
 		activityViewController.excludedActivityTypes = [
-			UIActivityType.postToWeibo,
-			UIActivityType.print,
-			UIActivityType.assignToContact,
-			UIActivityType.saveToCameraRoll,
-			UIActivityType.addToReadingList,
-			UIActivityType.postToFlickr,
-			UIActivityType.postToVimeo,
-			UIActivityType.postToTencentWeibo
+            UIActivity.ActivityType.postToWeibo,
+            UIActivity.ActivityType.print,
+            UIActivity.ActivityType.assignToContact,
+            UIActivity.ActivityType.saveToCameraRoll,
+            UIActivity.ActivityType.addToReadingList,
+            UIActivity.ActivityType.postToFlickr,
+            UIActivity.ActivityType.postToVimeo,
+            UIActivity.ActivityType.postToTencentWeibo
 		]
 		
 		viewController.present(activityViewController, animated: true, completion: nil)
@@ -313,7 +313,7 @@ class Utils {
 	class func createProgressView(progressView: KYCircularProgress, color: String, guideColor: String) -> KYCircularProgress {
 		progressView.colors = [UIColor(hex: color)]
 		progressView.guideColor = UIColor(hex: guideColor)
-		progressView.lineCap = kCALineCapRound
+        progressView.lineCap = CAShapeLayerLineCap.round.rawValue
 		progressView.guideLineWidth = 6.0
 		return progressView
 	}
@@ -337,7 +337,7 @@ class Utils {
 	}
 	
 	class func createFontAwesomeBarButton(button: UIBarButtonItem, icon: FontAwesome, style: FontAwesomeStyle) {
-		var attributes = [NSAttributedStringKey : Any]()
+        var attributes = [NSAttributedString.Key : Any]()
 		attributes = [.font: UIFont.fontAwesome(ofSize: 21, style: style)]
 		button.setTitleTextAttributes(attributes, for: .normal)
 		button.setTitleTextAttributes(attributes, for: .selected)

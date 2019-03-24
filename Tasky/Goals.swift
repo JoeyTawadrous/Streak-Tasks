@@ -39,7 +39,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		Utils.createFontAwesomeBarButton(button: addButton, icon: .plus, style: .solid)
 		Utils.createFontAwesomeBarButton(button: achievementsButton, icon: .gem, style: .solid)
 		Utils.createFontAwesomeBarButton(button: menuButton, icon: .bars, style: .solid)
-		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
 	
 	override var prefersStatusBarHidden: Bool {
@@ -107,7 +107,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: GoalTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "cell") as? GoalTableViewCell
         if cell == nil {
-            cell = GoalTableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "cell")
+            cell = GoalTableViewCell(style: UITableViewCell.CellStyle.value1, reuseIdentifier: "cell")
         }
         let goal = goals[indexPath.row]
 		
@@ -122,7 +122,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         let thumbnail = goal.value(forKey: Constants.CoreData.THUMBNAIL) as! String?
         cell.thumbnailImageView!.image = UIImage(named: thumbnail!)
-        cell.thumbnailImageView!.image = cell.thumbnailImageView!.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        cell.thumbnailImageView!.image = cell.thumbnailImageView!.image!.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         cell.thumbnailImageView!.tintColor = UIColor.white
 		
         cell.updateConstraints()
@@ -131,8 +131,8 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if(editingStyle == UITableViewCellEditingStyle.delete) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if(editingStyle == UITableViewCell.EditingStyle.delete) {
             
             // Delete tasks associated with this goal
             let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
@@ -195,7 +195,7 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 			
 			let emptyImageView = UIImageView(frame: CGRect(x:0, y:0, width:150, height:150))
 			emptyImageView.center = CGPoint(x:self.view.frame.width / 2, y: self.view.bounds.size.height * 0.30)
-			let emptyImage = Utils.imageResize(UIImage(named: "Hobbies")!, sizeChange: CGSize(width: 150, height: 150)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            let emptyImage = Utils.imageResize(UIImage(named: "Hobbies")!, sizeChange: CGSize(width: 150, height: 150)).withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
 			emptyImageView.image = emptyImage
 			emptyImageView.tintColor = UIColor.white
 			emptyView.addSubview(emptyImageView)

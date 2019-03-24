@@ -1,0 +1,6 @@
+framework module Pods_StreakTasksWidgets {
+  umbrella header "Pods-StreakTasksWidgets-umbrella.h"
+
+  export *
+  module * { export * }
+}

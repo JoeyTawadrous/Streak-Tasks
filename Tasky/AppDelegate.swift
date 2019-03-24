@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	/* MARK: Init
 	/////////////////////////////////////////// */
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		
         // Migrate Core Data to App Group
         self.migratePersistentStore()
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UINavigationBar.appearance().backgroundColor = .clear
 		UINavigationBar.appearance().tintColor = UIColor.white
 		UINavigationBar.appearance().titleTextAttributes = [
-			NSAttributedStringKey.foregroundColor : UIColor.white
+            NSAttributedString.Key.foregroundColor : UIColor.white
 		]
 		window?.tintColor = UIColor.white
 		
@@ -57,21 +57,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		
 		// Migration from old themes
-		var currentTheme = Constants.Purchases.MALIBU_THEME
-		if Utils.contains(key: Constants.Defaults.CURRENT_THEME) {
-			currentTheme = Utils.string(key: Constants.Defaults.CURRENT_THEME)
-		}
+        var currentTheme = Constants.Purchases.WHITE_THEME
+        if Utils.contains(key: Constants.Defaults.CURRENT_THEME) {
+            currentTheme = Utils.string(key: Constants.Defaults.CURRENT_THEME)
+        }
+        
 		
-		if currentTheme != Constants.Purchases.FIRE_THEME &&
-		   currentTheme != Constants.Purchases.GRASSY_THEME &&
-		   currentTheme != Constants.Purchases.LIFE_THEME &&
-		   currentTheme != Constants.Purchases.MALIBU_THEME &&
-		   currentTheme != Constants.Purchases.NIGHTLIGHT_THEME &&
-		   currentTheme != Constants.Purchases.RIPE_THEME &&
-		   currentTheme != Constants.Purchases.SALVATION_THEME &&
-		   currentTheme != Constants.Purchases.SUNRISE_THEME {
-			Utils.set(key: Constants.Defaults.CURRENT_THEME, value: Constants.Purchases.MALIBU_THEME)
-		}
+        if currentTheme != Constants.Purchases.FIRE_THEME &&
+           currentTheme != Constants.Purchases.GRASSY_THEME &&
+           currentTheme != Constants.Purchases.LIFE_THEME &&
+           currentTheme != Constants.Purchases.MALIBU_THEME &&
+           currentTheme != Constants.Purchases.NIGHTLIGHT_THEME &&
+           currentTheme != Constants.Purchases.RIPE_THEME &&
+           currentTheme != Constants.Purchases.SALVATION_THEME &&
+           currentTheme != Constants.Purchases.SUNRISE_THEME &&
+            currentTheme != Constants.Purchases.MALIBU_THEME {
+            Utils.set(key: Constants.Defaults.CURRENT_THEME, value: Constants.Purchases.WHITE_THEME)
+        }
         
         return true
     }

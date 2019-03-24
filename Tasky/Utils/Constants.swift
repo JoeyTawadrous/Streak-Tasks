@@ -124,6 +124,7 @@ class Constants {
 		static let MALIBU_THEME = "malibu"
 		static let LIFE_THEME = "life"
 		static let FIRE_THEME = "fire"
+        static let WHITE_THEME = "moonlight"
 		
 		static let Colors: [String : [String]] = [
 			GRASSY_THEME: ["96e6a1", "d4fc79"],
@@ -133,7 +134,8 @@ class Constants {
 			RIPE_THEME: ["f093fb", "f5576c"],
 			MALIBU_THEME: ["4facfe", "00f2fe"],
 			LIFE_THEME: ["43e97b", "38f9d7"],
-			FIRE_THEME: ["fa709a", "fee140"]
+			FIRE_THEME: ["fa709a", "fee140"],
+            WHITE_THEME: ["444857", "444857"]
 		]
 	}
 	

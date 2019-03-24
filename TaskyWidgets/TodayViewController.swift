@@ -59,7 +59,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
         {
             var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "noCell")
             if cell == nil {
-                cell = GoalTableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "noCell")
+                cell = GoalTableViewCell(style: UITableViewCell.CellStyle.value1, reuseIdentifier: "noCell")
             }
             return cell
         }
@@ -67,7 +67,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
         {
             var cell: GoalTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "cell") as? GoalTableViewCell
             if cell == nil {
-                cell = GoalTableViewCell(style:UITableViewCellStyle.value1, reuseIdentifier: "cell")
+                cell = GoalTableViewCell(style:UITableViewCell.CellStyle.value1, reuseIdentifier: "cell")
             }
             let goal = goals[indexPath.row]
             

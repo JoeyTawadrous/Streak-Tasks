@@ -18,7 +18,7 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
         Utils.insertGradientIntoView(viewController: self)
 		Utils.createFontAwesomeBarButton(button: restoreButton, icon: .sync, style: .solid)
 		Utils.createFontAwesomeBarButton(button: backButton, icon: .arrowLeft, style: .solid)
-		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
     
     
@@ -64,7 +64,7 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		let themes = Constants.Purchases.Colors.keys
 		let theme = Array(themes)[indexPath.row]
 		
-		var currentTheme = Constants.Purchases.MALIBU_THEME
+		var currentTheme = Constants.Purchases.WHITE_THEME
 		if Utils.contains(key: Constants.Defaults.CURRENT_THEME) {
 			currentTheme = Utils.string(key: Constants.Defaults.CURRENT_THEME)
 		}
@@ -78,7 +78,7 @@ class Themes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 			Dialogs.showOkButtonDialog(view: self, message: Constants.Strings.PURCHASE_SUCCESS)
 		}
 		else {
-			if theme != Constants.Purchases.MALIBU_THEME {
+			if theme != Constants.Purchases.WHITE_THEME {
 				if Utils.contains(key: Constants.Defaults.PURCHASED_THEMES) {
 					let purchasedThemes = Utils.object(key: Constants.Defaults.PURCHASED_THEMES) as? [String]
 					if !(purchasedThemes?.contains(theme))! {

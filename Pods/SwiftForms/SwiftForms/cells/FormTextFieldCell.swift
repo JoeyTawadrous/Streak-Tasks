@@ -28,13 +28,9 @@ open class FormTextFieldCell: FormBaseCell {
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         textField.translatesAutoresizingMaskIntoConstraints = false
-		
-		// JOEY
-		titleLabel.textColor = UIColor.white
-		textField.textColor = UIColor.white
-		
-        titleLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
-        textField.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+        
+        titleLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
+        textField.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
         
         contentView.addSubview(titleLabel)
         contentView.addSubview(textField)

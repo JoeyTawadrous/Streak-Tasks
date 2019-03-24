@@ -25,18 +25,14 @@ open class FormValueCell: FormBaseCell {
         super.configure()
         
         accessoryType = .disclosureIndicator
-		selectionStyle = .none
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         valueLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        titleLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
-        valueLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
-		
-		// JOEY
-		titleLabel.textColor = UIColor.white
-		valueLabel.textColor = UIColor.white
+        titleLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
+        valueLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
         
+        valueLabel.textColor = UIColor.lightGray
         valueLabel.textAlignment = .right
         
         contentView.addSubview(titleLabel)

@@ -5,7 +5,7 @@ extension NSMutableAttributedString {
 	public func setAsLink(textToFind:String, linkURL:String) {
 		let foundRange = self.mutableString.range(of: textToFind)
 		if foundRange.location != NSNotFound {
-			self.addAttribute(NSAttributedStringKey.link, value: linkURL, range: foundRange)
+            self.addAttribute(NSAttributedString.Key.link, value: linkURL, range: foundRange)
 		}
 	}
 }

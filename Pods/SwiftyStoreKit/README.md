@@ -170,6 +170,7 @@ SwiftyStoreKit.purchaseProduct("com.musevisions.SwiftyStoreKit.Purchase1", quant
         case .cloudServicePermissionDenied: print("Access to cloud service information is not allowed")
         case .cloudServiceNetworkConnectionFailed: print("Could not connect to the network")
         case .cloudServiceRevoked: print("User has revoked permission to use this cloud service")
+        default: print((error as NSError).localizedDescription)
         }
     }
 }
@@ -197,6 +198,7 @@ SwiftyStoreKit.purchaseProduct("com.musevisions.SwiftyStoreKit.Purchase1", quant
         case .cloudServicePermissionDenied: print("Access to cloud service information is not allowed")
         case .cloudServiceNetworkConnectionFailed: print("Could not connect to the network")
         case .cloudServiceRevoked: print("User has revoked permission to use this cloud service")
+        default: print((error as NSError).localizedDescription)
         }
     }
 }
@@ -720,6 +722,7 @@ Many thanks to [phimage](https://github.com/phimage) for adding macOS support an
 
 It would be great to showcase apps using SwiftyStoreKit here. Pull requests welcome :)
 
+* [Countdown](https://countdowns.download/ssk) - Countdown the days until your next vacation, deadline, or event
 * [MDacne](https://itunes.apple.com/app/id1044050208) - Acne analysis and treatment
 * [Pixel Picker](https://itunes.apple.com/app/id930804327) - Image Color Picker
 * [KType](https://itunes.apple.com/app/id1037000234) - Space shooter game

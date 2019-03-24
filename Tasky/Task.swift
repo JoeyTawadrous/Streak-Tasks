@@ -36,7 +36,7 @@ class Task: UIViewController {
         // Goal thumbnail
         let thumbnailFile = goals[selectedGoalIndex].value(forKey: Constants.CoreData.THUMBNAIL) as! String?
         goalImageView!.image = UIImage(named: thumbnailFile!)
-        goalImageView!.image! = Utils.imageResize(goalImageView!.image!, sizeChange: CGSize(width: 45, height: 45)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        goalImageView!.image! = Utils.imageResize(goalImageView!.image!, sizeChange: CGSize(width: 45, height: 45)).withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         goalImageView!.tintColor = UIColor.white
 		
         // Date label
@@ -56,7 +56,7 @@ class Task: UIViewController {
 		
         // Type thumbnail
 		taskImageView!.image = UIImage(named: type!)
-        taskImageView!.image! = Utils.imageResize(taskImageView!.image!, sizeChange: CGSize(width: 40, height: 40)).withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        taskImageView!.image! = Utils.imageResize(taskImageView!.image!, sizeChange: CGSize(width: 40, height: 40)).withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         taskImageView!.tintColor = UIColor.white
 		
         // Title bar button
@@ -64,7 +64,32 @@ class Task: UIViewController {
 		
         // Complete button
         markDoneButton!.layer.cornerRadius = 3
-        markDoneButton!.setTitleColor(Utils.getMainColor(), for: UIControlState())
+        markDoneButton!.setTitleColor(Utils.getMainColor(), for: UIControl.State())
+        self.styleBorders()
+    }
+    
+    func styleBorders() {
+        
+        self.reasonLabel?.layer.borderColor = UIColor.white.cgColor
+        self.reasonLabel?.layer.borderWidth = 3
+        
+        self.goalImageView?.layer.borderColor = UIColor.white.cgColor
+        self.goalImageView?.layer.borderWidth = 3
+        
+        self.dateLabel?.layer.borderColor = UIColor.white.cgColor
+        self.dateLabel?.layer.borderWidth = 3
+        
+        self.timeLabel?.layer.borderColor = UIColor.white.cgColor
+        self.timeLabel?.layer.borderWidth = 3
+        
+        self.typeLabel?.layer.borderColor = UIColor.white.cgColor
+        self.typeLabel?.layer.borderWidth = 3
+        
+        self.taskImageView?.layer.borderColor = UIColor.white.cgColor
+        self.taskImageView?.layer.borderWidth = 3
+        
+        self.markDoneButton?.layer.borderColor = UIColor.white.cgColor
+        self.markDoneButton?.layer.borderWidth = 3
     }
 	
 	override var prefersStatusBarHidden: Bool {
@@ -81,6 +106,7 @@ class Task: UIViewController {
         let selectedGoal = Utils.string(key: Constants.LocalData.SELECTED_GOAL)
         let selectedTaskIndex = Utils.int(key: Constants.LocalData.SELECTED_TASK_INDEX)
         var tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
+        tasks = tasks.reversed()
         let task = tasks[selectedTaskIndex] as! NSManagedObject
         Tasks.deleteTask(task)
 		

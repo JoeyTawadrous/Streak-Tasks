@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/joeytawadrous/Google Drive/Projects/Apps/Tasky/src_ios/StreakTasks.xcodeproj">
+      location = "group:StreakTasks.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

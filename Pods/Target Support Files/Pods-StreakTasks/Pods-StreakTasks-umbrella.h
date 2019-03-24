@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TaskyVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TaskyVersionString[];
+FOUNDATION_EXPORT double Pods_StreakTasksVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_StreakTasksVersionString[];
 

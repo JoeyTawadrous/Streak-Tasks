@@ -93,7 +93,7 @@ class Upgrade: UIViewController {
 		}
 		
 		let attributedString = NSMutableAttributedString(string: Constants.Strings.UPGRADE_SCREENS_INFO)
-		attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSRange(location:0, length: Constants.Strings.UPGRADE_SCREENS_INFO.count - 10))
+        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.white, range: NSRange(location:0, length: Constants.Strings.UPGRADE_SCREENS_INFO.count - 10))
 		attributedString.setAsLink(textToFind: Constants.Strings.LINK_PRIVACY, linkURL: Constants.Strings.LINK_PRIVACY)
 		attributedString.setAsLink(textToFind: Constants.Strings.LINK_TERMS, linkURL: Constants.Strings.LINK_TERMS)
 

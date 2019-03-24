@@ -54,7 +54,7 @@ class AddTask: FormViewController {
 		Utils.insertGradientIntoTableView(viewController: self, tableView: self.tableView)
 		Utils.createFontAwesomeBarButton(button: cancelButton, icon: .times, style: .solid)
 		Utils.createFontAwesomeBarButton(button: checkButton, icon: .check, style: .solid)
-		tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
 		
         // Disable scroll
         tableView.alwaysBounceVertical = false;

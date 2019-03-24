@@ -25,17 +25,17 @@
         }
     },
     {
-        "filter": "Tasks",
-        "background": "assets/blue.jpeg",
-        "title": {
-            "text": "Add tasks to complete \nyour goals"
-        }
-    },
-    {
         "filter": "Task",
         "background": "assets/purple.jpeg",
         "title": {
             "text": "Receive reminders for \neach of your tasks"
+        }
+    },
+    {
+        "filter": "Tasks",
+        "background": "assets/blue.jpeg",
+        "title": {
+            "text": "Add tasks to complete \nyour goals"
         }
     }]
 }

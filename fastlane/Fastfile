@@ -15,7 +15,7 @@
 
 default_platform(:ios)
 
-build_app(workspace: "Tasky.xcworkspace", scheme: "Tasky")
+build_app(workspace: "StreakTasks.xcworkspace", scheme: "StreakTasks")
 
 deliver(
   submit_for_review: true,

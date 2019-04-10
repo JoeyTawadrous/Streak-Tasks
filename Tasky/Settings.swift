@@ -16,15 +16,18 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	@IBOutlet var followDeveloperButtonIcon: UIButton!
 	@IBOutlet var shareButtonIcon: UIButton!
 	@IBOutlet var twitterButtonIcon: UIButton!
-	@IBOutlet var facebookButtonIcon: UIButton!
 	@IBOutlet var instagramButtonIcon: UIButton!
 	@IBOutlet var backButton: UIBarButtonItem!
-	
+    @IBOutlet weak var showCompletedTasksButton: UIButton!
+    @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var showCompletedSwitch: UISwitch!
+    
 	
 	
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
+        setButtonIcon(button: showCompletedTasksButton, icon: String.fontAwesomeIcon(name: .tasks), type: .solid)
 		setButtonIcon(button: upgradeButtonIcon, icon: String.fontAwesomeIcon(name: .trophy), type: .solid)
 		setButtonIcon(button: changeThemeButtonIcon, icon: String.fontAwesomeIcon(name: .star), type: .solid)
 		setButtonIcon(button: restorePurchasesButtonIcon, icon: String.fontAwesomeIcon(name: .flask), type: .solid)
@@ -34,7 +37,6 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		setButtonIcon(button: followDeveloperButtonIcon, icon: String.fontAwesomeIcon(name: .userAstronaut), type: .solid)
 		setButtonIcon(button: shareButtonIcon, icon: String.fontAwesomeIcon(name: .rocket), type: .solid)
 		setButtonIcon(button: twitterButtonIcon, icon: String.fontAwesomeIcon(name: .twitter), type: .brands)
-		setButtonIcon(button: facebookButtonIcon, icon: String.fontAwesomeIcon(name: .facebook), type: .brands)
 		setButtonIcon(button: instagramButtonIcon, icon: String.fontAwesomeIcon(name: .instagram), type: .brands)
 		
 		// Styling
@@ -42,6 +44,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		Utils.createFontAwesomeBarButton(button: backButton, icon: .arrowLeft, style: .solid)
 		tableView.separatorColor = UIColor.clear
 		aboutButton?.titleLabel?.numberOfLines = 15
+        showCompletedSwitch.setOn(UserDefaults.standard.bool(forKey: Constants.LocalData.SHOW_COMPLETED_TASKS), animated: false)
 	}
 	
 	func setButtonIcon(button: UIButton, icon: String, type: FontAwesomeStyle) {
@@ -81,7 +84,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	}
 	
 	public override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-		if section == 3 {
+		if section == 4 {
 			return 70.0
 		}
 		return 0
@@ -94,7 +97,15 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	@IBAction func backButtonPressed() {
 		Utils.presentView(self, viewName: Constants.Views.GOALS_NAV_CONTROLLER)
 	}
-	
+    
+    @IBAction func showCompletedTaskStateChange(_ sender: Any) {
+        guard let switchBtn = sender as? UISwitch else {
+            return
+        }
+        UserDefaults.standard.set(switchBtn.isOn, forKey: Constants.LocalData.SHOW_COMPLETED_TASKS)
+    }
+    
+    
 	@IBAction func aboutButtonPressed() {
 		Utils.openURL(url: Constants.Strings.LINK_TWITTER_JOEY)
 	}
@@ -156,10 +167,6 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 	
 	@IBAction func twitterButtonPressed() {
 		Utils.openURL(url: Constants.Strings.LINK_TWITTER)
-	}
-	
-	@IBAction func facebookButtonPressed() {
-		Utils.openURL(url: Constants.Strings.LINK_FACEBOOK)
 	}
 	
 	@IBAction func instagramButtonPressed() {

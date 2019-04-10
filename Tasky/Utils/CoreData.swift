@@ -49,6 +49,17 @@ class CoreData {
 		task.setValue(UUID().uuidString, forKey: Constants.CoreData.UUID);
 		CoreData.saveObject()
 	}
+    
+    class func createArchievedTask(goalName: String, type: AnyObject, when: Date, reason: AnyObject) {
+        let task = CoreData.createObject(Constants.CoreData.ARCHIEVE_TASK)
+        task.setValue(goalName, forKey: Constants.CoreData.NAME)
+        task.setValue(type, forKey: Constants.CoreData.TYPE)
+        task.setValue(when, forKey: Constants.CoreData.WHEN)
+        task.setValue(reason, forKey: Constants.CoreData.REASON)
+        task.setValue(UUID().uuidString, forKey: Constants.CoreData.UUID);
+        task.setValue(true, forKey: Constants.CoreData.ARCHIVED)
+        CoreData.saveObject()
+    }
 	
 	class func createObject(_ type: String) -> NSManagedObject {
 		let entity = NSEntityDescription.entity(forEntityName: type, in: fetchManagedObjectContext())

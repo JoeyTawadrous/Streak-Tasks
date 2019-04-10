@@ -56,6 +56,7 @@ class Constants {
 	
 	struct CoreData {
 		static let TASK = "Task"
+        static let ARCHIEVE_TASK = "Archieve_task"
 		static let GOAL = "Goal"
 		static let NAME = "name"
 		static let REASON = "reason"
@@ -63,6 +64,7 @@ class Constants {
 		static let TYPE = "type"
 		static let WHEN = "when"
 		static let UUID = "uuid"
+        static let ARCHIVED = "archived"
 	}
 	
     struct AppGroup {
@@ -91,6 +93,7 @@ class Constants {
 	
 	
     struct LocalData {
+        static let SHOW_COMPLETED_TASKS = "showTasks"
         static let SELECTED_GOAL = "selectedGoal"
 		static let SELECTED_GOAL_INDEX = "selectedGoalIndex"
         static let SELECTED_TASK_INDEX = "selectedTaskIndex"
@@ -149,7 +152,7 @@ class Constants {
 		
 		// Dialog: Achievements
 		static let ACHIEVEMENTS_INFO_DIALOG_TITLE = "How to Earn Points"
-		static let ACHIEVEMENTS_INFO_DIALOG_SUBTITLE = "\nEvery goal created will earn you three points. \n\nEvery task completed will earn you 2 points. \n\nEvery goal created/task completed/point gained brings you closer to earning achievement bagdes and levelling up :) \n"
+		static let ACHIEVEMENTS_INFO_DIALOG_SUBTITLE = "\nEvery goal created will earn you three points. \n\nEvery task completed will earn you two points. \n\nEvery goal created/task completed/point gained brings you closer to earning achievement bagdes and levelling up :) \n"
 
 		
 		// Dialog: Achievements
@@ -168,8 +171,7 @@ class Constants {
 		
 		// Links
 		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Core.APP_ID + "?action=write-review"
-		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
-		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
+		static let LINK_INSTAGRAM = "https://www.instagram.com/joeytawadrous"
 		static let LINK_IOS_STORE = "https://itunes.apple.com/us/app/streak-tasks-habit-tracker/id1195440882?mt=8"
 		static let LINK_PRIVACY = "https://www.getLearnable.com/privacy.php"
 		static let LINK_TERMS = "https://www.getLearnable.com/terms.php"
@@ -203,9 +205,9 @@ class Constants {
 		static let UPGRADE_SCREEN_FOUR_TITLE = "Unlimited Goals"
 		static let UPGRADE_SCREEN_FOUR_TEXT = "Create unlimited goals & tasks to keep you motivated."
 		static let UPGRADE_SCREENS_MONTHLY_SUBSCRIBE_BUTTON_TITLE = "$1.99 \nmonth"
-		static let UPGRADE_SCREENS_YEARLY_SUBSCRIBE_BUTTON_TITLE = "$4.99 \nyear"
+		static let UPGRADE_SCREENS_YEARLY_SUBSCRIBE_BUTTON_TITLE = "$3.99 \nyear"
 		static let UPGRADE_SCREENS_UNLOCK_BUTTON_TITLE = "$6.99 \nonce"
-		static let UPGRADE_SCREENS_INFO = "You'll be charged $1.99/$4.99 month at confirmation of purchase. Your subscription will renew after 1 month unless turned off 24-hours before the end of the subscription period. You can manage this in your App Store settings. For details, see " + Constants.Strings.LINK_PRIVACY + " & " + Constants.Strings.LINK_TERMS
+		static let UPGRADE_SCREENS_INFO = "You'll be charged $1.99/$3.99 month at confirmation of purchase. Your subscription will renew after 1 month unless turned off 24-hours before the end of the subscription period. You can manage this in your App Store settings. For details, see " + Constants.Strings.LINK_PRIVACY + " & " + Constants.Strings.LINK_TERMS
 	
 		
 		// Send Feedback

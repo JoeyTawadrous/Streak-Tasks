@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	/////////////////////////////////////////// */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		
+        self.setShowCompletedDefaultValue()
+        
         // Migrate Core Data to App Group
         self.migratePersistentStore()
 		
@@ -70,8 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            currentTheme != Constants.Purchases.NIGHTLIGHT_THEME &&
            currentTheme != Constants.Purchases.RIPE_THEME &&
            currentTheme != Constants.Purchases.SALVATION_THEME &&
-           currentTheme != Constants.Purchases.SUNRISE_THEME &&
-            currentTheme != Constants.Purchases.MALIBU_THEME {
+           currentTheme != Constants.Purchases.SUNRISE_THEME {
             Utils.set(key: Constants.Defaults.CURRENT_THEME, value: Constants.Purchases.WHITE_THEME)
         }
         
@@ -121,15 +122,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	
     func applicationWillResignActive(_ application: UIApplication) {
-        tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+        var badgeCount = 0
+        let allGoals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+        //self.goals.removeAll()
+        if allGoals.count > 0 {
+            for goal in allGoals {
+                if !(goal.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false) {
+                    let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: goal.value(forKey: Constants.CoreData.NAME) as! String? ?? "")
+                    for task in tasks {
+                        let archived = task.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false
+                        if !archived {
+                            badgeCount += 1
+                        }
+                    }
+                    
+                }
+            }
+        }
         
-        let tasksDue = tasks.filter({ (task) -> Bool in
-            let when = task.value(forKey: Constants.CoreData.WHEN) as! Date
-            let dateComparisionResult: ComparisonResult = when.compare(Date())
-            
-            return dateComparisionResult == ComparisonResult.orderedAscending
-        })
-        UIApplication.shared.applicationIconBadgeNumber = tasksDue.count
+//        tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+//
+//        let tasksDue = tasks.filter({ (task) -> Bool in
+//            let when = task.value(forKey: Constants.CoreData.WHEN) as! Date
+//            let archived = task.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false
+//            if archived {
+//                return false
+//            }
+//            let dateComparisionResult: ComparisonResult = when.compare(Date())
+//
+//            return dateComparisionResult == ComparisonResult.orderedAscending
+//        })
+        UIApplication.shared.applicationIconBadgeNumber =  badgeCount //tasksDue.count
+    }
+    
+    func setShowCompletedDefaultValue() {
+        if UserDefaults.standard.object(forKey: Constants.LocalData.SHOW_COMPLETED_TASKS) == nil {
+            UserDefaults.standard.set(true, forKey: Constants.LocalData.SHOW_COMPLETED_TASKS)
+        }
     }
 
     //* MARK: migrate Core Data
@@ -161,6 +190,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if targetUrl == nil {
             targetUrl = newStoreUrl
         }
+        needMigrate = true
+        needDeleteOld = true
         if needMigrate {
             do {
                 try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: targetUrl!, options: storeOptions)

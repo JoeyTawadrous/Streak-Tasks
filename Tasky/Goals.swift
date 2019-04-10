@@ -16,7 +16,8 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	@IBOutlet var addButton: UIBarButtonItem!
 	@IBOutlet var achievementsButton: UIBarButtonItem!
 	@IBOutlet var menuButton: UIBarButtonItem!
-	
+    @IBOutlet weak var archiveButton: UIBarButtonItem!
+    
     var goals = [AnyObject]()
 	
 	
@@ -24,13 +25,12 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	/* MARK: Init
 	/////////////////////////////////////////// */
 	override func viewWillAppear(_ animated: Bool) {
-		goals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
-		goals = goals.reversed() // newest first
+		self.refreshData()
 		
 		// Demo data
-//		if goals.count == 0 {
-//			goals = Utils.createDemoData()
-//		}
+//        if goals.count == 0 {
+//            goals = CoreData.createDemoData()
+//        }
 		
 		tableView.reloadData()
 		
@@ -39,7 +39,21 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 		Utils.createFontAwesomeBarButton(button: addButton, icon: .plus, style: .solid)
 		Utils.createFontAwesomeBarButton(button: achievementsButton, icon: .gem, style: .solid)
 		Utils.createFontAwesomeBarButton(button: menuButton, icon: .bars, style: .solid)
+        Utils.createFontAwesomeBarButton(button: archiveButton, icon: .fileArchive, style: .solid)
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+    }
+    
+    func refreshData() {
+        let allGoals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+        self.goals.removeAll()
+        if allGoals.count > 0 {
+            for goal in allGoals {
+                if !(goal.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false) {
+                    self.goals.append(goal)
+                }
+            }
+        }
+        goals = goals.reversed() // newest first
     }
 	
 	override var prefersStatusBarHidden: Bool {
@@ -99,6 +113,15 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	@IBAction func menuButtonPressed(_ sender: AnyObject) {
 		Utils.presentView(self, viewName: Constants.Views.SETTINGS_NAV_CONTROLLER)
 	}
+    
+    func archieveTask(_ task: NSManagedObject) {
+        let goalName = task.value(forKey: Constants.CoreData.NAME) as! String? ?? ""
+        let type = task.value(forKey: Constants.CoreData.TYPE)
+        let date = task.value(forKey: Constants.CoreData.WHEN) as! Date? ?? Date()
+        let reason = task.value(forKey: Constants.CoreData.REASON)
+        
+        CoreData.createArchievedTask(goalName: goalName, type: type as AnyObject, when: date, reason: reason as AnyObject)
+    }
 	
 	
 	
@@ -131,12 +154,15 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if(editingStyle == UITableViewCell.EditingStyle.delete) {
-            
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .default, title: "Delete") {_,_ in
             // Delete tasks associated with this goal
             let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
-            let goal = goals[indexPath.row]
+            let goal = self.goals[indexPath.row]
             let selectedGoal = goal.value(forKey: Constants.CoreData.NAME) as! String?
             
             for task in tasks {
@@ -144,9 +170,9 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     Tasks.deleteTask(task as! NSManagedObject)
                 }
             }
-			
+            
             // Delete goal
-            let goalToDelete = goals[indexPath.row]
+            let goalToDelete = self.goals[indexPath.row]
             
             let managedObjectContect = CoreData.fetchManagedObjectContext()
             managedObjectContect.delete(goalToDelete as! NSManagedObject)
@@ -157,14 +183,35 @@ class Goals: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 print(error)
             }
             
-            goals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
-            goals = goals.reversed() // newest first
+            self.goals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+            self.goals = self.goals.reversed() // newest first
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.reloadData()
+        }
+        let archiveAction = UITableViewRowAction(style: .normal, title: "Archive") { (_, _) in
+            // Archive goal
+            // Archive all tasks in goal
+            let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
+            let goal = self.goals[indexPath.row]
+            let selectedGoal = goal.value(forKey: Constants.CoreData.NAME) as! String?
+            
+//            for task in tasks {
+//                if (selectedGoal == task.name) {
+//                    self.archieveTask(task as! NSManagedObject)
+//                    Tasks.deleteTask(task as! NSManagedObject)
+//                }
+//            }
+            self.goals[indexPath.row].setValue(true, forKey: Constants.CoreData.ARCHIVED)
+            CoreData.saveObject()
+            self.goals.remove(at: indexPath.row)
+            self.tableView.reloadData()
         }
         
-        tableView.reloadData()
+        return [deleteAction, archiveAction]
     }
+    
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

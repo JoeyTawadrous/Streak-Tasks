@@ -31,6 +31,9 @@ class StreakTasksUITests: XCTestCase {
     
     func testExample() {
         let app = XCUIApplication()
+        app.navigationBars["Goals"].buttons[""].tap()
+        snapshot("ArchivedGoals")
+        app.navigationBars["Archived Goals"].buttons["Goals"].tap()
         app.navigationBars["Goals"].buttons[""].tap()
         app/*@START_MENU_TOKEN@*/.buttons["Close"]/*[[".otherElements[\"SCLAlertView\"].buttons[\"Close\"]",".buttons[\"Close\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.navigationBars["Goals"].buttons[""].tap()

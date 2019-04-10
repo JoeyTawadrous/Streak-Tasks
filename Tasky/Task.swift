@@ -25,7 +25,9 @@ class Task: UIViewController {
         let selectedGoalIndex = Utils.int(key: Constants.LocalData.SELECTED_GOAL_INDEX)
         let selectedTaskIndex = Utils.int(key: Constants.LocalData.SELECTED_TASK_INDEX)
         var tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
+        let archivedTasks = CoreData.fetchCoreDataObject(Constants.CoreData.ARCHIEVE_TASK, predicate: selectedGoal)
         tasks = tasks.reversed()
+        tasks.append(contentsOf: archivedTasks)
 		
 		// Styling
 		Utils.insertGradientIntoView(viewController: self)
@@ -65,6 +67,9 @@ class Task: UIViewController {
         // Complete button
         markDoneButton!.layer.cornerRadius = 3
         markDoneButton!.setTitleColor(Utils.getMainColor(), for: UIControl.State())
+        if  tasks[selectedTaskIndex].value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false {
+            markDoneButton?.isHidden = true
+        }
         self.styleBorders()
     }
     
@@ -108,12 +113,22 @@ class Task: UIViewController {
         var tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: selectedGoal)
         tasks = tasks.reversed()
         let task = tasks[selectedTaskIndex] as! NSManagedObject
+        self.archieveTask(task)
         Tasks.deleteTask(task)
 		
 		// Achievements
 		Task.updateTasksCompleted(view: self)
 		
         navigationController?.popViewController(animated: true)
+    }
+    
+    func archieveTask(_ task: NSManagedObject) {
+        let goalName = task.value(forKey: Constants.CoreData.NAME) as! String? ?? ""
+        let type = task.value(forKey: Constants.CoreData.TYPE)
+        let date = task.value(forKey: Constants.CoreData.WHEN) as! Date? ?? Date()
+        let reason = task.value(forKey: Constants.CoreData.REASON)
+        
+        CoreData.createArchievedTask(goalName: goalName, type: type as AnyObject, when: date, reason: reason as AnyObject)
     }
 	
 	class func updateTasksCompleted(view: UIViewController) {

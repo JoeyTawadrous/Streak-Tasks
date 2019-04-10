@@ -32,7 +32,9 @@ Get organized today.
 # Features
 
 - A beautiful list of all your goals & tasks to keep you motivated.
+- See completed tasks (you can also turn this setting off).
 - An easy way to manage & track what you want to achieve.
+- Archive your goals.
 - Prioritise what is most important to you.
 - Elegant, simple & colorful design.
 - Track your progress towards achieving a goal.
@@ -48,8 +50,8 @@ Get organized today.
 - Download today and get the productivity boost you've been looking for.
 
 
-<img alt="Screenshot" width="205px" src="readme_assets/1.png"><img alt="Screenshot2" width="205px" src="readme_assets/2.png"><img alt="Screenshot3" width="205px" src="readme_assets/3.png">
-<br><img alt="Screenshot" width="205px" src="readme_assets/1_ipad.png"><img alt="Screenshot2" width="205px" src="readme_assets/2_ipad.png"><img alt="Screenshot3" width="205px" src="readme_assets/3_ipad.png">
+<img alt="Screenshot" width="205px" src="readme_assets/1.png"><img alt="Screenshot2" width="205px" src="readme_assets/2.png"><img alt="Screenshot3" width="205px" src="readme_assets/3.png"><img alt="Screenshot4" width="205px" src="readme_assets/4.png">
+<br><img alt="Screenshot" width="205px" src="readme_assets/1_ipad.png"><img alt="Screenshot2" width="205px" src="readme_assets/2_ipad.png"><img alt="Screenshot3" width="205px" src="readme_assets/3_ipad.png"><img alt="Screenshot4" width="205px" src="readme_assets/4_ipad.png">
 
 
 # Tags

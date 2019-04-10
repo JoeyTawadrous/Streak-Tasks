@@ -36,8 +36,10 @@
 		52CC53291AAA4E8A002A51C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC53281AAA4E8A002A51C1 /* AppDelegate.swift */; settings = {COMPILER_FLAGS = "-w"; }; };
 		52CC53331AAA4E8A002A51C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53321AAA4E8A002A51C1 /* Images.xcassets */; };
 		52CC53361AAA4E8A002A51C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CC53341AAA4E8A002A51C1 /* LaunchScreen.xib */; };
+		6D0AFF1B224FDCAF0092E43B /* ArchieveTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AFF1A224FDCAF0092E43B /* ArchieveTasks.swift */; };
 		6DCC49EA224010940034FCBF /* StreakTasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC49E9224010940034FCBF /* StreakTasksUITests.swift */; };
 		6DCC49F4224011AB0034FCBF /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC49F3224011AB0034FCBF /* SnapshotHelper.swift */; };
+		6DF27F0722553FAD00CABD32 /* ArchivedGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF27F0622553FAD00CABD32 /* ArchivedGoals.swift */; };
 		B9EA23C3DC0DDB92DD51DFE5 /* Pods_StreakTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0B5B322A9CC0D3356AC212 /* Pods_StreakTasks.framework */; };
 		E3D170B721DB997900DDBB6D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D170B621DB997900DDBB6D /* NotificationCenter.framework */; };
 		E3D170BA21DB997900DDBB6D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D170B921DB997900DDBB6D /* TodayViewController.swift */; };
@@ -115,10 +117,15 @@
 		5EB43110D8F868BA5F124D4B /* Pods-StreakTasksWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreakTasksWidgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreakTasksWidgets/Pods-StreakTasksWidgets.debug.xcconfig"; sourceTree = "<group>"; };
 		67EF2CA912152745B1452B9F /* Pods-StreakTasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreakTasks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreakTasks/Pods-StreakTasks.debug.xcconfig"; sourceTree = "<group>"; };
 		6A0B5B322A9CC0D3356AC212 /* Pods_StreakTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreakTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0AFF1A224FDCAF0092E43B /* ArchieveTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchieveTasks.swift; sourceTree = "<group>"; };
+		6D0AFF1C224FE7670092E43B /* InTouch 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "InTouch 2.xcdatamodel"; sourceTree = "<group>"; };
+		6D0AFF252251365C0092E43B /* InTouch 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "InTouch 3.xcdatamodel"; sourceTree = "<group>"; };
 		6DCC49E7224010940034FCBF /* StreakTasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreakTasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCC49E9224010940034FCBF /* StreakTasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakTasksUITests.swift; sourceTree = "<group>"; };
 		6DCC49EB224010940034FCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DCC49F3224011AB0034FCBF /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		6DF27F0522552B2400CABD32 /* InTouch 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "InTouch 4.xcdatamodel"; sourceTree = "<group>"; };
+		6DF27F0622553FAD00CABD32 /* ArchivedGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedGoals.swift; sourceTree = "<group>"; };
 		E1B04B76106EBF5CE3DE0C15 /* Pods-StreakTasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreakTasks.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreakTasks/Pods-StreakTasks.release.xcconfig"; sourceTree = "<group>"; };
 		E3D170B521DB997900DDBB6D /* StreakTasksWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StreakTasksWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D170B621DB997900DDBB6D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -252,6 +259,8 @@
 				52BB3EF41AE314BA00A12D0C /* Task.swift */,
 				52579C88218E381000C1DEA1 /* Achievements */,
 				52973AE61E2BD78B00D7DE3F /* Settings.swift */,
+				6D0AFF1A224FDCAF0092E43B /* ArchieveTasks.swift */,
+				6DF27F0622553FAD00CABD32 /* ArchivedGoals.swift */,
 			);
 			path = Tasky;
 			sourceTree = "<group>";
@@ -408,6 +417,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -542,7 +552,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0AFF1B224FDCAF0092E43B /* ArchieveTasks.swift in Sources */,
 				5252DB3020679E2900621E57 /* Goals.swift in Sources */,
+				6DF27F0722553FAD00CABD32 /* ArchivedGoals.swift in Sources */,
 				52C7033B2143F7F500AC839F /* Dialogs.swift in Sources */,
 				52C7034221441D1E00AC839F /* CustomClasses.swift in Sources */,
 				52973AE71E2BD78B00D7DE3F /* Settings.swift in Sources */,
@@ -921,7 +933,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = P5Z7RL76WF;
-				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = TaskyWidgets/Info.plist;
@@ -967,7 +978,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = P5Z7RL76WF;
-				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = TaskyWidgets/Info.plist;
@@ -1028,11 +1038,15 @@
 		527EBF77206D6DDA00F17038 /* Tasky.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				6DF27F0522552B2400CABD32 /* InTouch 4.xcdatamodel */,
+				6D0AFF252251365C0092E43B /* InTouch 3.xcdatamodel */,
+				6D0AFF1C224FE7670092E43B /* InTouch 2.xcdatamodel */,
 				527EBF78206D6DDA00F17038 /* InTouch.xcdatamodel */,
 			);
-			currentVersion = 527EBF78206D6DDA00F17038 /* InTouch.xcdatamodel */;
+			currentVersion = 6DF27F0522552B2400CABD32 /* InTouch 4.xcdatamodel */;
 			path = Tasky.xcdatamodeld;
 			sourceTree = "<group>";
+			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */

@@ -12,6 +12,7 @@ class Task: UIViewController {
     @IBOutlet var typeLabel: UILabel?
     @IBOutlet var taskImageView: UIImageView?
     @IBOutlet var markDoneButton: UIButton?
+    var cameFromArchive:Bool = false
     
 	
 	
@@ -67,7 +68,7 @@ class Task: UIViewController {
         // Complete button
         markDoneButton!.layer.cornerRadius = 3
         markDoneButton!.setTitleColor(Utils.getMainColor(), for: UIControl.State())
-        if  tasks[selectedTaskIndex].value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false {
+        if cameFromArchive || tasks[selectedTaskIndex].value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false {
             markDoneButton?.isHidden = true
         }
         self.styleBorders()

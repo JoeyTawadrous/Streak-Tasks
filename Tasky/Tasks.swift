@@ -201,6 +201,7 @@ class Tasks: UIViewController, UITableViewDataSource, UITableViewDelegate {
         // Show task view
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let taskView = storyBoard.instantiateViewController(withIdentifier: Constants.Views.TASK) as! Task
+        taskView.cameFromArchive = self.cameFromArchive
         self.show(taskView as UIViewController, sender: taskView)
     }
 

@@ -68,11 +68,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if currentTheme != Constants.Purchases.FIRE_THEME &&
            currentTheme != Constants.Purchases.GRASSY_THEME &&
            currentTheme != Constants.Purchases.LIFE_THEME &&
-           currentTheme != Constants.Purchases.MALIBU_THEME &&
            currentTheme != Constants.Purchases.NIGHTLIGHT_THEME &&
            currentTheme != Constants.Purchases.RIPE_THEME &&
            currentTheme != Constants.Purchases.SALVATION_THEME &&
-           currentTheme != Constants.Purchases.SUNRISE_THEME {
+           currentTheme != Constants.Purchases.SUNRISE_THEME &&
+            currentTheme != Constants.Purchases.MALIBU_THEME {
             Utils.set(key: Constants.Defaults.CURRENT_THEME, value: Constants.Purchases.WHITE_THEME)
         }
         
@@ -123,35 +123,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
     func applicationWillResignActive(_ application: UIApplication) {
         var badgeCount = 0
-        let allGoals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
-        //self.goals.removeAll()
+        var allGoals = CoreData.fetchCoreDataObject(Constants.CoreData.GOAL, predicate: "")
+        allGoals = allGoals.filter({ (goal) -> Bool in
+            return !(goal.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false)
+        })
         if allGoals.count > 0 {
             for goal in allGoals {
-                if !(goal.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false) {
-                    let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: goal.value(forKey: Constants.CoreData.NAME) as! String? ?? "")
-                    for task in tasks {
-                        let archived = task.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false
-                        if !archived {
+                let tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: goal.value(forKey: Constants.CoreData.NAME) as! String? ?? "")
+                for task in tasks {
+                    let archived = task.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false
+                    if !archived {
+                        let when = task.value(forKey: Constants.CoreData.WHEN) as! Date
+                        let dateComparisionResult: ComparisonResult = when.compare(Date())
+                        if dateComparisionResult == ComparisonResult.orderedAscending {
                             badgeCount += 1
                         }
                     }
-                    
                 }
             }
         }
-        
-//        tasks = CoreData.fetchCoreDataObject(Constants.CoreData.TASK, predicate: "")
-//
-//        let tasksDue = tasks.filter({ (task) -> Bool in
-//            let when = task.value(forKey: Constants.CoreData.WHEN) as! Date
-//            let archived = task.value(forKey: Constants.CoreData.ARCHIVED) as! Bool? ?? false
-//            if archived {
-//                return false
-//            }
-//            let dateComparisionResult: ComparisonResult = when.compare(Date())
-//
-//            return dateComparisionResult == ComparisonResult.orderedAscending
-//        })
         UIApplication.shared.applicationIconBadgeNumber =  badgeCount //tasksDue.count
     }
     

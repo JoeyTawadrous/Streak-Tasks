@@ -179,11 +179,21 @@ extension Upgrade: PaperOnboardingDataSource {
 							   titleFont: titleFont,
 							   descriptionFont: descriptionFont),
 			
-			OnboardingItemInfo(informationImage: UIImage(named: "growth")!,
+			OnboardingItemInfo(informationImage: UIImage(named: "diamond")!,
 							   title: Constants.Strings.UPGRADE_SCREEN_FOUR_TITLE,
 							   description: Constants.Strings.UPGRADE_SCREEN_FOUR_TEXT,
 							   pageIcon: UIImage(named: "transparent")!,
 							   color: UIColor(hex: Constants.Colors.GREEN),
+							   titleColor: UIColor.white,
+							   descriptionColor: UIColor.white,
+							   titleFont: titleFont,
+							   descriptionFont: descriptionFont),
+			
+			OnboardingItemInfo(informationImage: UIImage(named: "key")!,
+							   title: Constants.Strings.UPGRADE_SCREEN_FIVE_TITLE,
+							   description: Constants.Strings.UPGRADE_SCREEN_FIVE_TEXT,
+							   pageIcon: UIImage(named: "transparent")!,
+							   color: UIColor(hex: Constants.Colors.BLUE_DARK),
 							   titleColor: UIColor.white,
 							   descriptionColor: UIColor.white,
 							   titleFont: titleFont,
@@ -192,6 +202,6 @@ extension Upgrade: PaperOnboardingDataSource {
 	}
 	
 	func onboardingItemsCount() -> Int {
-		return 4
+		return 5
 	}
 }

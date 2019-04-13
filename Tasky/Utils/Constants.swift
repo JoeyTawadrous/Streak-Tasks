@@ -41,6 +41,7 @@ class Constants {
 	
 	struct Colors {
 		static let BLUE = "69CDFC"
+		static let BLUE_DARK = "1168E8"
 		static let GREEN = "2ecc71"
 		static let ORANGE = "f39c12"
 		static let PURPLE = "B0B1F1"
@@ -204,6 +205,8 @@ class Constants {
 		static let UPGRADE_SCREEN_THREE_TEXT = "Gain access to our Sunrise, Salvation, Nightlight themes & more."
 		static let UPGRADE_SCREEN_FOUR_TITLE = "Unlimited Goals"
 		static let UPGRADE_SCREEN_FOUR_TEXT = "Create unlimited goals & tasks to keep you motivated."
+		static let UPGRADE_SCREEN_FIVE_TITLE = "Advanced Settings"
+		static let UPGRADE_SCREEN_FIVE_TEXT = "Archive your goals and show your completed tasks."
 		static let UPGRADE_SCREENS_MONTHLY_SUBSCRIBE_BUTTON_TITLE = "$1.99 \nmonth"
 		static let UPGRADE_SCREENS_YEARLY_SUBSCRIBE_BUTTON_TITLE = "$3.99 \nyear"
 		static let UPGRADE_SCREENS_UNLOCK_BUTTON_TITLE = "$6.99 \nonce"
